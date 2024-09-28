@@ -54,7 +54,7 @@ li::before {
 @media (max-width: 768px) {
   div .container {
     min-height: 100vh; /* Allows full viewport height */
-    padding: 2rem; /* Optional padding */
+    padding: 0.8rem; /* Optional padding */
     box-sizing: border-box; /* Ensures padding doesn't affect height */ 
   }
 }

@@ -8,7 +8,10 @@ const Hero = () => {
         <h1 className="hero-title"> Built for Government Agencies</h1>
         <p className="hero-description">
           Streamline your data management and improve efficiency with our
-          Event-Driven Organizational Records Application.
+          <br /> 
+          <span className="text-center">
+          <u>E</u>vent-<u>D</u>riven <u>O</u>rganizational <u>R</u>ecords <u>A</u>pplication.
+          </span>
         </p>
         <button className="cta-button">Free to use</button>
         <div className="hero">
