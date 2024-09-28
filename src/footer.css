@@ -1,0 +1,87 @@
+/* footer.css */
+.footer-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem; /* Slightly increased padding for a spacious feel */
+  background-color: var(--theme1-light); /* Lighter background for contrast */
+  color: var(--theme1-dark); /* Darker text for better readability */
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.15); /* Softer shadow */
+}
+
+.footer-left {
+  display: flex;
+  align-items: center; /* Align icon and brand text */
+}
+
+.footer-icon {
+  font-size: 2rem; /* Icon size */
+  margin-right: 0.5rem; /* Space between icon and brand name */
+}
+
+.footer-brand {
+  font-size: 1.5rem; /* Brand name size */
+  font-weight: bold; /* Bold for emphasis */
+}
+
+.footer-center {
+  text-align: center; /* Center-align the text and icons */
+  flex: 2; /* Center section takes up more space */
+}
+
+.footer-text {
+  font-size: 1.1rem; /* Font size for footer description */
+  margin-bottom: 0.5rem; /* Space below description */
+}
+
+.social-icons {
+  display: flex; /* Flexbox for social icons */
+  justify-content: center; /* Center the icons */
+}
+
+.social-icon {
+  font-size: 1.5rem; /* Icon size */
+  margin: 0 0.5rem; /* Space between icons */
+  cursor: pointer; /* Pointer on hover */
+  transition: transform 0.3s; /* Transition for hover effect */
+}
+
+.social-icon:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.footer-right {
+  text-align: right; /* Align links to the right */
+}
+
+.footer-links {
+  font-size: 0.9rem; /* Smaller font size for links */
+}
+
+.footer-link {
+  color: var(--theme3-dark); /* Link color */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s; /* Transition for hover effect */
+}
+
+.footer-link:hover {
+  color: var(--theme-alert3); /* Change color on hover */
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+  .footer-bar {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align all items */
+    text-align: center; /* Center text alignment */
+  }
+
+  .footer-left, .footer-center, .footer-right {
+    width: 100%; /* Full width for each section */
+    margin-bottom: 1rem; /* Space between sections */
+  }
+
+  .social-icons {
+    justify-content: center; /* Center social icons in column layout */
+  }
+}

@@ -1,0 +1,59 @@
+/* header.css */
+.header-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--theme1-dark);
+  color: var(--theme6-light);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.header-title {
+  font-size: 2.5rem; /* Adjust to your desired size */
+  font-weight: bold;
+  color: var(--theme5-light); /* Text color from your theme */
+  text-shadow: 
+  2px 2px 5px rgba(255, 255, 255, 0.4), /* Soft glowing white shadow */
+               0px 0px 5px rgba(255, 255, 255, 0.6), /* Fainter glow effect */
+               -1px -1px 1px rgba(255, 255, 255, 0.5); /* Subtle inner glow */
+  letter-spacing: 0.1rem;
+  position: relative;
+}
+
+/* Optional hover effect for more dynamism */
+.header-title:hover {
+  text-shadow: 3px 3px 7px rgba(255, 255, 255, 0.9), /* Slightly stronger glow */
+               0px 0px 12px rgba(255, 255, 255, 0.7), 
+               -2px -2px 6px rgba(255, 255, 255, 0.6);
+  transition: text-shadow 0.3s ease-in-out;
+}
+
+.header-left {
+text-align: left;
+}
+.header-right {
+  text-align: right;
+}
+  
+.header-left,
+.header-right {
+  flex: 1;
+}
+
+.header-center {
+  flex: 2;
+  text-align: center;
+}
+.star-icon {
+  color: var(--theme5-contrast);
+}
+.star-icon,
+.hamburger-icon {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.hamburger-icon { 
+  font-size: 2.2rem;
+  color: var(--theme5-contrast);
+}

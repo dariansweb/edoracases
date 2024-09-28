@@ -1,0 +1,60 @@
+
+/* Addit  ional styles */
+div .container {
+  min-height: 80vh; /* Allows full viewport height */
+  max-width: 1280px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  box-sizing: border-box;   
+  overflow: hidden; /* Prevent overflow for child elements */
+  color: var(--theme1-dark)
+} 
+ul {
+  list-style: none; /* Removes default bullet points */
+  padding: 0;
+}
+li {
+  position: relative;
+  padding-left: 25px; /* Adds space for the checkmark */
+  margin: 10px;
+}
+li::before {
+  content: '➔'; /*  Unicode character for the checkmark */
+  margin-right: 1rem  ;
+  left: 0;  
+  color: var(--theme3-dark ); /* You can customize the color */
+  font-size: 1.5em; /* Adjust size as needed */
+}
+
+.edora-text li {
+  line-height: 1.6; /* Adjust line height for readability */
+}
+
+.edora-text li span::first-letter {
+  font-size: 3rem;  /* Adjust size as needed */
+  font-weight: bold;  /* Make it bold */
+  float: left;  /* Float to the left to create drop cap effect */
+  margin-right: 0.1em;  /* Space between the drop cap and text */
+  line-height: 1;  /* Adjust line height for drop cap */
+  color: var(--theme3-dark); /* Change this to your preferred color */
+} 
+
+::selection {
+  background-color: var(--theme3-dark); /* Custom background color */
+  color: var(--theme1-light); /* Custom text color */
+}
+
+.align-center {
+    display: flex; /* Establishes flex context */
+    flex-direction: column; /* Stack children vertically *  /    
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  div .container {
+    min-height: 100vh; /* Allows full viewport height */
+    padding: 2rem; /* Optional padding */
+    box-sizing: border-box; /* Ensures padding doesn't affect height */ 
+  }
+}

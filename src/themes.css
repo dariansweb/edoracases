@@ -1,0 +1,25 @@
+:root {
+/* Primary */
+  --theme3-dark: rgb(60, 179, 113); /*Seafoam*/
+  --theme3-light: rgb(241, 250, 245); /*Pale Mint*/
+  --theme3-contrast: rgb(255, 235, 59);
+
+  --theme1-dark: rgb(74, 112, 108); /*Muted Forest */
+  --theme1-light: rgb(245, 245, 220); /*Light Sand*/
+
+  --theme2-dark:  rgb(107, 142, 35); /*Olive Green*/
+  --theme2-light: rgb(248, 248, 240); /*Ivory*/
+
+  --theme4-dark: rgb(157, 193, 131); /*Seige Green*/
+  --theme4-light: rgb(255, 245, 225); /*Pale Peach*/
+
+  --theme5-dark: rgb(138, 154, 91); /*Moss Green*/
+  --theme5-light: rgb(245, 245, 220); /*Light Sand*/
+
+  --theme6-dark: rgb(147, 197, 114); /*Pistachio Peach*/
+  --theme6-light: rgb(255, 245, 225); /*Pale Peach*/
+
+  --theme1-alert1: rgb(218, 165, 32);
+  --theme1-alert2: rgb(255, 127, 80);
+  --theme1-alert3: rgb(125, 20, 160);
+}
