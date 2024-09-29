@@ -10,6 +10,7 @@ button {
     cursor: pointer;
   }
   .cta-button {
+    margin: 25  px;
     padding: 1rem 2rem;
     background-color: var(--theme3-dark);
     color: var(--theme6-light);

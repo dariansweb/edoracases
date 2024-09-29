@@ -1,59 +1,101 @@
 /* header.css */
+:root {
+  --text-shadow-light: 2px 2px 5px rgba(255, 255, 255, 0.4); /* Soft glowing white shadow */
+  --text-shadow-medium: 0px 0px 5px rgba(255, 255, 255, 0.6); /* Fainter glow effect */
+  --text-shadow-dark: -1px -1px 1px rgba(255, 255, 255, 0.5); /* Subtle inner glow */
+}
+
+/* Header Bar */
 .header-bar {
+  position: sticky;   
+  top: 0;
+  z-index: 100; /* Ensure it stays above other elements */  
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-  background-color: var(--theme1-dark);
-  color: var(--theme6-light);
+  padding: 0.4rem 0.8rem;
+  background-color: var(--theme1-dark); /* Main background color */
+  color: var(--theme6-light); /* Text color */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
 }
+
+/* Title styles */
 .header-title {
   font-size: 2.5rem; /* Adjust to your desired size */
   font-weight: bold;
   color: var(--theme5-light); /* Text color from your theme */
-  text-shadow: 
-  2px 2px 5px rgba(255, 255, 255, 0.4), /* Soft glowing white shadow */
-               0px 0px 5px rgba(255, 255, 255, 0.6), /* Fainter glow effect */
-               -1px -1px 1px rgba(255, 255, 255, 0.5); /* Subtle inner glow */
+  text-shadow: var(--text-shadow-light), var(--text-shadow-medium),
+    var(--text-shadow-dark);
   letter-spacing: 0.1rem;
   position: relative;
+  transition: text-shadow 0.3s ease-in-out; /* Transition for hover */
 }
 
-/* Optional hover effect for more dynamism */
+/* Hover effect for title */
 .header-title:hover {
-  text-shadow: 3px 3px 7px rgba(255, 255, 255, 0.9), /* Slightly stronger glow */
-               0px 0px 12px rgba(255, 255, 255, 0.7), 
-               -2px -2px 6px rgba(255, 255, 255, 0.6);
-  transition: text-shadow 0.3s ease-in-out;
+  text-shadow: 3px 3px 7px rgba(255, 255, 255, 0.9),
+    /* Slightly stronger glow */ 0px 0px 12px rgba(255, 255, 255, 0.7),
+    -2px -2px 6px rgba(255, 255, 255, 0.6);
 }
 
-.header-left {
-text-align: left;
-}
-.header-right {
-  text-align: right;
-}
-  
+/* Flex settings for header sections */
 .header-left,
 .header-right {
   flex: 1;
+  text-align: center; /* Centered text in both sections */
 }
 
 .header-center {
-  flex: 2;
+  flex: 2; /* Center section takes more space */
   text-align: center;
 }
-.star-icon {
-  color: var(--theme5-contrast);
-}
+
+/* Icon styles */
 .star-icon,
 .hamburger-icon {
-  font-size: 2rem;
-  cursor: pointer;
+  font-size: 2rem; /* Base icon size */
+  cursor: pointer; /* Change cursor on hover */
+  color: var(--theme5-contrast); /* Shared color for icons */
+  text-shadow: var(--text-shadow-light), var(--text-shadow-medium),
+    var(--text-shadow-dark); /* Apply shadow effect to icons */
+  transition: transform 0.3s ease,
+    /* Smooth transition for scaling */ text-shadow 0.3s ease; /* Smooth transition for shadow on hover */
 }
 
-.hamburger-icon { 
-  font-size: 2.2rem;
-  color: var(--theme5-contrast);
+/* Hover effect for icons */
+.star-icon:hover,
+.hamburger-icon:hover {
+  text-shadow: 3px 3px 7px rgba(245, 245, 220, 1.2),
+    /* Slightly stronger glow */ 0px 0px 12px rgba(255, 255, 255, 0.7),
+    -2px -2px 6px rgba(255, 255, 255, 0.6); /* Same hover effect as title */
+  transform: scale(1.1); /* Scale up on hover */
+}
+
+/* Hamburger icon adjustment */
+.hamburger-icon {
+  font-size: 2.2rem; /* Slightly larger for hamburger */
+}
+
+/* Define the explosion effect */
+.explode-effect {
+  animation: explode 1s ease forwards; /* Animation name and duration */
+}
+
+/* Keyframes for the explosion animation */
+@keyframes explode {
+  0% {
+    transform: scale(1); /* Original size */
+    opacity: 1; /* Fully visible */
+  }
+  50% {
+    transform: scale(1.5); /* Scale up */
+    opacity: 0.5; /* Fade out */
+  }
+  100% {
+    transform: scale(0); /* Scale down to disappear */
+    opacity: 0; /* Fully transparent */
+  }
 }

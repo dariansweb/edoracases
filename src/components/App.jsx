@@ -1,43 +1,25 @@
-import React from 'react';
+import React from "react";
+import features from "../data/features";
+import { shuffleArray } from "../utils/shuffleArray";
 
 function App() {
+  const shuffledFeatures = shuffleArray(features); // Shuffle features
   return (
     <>
-      <div className="container edora-text">
+      <div className="container">
         <h1>Human and Health Services</h1>
         <h2>Client Management</h2>
-        <ul>
-          <li>
-            Designed to streamline client intake, case
-            management, and service coordination for human and health services
-            organizations.
-          </li>
-          <li>
-            Simplifies the process of capturing and tracking client data,
-            ensuring that services are delivered efficiently and in compliance
-            with industry standards.
-          </li>
-          <li>
-            Ensures that client
-            records are automatically updated in response to critical events,
-            such as client interactions, medical appointments, or service
-            changes.
-          </li>
-          <li>
-            Enables healthcare providers, social workers, and
-            case managers to access real-time information, enhancing the speed
-            and quality of decision-making.
-          </li>
-          <li>
-            Collaboration across departments, ensuring that vital
-            client data is available whenever and wherever it’s needed. With a
-            focus on data integrity, compliance, and service delivery,
-          </li>
-          <li>
-            An essential tool for human services organizations
-            committed to providing high-quality care and support.
-          </li>
-        </ul>
+
+        <div className="features-list edora-text">
+          <h3>An essential tool for providing high-quality care and support.</h3>
+          <ul className="rotating-features">
+            {shuffledFeatures.map((feature, index) => (
+              <li key={index} className="feature-item">
+                {feature}
+              </li>
+            ))}
+          </ul>
+        </div>
         <h3>View EDORA in Action </h3>
         <span className="align-center">
           <button className="cta-button">Try It Now</button>

@@ -1,11 +1,10 @@
 
 /* Addit  ional styles */
-div .container {
-  min-height: 80vh; /* Allows full viewport height */
-  max-width: 1280px;
+.container {
+  max-width: 1440px;
+  margin: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   box-sizing: border-box;   
-  overflow: hidden; /* Prevent overflow for child elements */
   color: var(--theme1-dark)
 } 
 ul {
@@ -29,26 +28,61 @@ li::before {
   line-height: 1.6; /* Adjust line height for readability */
 }
 
-.edora-text li span::first-letter {
-  font-size: 3rem;  /* Adjust size as needed */
-  font-weight: bold;  /* Make it bold */
-  float: left;  /* Float to the left to create drop cap effect */
-  margin-right: 0.1em;  /* Space between the drop cap and text */
-  line-height: 1;  /* Adjust line height for drop cap */
-  color: var(--theme3-dark); /* Change this to your preferred color */
-} 
-
-::selection {
-  background-color: var(--theme3-dark); /* Custom background color */
-  color: var(--theme1-light); /* Custom text color */
-}
-
 .align-center {
     display: flex; /* Establishes flex context */
     flex-direction: column; /* Stack children vertically *  /    
     justify-content: center; /* Centers horizontally */
     align-items: center; /* Centers vertically */
 }
+/* Container for the list */
+.features-list {
+  margin-top: 2rem;
+}
+
+/* List styles */
+.rotating-features {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* List item styles */
+.feature-item {
+  background-color: var(--theme1-light); /* Initial background color */
+  padding: 1.5rem; /* Nice large padding */
+  margin-bottom: 1rem; /* Spacing between items */
+  font-size: 1.25rem; /* Larger font */
+  font-weight: bold; /* Bold text for emphasis */
+  border-radius: 10px; /* Rounded corners for the box */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: background-color 1s ease; /* Smooth background transition */
+  animation: rotate-colors 5s infinite; /* Infinite color rotation */
+}
+
+/* Define the color rotation using keyframes */
+@keyframes rotate-colors {
+  0% {
+    background-color: var(--theme1-light); /* Start color */
+  }
+  25% {
+    background-color: var(--theme2-light);
+  }
+  50% {
+    background-color: var(--theme3-light);
+  }
+  75% {
+    background-color: var(--theme4-light);
+  }
+  100% {
+    background-color: var(--theme5-light); /* Return to start color */
+  }
+}
+
+/* Optional: Add hover effect for a more interactive feel */
+.feature-item:hover {
+  transform: scale(1.05); /* Slightly enlarge the box on hover */
+  transition: transform 0.3s ease;
+}
+
 
 /* Responsive adjustments */
 @media (max-width: 768px) {

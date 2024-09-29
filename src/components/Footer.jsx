@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <div className="footer-bar">
+    <div className="footer-bar full-width-container">
       <div className="footer-left">
         <span className="footer-icon">🌟</span> {/* Star icon for branding */}
         <span className="footer-brand">EDORA</span> {/* Brand name */}
