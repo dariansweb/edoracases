@@ -13,9 +13,10 @@ const Hero = () => {
           </span>
         </p>
         <button className="cta-button">Free to use</button>
+
         <div className="hero">
-          <div className="circle large"></div>
           <div className="circle small"></div>
+          <div className="circle large"></div>
         </div>
       </div>
     </section>
