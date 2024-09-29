@@ -1,13 +1,15 @@
-
 /* Addit  ional styles */
 .container {
   color: var(--theme1-dark);
+  width: 100%; /* This helps in centering */
   max-width: 1280px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-} 
+  margin: 0 auto; /* Centers the container horizontally */
+}
+
 ul {
   list-style: none; /* Removes default bullet points */
   padding: 0;
@@ -18,10 +20,10 @@ li {
   margin: 10px;
 }
 li::before {
-  content: '➔'; /*  Unicode character for the checkmark */
-  margin-right: 1rem  ;
-  left: 0;  
-  color: var(--theme3-dark ); /* You can customize the color */
+  content: "➔"; /*  Unicode character for the checkmark */
+  margin-right: 1rem;
+  left: 0;
+  color: var(--theme3-dark); /* You can customize the color */
   font-size: 1.5em; /* Adjust size as needed */
 }
 
@@ -30,10 +32,10 @@ li::before {
 }
 
 .align-center {
-    display: flex; /* Establishes flex context */
-    flex-direction: column; /* Stack children vertically *  /    
+  display: flex; /* Establishes flex context */
+  flex-direction: column; /* Stack children vertically *  /    
     justify-content: center; /* Centers horizontally */
-    align-items: center; /* Centers vertically */
+  align-items: center; /* Centers vertically */
 }
 /* Container for the list */
 .features-list {
@@ -84,12 +86,11 @@ li::before {
   transition: transform 0.3s ease;
 }
 
-
 /* Responsive adjustments */
 @media (max-width: 768px) {
   div .container {
     min-height: 100vh; /* Allows full viewport height */
     padding: 0.8rem; /* Optional padding */
-    box-sizing: border-box; /* Ensures padding doesn't affect height */ 
+    box-sizing: border-box; /* Ensures padding doesn't affect height */
   }
 }
