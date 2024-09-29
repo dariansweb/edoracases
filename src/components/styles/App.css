@@ -1,11 +1,12 @@
 
 /* Addit  ional styles */
 .container {
-  max-width: 1440px;
-  margin: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  box-sizing: border-box;   
-  color: var(--theme1-dark)
+  color: var(--theme1-dark);
+  max-width: 1280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 } 
 ul {
   list-style: none; /* Removes default bullet points */

@@ -44,24 +44,13 @@
 /* font-family: 'Poppins', 'Montserrat', 'Roboto', sans-serif; */
 #root {
   font-family: Muli, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  max-width: 1440px; /* Maximum width of the container */
-  margin: 0 auto; /* Center the container */
-  padding: 0.1rem; /* Space inside the container */
-  text-align: left; /* left text alignment */
-
-  line-height: 1.5;
-  font-weight: 500;
-  font-size: 1.1rem; /* Base font size for the application */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  box-sizing: border-box;   
 }
 body {
   margin: 0;
-  display: flex;
-  place-items: top;
   min-width: 320px;
   min-height: 100vh;
-  /* Hide scrollbars on the entire page */
-  overflow-y  : scroll; /* Keeps vertical scrolling functional */
-  -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */  
 }
 
 body::-webkit-scrollbar {
@@ -71,6 +60,7 @@ body::-webkit-scrollbar {
 .full-width-container {
   width: 100vw;
   margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);  
 }
 
 a {
