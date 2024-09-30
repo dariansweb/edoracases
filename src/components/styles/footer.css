@@ -1,6 +1,7 @@
 /* footer.css */
 .footer-bar {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 2rem; /* Slightly increased padding for a spacious feel */
