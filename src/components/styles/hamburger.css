@@ -1,0 +1,59 @@
+.hamburger-menu {
+    position: absolute; /* Keep it positioned absolutely */
+    top: 60px; /* Adjust based on header height */
+    right: 0;
+    width: 100%; /* Make it full width */
+    background-color: var(--theme1-dark); /* Use your desired background color */
+    padding: 1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+    border-radius: 5px;
+    animation: rotate-colors 5s linear infinite; /* Continuous color rotation */
+    transform: translateY(-10px); /* Start slightly above */
+    opacity: 0; /* Start hidden */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition for visibility */
+}
+
+.hamburger-menu.open {
+    display: block; /* Show menu when it's open */
+    transform: translateY(0); /* Slide down into position */
+    opacity: 1; /* Fade in */   
+}
+
+.hamburger-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.hamburger-menu li {
+    margin: 0.5rem 0;
+    display: block; /* Make it stack vertically */
+}
+
+.hamburger-menu a {
+    color: var(--theme3-dark); /* Bright contrast color */
+    text-decoration: none;
+        font-weight: 800;
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+.hamburger-menu li:hover {
+    background-color: var(--theme5-light); /* Change on hover */
+    color: var(--theme6-dark); /* Dark color on hover */
+    border: 1px solid var(--theme3-dark);
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .hamburger-menu {
+        width: 50%; /* Slide out to 50% of header width */
+        right: 0; /* Keep it aligned to the right */
+    }
+}
+
+/* Ensure full-width menu in desktop mode */
+@media (min-width: 769px) {
+    .hamburger-menu {
+        display: block; /* Always show the menu in desktop mode */
+        width: 100%; /* Full width for desktop */
+    }
+}
