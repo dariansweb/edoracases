@@ -16,7 +16,7 @@ const Header = () => {
   };
 
   return (
-    <header className="header-bar">
+    <header className="header-bar full-width-container">
       <div className="header-left">
         <span
           className={`star-icon ${isExploding ? "explode-effect" : ""}`}
