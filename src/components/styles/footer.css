@@ -1,5 +1,7 @@
 /* footer.css */
 .footer-bar {
+  box-sizing: border-box;
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -7,7 +9,6 @@
   padding: 1.5rem 2rem; /* Slightly increased padding for a spacious feel */
   background-color: var(--theme1-light); /* Lighter background for contrast */
   color: var(--theme1-dark); /* Darker text for better readability */
-  box-sizing: border-box;
   box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.15); /* Softer shadow */
 }
 

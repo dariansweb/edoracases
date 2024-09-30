@@ -36,8 +36,8 @@ const Hero = () => {
           <div className="hero-content">
             <h1 className="hero-title">Built for your specific needs!</h1>
             <p className="hero-description text-center">
-              This project is Open Source with the MIT License found as a
-              repository on GitHub
+              This project is Free and Open Source! <br /> 
+              Find my work on GitHub with the to use MIT License!
             </p>
             <button onClick={handleReset} className="cta-button">Okay!</button>
           </div>

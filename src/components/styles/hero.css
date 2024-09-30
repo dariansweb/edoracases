@@ -1,17 +1,18 @@
 .hero-container {
   height: 75vh; /* Full viewport height */
   background: linear-gradient(135deg, var(--theme1-dark), var(--theme3-dark));
+
+  box-sizing: border-box;
+
   display: flex;
   padding: 1rem 2rem;
   justify-content: center;
   align-items: center;
   text-align: center;
   color: var(--theme3-light);
-  width:100%;   
   padding: 1rem 0; /* Adjust padding to just top and bottom */    
 
   box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.4); /* Adds subtle shadow to the edges */
-  box-sizing: border-box;
   background-size: cover;  
 }
 
@@ -83,6 +84,9 @@
 
 /* Responsive Design for smaller screens */
 @media (max-width: 768px) {
+  .hero-container {
+    padding: 1rem 2rem;
+  }
   .hero-title {
     font-size: 3rem;
   }
