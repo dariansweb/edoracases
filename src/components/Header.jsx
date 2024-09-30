@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react"; 
+import React, { useState, useRef, useEffect } from "react";
 import "./styles/header.css"; // Ensure you import your CSS file
 
 const Header = () => {
@@ -19,7 +19,11 @@ const Header = () => {
   useEffect(() => {
     const handleClickOutside = (event) => {
       // Check if the click was outside the menu
-      if (menuRef.current && !menuRef.current.contains(event.target) && isMenuOpen) {
+      if (
+        menuRef.current &&
+        !menuRef.current.contains(event.target) &&
+        isMenuOpen
+      ) {
         setIsMenuOpen(false);
       }
     };
@@ -49,18 +53,49 @@ const Header = () => {
         <span
           className={`hamburger-icon ${isExploding ? "explode-effect" : ""}`}
           onClick={() => handleClick("hamburger-icon")}
-        >☰</span>
-        <div ref={menuRef} className={`hamburger-menu ${isMenuOpen ? 'open' : ''}`}>
+        >
+          <svg viewBox="0 0 100 80" width="40" height="40">
+            <rect width="100" height="20" fill="var(--theme5-light)"></rect>
+            <rect
+              y="30"
+              width="100"
+              height="20"
+              fill="var(--theme5-light)"
+            ></rect>
+            <rect
+              y="60"
+              width="100"
+              height="20"
+              fill="var(--theme5-light)"
+            ></rect>
+          </svg>
+        </span>
+        <div
+          ref={menuRef}
+          className={`hamburger-menu ${isMenuOpen ? "open" : ""}`}
+        >
           <ul>
-            <li><a href="#">Child and Family</a></li>
-            <li><a href="#">Aging</a></li>
-            <li><a href="#">Disability</a></li>
-            <li><a href="#">Juvenile Justice</a></li>   
-            <li><a href="#">Medical</a></li>
-            <li><a href="#">Provider Services</a></li>
+            <li>
+              <a href="#">Child and Family</a>
+            </li>
+            <li>
+              <a href="#">Aging</a>
+            </li>
+            <li>
+              <a href="#">Disability</a>
+            </li>
+            <li>
+              <a href="#">Juvenile Justice</a>
+            </li>
+            <li>
+              <a href="#">Medical</a>
+            </li>
+            <li>
+              <a href="#">Provider Services</a>
+            </li>
             {/* Add more menu items as needed */}
           </ul>
-        </div>     
+        </div>
       </div>
     </header>
   );
