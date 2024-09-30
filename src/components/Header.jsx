@@ -49,9 +49,7 @@ const Header = () => {
         <span
           className={`hamburger-icon ${isExploding ? "explode-effect" : ""}`}
           onClick={() => handleClick("hamburger-icon")}
-        >
-          ☰
-        </span>
+        >☰</span>
         <div ref={menuRef} className={`hamburger-menu ${isMenuOpen ? 'open' : ''}`}>
           <ul>
             <li><a href="#">Child and Family</a></li>
