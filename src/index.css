@@ -43,7 +43,7 @@
 /* Example: */
 /* font-family: 'Poppins', 'Montserrat', 'Roboto', sans-serif; */
 #root {
-  font-family: Muli, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Source Sans Pro'      , system-ui, Avenir, Helvetica, Arial, sans-serif;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   box-sizing: border-box;   
 }

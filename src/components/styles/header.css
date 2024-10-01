@@ -33,6 +33,11 @@
     -2px -2px 6px rgba(255, 255, 255, 0.6);
 }
 
+.header-left {
+  align-items: center; /* Align items vertically */
+  gap: 1rem; /* Space between the star icon and dropdown */
+  position: relative; /* Required for absolute positioning of dropdown */
+}
 /* Flex settings for header sections */
 .header-left,
 .header-right {
@@ -65,7 +70,26 @@
     -2px -2px 6px rgba(255, 255, 255, 0.6); /* Same hover effect as title */
   transform: scale(1.1); /* Scale up on hover */
 }
+.star-dropdown {
+  position: absolute; /* Positioning it relative to the header-left */
+  background: white; /* Background color for the dropdown */
+  border: 1px solid #ccc; /* Border styling */
+  border-radius: 4px; /* Rounded corners */
+  width: 100%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
+  z-index: 1000; /* Make sure it appears above other elements */
+  padding: 0.5rem 0; /* Padding for the dropdown */
+}
+.star-menu-item {
+  display: block; /* Make each item a block for easier clicking */
+  padding: 0.5rem 1rem; /* Padding for each link */
+  text-decoration: none; /* Remove underline */
+  color: #333; /* Change color as needed */
+}
 
+.star-menu-item:hover {
+  background: rgba(0, 0, 0, 0.05); /* Change background on hover */
+} 
 /* Hamburger icon adjustment */
 .hamburger-icon {
   font-size: 2.2rem; /* Slightly larger for hamburger */

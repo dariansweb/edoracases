@@ -1,0 +1,72 @@
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9; /* Light background for readability */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .about-title {
+    text-align: center;
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .about-introduction {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #555;
+  }
+  
+  .mission-section,
+  .team-section,
+  .contact-section {
+    margin-top: 30px;
+  }
+  
+  .mission-title,
+  .team-title,
+  .contact-title {
+    font-size: 2rem;
+    color: #444;
+    margin-bottom: 15px;
+  }
+  
+  .mission-description {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .team-member {
+    margin-bottom: 20px;
+  }
+  
+  .member-name {
+    font-size: 1.5rem;
+    color: #222;
+  }
+  
+  .member-role {
+    font-size: 1.1rem;
+    color: #666;
+  }
+  
+  .member-bio {
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  .contact-info {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .contact-email {
+    font-weight: bold;
+    color: #007BFF; /* Link color */
+  }
+  

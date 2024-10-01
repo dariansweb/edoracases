@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom'; // Import Link for navigation
 import './HamburgerMenu.css';
 
 const HamburgerMenu = () => {
@@ -6,7 +7,7 @@ const HamburgerMenu = () => {
   const menuRef = useRef(null); // Reference to the menu
 
   const toggleMenu = () => {
-    setIsOpen(!isOpen);
+    setIsOpen((prev) => !prev);
   };
 
   // Close menu when clicking outside of it
@@ -25,15 +26,13 @@ const HamburgerMenu = () => {
 
   return (
     <div className={`hamburger ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
-      <div className="line"></div>
-      <div className="line"></div>
-      <div className="line"></div>
       <nav className={`menu ${isOpen ? 'open' : ''}`} ref={menuRef}>
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
+          {/* Use Link for internal navigation */}
+          <li><Link to="../pages/">Home</Link></li>
+          <li><Link to="../pages/About">About</Link></li>
+          <li><Link to="../pages/Services">Services</Link></li>
+          <li><Link to="../pages/Contact">Contact</Link></li>
         </ul>
       </nav>
     </div>
@@ -41,4 +40,3 @@ const HamburgerMenu = () => {
 };
 
 export default HamburgerMenu;
-  

@@ -1,71 +1,71 @@
 import React, { useState, useRef, useEffect } from "react";
-// Importing the menu data from an external file
-import { mainMenuItems } from "../data/menuData"; 
-// Importing the CSS for styling the header component
-import "./styles/header.css"; 
+import { Link } from "react-router-dom";
+import { mainMenuItems, starMenuItems } from "../data/menuData"; // Importing both main and star menu items
+  import "./styles/header.css"; 
 
 // The Header component 
 const Header = () => {
-  // State to track if the menu is open or closed. Default is closed (false).
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  // State to manage the explosion effect (used for animations when opening the menu).
+  const [isStarMenuOpen, setIsStarMenuOpen] = useState(false); // State to manage the star menu
   const [isExploding, setIsExploding] = useState(false);
-
-  // Create a ref for the menu, which will allow us to interact with the DOM directly.
   const menuRef = useRef(null);
   
-  // Function to handle click events. It takes an `icon` parameter to differentiate between
-  // different buttons (e.g., "hamburger-icon" or "star-icon").
   const handleClick = (icon) => {
-    // Only act if the clicked icon is the hamburger menu icon
     if (icon === "hamburger-icon") {
-      // Toggle the state of the menu between open and closed
       setIsMenuOpen((prev) => !prev);
-
-      // Trigger the explosion effect for a fun animation when the menu is opened
       setIsExploding((prev) => !prev);
-
-      // Optionally, after 300 milliseconds, reset the explosion effect back to normal
       setTimeout(() => setIsExploding(false), 300);
+    }
+    if (icon === "star-icon") {
+      setIsStarMenuOpen((prev) => !prev); // Toggle the star menu
     }
   };
 
-  // This useEffect is responsible for closing the menu when the user clicks outside of it.
   useEffect(() => {
-    // This function runs when the user clicks anywhere on the document
     const handleClickOutside = (event) => {
-      // Check if the menu is open AND the click happened outside of the menu area.
       if (
-        menuRef.current && // The current DOM element of the menu
-        !menuRef.current.contains(event.target) && // Event target is outside the menu
-        isMenuOpen // Menu is currently open
+        menuRef.current &&
+        !menuRef.current.contains(event.target) &&
+        isMenuOpen
       ) {
-        setIsMenuOpen(false); // Close the menu
+        setIsMenuOpen(false);
+      }
+      if (
+        menuRef.current &&
+        !menuRef.current.contains(event.target) &&
+        isStarMenuOpen
+      ) {
+        setIsStarMenuOpen(false); // Close the star menu if clicked outside
       }
     };
 
-    // Add a mouse click event listener to the entire document (detect outside clicks)
     document.addEventListener("mousedown", handleClickOutside);
-
-    // Cleanup function to remove the event listener when the component unmounts or when
-    // the isMenuOpen state changes (avoids memory leaks).
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, [isMenuOpen]); // useEffect depends on isMenuOpen, meaning it will run every time this value changes
+  }, [isMenuOpen, isStarMenuOpen]);
 
-  // The JSX (UI) returned by the component
   return (
     <header className="header-bar full-width-container">
-      {/* Left section: The star icon (currently not doing much) */}
+      {/* Left section: The star icon and dropdown for star menu items */}
       <div className="header-left">
         <span
-          className={`star-icon ${isExploding ? "explode-effect" : ""}`} // Apply explosion effect when exploding
-          onClick={() => handleClick("star-icon")} // No action for star icon yet, but event listener is set
+          className={`star-icon ${isExploding ? "explode-effect" : ""}`} // Star icon with explosion effect
+          onClick={() => handleClick("star-icon")}
         >
-          <span className="material-symbols-outlined">home</span> {/* This displays a home icon */}
+          <span className="material-symbols-outlined">star</span> {/* Using the star icon */}
         </span>
+        
+        {/* Dropdown menu for star items */}
+        {isStarMenuOpen && (
+          <div className="star-dropdown">
+            {starMenuItems.map((item) => (
+              <Link key={item.id} to={item.link} className="star-menu-item">
+                {item.name}
+              </Link>
+            ))}
+          </div>
+        )}
       </div>
 
       {/* Center section: The title/logo of the application */}
@@ -75,25 +75,22 @@ const Header = () => {
 
       {/* Right section: The hamburger menu icon and menu items */}
       <div className="header-right">
-        {/* The clickable hamburger icon, which triggers the menu open/close and explosion effect */}
         <span
-          className={`hamburger-icon ${isExploding ? "explode-effect" : ""}`} // Explosion effect on click
-          onClick={() => handleClick("hamburger-icon")} // Toggles the menu when clicked
+          className={`hamburger-icon ${isExploding ? "explode-effect" : ""}`} 
+          onClick={() => handleClick("hamburger-icon")}
         >
-          <span className="material-symbols-outlined hamburger-icon">menu</span> {/* Menu icon */}
+          <span className="material-symbols-outlined hamburger-icon">menu</span>
         </span>
 
-        {/* The actual menu. Ref is attached to detect clicks outside of the menu. */}
         <div
-          ref={menuRef} // This is the reference to the DOM element for detecting outside clicks
-          className={`hamburger-menu ${isMenuOpen ? "open" : ""}`} // Add 'open' class when isMenuOpen is true
+          ref={menuRef}
+          className={`hamburger-menu ${isMenuOpen ? "open" : ""}`}
         >
           <ul>
-            {/* Dynamically render each menu item from the `mainMenuItems` array */}
             {mainMenuItems.map((item) => (
-              <li key={item.id}> {/* Use 'key' to give each item a unique identifier */}
-                <a href={item.link}>{item.name}</a> {/* Display each menu item's name and link */}
-              </li>
+              <li key={item.id}>
+                <Link to={item.link}>{item.name}</Link>
+              </li>   
             ))}
           </ul>
         </div>

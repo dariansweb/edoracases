@@ -65,6 +65,12 @@ li {
   transition: transform 0.3s ease;
 }
 
+/* Basic styles for selection */
+::selection {
+  color: var(--theme5-light); /* Text color for selected text */
+  background: var(--theme3-dark ); /* Fallback if needed */
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   div .container {

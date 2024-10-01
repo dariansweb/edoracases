@@ -1,0 +1,45 @@
+/* CSS specific to .aging-services */
+.aging-services {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+  background-color: var(--theme1-light);
+  color: var(--theme1-dark);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.aging-services h1,
+.aging-services h2 {
+  color: var(--theme2-dark);
+  text-shadow: var(--text-shadow-light);
+}
+
+.aging-services h1 {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+}
+
+.aging-services h2 {
+  font-size: 2em;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.aging-services p {
+  margin-bottom: 15px;
+}
+
+.aging-services ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.aging-services ul li {
+  margin-bottom: 10px;
+}
+
+.aging-services ul ul {
+  list-style-type: circle;
+  margin-left: 20px;
+}
+  
