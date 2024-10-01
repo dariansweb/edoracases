@@ -16,6 +16,7 @@
       <Router>
         <Header />
         <Hero />
+        <AppRoutes />
         <App />
         <Footer />
       </Router>

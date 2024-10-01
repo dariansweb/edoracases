@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { mainMenuItems, starMenuItems } from "../data/menuData"; // Importing both main and star menu items
-  import "./styles/header.css"; 
+import "./styles/header.css"; 
 
 // The Header component 
 const Header = () => {
@@ -19,6 +19,10 @@ const Header = () => {
     if (icon === "star-icon") {
       setIsStarMenuOpen((prev) => !prev); // Toggle the star menu
     }
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false); // Close hamburger menu on link click
   };
 
   useEffect(() => {
@@ -53,7 +57,7 @@ const Header = () => {
           className={`star-icon ${isExploding ? "explode-effect" : ""}`} // Star icon with explosion effect
           onClick={() => handleClick("star-icon")}
         >
-          <span className="material-symbols-outlined">star</span> {/* Using the star icon */}
+          <span className="material-symbols-outlined">home</span> {/* Using the star icon */}
         </span>
         
         {/* Dropdown menu for star items */}
@@ -89,7 +93,10 @@ const Header = () => {
           <ul>
             {mainMenuItems.map((item) => (
               <li key={item.id}>
-                <Link to={item.link}>{item.name}</Link>
+                {/* Add onClick event to close menu after link click */}
+                <Link to={item.link} onClick={closeMenu}>
+                  {item.name}
+                </Link>
               </li>   
             ))}
           </ul>
@@ -100,3 +107,4 @@ const Header = () => {
 };
 
 export default Header;
+    

@@ -33,13 +33,16 @@
   color: var(--theme3-dark); /* Bright contrast color */
   text-decoration: none;
   font-weight: 800;
-  transition: color 0.3s; /* Smooth color transition on hover */
+  transition: color 0.3s; 
 }
 
 .hamburger-menu li:hover {
-  background-color: var(--theme6-light); /* Change on hover */
-  color: var(--theme6-dark); /* Dark color on hover */
-  border: 1px dotted var(--theme3-dark);
+  color: var(--theme6-light); 
+  background-color: var(--theme6-dark); 
+}
+.hamburger-menu a:hover {
+  color: var(--theme6-light); 
+  background-color: var(--theme6-dark); 
 }
 
 /* Media query for smaller screens */
@@ -54,6 +57,6 @@
 @media (min-width: 769px) {
   .hamburger-menu {
     display: block; /* Always show the menu in desktop mode */
-    width: 100%; /* Full width for desktop */
+    width: 25%; /* Full width for desktop */
   }
 }
