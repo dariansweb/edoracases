@@ -1,5 +1,5 @@
 :root {
-/* Primary */
+  /* Primary */
   --theme3-dark: rgb(60, 179, 113); /*Seafoam*/
   --theme3-light: rgb(241, 250, 245); /*Pale Mint*/
   --theme3-contrast: rgb(255, 235, 59);
@@ -7,7 +7,7 @@
   --theme1-dark: rgb(74, 112, 108); /*Muted Forest */
   --theme1-light: rgb(245, 245, 220); /*Light Sand*/
 
-  --theme2-dark:  rgb(107, 142, 35); /*Olive Green*/
+  --theme2-dark: rgb(107, 142, 35); /*Olive Green*/
   --theme2-light: rgb(248, 248, 240); /*Ivory*/
 
   --theme4-dark: rgb(157, 193, 131); /*Seige Green*/
@@ -22,4 +22,64 @@
   --theme1-alert1: rgb(218, 165, 32);
   --theme1-alert2: rgb(255, 127, 80);
   --theme1-alert3: rgb(125, 20, 160);
+
+  --text-shadow-light: 2px 2px 5px rgba(255, 255, 255, 0.4); /* Soft glowing white shadow */
+  --text-shadow-medium: 0px 0px 5px rgba(255, 255, 255, 0.6); /* Fainter glow effect */
+  --text-shadow-dark: -1px -1px 1px rgba(255, 255, 255, 0.5); /* Subtle inner glow */
+}
+@keyframes rotateColors {
+  0% {
+    color: var(--theme1-light);
+  }
+  16.67% {
+    color: var(--theme2-light);
+  }
+  33.34% {
+    color: var(--theme3-light);
+  }
+  50% {
+    color: var(--theme4-light);
+  }
+  66.67% {
+    color: var(--theme5-light);
+  }
+  83.34% {
+    color: var(--theme6-light);
+  }
+  100% {
+    color: var(--theme1-light);
+  } /* Reset to start */
+}
+/* Define the color rotation using keyframes */
+@keyframes rotateBackgroundColors {
+  0% {
+    background-color: var(--theme1-light); /* Start color */
+  }
+  25% {
+    background-color: var(--theme2-light);
+  }
+  50% {
+    background-color: var(--theme3-light);
+  }
+  75% {
+    background-color: var(--theme4-light);
+  }
+  100% {
+    background-color: var(--theme5-light); /* Return to start color */
+  }
+}
+/* Keyframes for the explosion animation */
+@keyframes explode {
+  0% {
+    transform: scale(1); /* Original size */
+    opacity: 1; /* Fully visible */
+  }
+  50% {
+    transform: scale(1.5); /* Scale up */
+    opacity: 0.5; /* Fade out */
+  }
+  100% {
+    transform: scale(0); /* Scale down to disappear */
+    opacity: 0; /* Fully transparent */
+  }
 }

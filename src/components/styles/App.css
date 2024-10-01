@@ -9,7 +9,7 @@
   justify-content: center;
   margin: 0 auto; /* Centers the container horizontally */
 }
-  
+
 ul {
   list-style: none; /* Removes default bullet points */
   padding: 0;
@@ -19,14 +19,6 @@ li {
   padding-left: 25px; /* Adds space for the checkmark */
   margin: 10px;
 }
-li::before {
-  content: "➔"; /*  Unicode character for the checkmark */
-  margin-right: 1rem;
-  left: 0;
-  color: var(--theme3-dark); /* You can customize the color */
-  font-size: 1.5em; /* Adjust size as needed */
-}
-
 .edora-text li {
   line-height: 1.6; /* Adjust line height for readability */
 }
@@ -41,7 +33,6 @@ li::before {
 .features-list {
   margin-top: 2rem;
 }
-
 /* List styles */
 .rotating-features {
   list-style-type: none;
@@ -58,26 +49,14 @@ li::before {
   border-radius: 10px; /* Rounded corners for the box */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
   transition: background-color 1s ease; /* Smooth background transition */
-  animation: rotate-colors 5s infinite; /* Infinite color rotation */
+  animation: rotateBackgroundColors 2s infinite; /* Infinite color rotation */
 }
-
-/* Define the color rotation using keyframes */
-@keyframes rotate-colors {
-  0% {
-    background-color: var(--theme1-light); /* Start color */
-  }
-  25% {
-    background-color: var(--theme2-light);
-  }
-  50% {
-    background-color: var(--theme3-light);
-  }
-  75% {
-    background-color: var(--theme4-light);
-  }
-  100% {
-    background-color: var(--theme5-light); /* Return to start color */
-  }
+.feature-item::before {
+  content: "➔"; /*  Unicode character for the checkmark */
+  margin-right: 1rem;
+  left: 0;
+  color: var(--theme3-dark); /* You can customize the color */
+  font-size: 1.5em; /* Adjust size as needed */
 }
 
 /* Optional: Add hover effect for a more interactive feel */
