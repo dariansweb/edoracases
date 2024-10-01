@@ -16,7 +16,7 @@ const Hero = () => {
   return (  
     <>
       {view === "landing" && (
-        <section className="hero-container full-width-container">
+        <section className="hero-container full-width-container">          
           <div className="hero-content">
             <h1 className="hero-title">Built for Government Agencies</h1>
             <p className="hero-description">

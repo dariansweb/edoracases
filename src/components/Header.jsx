@@ -43,7 +43,7 @@ const Header = () => {
           className={`star-icon ${isExploding ? "explode-effect" : ""}`}
           onClick={() => handleClick("star-icon")}
         >
-          ★
+            <span class="material-symbols-outlined">home</span>
         </span>
       </div>
       <div className="header-center">
@@ -54,21 +54,7 @@ const Header = () => {
           className={`hamburger-icon ${isExploding ? "explode-effect" : ""}`}
           onClick={() => handleClick("hamburger-icon")}
         >
-          <svg viewBox="0 0 100 80" width="40" height="40">
-            <rect width="100" height="20" fill="var(--theme5-light)"></rect>
-            <rect
-              y="30"
-              width="100"
-              height="20"
-              fill="var(--theme5-light)"
-            ></rect>
-            <rect
-              y="60"
-              width="100"
-              height="20"
-              fill="var(--theme5-light)"
-            ></rect>
-          </svg>
+          <span className="material-symbols-outlined">menu</span>
         </span>
         <div
           ref={menuRef}
