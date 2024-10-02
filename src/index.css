@@ -101,3 +101,8 @@ h6 {
   font-size: 1em; /* Smallest heading size */
   line-height: 1.6; /* Adjusted line height for h6 */
 }
+@media only screen and (max-width: 768px) {
+  .header-bar {
+      padding: 10px; /* Adjust padding or margins to fit mobile screens */
+  }
+}
