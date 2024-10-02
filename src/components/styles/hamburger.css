@@ -33,18 +33,13 @@
   color: var(--theme3-dark); /* Bright contrast color */
   text-decoration: none;
   font-weight: 800;
-  transition: color 0.3s; 
+  transition: color 1.3s; 
 }
 
 .hamburger-menu li:hover {
-  color: var(--theme6-light); 
-  background-color: var(--theme6-dark); 
+  color: var(--theme-alert1); 
+  background-color: var(--theme6-light); 
 }
-.hamburger-menu a:hover {
-  color: var(--theme6-light); 
-  background-color: var(--theme6-dark); 
-}
-
 /* Media query for smaller screens */
 @media (max-width: 768px) {
   .hamburger-menu {

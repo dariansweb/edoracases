@@ -1,7 +1,13 @@
-import React from "react";
-import AppRoutes from "./Routes"; // Make sure this path is correct
+  import React from "react";
+  import AppRoutes from "./Routes";
+  import "./styles/App.css";
 
-function App() {
-  return <AppRoutes />;
-}
-export default App;
+  function App() {
+    return (
+      <AppWrapper className="container flex-box-container">
+        <AppRoutes />
+      </AppWrapper>
+    );
+  } 
+
+  export default App;

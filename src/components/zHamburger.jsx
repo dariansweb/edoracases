@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom'; // Import Link for navigation
-import './HamburgerMenu.css';
+import './styles//Heading.css';
 
 const HamburgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,13 +27,7 @@ const HamburgerMenu = () => {
   return (
     <div className={`hamburger ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
       <nav className={`menu ${isOpen ? 'open' : ''}`} ref={menuRef}>
-        <ul>
-          {/* Use Link for internal navigation */}
-          <li><Link to="../pages/">Home</Link></li>
-          <li><Link to="../pages/About">About</Link></li>
-          <li><Link to="../pages/Services">Services</Link></li>
-          <li><Link to="../pages/Contact">Contact</Link></li>
-        </ul>
+      <span className="material-symbols-outlined">home</span>
       </nav>
     </div>
   );

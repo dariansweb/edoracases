@@ -1,14 +1,15 @@
 // Home.jsx
-import React from 'react';
+import React from "react";
 import features from "../data/features";
 import { shuffleArray } from "../utils/shuffleArray";
+import "./styles/Home.css";
 
 const shuffledFeatures = shuffleArray(features); // Shuffle features
 
 const Home = () => {
   return (
     <>
-      <div className="container">
+      <div className="home-container">
         <h1>Human and Health Services</h1>
         <h2>Client Management</h2>
 
@@ -30,7 +31,7 @@ const Home = () => {
         </span>
       </div>
     </>
-  )
+  );
 };
 
 export default Home; // Make sure this line is present

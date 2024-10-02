@@ -1,26 +1,20 @@
-/* Addit  ional styles */
+/* styles/App.css */
 .container {
-  color: var(--theme1-dark);
-  width: 100%; /* This helps in centering */
-  max-width: 1280px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto; /* Centers the container horizontally */
+  min-height: 100vh;
+  width: 800px; /* Maximum width of the container */
+  margin: 0 auto; /* Center the container */
+  padding: 1.2rem; /* Padding around the container */
+  line-height: 1.6;
+  padding: 1rem;  
 }
 
-ul {
-  list-style: none; /* Removes default bullet points */
-  padding: 0;
-}
-li {
-  position: relative;
-  padding-left: 25px; /* Adds space for the checkmark */
-  margin: 10px;
-}
-.edora-text li {
-  line-height: 1.6; /* Adjust line height for readability */
+/* styles/App.css */
+.flex-container {
+  display: flex;
+  flex-direction: row; /* Arrange items vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  gap: 20px; /* Space between items */
 }
 
 .align-center {
@@ -29,53 +23,19 @@ li {
     justify-content: center; /* Centers horizontally */
   align-items: center; /* Centers vertically */
 }
-/* Container for the list */
-.features-list {
-  margin-top: 2rem;
-}
-/* List styles */
-.rotating-features {
-  list-style-type: none;
-  padding: 0;
-}
-
-/* List item styles */
-.feature-item {
-  background-color: var(--theme1-light); /* Initial background color */
-  padding: 1.5rem; /* Nice large padding */
-  margin-bottom: 1rem; /* Spacing between items */
-  font-size: 1.25rem; /* Larger font */
-  font-weight: bold; /* Bold text for emphasis */
-  border-radius: 10px; /* Rounded corners for the box */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  transition: background-color 1s ease; /* Smooth background transition */
-  animation: rotateBackgroundColors 2s infinite; /* Infinite color rotation */
-}
-.feature-item::before {
-  content: "➔"; /*  Unicode character for the checkmark */
-  margin-right: 1rem;
-  left: 0;
-  color: var(--theme3-dark); /* You can customize the color */
-  font-size: 1.5em; /* Adjust size as needed */
-}
-
-/* Optional: Add hover effect for a more interactive feel */
-.feature-item:hover {
-  transform: scale(1.05); /* Slightly enlarge the box on hover */
-  transition: transform 0.3s ease;
-}
-
 /* Basic styles for selection */
 ::selection {
-  color: var(--theme5-light); /* Text color for selected text */
-  background: var(--theme3-dark ); /* Fallback if needed */
+  color: var(--theme3-light); /* Text color for selected text */
+  background: var(--theme3-dark); /* Fallback if needed */
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  div .container {
-    min-height: 100vh; /* Allows full viewport height */
-    padding: 0.8rem; /* Optional padding */
-    box-sizing: border-box; /* Ensures padding doesn't affect height */
+  .container {
+    padding: 1.2rem; /* Less padding on smaller screens */
+  }
+
+  .flex-container {
+    flex-direction: column; /* Stack items vertically on smaller screens */
   }
 }

@@ -3,13 +3,12 @@
   position: sticky;
   z-index: 100;
   top: 0;
-
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--theme1-dark); /* Main background color */
+  background-color: var(--theme1-dark); /* Use your desired background color */
   color: var(--theme6-light); /* Text color */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -49,11 +48,10 @@
   flex: 2; /* Center section takes more space */
   text-align: center;
 }
-
 /* Icon styles */
-.star-icon,
+.star-menu-icon,
 .hamburger-icon {
-  font-size: 1.2rem; /* Base icon size */
+  font-size: 2.2rem; /* Slightly larger for hamburger */
   cursor: pointer; /* Change cursor on hover */
   color: var(--theme5-contrast); /* Shared color for icons */
   text-shadow: var(--text-shadow-light), var(--text-shadow-medium),
@@ -61,7 +59,6 @@
   transition: transform 0.3s ease,
     /* Smooth transition for scaling */ text-shadow 0.3s ease; /* Smooth transition for shadow on hover */
 }
-
 /* Hover effect for icons */
 .star-icon:hover,
 .hamburger-icon:hover {
@@ -70,32 +67,74 @@
     -2px -2px 6px rgba(255, 255, 255, 0.6); /* Same hover effect as title */
   transform: scale(1.1); /* Scale up on hover */
 }
-.star-dropdown {
+
+.star-dropdown,
+.hamburger-menu {
   position: absolute; /* Positioning it relative to the header-left */
-  background: white; /* Background color for the dropdown */
-  border: 1px solid #ccc; /* Border styling */
-  border-radius: 4px; /* Rounded corners */
+  top: 60px;
   width: 100%;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
-  z-index: 1000; /* Make sure it appears above other elements */
-  padding: 0.5rem 0; /* Padding for the dropdown */
+  color: var(--theme3-dark);
+  background-color: var(--theme3-light); /* Use your desired background color */
+  padding: 1rem; /* Padding for the dropdown */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+  border-radius: 5px; /* Rounded corners */
+  animation: rotateBackgroundColors 3s linear infinite; /* Continuous color rotation */
+  transform: translateY(-10px); /* Start slightly above */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition for visibility */
 }
-.star-menu-item {
-  display: block; /* Make each item a block for easier clicking */
-  padding: 0.5rem 1rem; /* Padding for each link */
-  text-decoration: none; /* Remove underline */
-  color: #333; /* Change color as needed */
+.star-dropdown {
+  z-index: 1000;
+  left: 0;
+}
+.hamburger-menu {
+  opacity: 0; /* Start hidden */
+  right: 0;
+}
+.hamburger-menu.open {
+  display: block; /* Show menu when it's open */
+  transform: translateY(0); /* Slide down into position */
+  opacity: 1; /* Fade in */
 }
 
-.star-menu-item:hover {
-  background: rgba(0, 0, 0, 0.05); /* Change background on hover */
-} 
-/* Hamburger icon adjustment */
-.hamburger-icon {
-  font-size: 2.2rem; /* Slightly larger for hamburger */
+.star-menu-item,
+.hamburger-menu-item {
+  display: block; /* Make each item a block for easier clicking */
+  padding: 0.5rem 1rem; /* Padding for each link */
+}
+.star-menu-item a,
+.hamburger-menu-item a {
+  color: var(--theme3-dark); /* Bright contrast color */
+  text-decoration: none;
+  font-weight: 800;
+  transition: color 0.3s;
+}
+
+.star-menu-item:hover a:hover,
+.hamburger-menu-item:hover a:hover {
+  color: var(--theme6-light); /* Change text color on hover */
+  background-color: var(--theme6-dark); /* Change background color on hover */
 }
 
 /* Define the explosion effect */
 .explode-effect {
   animation: explode 1s ease forwards; /* Animation name and duration */
+}
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .hamburger-menu {
+    width: 50vh; /* Slide out to 50% of header width */
+    right: 0; /* Keep it aligned to the right */
+  }
+  .star-dropdown {
+    width: 25vh; /* Slide out to 50% of header width */
+    left: 0; /* Keep it aligned to the right */
+  }
+}
+/* Ensure full-width menu in desktop mode */
+@media (min-width: 769px) {
+  .hamburger-menu,
+  .star-dropdown {
+    display: block; /* Always show the menu in desktop mode */
+    width: 75vh; /* Full width for desktop */
+  }
 }

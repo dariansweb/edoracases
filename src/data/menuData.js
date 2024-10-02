@@ -8,14 +8,14 @@ export const mainMenuItems = [
 ];
 
 export const starMenuItems = [
-  { id: 1, name: "Home", link: "/" },
-  { id: 2, name: "About", link: "/about" },
-  { id: 3, name: "Services", link: "/services" },
-  { id: 1, name: "Contact", link: "/contact" },
+  { id: 7, name: "Home", link: "/" },
+  { id: 8, name: "About", link: "/about" },
+  // { id: 9, name: "Services", link: "/services" },
+  // { id: 10, name: "Contact", link: "/contact" },
 ];
 
 export const adminMenuItems = [
-  { id: 1, name: "Dashboard", link: "#" },
-  { id: 2, name: "User Management", link: "#" },
-  { id: 3, name: "Reports", link: "#" },
+  { id: 11, name: "Dashboard", link: "#" },
+  { id: 12, name: "User Management", link: "#" },
+  { id: 13, name: "Reports", link: "#" },
 ];
