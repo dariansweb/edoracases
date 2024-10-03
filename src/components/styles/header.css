@@ -15,7 +15,7 @@
 
 /* Title styles */
 .header-title {
-  font-size: 2.5rem; /* Adjust to your desired size */
+  font-size: 1.5rem; /* Adjust to your desired size */
   font-weight: bold;
   color: var(--theme5-light); /* Text color from your theme */
   text-shadow: var(--text-shadow-light), var(--text-shadow-medium),
@@ -58,6 +58,9 @@
     var(--text-shadow-dark); /* Apply shadow effect to icons */
   transition: transform 0.3s ease,
     /* Smooth transition for scaling */ text-shadow 0.3s ease; /* Smooth transition for shadow on hover */
+}
+.star-menu-icon {
+  display: none;
 }
 /* Hover effect for icons */
 .star-icon:hover,

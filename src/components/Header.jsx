@@ -56,7 +56,17 @@ const Header = () => {
           className={`star-icon ${isExploding ? "explode-effect" : ""}`} // Apply explosion effect conditionally
           onClick={() => toggleMenu("star-icon")} // Toggle star menu on click
         >
-          <span className="material-symbols-outlined star-menu-icon">add</span>
+          <span className="material-symbols-outlined star-menu-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="30px"
+              viewBox="0 -960 960 960"
+              width="30px"
+              fill="#e8eaed"
+            >
+              <path d="M446.67-163.67V-461l-260-150.33V-314l260 150.33Zm66.66 0 260-150.33v-298l-260 150.89v297.44ZM480-518l256.33-149L480-815.33 223-667l257 149ZM153.33-256q-15.83-9.28-24.58-24.48-8.75-15.19-8.75-33.19v-332.66q0-18 8.75-33.19 8.75-15.2 24.58-24.48l293.34-169q15.88-9 33.44-9 17.56 0 33.22 9l293.34 169q15.83 9.28 24.58 24.48 8.75 15.19 8.75 33.19v332.66q0 18-8.75 33.19-8.75 15.2-24.58 24.48L513.33-87q-15.88 9-33.44 9-17.56 0-33.22-9L153.33-256ZM480-480Z" />
+            </svg>
+          </span>
         </span>
         {isStarMenuOpen && (
           <div className="star-dropdown">
@@ -76,7 +86,11 @@ const Header = () => {
       </div>
 
       <div className="header-center">
-        <h1 className="header-title">EDORA</h1>
+        <h1 className="header-title">
+          <a href="/">
+        <span className="material-symbols-outlined hamburger-icon">home</span>
+        </a>
+        </h1>
       </div>
 
       <div className="header-right">
@@ -87,7 +101,10 @@ const Header = () => {
           <span className="material-symbols-outlined hamburger-icon">menu</span>
         </span>
 
-        <div ref={menuRef} className={`hamburger-menu ${isMenuOpen ? "open" : ""}`}>
+        <div
+          ref={menuRef}
+          className={`hamburger-menu ${isMenuOpen ? "open" : ""}`}
+        >
           {isMenuOpen && ( // Ensure the menu is only rendered when open
             <div>
               {mainMenuItems.map((item) => (

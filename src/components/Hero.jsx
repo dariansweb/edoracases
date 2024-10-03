@@ -10,24 +10,26 @@ const Hero = () => {
   };
   // Reset back to the landing content
   const handleReset = () => {
-    setView("landing"); 
+    setView("landing");
   };
 
-  return (  
+  return (
     <>
       {view === "landing" && (
-        <section className="hero-container full-width-container">          
+        <section className="hero-container full-width-container">
           <div className="hero-content">
-            <h1 className="hero-title">Built for Government Agencies</h1>
+            <h1 className="hero-title">EDORA</h1>
+            <h2>
+            <u>E</u>vent-<u>D</u>riven <u>O</u>rganizational <u>R</u>ecords{" "}
+                <u>A</u>pplication.              
+            </h2>
             <p className="hero-description">
-              Streamline your data management and improve efficiency with our
-              <br />
               <span className="text-center">
-                <u>E</u>vent-<u>D</u>riven <u>O</u>rganizational <u>R</u>ecords{" "}
-                <u>A</u>pplication.
               </span>
             </p>
-            <button onClick={handleStart} className="cta-button">Free to use!</button>
+            <button onClick={handleStart} className="cta-button">
+              Free to use!
+            </button>
           </div>
         </section>
       )}
@@ -36,17 +38,24 @@ const Hero = () => {
           <div className="hero-content">
             <h1 className="hero-title">Built for your specific needs!</h1>
             <p className="hero-description text-center">
-              This project is Free and Open Source! <br /> 
+              This project is Free and Open Source! <br />
               Find my work on GitHub with the to use MIT License!
+              <hr></hr>
+              <a href="https://github.com/dariansweb/edoracases" target="_blank">
+                Open Source Project Here
+              </a>
+
             </p>
-            <button onClick={handleReset} className="cta-button">Okay!</button>
+            <button onClick={handleReset} className="cta-button">
+              Okay!
+            </button>
           </div>
         </section>
       )}
-        <div className="hero">
-          <div className="circle small"></div>
-          <div className="circle large"></div>
-        </div>
+      <div className="hero">
+        <div className="circle small"></div>
+        <div className="circle large"></div>
+      </div>
     </>
   );
 };
