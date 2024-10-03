@@ -1,0 +1,66 @@
+.form-container {
+    position: relative;
+    perspective: 1000px;
+    margin-bottom: 16px;
+}
+
+.form-read-view, .form-edit-view {
+    padding: 16px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backface-visibility: hidden;
+    transition: transform 0.6s;
+}
+
+.form-read-view {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.form-edit-view {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transform: rotateY(180deg);
+}
+
+.form-container.flipped .form-read-view {
+    transform: rotateY(180deg);
+}
+
+.form-container.flipped .form-edit-view {
+    transform: rotateY(0deg);
+}
+
+input[type="text"], select, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    background-color: #f7fafc;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 8px;
+}
+
+textarea {
+    height: 80px;
+}
+
+button.toggle-edit, button.toggle-read {
+    background-color: #3182ce;
+    color: #ffffff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+button.toggle-edit:hover, button.toggle-read:hover {
+    background-color: #2b6cb0;
+}
