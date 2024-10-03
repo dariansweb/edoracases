@@ -1,11 +1,14 @@
-import React from 'react'
+import React from "react";
+import ScrollToTop from "../utils/ScrollToTop";
 
 const Services = () => {
   return (
-    <div>
-      Built uniquely and specifically for your agency.
-    </div>
-  )
-}
+    <>
+      <ScrollToTop />
 
-export default Services
+      <div>Built uniquely and specifically for your agency.</div>
+    </>
+  );
+};
+
+export default Services;

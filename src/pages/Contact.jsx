@@ -1,11 +1,13 @@
-import React from 'react'
-
+import React from "react";
+import ScrollToTop from "../utils/ScrollToTop";
 const Contact = () => {
   return (
-    <div>
-      @dariansweb
-    </div>
-  )
-}
+    <>
+      <ScrollToTop />
 
-export default Contact
+      <div>@dariansweb</div>
+    </>
+  );
+};
+
+export default Contact;
