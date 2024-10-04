@@ -43,16 +43,19 @@
 /* Example: */
 /* font-family: 'Poppins', 'Montserrat', 'Roboto', sans-serif; */
 #root {
-  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
+  margin: 0; /* Optional */
+  padding: 0; /* Optional */
 }
+
 body {
   margin: 0;
   padding: 0;
   min-width: 320px;
   min-height: 100vh;
   background-color: var(--theme3-light);
-  color: var(--theme1-dark);  
+  color: var(--theme1-dark);
 }
 
 .full-width-container {
@@ -60,52 +63,268 @@ body {
   margin-left: calc(-50vw + 50%);
   margin-right: calc(-50vw + 50%);
 }
+p {
+  font-size: 18px; /* Slightly larger font size for better readability */
+  font-weight: 500;
+  line-height: 1.8; /* Increased line height for enhanced spacing between lines */
+  color: var(--theme1-dark); /* Keep dark gray for text color */
+  margin-bottom: 1.5rem; /* Maintains good spacing between paragraphs */
+  text-align: justify; /* Uniform text distribution for a clean look */
+  max-width: 800px; /* Prevents overly long lines */
+  padding: 1rem; /* More breathing room inside the paragraph */
+  background-color: var(--theme3-light); /* Light background for contrast */
+  border-radius: 8px; /* Slightly increased rounding for a softer look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Deeper shadow for a more pronounced effect */
+  transition: all 0.3s ease-in-out; /* Smooth transitions for interaction */
 
-h1 {
-  text-align: center;
-  font-size: 3.2em; /* Main heading size */
-  line-height: 1.1; /* Space between lines of text */
-  color: var(--theme3-dark);
-  padding-bottom: 10px;
+  /* New styles for added vibrancy */
+  border-left: 5px solid var(--theme2-primary); /* Colorful left border to create visual interest */
+  padding-left: 1.5rem; /* Extra padding on the left for the border */
+
+  /* Optional: subtle text shadow for added depth */
+  text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.1); /* Light shadow for a slight 3D effect */
 }
 
-h2 {
+/* Optional hover effect for interactivity */
+p:hover {
+  background-color: var(
+    --theme1-light-hover
+  ); /* Slightly darker background on hover */
+  transform: translateY(-2px); /* Lift effect on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+.underline {
+  text-decoration: underline;
+  color: var(--theme3-contrast);
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: -3px; /* Adjust based on the space below text */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow */
+}
+
+/* Heading 1 */
+h1.dark,
+h1.light {
   text-align: center;
-  font-size: 2.4em; /* Slightly smaller than h1 */
-  line-height: 1.2; /* Adjusted line height for h2 */
+  font-size: 2.5em; /* Slightly smaller for better harmony with paragraphs */
+  line-height: 1.3; /* Space between lines of text */
+  margin-bottom: 20px; /* Space between the heading and next element */
+  padding-bottom: 10px;
+  font-weight: 700; /* Strong font-weight for emphasis */
+}
+
+h1.dark {
   color: var(--theme1-dark);
+  text-shadow: 1px 1px 3px var(--theme3-light); /* Subtle shadow */
+}
+
+h1.light {
+  color: var(--theme1-light);
+}
+
+/* Heading 2 */
+h2.dark,
+h2.light {
+  text-align: center;
+  font-size: 2em; /* Smaller than h1, still bold */
+  line-height: 1.4; /* Adjusted for readability */
+  margin-bottom: 18px;
   padding-bottom: 8px;
 }
 
-h3 {
+h2.dark {
+  color: var(--theme2-dark);
+}
+
+h2.light {
+  color: var(--theme2-light);
+}
+
+/* Heading 3 */
+h3.dark,
+h3.light {
   text-align: center;
-  font-size: 1.8em; /* Smaller than h2 */
-  line-height: 1.3; /* Adjusted line height for h3 */
+  font-size: 1.75em; /* Stepping down size for h3 */
+  line-height: 1.5;
+  margin-bottom: 16px;
+  padding-bottom: 6px;
+}
+
+h3.dark {
+  color: var(--theme3-dark);
+}
+
+h3.light {
+  color: var(--theme3-light);
+}
+
+/* Heading 4 */
+h4.dark,
+h4.light {
+  text-align: center;
+  font-size: 1.5em; /* Smaller size for h4 */
+  line-height: 1.5;
+  margin-bottom: 14px;
+  padding-bottom: 6px;
+}
+
+h4.dark {
+  color: var(--theme4-dark);
+}
+
+h4.light {
+  color: var(--theme4-light);
+}
+
+/* Heading 5 */
+h5.dark,
+h5.light {
+  text-align: center;
+  font-size: 1.25em; /* Further reduction for h5 */
+  line-height: 1.6;
+  margin-bottom: 12px;
   padding-bottom: 4px;
 }
 
-h4 {
-  text-align: center;
-  font-size: 1.5em; /* Smaller than h3 */
-  line-height: 1.4; /* Adjusted line height for h4 */
+h5.dark {
+  color: var(--theme5-dark);
 }
 
-h5 {
-  text-align: center;
-  font-size: 1.2em; /* Smaller than h4 */
-  line-height: 1.5; /* Adjusted line height for h5 */
-}
-
-h6 {
-  text-align: center;
-  font-size: 1em; /* Smallest heading size */
-  line-height: 1.6; /* Adjusted line height for h6 */
-}
-a {
+h5.light {
   color: var(--theme5-light);
 }
-@media only screen and (max-width: 768px) {
-  .header-bar {
-      padding: 10px; /* Adjust padding or margins to fit mobile screens */
+
+/* Heading 6 */
+h6.dark,
+h6.light {
+  text-align: center;
+  font-size: 1em; /* Smallest heading size */
+  line-height: 1.6;
+  margin-bottom: 10px;
+  padding-bottom: 4px;
+}
+
+h6.dark {
+  color: var(--theme6-dark);
+}
+
+h6.light {
+  color: var(--theme6-light);
+}
+
+/* Base anchor styles */
+a {
+  text-decoration: none; /* Removing default underline */
+  font-weight: 500; /* Medium weight for readability */
+  cursor: pointer; /* Ensures the user knows it's clickable */
+  transition: color 0.3s ease, border-bottom 0.3s ease; /* Smooth hover effects */
+}
+
+/* Light theme anchor */
+a.light {
+  color: var(--theme5-light);
+  border-bottom: 2px solid transparent; /* Underline effect on hover */
+}
+
+a.light:hover,
+a.light:focus {
+  color: var(--theme2-light); /* Highlight color change on hover */
+  border-bottom: 2px solid var(--theme2-light); /* Show underline on hover */
+  text-shadow: 1px 1px 2px var(--theme2-dark); /* Subtle shadow for emphasis */
+}
+
+/* Dark theme anchor */
+a.dark {
+  color: var(--theme5-dark);
+  border-bottom: 2px solid transparent; /* Underline effect on hover */
+}
+
+a.dark:hover,
+a.dark:focus {
+  color: var(--theme2-dark); /* Highlight color change on hover */
+  border-bottom: 2px solid var(--theme2-dark); /* Show underline on hover */
+  text-shadow: 1px 1px 2px var(--theme3-dark); /* Subtle shadow for emphasis */
+}
+
+/* Visited link styles */
+a.light:visited {
+  color: var(--theme3-light); /* Slightly muted for visited links */
+}
+
+a.dark:visited {
+  color: var(--theme3-dark);
+}
+
+/* Active state for when links are clicked */
+a.light:active {
+  color: var(--theme1-light); /* Brief change during click */
+  border-bottom: 2px solid var(--theme1-light);
+}
+
+a.dark:active {
+  color: var(--theme1-dark); /* Brief change during click */
+  border-bottom: 2px solid var(--theme1-dark);
+}
+
+
+@media (max-width: 480px) {
+  #root {
+    font-size: 14px; /* Optimize further for mobile */
+    padding: 0.3rem;
+    line-height: 1.5;
+
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content:flex-start; /* Center items vertically */
+    text-align: center; /* Center text within items */
+  }
+}
+
+@media (max-width: 600px) {
+  #root {
+    padding: 10px; /* Adjust padding for smaller devices */
+  }
+
+  body {
+    font-size: 14px; /* Decrease font size on smaller devices */
+    
+    display: flex; /* Enable flexbox for body */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    text-align: center; /* Center text within items */
+  }
+}
+
+/* Media query for larger screens */
+@media (min-width: 601px) {
+  #root {
+    padding: 20px; /* More padding for larger devices */
+  }
+
+  body {
+    font-size: 16px; /* Standard font size for larger devices */
+    
+    display: flex; /* Enable flexbox for body */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    text-align: center; /* Center text within items */
+  }
+}
+
+@media (max-width: 768px) {
+  #root {
+    font-size: 15px; /* Slightly smaller font for smaller screens */
+    padding: 0.4rem;
+
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    text-align: center; /* Center text within items */
   }
 }

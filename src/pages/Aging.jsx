@@ -7,87 +7,58 @@ const Aging = () => {
     <>
       <ScrollToTop />
       <div className="pages-container">
-        <h1>Division of Aging, Adult, and Behavioral Health Services</h1>
+        <h1 className="dark">
+          Division of Aging, Adult, and Behavioral Health Services
+        </h1>
+        <h2 class="dark">Why EDORA?</h2>
         <p>
-          Welcome to the Division of Aging, Adult, and Behavioral Health
-          Services (DAABHS)! We are dedicated to enhancing the quality of life
-          for Arkansans through comprehensive support and services tailored to
-          two vital populations: those in need of behavioral health services,
-          including mental health and substance abuse treatment, and adults with
-          physical disabilities and aging individuals requiring assistance to
-          thrive in their homes and communities.
+          EDORA is more than just a case management system; it is a
+          transformative tool that empowers DAABHS to fulfill its mission of
+          providing essential services with efficiency and effectiveness.
         </p>
-
-        <h2>Our Mission</h2>
+        <h3 className="dark">Here is why EDORA is crucial for our operations:</h3>
         <p>
-          At DAABHS, our mission is clear: to empower individuals and families
-          by providing access to essential services that promote health, safety,
-          and independence. Through innovative programs and dedicated personnel,
-          we strive to create a supportive environment where every Arkansan can
-          flourish.
+          By implementing EDORA, we are not just improving operational
+          efficiency; we are fundamentally enhancing the quality of life for
+          those we serve. Together, we are building a brighter future for all
+          Arkansans, where everyone has the opportunity to thrive, live
+          independently, and age gracefully in their own homes and communities.
+          Join us in our mission to support those who need it most!
         </p>
-
-        <h2>Sections of DAABHS</h2>
-        <p>DAABHS is thoughtfully divided into two impactful sections:</p>
-
-        <ul>
-          <li>
-            <strong>Aging and Adult Services</strong>:
-            <p>
-              This section is committed to overseeing home and community-based
-              programs for adults with physical disabilities and seniors. Our
-              efforts include:
-            </p>
-            <ul>
-              <li>
-                Investigating allegations of adult maltreatment through Adult
-                Protective Services.
-              </li>
-              <li>
-                Advocating for residents in long-term care (LTC) facilities
-                through the LTC Ombudsman office.
-              </li>
-              <li>
-                Providing essential services and information tailored for older
-                Arkansans.
-              </li>
-            </ul>
-            <p>
-              Our dedicated staff work tirelessly to ensure the health, safety,
-              and independence of older Arkansans and individuals with physical
-              disabilities, delivering compassionate care and vital resources.
-            </p>
-          </li>
-          <li>
-            <strong>Beneficiary Support</strong>:
-            <p>
-              This section oversees our beneficiary support line, ensuring that
-              clients who need assistance can access the information and support
-              they require. We aim to make the process seamless and efficient,
-              connecting Arkansans with the services that matter most to them.
-            </p>
-            <p>
-              Our team is always ready to lend a helping hand, guiding
-              individuals through the various options available to them and
-              answering any questions they may have about accessing services.
-            </p>
-          </li>
-        </ul>
-
-        <h2>Why EDORA?</h2>
+        <h3 className="dark">Streamlined Service Delivery</h3>
         <p>
-          EDORA stands at the forefront of delivering these essential services,
-          harnessing cutting-edge technology to streamline processes, enhance
-          communication, and ensure that every Arkansan receives the care they
-          deserve. Our commitment to data-driven decision-making allows us to
-          continuously improve our services and adapt to the evolving needs of
-          our communities.
+          EDORA integrates all aspects of client management, allowing our staff
+          to access vital information quickly. This streamlining means faster
+          responses to client needs, ensuring that individuals receive timely
+          assistance tailored to their specific situations.
         </p>
+        <h3 className="dark">Enhanced Communication</h3>
         <p>
-          Together, we are building a brighter future for all Arkansans, where
-          everyone has the opportunity to thrive, live independently, and age
-          gracefully in their own homes and communities. Join us in our mission
-          to support those who need it most!
+          With EDORA, communication between departments is seamless. This
+          capability enables our teams to collaborate efficiently, sharing
+          insights and updates that lead to comprehensive support for clients
+          and their families.
+        </p>
+        <h3 className="dark">Data-Driven Decision Making</h3>
+        <p>
+          EDORA harnesses the power of analytics, providing actionable insights
+          that help us monitor service outcomes and make informed adjustments.
+          By utilizing real-time data, we can anticipate client needs, adapt our
+          programs, and allocate resources effectively.
+        </p>
+        <h3 className="dark">Proactive Client Engagement</h3>
+        <p>
+          EDORA's event-driven architecture allows us to proactively identify
+          and respond to client needs and regulatory changes. This proactive
+          approach ensures we stay ahead of challenges, enhancing our ability to
+          support Arkansans as their circumstances evolve.
+        </p>
+        <h3 className="dark">Accountability and Transparency</h3>
+        <p>
+          EDORA establishes clear protocols and responsibilities, fostering
+          accountability within our teams. This transparency builds trust with
+          clients, ensuring they feel supported and valued throughout their
+          journey with us.
         </p>
       </div>
     </>

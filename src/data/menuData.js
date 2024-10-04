@@ -8,7 +8,7 @@ export const mainMenuItems = [
 ];
 
 export const starMenuItems = [
-  { id: 7, name: "Home", link: "/" },
+  // { id: 7, name: "Home", link: "/" },
   { id: 8, name: "About", link: "/about" },
   // { id: 9, name: "Services", link: "/services" },
   // { id: 10, name: "Contact", link: "/contact" },

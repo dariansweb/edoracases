@@ -1,7 +1,5 @@
-/* footer.css */
 .footer-bar {
   box-sizing: border-box;
-
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -61,6 +59,7 @@
   font-size: 0.9rem; /* Smaller font size for links */
 }
 
+/* Styling for the footer links */
 .footer-link {
   color: var(--theme3-dark); /* Link color */
   text-decoration: none; /* Remove underline */
@@ -77,6 +76,7 @@
     flex-direction: column; /* Stack items vertically */
     align-items: center; /* Center align all items */
     text-align: center; /* Center text alignment */
+    padding: 1rem; /* Less padding for smaller screens */
   }
 
   .footer-left, .footer-center, .footer-right {
@@ -86,5 +86,15 @@
 
   .social-icons {
     justify-content: center; /* Center social icons in column layout */
+  }
+
+  .footer-links {
+    display: flex; /* Use flexbox for the links */
+    justify-content: center; /* Center the links */
+    margin: 0; /* Reset margin for consistent spacing */
+  }
+
+  .footer-link {
+    margin: 0 0.5rem; /* Space between links */
   }
 }

@@ -8,12 +8,12 @@ const Footer = () => {
         <span className="footer-brand">EDORA</span> {/* Brand name */}
       </div>
       <div className="footer-center">
-        <p className="footer-text">Transforming service delivery through innovation.</p>
         <div className="social-icons">
           <span className="social-icon">🔗</span>
           <span className="social-icon">📧</span>
           <span className="social-icon">🌐</span>
         </div>
+
       </div>
       <div className="footer-right">
         <p className="footer-links">

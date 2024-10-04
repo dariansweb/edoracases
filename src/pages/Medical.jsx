@@ -7,60 +7,111 @@ const Medical = () => {
     <>
       <ScrollToTop />
       <div className="pages-container">
-        <h1>Division of Medical Services</h1>
+        <h1 className="dark">Division of Medical Services</h1>
+        <h2 className="dark">Why Choose EDORA for the Division of Medical Services?</h2>
         <p>
-          The Division of Medical Services is the administrative arm of Arkansas
-          Medicaid, overseeing provider enrollment, billing, pharmacy,
-          beneficiary support, and fee-for-service and managed care programs
-          funded by Medicaid. Arkansas Medicaid, which is jointly funded and
-          operated by DHS and the Centers for Medicare and Medicaid Services
-          (CMS), provides medically necessary health care services for eligible
-          Arkansans from birth through end-of-life. Beneficiaries with questions
-          about eligibility should contact the Division of County Operations.
+          The Division of Medical Services plays a pivotal role in ensuring that
+          Arkansas Medicaid efficiently delivers essential health care services
+          to eligible residents. In this context, <strong>EDORA</strong> stands
+          out as a transformative management solution designed to enhance
+          operations, improve beneficiary support, and facilitate seamless
+          service delivery. Here are key reasons why EDORA is indispensable for
+          the Division of Medical Services:
         </p>
-        <h2>Division Structure</h2>
-        <p>The Division is divided into four units:</p>
-        <ul>
-          <li>
-            <strong>Plan Partnerships</strong> oversees contract and managed
-            care programs, including the Provider-Led Arkansas Shared Savings
-            Entity (PASSE) for Medicaid clients with complex behavioral health,
-            developmental, or intellectual disabilities, Non-Emergency
-            Transportation services, the dental managed care program called
-            Health Smiles, and the Arkansas Independent Assessment system that
-            is used to perform a functional-needs assessment to assist in the
-            development of an individual’s Person-Centered Service Plan (PCSP)
-            and personal care services plan.
-          </li>
-          <li>
-            <strong>Fee for Service</strong> oversees provider enrollment, prior
-            authorizations and utilization review, the Electronic Visit
-            Verification system, rate reviews, the voluntary performance-based
-            incentive program known as Patient-Centered Medical Home (PCMH),
-            Primary Care Case Management (PCCM) program in which physicians
-            agree to monitor the care of their Medicaid clients, and the policy
-            analysis unit, which plans, develops, and implements policy changes
-            within Medicaid.
-          </li>
-          <li>
-            <strong>Administration & Operations</strong> oversees contracts,
-            reporting, and technology systems and works with the DHS shared
-            services offices, including Human resources and Finance. The goal of
-            Administration & Operations is to facilitate the smooth and
-            efficient operation of those other areas and the programs they
-            administer.
-          </li>
-          <li>
-            <strong>Pharmacy</strong> serves Arkansas Medicaid clients needing
-            prescription services from Medicaid-enrolled providers, both
-            enrolled prescribers and enrolled pharmacies. Pharmacy develops
-            clinical drug criteria, and is staffed by clinical pharmacists who
-            review cases needing prior authorization. The Pharmacy Vendor for
-            the Arkansas Medicaid Pharmacy Department helps develop clinical
-            criteria, rebate invoicing and collection, and has clinical pharmacy
-            staff to review cases needing prior authorization.
-          </li>
-        </ul>
+
+        <h3 className="dark">1. Streamlined Provider Enrollment and Management</h3>
+        <p>
+          EDORA significantly streamlines the provider enrollment process,
+          enabling quicker onboarding and credentialing for healthcare providers
+          participating in the Arkansas Medicaid program. With its user-friendly
+          interface and efficient tracking systems, EDORA minimizes
+          administrative burdens, ensuring that providers can focus on
+          delivering quality care rather than navigating complex enrollment
+          procedures.
+        </p>
+
+        <h3 className="dark">2. Comprehensive Billing and Claims Processing</h3>
+        <p>
+          EDORA optimizes billing and claims processing, reducing errors and
+          expediting reimbursements for healthcare providers. By integrating
+          billing functions with provider management and services oversight,
+          EDORA ensures that claims are processed accurately and promptly,
+          enhancing the financial stability of Medicaid providers and, in turn,
+          improving access to care for beneficiaries.
+        </p>
+
+        <h3 className="dark">3. Enhanced Beneficiary Support Services</h3>
+        <p>
+          One of EDORA’s primary strengths is its capacity to improve
+          beneficiary support services. By offering a centralized platform for
+          managing inquiries related to eligibility, services, and care plans,
+          EDORA empowers beneficiaries to access the information they need
+          quickly. This accessibility fosters trust and engagement, leading to
+          better health outcomes for Arkansas residents.
+        </p>
+
+        <h3 className="dark">4. Data-Driven Insights for Program Improvement</h3>
+        <p>
+          EDORA provides robust analytics and reporting capabilities that enable
+          the Division of Medical Services to make data-driven decisions. By
+          analyzing trends in provider performance, beneficiary utilization, and
+          health outcomes, DMS can identify areas for improvement and implement
+          targeted strategies that enhance service delivery and program
+          effectiveness.
+        </p>
+
+        <h3 className="dark">5. Seamless Coordination Across Units</h3>
+        <p>
+          The Division of Medical Services is structured into various units,
+          each with distinct responsibilities. EDORA facilitates seamless
+          coordination and communication among these units—Plan Partnerships,
+          Fee for Service, Administration & Operations, and Pharmacy. By
+          breaking down silos and fostering collaboration, EDORA ensures that
+          all aspects of Medicaid service delivery are aligned and working
+          toward common goals.
+        </p>
+
+        <h3 className="dark">6. Improved Policy Development and Compliance</h3>
+        <p>
+          With EDORA’s comprehensive data management and reporting tools, the
+          Division can more effectively plan, develop, and implement policy
+          changes within Medicaid. This capability ensures that DMS remains
+          compliant with federal and state regulations while continuously
+          adapting to the evolving healthcare landscape. EDORA empowers the
+          Division to respond proactively to changes, ensuring sustained program
+          integrity and excellence.
+        </p>
+
+        <h3 className="dark">7. Efficient Pharmacy Management</h3>
+        <p>
+          EDORA enhances the management of pharmacy services within Arkansas
+          Medicaid by streamlining the prior authorization process and improving
+          communication between clinical pharmacists and healthcare providers.
+          With an integrated platform for managing clinical drug criteria and
+          reviewing prescription services, EDORA ensures that Medicaid clients
+          receive timely and appropriate medications, ultimately improving
+          health outcomes.
+        </p>
+
+        <h3 className="dark">8. Commitment to Quality Improvement</h3>
+        <p>
+          EDORA aligns with the Division’s commitment to quality improvement
+          through its emphasis on data transparency and performance measurement.
+          By facilitating ongoing monitoring and evaluation of health services,
+          EDORA supports continuous quality improvement initiatives that enhance
+          the overall effectiveness of Arkansas Medicaid programs.
+        </p>
+
+        <p>
+          In summary, choosing <strong>EDORA</strong> means choosing a future
+          where Arkansas Medicaid can efficiently deliver high-quality,
+          medically necessary healthcare services to its beneficiaries. By
+          enhancing administrative operations, streamlining service delivery,
+          and promoting collaboration among stakeholders, EDORA empowers the
+          Division of Medical Services to fulfill its mission of ensuring that
+          every Arkansan receives the care they need—from birth through
+          end-of-life.
+        </p>
       </div>
     </>
   );

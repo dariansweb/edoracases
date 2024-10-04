@@ -1,55 +1,83 @@
 import React from "react";
 import "./styles/Pages.css"; // Importing a separate CSS file for styling
-import ScrollToTop from "../utils/ScrollToTop"; 
+import ScrollToTop from "../utils/ScrollToTop";
 
 const About = () => {
   return (
     <>
       <ScrollToTop />
       <div className="pages-container">
-        <h1>About Us</h1>
+        <h1 className="dark">About Us</h1>
         <p>
-          Welcome to our application! We are dedicated to providing
-          comprehensive resources and support for individuals and families in
-          need.
+          Welcome to our application! We are a passionate team of software
+          engineers dedicated to transforming the landscape of governmental
+          human and health services. With a deep commitment to innovation and
+          integrity, we leverage our technical expertise to create solutions
+          that empower individuals and families in need.
         </p>
-
+        <p>
+          Having witnessed firsthand the misuse of tax dollars and the
+          detrimental impact of contractors taking advantage of underfunded
+          agencies, we understand the urgency for change. Our mission is to
+          bridge the gap between technology and human services, ensuring that
+          every dollar spent translates into meaningful support for those who
+          rely on these vital resources.
+        </p>
+        <p>
+          We believe that everyone deserves access to high-quality services that
+          address their unique challenges. By developing intuitive and efficient
+          software solutions, we aim to enhance the operational capacity of
+          agencies, allowing them to serve their clients more effectively and
+          compassionately.
+        </p>
+        <p>
+          Our vision is to create a future where technology and human services
+          work in harmony, driving positive change and accountability. Together,
+          we are committed to making a difference, ensuring that governmental
+          agencies can fulfill their mission of serving the community with
+          transparency and purpose.
+        </p>
+        <p>
+          Join us on this journey as we strive to bring the best we have to
+          offer, fostering a supportive environment for those who need it most.{" "}
+        </p>
         <section>
-          <h2>Our Mission</h2>
+          <h2 className="dark">Our Mission</h2>
           <p>
-            Our mission is to empower our community by offering accessible
-            services that promote well-being and personal growth. We strive to
-            make a positive impact through collaboration and advocacy.
+            At the heart of our mission is a profound commitment to empower
+            every member of our community, especially those who are vulnerable
+            and in need of support. We strive to provide accessible,
+            compassionate, and comprehensive services that promote well-being,
+            resilience, and personal growth.
           </p>
-        </section>
-
-        <section>
-          <h2>Meet Our Team</h2>
-          <div>
-            <h3>Darian Ross</h3>
-            <p>Executive Director</p>
-            <p>
-              Darian has over 15 years of experience in community service and is
-              passionate about making a difference in people’s lives.
-            </p>
-          </div>
-          <div>
-            <h3>John Forgedama</h3>
-            <p>Program Manager</p>
-            <p>
-              John oversees our programs and ensures that we deliver
-              high-quality services to our clients.
-            </p>
-          </div>
-        </section>
-
-        <section>
-          <h2>Contact Us</h2>
           <p>
-            If you have any questions or would like to learn more about our
-            services, please reach out to us at:
+            We recognize that individuals facing challenges—whether due to
+            health issues, personal circumstances, or societal barriers—deserve
+            timely and appropriate assistance that meets their unique needs. By
+            fostering a collaborative environment that unites our staff,
+            community partners, and stakeholders, we advocate for those we
+            serve, ensuring that their voices are heard and their needs are met.
           </p>
-          <p>dariansweb@gmail.com</p>
+          <p>
+            In our pursuit of excellence, we leverage Event Driven Operations to
+            focus on the critical events and triggers that impact service
+            delivery. This proactive approach enables us to respond swiftly to
+            the evolving needs of our clients, maximizing our agency's resources
+            and operational capacity to create a more responsive and adaptive
+            framework.
+          </p>
+          <p>
+            We are dedicated to making a lasting positive impact, enhancing
+            client outcomes, and supporting the overall health and well-being of
+            our community. Together, we aim to build a compassionate network of
+            support that uplifts those who are hurting, helping them navigate
+            their journeys toward healing and empowerment.
+          </p>
+          <p>
+            Join us in our mission to transform lives through service, advocacy,
+            and collaboration, ensuring that everyone in our community has the
+            opportunity to thrive and live with dignity.
+          </p>
         </section>
       </div>
     </>

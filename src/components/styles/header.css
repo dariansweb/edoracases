@@ -1,16 +1,19 @@
 /* Header Bar */
 .header-bar {
+  color: var(--theme6-light); /* Text color */
+  background-color: var(--theme1-dark); /* Use your desired background color */
+
+  min-width: 100vh;
   position: sticky;
   z-index: 100;
   top: 0;
-  box-sizing: border-box;
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--theme1-dark); /* Use your desired background color */
-  color: var(--theme6-light); /* Text color */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
 }
 
 /* Title styles */
@@ -58,9 +61,6 @@
     var(--text-shadow-dark); /* Apply shadow effect to icons */
   transition: transform 0.3s ease,
     /* Smooth transition for scaling */ text-shadow 0.3s ease; /* Smooth transition for shadow on hover */
-}
-.star-menu-icon {
-  display: none;
 }
 /* Hover effect for icons */
 .star-icon:hover,

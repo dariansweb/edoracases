@@ -7,7 +7,7 @@ const Disability = () => {
     <>
       <ScrollToTop />
       <div className="pages-container">
-        <h1>Disability Services Management Application</h1>
+        <h1 className="dark">Disability Services Management Application</h1>
 
         <p>
           In a world where individuals with developmental disabilities and
@@ -20,7 +20,7 @@ const Disability = () => {
           and efficient.
         </p>
 
-        <h2>Core Mission</h2>
+        <h2 className="dark">Core Mission</h2>
         <p>
           EDORA is built on the core belief that every Arkansan, regardless of
           their abilities, has the constitutional right to live, learn, and
@@ -30,54 +30,109 @@ const Disability = () => {
           through the often-complex landscape of disability services.
         </p>
 
-        <h2>Key Features</h2>
-        <ul>
-          <li>
-            <strong>Intuitive User Interface</strong>: EDORA features a
-            user-friendly interface designed for all users, simplifying the
-            process of finding and accessing services.
-          </li>
-          <li>
-            <strong>Comprehensive Service Directory</strong>: Users can easily
-            access a detailed directory of services available for infants and
-            toddlers, including developmental screenings, therapies, and care
-            plans.
-          </li>
-          <li>
-            <strong>Personalized Care Plans</strong>: Families can collaborate
-            with service providers to create and manage individualized care
-            plans tailored to their loved ones' unique needs.
-          </li>
-          <li>
-            <strong>Case Management Tools</strong>: Comprehensive tools enable
-            tracking of progress, appointment management, and effective
-            communication.
-          </li>
-          <li>
-            <strong>Referral and Intake Management</strong>: Seamless
-            integration for initiating service requests, allowing clients to
-            contact DDS directly.
-          </li>
-          <li>
-            <strong>Resource Library</strong>: A comprehensive library of
-            resources empowering families with knowledge and guidance.
-          </li>
-          <li>
-            <strong>Data-Driven Insights</strong>: Leveraging analytics to
-            provide insights into service utilization and trends.
-          </li>
-          <li>
-            <strong>Community Engagement</strong>: Connecting users with local
-            support groups, workshops, and events to foster community
-            involvement.
-          </li>
-          <li>
-            <strong>Accessibility Features</strong>: Designed to ensure
-            usability for all individuals, regardless of abilities.
-          </li>
-        </ul>
+        <h2 className="dark">Key Features</h2>
 
-        <h2>Conclusion</h2>
+        <h3 className="dark">Intuitive User Interface</h3>
+        <p>
+          EDORA features a user-friendly interface designed for all users,
+          simplifying the process of finding and accessing services.
+        </p>
+
+        <h3 className="dark">Comprehensive Service Directory</h3>
+        <p>
+          Users can easily access a detailed directory of services available for
+          infants and toddlers, including developmental screenings, therapies,
+          and care plans.
+        </p>
+
+        <h3 className="dark">Personalized Care Plans</h3>
+        <p>
+          Families can collaborate with service providers to create and manage
+          individualized care plans tailored to their loved ones' unique needs.
+        </p>
+
+        <h3 className="dark">Case Management Tools</h3>
+        <p>
+          Comprehensive tools enable tracking of progress, appointment
+          management, and effective communication.
+        </p>
+
+        <h3 className="dark">Referral and Intake Management</h3>
+        <p>
+          Seamless integration for initiating service requests, allowing clients
+          to contact DDS directly.
+        </p>
+
+        <h3 className="dark">Resource Library</h3>
+        <p>
+          A comprehensive library of resources empowering families with
+          knowledge and guidance.
+        </p>
+
+        <h3 className="dark">Data-Driven Insights</h3>
+        <p>
+          Leveraging analytics to provide insights into service utilization and
+          trends.
+        </p>
+
+        <h3 className="dark">Community Engagement</h3>
+        <p>
+          Connecting users with local support groups, workshops, and events to
+          foster community involvement.
+        </p>
+
+        <h3 className="dark">Accessibility Features</h3>
+        <p>
+          Designed to ensure usability for all individuals, regardless of
+          abilities.
+        </p>
+
+        <h2 className="dark">Why EDORA?</h2>
+        <p>
+          Choosing <strong>EDORA</strong> means choosing a future where the
+          management of disability services is not just efficient, but also
+          profoundly impactful. Here's how EDORA excels in capturing data and
+          enhancing the experiences of both clients and program managers:
+        </p>
+        <p>
+          <strong>Seamless Data Capture:</strong> EDORA integrates advanced data
+          collection techniques, ensuring that all client interactions, service
+          utilizations, and progress metrics are accurately recorded in
+          real-time. This means that program managers have immediate access to
+          comprehensive data that reflects current trends and needs within the
+          community.
+        </p>
+        <p>
+          <strong>Enhanced Reporting Capabilities:</strong> The data-driven
+          insights generated by EDORA allow program managers to quickly assess
+          service effectiveness, identify gaps, and make informed decisions.
+          Customizable reports provide a clear view of resource allocation and
+          program outcomes, fostering a culture of accountability and
+          transparency.
+        </p>
+        <p>
+          <strong>Proactive Management Tools:</strong> With EDORA's case
+          management tools, program managers can proactively track appointments,
+          monitor client progress, and communicate efficiently with service
+          providers and families. This streamlined approach not only reduces
+          administrative burdens but also enhances the overall service delivery
+          process.
+        </p>
+        <p>
+          <strong>Tailored Support:</strong> EDORA's capacity for personalized
+          data analysis ensures that program managers can identify specific
+          client needs and adapt services accordingly. This adaptability
+          promotes better outcomes and client satisfaction, reassuring families
+          that their loved ones are receiving the highest quality of care.
+        </p>
+        <p>
+          By harnessing the power of data and technology, <strong>EDORA</strong>{" "}
+          transforms the landscape of disability services management. It
+          empowers both clients and program managers, creating a supportive
+          ecosystem where everyone can thrive.
+        </p>
+
+        <h2 className="dark">Conclusion</h2>
         <p>
           <strong>EDORA</strong> stands at the forefront of disability services
           management, revolutionizing how individuals with developmental

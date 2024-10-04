@@ -7,82 +7,81 @@ const ChildAndFamily = () => {
     <>
       <ScrollToTop />
       <div className="pages-container">
-        <h1>Division of Children and Family Services</h1>
+        <h1 className="dark">Division of Children and Family Services</h1>
+        <h2 className="dark">Why EDORA?</h2>
+
         <p>
-          Welcome to the Division of Children and Family Services (DCFS)! Our
-          mission is to ensure the safety, permanency, and well-being of
-          children and youth of all ages while strengthening families throughout
-          Arkansas. With over a thousand dedicated employees spread across ten
-          service areas, we work in collaboration with national and local
-          partners to create a protective and nurturing environment for
-          children, families, and communities.
+          In an ever-evolving landscape of child and family services, the
+          integration of <strong>EDORA</strong> into our operations stands as a
+          beacon of hope and efficiency. Here’s why EDORA is not just a choice
+          but a vital partner in our mission:
         </p>
 
-        <h2>Prevention & Protection</h2>
+        <h3 className="dark">1. Data-Driven Decision Making</h3>
         <p>
-          At DCFS, we believe that the best way to protect children is through
-          prevention. Our comprehensive programs and services are designed to
-          promote resilience and enhance parental capacity, ultimately
-          preventing child maltreatment before it occurs. Through the power of
-          EDORA, we have transformed our approach to prevention, leveraging data
-          and insights to identify at-risk families and provide timely support.
-        </p>
-        <p>
-          We utilize both federal and state funding, including the Children’s
-          Bureau Community-Based Child Abuse Prevention (CBCAP) grant and the
-          Arkansas Children’s Trust Fund, to support state-wide initiatives like
-          the Baby and Me Program and Community School Model enhancements. These
-          initiatives empower families and communities, fostering a safer
-          environment for children to grow and thrive.
+          EDORA empowers our team with robust data analytics and real-time
+          insights, enabling us to identify at-risk families and respond
+          proactively. By harnessing comprehensive data, we can tailor our
+          programs and interventions to meet the specific needs of each child
+          and family, ensuring that our resources are allocated effectively and
+          efficiently.
         </p>
 
-        <h2>Safety & Stability</h2>
+        <h3 className="dark">2. Enhanced Collaboration</h3>
         <p>
-          In instances where families are facing crises of abuse or neglect,
-          DCFS steps in to provide immediate protection for children and youth.
-          Our highly trained staff conducts timely and thorough investigations,
-          ensuring that families receive the necessary services to rebuild and
-          strengthen their relationships.
-        </p>
-        <p>
-          EDORA plays a crucial role here, facilitating seamless communication
-          and coordination among our team members and community partners,
-          ensuring that every child receives the safety and stability they need.
-          On average, we support approximately 4,300 children in foster care
-          through a network of nearly 1,700 foster homes. We are committed to
-          placing children in traditional home settings, where they can find
-          comfort and security while we work collaboratively with their families
-          to create a safe return environment.
-        </p>
-        <p>
-          In cases where specialized care is required, DCFS actively
-          collaborates with community partners and placement providers to ensure
-          children are placed in settings that cater to their unique needs. Our
-          goal is to ensure every child is well-supported and stable in their
-          environment, providing them with the foundation for a brighter future.
+          EDORA facilitates seamless communication and collaboration among our
+          staff, community partners, and stakeholders. This integrated approach
+          means that every member of our team has access to the same critical
+          information, allowing for timely interventions and coordinated
+          support. When everyone is aligned, we create a unified front in
+          protecting and nurturing our children and families.
         </p>
 
-        <h2>Permanency</h2>
+        <h3 className="dark">3. Increased Accountability</h3>
         <p>
-          For families with children in foster care, achieving permanency is our
-          paramount objective. We understand that every child’s journey is
-          unique, and we strive to facilitate the best path forward—whether
-          through reunification with their biological families, adoption, or
-          transitional youth services.
+          With EDORA, we can track outcomes and measure the effectiveness of our
+          initiatives. This transparency ensures that we remain accountable to
+          the families we serve, our funding partners, and our community. By
+          continually assessing our programs, we can identify areas for
+          improvement and celebrate our successes.
         </p>
+
+        <h3 className="dark">4. Streamlined Operations</h3>
         <p>
-          EDORA enhances our ability to monitor and support these processes by
-          providing real-time data analytics and insights. This empowers our
-          staff to make informed decisions that prioritize the best interests of
-          the child. For youth transitioning into adulthood, we offer vital
-          support through the Extended Foster Care Program, ensuring they have
-          the resources and guidance they need until they reach 21.
+          EDORA simplifies our workflow by automating routine tasks and
+          providing a centralized platform for case management. This allows our
+          dedicated employees to focus their efforts where they matter most—on
+          the families and children who need us the most. By reducing
+          administrative burdens, we maximize our agency’s operational capacity
+          and impact.
         </p>
+
+        <h3 className="dark">5. Promoting Well-Being</h3>
         <p>
-          At DCFS, we are committed to transforming lives through compassion,
-          advocacy, and innovation. With EDORA as our driving force, we are not
-          just responding to challenges; we are proactively building a future
-          where every child and family can thrive!
+          Ultimately, EDORA is about improving the well-being of children and
+          families. By providing our staff with the tools and information they
+          need, we can create a more responsive and supportive environment. This
+          leads to better outcomes in safety, stability, and permanency for the
+          children in our care.
+        </p>
+
+        <h3 className="dark">6. A Commitment to Innovation</h3>
+        <p>
+          At DCFS, we understand that the challenges facing children and
+          families are complex and multifaceted. EDORA embodies our commitment
+          to innovation, allowing us to adapt to changing needs and embrace new
+          opportunities. By leveraging technology, we are not just keeping pace
+          with best practices; we are setting new standards in the field of
+          human and health services.
+        </p>
+
+        <p>
+          By integrating <strong>EDORA</strong>, the Division of Children and
+          Family Services is not merely enhancing our service delivery; we are
+          revolutionizing how we approach our mission. Together, we can create a
+          future where every child and family thrives, supported by the power of
+          data, collaboration, and compassion. Join us in this transformative
+          journey, as we make a lasting impact on our community!
         </p>
       </div>
     </>

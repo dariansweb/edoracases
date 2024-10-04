@@ -1,5 +1,5 @@
 .hero-container {
-  height: 75vh; /* Full viewport height */
+  min-height: 50vh; /* Full viewport height */
   background: linear-gradient(135deg, var(--theme1-dark), var(--theme3-dark));
 
   box-sizing: border-box;
@@ -25,6 +25,7 @@
   font-weight: bold;
   color: var(--theme3-light);
   margin-bottom: 1rem;
+  letter-spacing: 0.9rem;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
