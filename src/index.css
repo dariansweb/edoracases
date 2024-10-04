@@ -120,13 +120,51 @@ p:hover {
 div {
 
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   margin: 0 auto; /* Centers the container horizontally */
   padding: 0.8rem; /* More breathing room inside the paragraph */
   border-radius: 4px; /* Slightly increased rounding for a softer look */
 }
+/* Reset default styles for unordered and ordered lists */
+ul, ol {
+  margin: 0;
+  padding: 0;
+}
 
+ul,
+ol {
+  list-style-position: inside; /* Keeps bullet points or numbers inside the container */
+  padding-left: 1.5rem; /* Adds some padding on the left for a neat look */
+  margin: 0; /* Removes default margin */
+  overflow: hidden; /* Prevents content from overflowing the container */
+}
+
+/* Styles for list items */
+li {
+  margin-bottom: 0.5rem; /* Adds space between items */
+  padding: 0.25rem 0; /* Adds padding for touch target and aesthetics */
+  font-size: 1em; /* Ensure font size is consistent with body text */
+  line-height: 1.5; /* Adequate spacing for readability */
+  color: var(--theme1-dark); /* Uses your dark theme color for consistency */
+}
+
+/* Optional: Differentiate ordered lists */
+ol {
+  counter-reset: list-counter; /* Resetting counter for ordered list */
+}
+
+ol li {
+  counter-increment: list-counter; /* Increments the counter for each item */
+  position: relative; /* For absolute positioning if needed */
+}
+
+ol li::before {
+  content: counter(list-counter) ". "; /* Add a period after the counter */
+  position: absolute; /* Positioning the counter */
+  left: -2rem; /* Positioning left to avoid overlap */
+  color: var(--theme2-primary); /* Give a distinctive color for ordered list numbers */
+} 
 .underline {
   text-decoration: underline;
   color: var(--theme3-contrast);

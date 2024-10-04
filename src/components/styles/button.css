@@ -1,27 +1,27 @@
 button {
-    border-radius: 8px;
-    padding: 0.6em 1.2em;
-    margin: 5px;  
-    font-size: 1,4em;
-    font-weight: 500;
-    font-family: inherit;
-    color: var(--theme6-light);
-    background-color: var(--theme3-dark);
-    cursor: pointer;
-  }
-  .cta-button {
-    margin: 25  px;
-    padding: 1rem 2rem;
-    background-color: var(--theme3-dark);
-    color: var(--theme6-light);
-    border: none;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .cta-button:hover {
-    background-color: var(--theme6-light);
-    color: var(--theme1-dark);
-  }
+  border-radius: 8px;
+  padding: 0.6em 1.2em;
+  margin: 5px;
+  font-size: 1, 4em;
+  font-weight: 500;
+  font-family: inherit;
+  color: var(--theme6-light);
+  background-color: var(--theme3-dark);
+  cursor: pointer;
+}
+.cta-button {
+  margin: 25px;
+  padding: 1rem 2rem;
+  background-color: var(--theme3-dark);
+  color: var(--theme6-light);
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: var(--theme6-light);
+  color: var(--theme1-dark);
+}

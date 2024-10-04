@@ -49,7 +49,7 @@ const Header = () => {
   }, []); // Empty dependency array ensures this runs only on mount and unmount
 
   return (
-    <header className="header-bar full-width-container">
+    <header className="header-bar">
       <div className="header-left">
         <span
           className={`star-icon ${isExploding ? "explode-effect" : ""}`} // Apply explosion effect conditionally

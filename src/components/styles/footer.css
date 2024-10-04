@@ -12,7 +12,7 @@
 
 .footer-left {
   display: flex;
-  align-items: center; /* Align icon and brand text */
+  align-items: left; /* Align icon and brand text */
 }
 
 .footer-icon {
@@ -67,7 +67,119 @@
 }
 
 .footer-link:hover {
-  color: var(--theme-alert3); /* Change color on hover */
+  background-color: var(--theme1-dark);
+  color: var(--theme6-light); /* Change color on hover */
+}
+
+/* Footer Styles */
+.footer-nav {
+  background-color: var(--theme1-dark);
+  padding: 20px;
+  color: var(--theme1-light);
+}
+
+.footer-nav h4 {
+  color: var(--theme4-light);
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-nav ul li {
+  margin-bottom: 8px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.footer-nav ul li a {
+  color: var(--theme1-light);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-nav ul li a:hover {
+  color: var(--theme-alert1);
+}
+
+/* Custom bullets (example: stars) */
+.footer-nav ul li::before {
+  content: "★";
+  position: absolute;
+  left: 0;
+  color: #ffcc00;
+}
+
+/* FooterListItems styling */
+.footerListItems {
+  padding-left: 25px;
+}
+
+/* Hover effects for fun */
+.footer-nav ul li a:hover {
+  color: var(--theme6-light);
+  text-decoration: underline;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center; /* Centers the icons horizontally */
+  gap: 20px; /* Space between the icons */
+  padding: 20px 0; /* Padding around the social icons */
+}
+
+.social-icons a {
+  text-decoration: none; /* Removes underline from links */
+  color: #0073e6; /* Base color for the links */
+  font-weight: bold; /* Makes the text bold */
+  font-size: 18px; /* Increases the font size */
+  position: relative; /* For positioning pseudo-elements */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.social-icons a:hover {
+  color: #005bb5; /* Darker blue on hover */
+}
+
+.social-icons a::before {
+  content: ""; /* Empty content for the pseudo-element */
+  position: absolute; /* Position it absolutely */
+  width: 100%; /* Full width */
+  height: 2px; /* Line height */
+  background: #0073e6; /* Base color */
+  bottom: 0; /* Position at the bottom */
+  left: 0; /* Align to the left */
+  transform: scaleX(0); /* Start scaled down to 0 */
+  transition: transform 0.3s ease; /* Smooth scaling transition */
+}
+
+.social-icons a:hover::before {
+  transform: scaleX(1); /* Scale to full width on hover */
+}
+
+.footer-quick-links {
+  display: flex;
+  justify-content: center; /* Centers the buttons horizontally */
+  gap: 10px; /* Space between buttons */
+  padding: 10px 0; /* Padding around the buttons */
+}
+
+.back-to-top {
+  background-color: #0073e6; /* Button color */
+  color: white; /* Text color */
+  padding: 10px 20px; /* Padding */
+  border-radius: 5px; /* Rounded corners */
+  text-decoration: none; /* Remove underline */
+  display: none; /* Initially hidden */
+  transition: opacity 0.3s; /* Smooth transition for appearance */
+}
+.back-to-top.show {
+  display: block; /* Show the button when needed */
+  opacity: 1; /* Make it fully visible */
 }
 
 /* Media Query for Responsive Design */
@@ -79,7 +191,9 @@
     padding: 1rem; /* Less padding for smaller screens */
   }
 
-  .footer-left, .footer-center, .footer-right {
+  .footer-left,
+  .footer-center,
+  .footer-right {
     width: 100%; /* Full width for each section */
     margin-bottom: 1rem; /* Space between sections */
   }

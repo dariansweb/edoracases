@@ -12,6 +12,9 @@ import Disability from "../pages/Disability";
 import JuvenileJustice from "../pages/JuvenileJustice";
 import Medical from "../pages/Medical";
 import ProviderServices from "../pages/ProviderServices";
+import Privacy from "../pages/Privacy";
+import Terms from "../pages/Terms";
+  
 
 const AppRoutes = () => {
   return (
@@ -27,7 +30,8 @@ const AppRoutes = () => {
       <Route path="/juvenile-justice" element={<JuvenileJustice />} />
       <Route path="/medical" element={<Medical />} />
       <Route path="/provider-services" element={<ProviderServices />} />
-      
+      <Route path="/privacy" element={<Privacy />} />
+      <Route path="/terms" element={<Terms />} />      
       {/* Default route: redirects to Home or could be a 404 page */}
       <Route path="*" element={<Navigate to="/" />} />
       {/* If you want a 404 page instead of redirecting to Home, you could create a 404 component */}
