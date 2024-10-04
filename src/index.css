@@ -69,7 +69,9 @@ p {
   line-height: 1.8; /* Increased line height for enhanced spacing between lines */
   color: var(--theme1-dark); /* Keep dark gray for text color */
   margin-bottom: 1.5rem; /* Maintains good spacing between paragraphs */
-  text-align: justify; /* Uniform text distribution for a clean look */
+  margin-left: 0.8rem;
+  margin-right: 0;
+  text-align: left; /* Uniform text distribution for a clean look */
   max-width: 800px; /* Prevents overly long lines */
   padding: 1rem; /* More breathing room inside the paragraph */
   background-color: var(--theme3-light); /* Light background for contrast */
@@ -268,7 +270,6 @@ a.dark:active {
   border-bottom: 2px solid var(--theme1-dark);
 }
 
-
 @media (max-width: 480px) {
   #root {
     font-size: 14px; /* Optimize further for mobile */
@@ -278,40 +279,7 @@ a.dark:active {
     display: flex; /* Enable flexbox */
     flex-direction: column; /* Stack items vertically */
     align-items: center; /* Center items horizontally */
-    justify-content:flex-start; /* Center items vertically */
-    text-align: center; /* Center text within items */
-  }
-}
-
-@media (max-width: 600px) {
-  #root {
-    padding: 10px; /* Adjust padding for smaller devices */
-  }
-
-  body {
-    font-size: 14px; /* Decrease font size on smaller devices */
-    
-    display: flex; /* Enable flexbox for body */
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items horizontally */
-    justify-content: center; /* Center items vertically */
-    text-align: center; /* Center text within items */
-  }
-}
-
-/* Media query for larger screens */
-@media (min-width: 601px) {
-  #root {
-    padding: 20px; /* More padding for larger devices */
-  }
-
-  body {
-    font-size: 16px; /* Standard font size for larger devices */
-    
-    display: flex; /* Enable flexbox for body */
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items horizontally */
-    justify-content: center; /* Center items vertically */
+    justify-content: flex-start; /* Center items vertically */
     text-align: center; /* Center text within items */
   }
 }
@@ -319,7 +287,8 @@ a.dark:active {
 @media (max-width: 768px) {
   #root {
     font-size: 15px; /* Slightly smaller font for smaller screens */
-    padding: 0.4rem;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
 
     display: flex; /* Enable flexbox */
     flex-direction: column; /* Stack items vertically */
