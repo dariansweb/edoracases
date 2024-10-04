@@ -2,13 +2,11 @@
 import React from "react";
 import features from "../data/features";
 import { shuffleArray } from "../utils/shuffleArray";
-import ScrollToDiv from "../utils/ScrollToDiv";
 const shuffledFeatures = shuffleArray(features); // Shuffle features
 
 const Home = () => {
   return (
     <>
-      <ScrollToDiv targetDiv=".pages-container" />        
       <div className="pages-container">
         <h1 className="dark">Human and Health Services</h1>
 
