@@ -10,9 +10,9 @@ const Hero = () => {
           <h2 className="light">
             <span className="underline">E</span>vent-
             <span className="underline">D</span>riven{" "}
-            <span className="underline">O</span>perations{" "}
-            <span className="underline">R</span>ecords{" "}
-            <span className="underline">A</span>pplication.
+            <span className="underline">O</span>rientated{" "}
+            <span className="underline">R</span>esults{" "}
+            <span className="underline">A</span>ssessment.
           </h2>
         </div>
       </section>

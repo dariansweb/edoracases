@@ -40,63 +40,55 @@ const Home = () => {
           may include:
         </p>
         <p>
-          <ul>
-            <li>
-              <p>
-                <strong>Client Interactions:</strong> Instances where clients
-                seek assistance, such as applying for services, reporting
-                changes in circumstances, or requesting support for specific
-                health concerns.
-              </p>
-            </li>
-            <li>
-              <p>
-                <strong>Regulatory Updates:</strong> Changes in laws,
-                regulations, or policies that necessitate immediate operational
-                adjustments to remain compliant and effective in service
-                delivery.
-              </p>
-            </li>
-            <li>
-              <p>
-                <strong>Service Outcomes:</strong> Monitoring and evaluation
-                results that indicate a need for intervention, program
-                modifications, or enhancements in service offerings.
-              </p>
-            </li>
-          </ul>
+          <h2 className="dark">Client Interactions:</h2>
+          <p>
+            Instances where clients seek assistance, such as applying for
+            services, reporting changes in circumstances, or requesting support
+            for specific health concerns.
+          </p>
+
+          <h2 className="dark">Regulatory Updates:</h2>
+          <p>
+            Changes in laws, regulations, or policies that necessitate immediate
+            operational adjustments to remain compliant and effective in service
+            delivery.
+          </p>
+
+          <h2 className="dark">Service Outcomes:</h2>
+          <p>
+            Monitoring and evaluation results that indicate a need for
+            intervention, program modifications, or enhancements in service
+            offerings.
+          </p>
 
           <h2 className="dark">Key Features:</h2>
-          <ul>
-            <li>
-              <p>
-                <strong>Proactivity:</strong> Anticipating client needs and
-                regulatory requirements based on real-time data and event
-                tracking to initiate timely responses and support.
-              </p>
-            </li>
-            <li>
-              <p>
-                <strong>Data-Driven Decision Making:</strong> Utilizing data
-                analytics and event monitoring systems to gather insights that
-                inform operational strategies and service improvements.
-              </p>
-            </li>
-            <li>
-              <p>
-                <strong>Collaboration:</strong> Facilitating partnerships
-                between various departments and agencies to ensure a
-                comprehensive response to events that affect client well-being.
-              </p>
-            </li>
-            <li>
-              <p>
-                <strong>Accountability:</strong> Establishing clear protocols
-                and responsibilities for responding to events, enhancing
-                transparency and trust in government services.
-              </p>
-            </li>
-          </ul>
+
+          <h3 className="dark">Proactivity:</h3>
+          <p>
+            Anticipating client needs and regulatory requirements based on
+            real-time data and event tracking to initiate timely responses and
+            support.
+          </p>
+
+          <h3 className="dark">Data-Driven Decision Making:</h3>
+          <p>
+            Utilizing data analytics and event monitoring systems to gather
+            insights that inform operational strategies and service
+            improvements.
+          </p>
+
+          <h3 className="dark">Collaboration:</h3>
+          <p>
+            Facilitating partnerships between various departments and agencies
+            to ensure a comprehensive response to events that affect client
+            well-being.
+          </p>
+
+          <h3 className="dark">Accountability:</h3>
+          <p>
+            Establishing clear protocols and responsibilities for responding to
+            events, enhancing transparency and trust in government services.
+          </p>
         </p>
       </div>
     </>

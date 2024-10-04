@@ -87,7 +87,7 @@ const Header = () => {
 
       <div className="header-center">
         <h1 className="header-title">
-          <a href="/">
+          <a className="light" href="/">
         <span className="material-symbols-outlined hamburger-icon">home</span>
         </a>
         </h1>

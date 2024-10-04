@@ -54,14 +54,14 @@ body {
   padding: 0;
   min-width: 320px;
   min-height: 100vh;
-  background-color: var(--theme3-light);
+  background-color: var(--theme2-light);
   color: var(--theme1-dark);
 }
 
 .full-width-container {
   width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  margin-right: calc(-50vw + 50%);
+  /* margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%); */
 }
 p {
   font-size: 18px; /* Slightly larger font size for better readability */
@@ -256,7 +256,7 @@ a.light:visited {
 }
 
 a.dark:visited {
-  color: var(--theme3-dark);
+  color: var(--theme3-light);
 }
 
 /* Active state for when links are clicked */
@@ -273,7 +273,6 @@ a.dark:active {
 @media (max-width: 480px) {
   #root {
     font-size: 14px; /* Optimize further for mobile */
-    padding: 0.3rem;
     line-height: 1.5;
 
     display: flex; /* Enable flexbox */
