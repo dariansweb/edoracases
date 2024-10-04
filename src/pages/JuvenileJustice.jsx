@@ -1,10 +1,11 @@
 import React from "react";
-import ScrollToTop from "../utils/ScrollToTop";
+import ScrollToDiv from "../utils/ScrollToDiv";
 
 const JuvenileJustice = () => {
   return (
     <>
-      <ScrollToTop />
+      <ScrollToDiv targetDiv=".pages-container" />        
+
       <div className="pages-container">
         <h1 className="dark">The Division of Youth Services</h1>
         <h2 className="dark">Why EDORA?</h2>

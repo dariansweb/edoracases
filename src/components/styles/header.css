@@ -116,6 +116,8 @@
 .explode-effect {
   animation: explode 1s ease forwards; /* Animation name and duration */
 }
+
+
 /* Media query for smaller screens */
 @media (max-width: 768px) {
   .hamburger-menu {

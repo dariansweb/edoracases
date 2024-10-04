@@ -1,12 +1,12 @@
 import React from "react";
-import ScrollToTop from "../utils/ScrollToTop";
+import ScrollToDiv from "../utils/ScrollToDiv";
 
 const Services = () => {
   return (
     <>
-      <ScrollToTop />
+      <ScrollToDiv targetDiv=".pages-container" />        
 
-      <div>Built uniquely and specifically for your agency.</div>
+      <div className="pages.container">Built uniquely and specifically for your agency.</div>
     </>
   );
 };

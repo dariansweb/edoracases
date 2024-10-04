@@ -1,10 +1,10 @@
 import React from "react";
-import ScrollToTop from "../utils/ScrollToTop";
+import ScrollToDiv from "../utils/ScrollToDiv";
 
 const Medical = () => {
   return (
     <>
-      <ScrollToTop />
+      <ScrollToDiv targetDiv=".pages-container" />        
       <div className="pages-container">
         <h1 className="dark">Division of Medical Services</h1>
         <h2 className="dark">Why EDORA?</h2>

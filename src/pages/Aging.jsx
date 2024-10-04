@@ -1,10 +1,11 @@
 import React from "react";
-import ScrollToTop from "../utils/ScrollToTop";
+import ScrollToDiv from "../utils/ScrollToDiv";
 
 const Aging = () => {
   return (
     <>
-      <ScrollToTop />
+      <ScrollToDiv targetDiv=".pages-container" />    
+
       <div className="pages-container">
         <h1 className="dark">
           Division of Aging, Adult, and Behavioral Health Services

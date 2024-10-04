@@ -1,44 +1,45 @@
 import React from "react";
-import ScrollToTop from "../utils/ScrollToTop";
+import ScrollToDiv from "../utils/ScrollToDiv";
 
 const About = () => {
   return (
     <>
-      <ScrollToTop />
-        <h1 className="dark">About Us</h1>
-        <h2 className="dark"></h2>
-        <div className="pages-container">
-        <p>
-          We are a passionate team of software
-          engineers dedicated to transforming the landscape of governmental
-          human and health services. With a deep commitment to innovation and
-          integrity, we leverage our technical expertise to create solutions
-          that empower individuals and families in need.
-        </p>
-        <p>
-          Our mission is to bridge the gap between technology and human
-          services, ensuring that every dollar spent translates into meaningful
-          support for those who rely on these vital resources.
-        </p>
-        <p>
-          We believe that everyone deserves access to high-quality services that
-          address their unique challenges. By developing intuitive and efficient
-          software solutions, we aim to enhance the operational capacity of
-          agencies, allowing them to serve their clients more effectively and
-          compassionately.
-        </p>
-        <p>
-          Our vision is to create a future where technology and human services
-          work in harmony, driving positive change and accountability. Together,
-          we are committed to making a difference, ensuring that governmental
-          agencies can fulfill their mission of serving the community with
-          transparency and purpose.
-        </p>
-        <p>
-          Join us on this journey as we strive to bring the best we have to
-          offer, fostering a supportive environment for those who need it most.{" "}
-        </p>
+      <ScrollToDiv targetDiv=".pages-container" />    
+
+      <div className="pages-container">    
+      <h1 className="dark">About Us</h1>
         <section>
+          <p>
+            We are a passionate team of software engineers dedicated to
+            transforming the landscape of governmental human and health
+            services. With a deep commitment to innovation and integrity, we
+            leverage our technical expertise to create solutions that empower
+            individuals and families in need.
+          </p>
+          <p>
+            Our mission is to bridge the gap between technology and human
+            services, ensuring that every dollar spent translates into
+            meaningful support for those who rely on these vital resources.
+          </p>
+          <p>
+            We believe that everyone deserves access to high-quality services
+            that address their unique challenges. By developing intuitive and
+            efficient software solutions, we aim to enhance the operational
+            capacity of agencies, allowing them to serve their clients more
+            effectively and compassionately.
+          </p>
+          <p>
+            Our vision is to create a future where technology and human services
+            work in harmony, driving positive change and accountability.
+            Together, we are committed to making a difference, ensuring that
+            governmental agencies can fulfill their mission of serving the
+            community with transparency and purpose.
+          </p>
+          <p>
+            Join us on this journey as we strive to bring the best we have to
+            offer, fostering a supportive environment for those who need it
+            most.{" "}
+          </p>
           <h2 className="dark">Our Mission</h2>
           <p>
             At the heart of our mission is a profound commitment to empower

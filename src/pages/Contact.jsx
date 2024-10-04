@@ -1,9 +1,9 @@
 import React from "react";
-import ScrollToTop from "../utils/ScrollToTop";
+import ScrollToDiv from "../utils/ScrollToDiv";
 const Contact = () => {
   return (
     <>
-      <ScrollToTop />
+      <ScrollToDiv targetDiv=".pages-container" />    
 
       <div>@dariansweb</div>
     </>
