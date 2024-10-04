@@ -54,7 +54,7 @@
 
 body,
 html {
-  font-family:  "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
 
   margin: 0;
   padding: 0;
@@ -63,6 +63,34 @@ html {
   overflow-x: hidden; /* Prevent horizontal overflow */
   background-color: var(--theme2-light);
   color: var(--theme1-dark);
+}
+/* Styles for Section, Article, Aside, and other semantic containers */
+section,
+article,
+aside,
+nav,
+main {
+  font-size: 18px; /* Same font size as the paragraph for consistency */
+  font-weight: 500;
+  line-height: 1.8;
+  color: var(--theme1-dark); /* Ensure readable text color */
+  margin-bottom: 2rem; /* Increased margin for more breathing room between sections */
+  margin-left: 1rem;
+  margin-right: 0;
+  text-align: left;
+  max-width: 1000px; /* Wider sections to hold more content comfortably */
+  padding: 1.5rem; /* Extra padding to differentiate section containers */
+  background-color: var(
+    --theme3-light
+  ); /* Light background to maintain readability */
+  border-radius: 10px; /* Slightly larger border-radius for softer containers */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1); /* More pronounced shadow for a subtle pop */
+  transition: all 0.3s ease-in-out;
+
+  /* Additional styling to differentiate containers */
+  border-left: 8px solid var(--theme2-primary); /* Bolder left border for containers */
+  padding-left: 2rem; /* More padding for the section's internal content */
+  text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for depth */
 }
 .container {
   min-height: 100vh;
@@ -83,6 +111,38 @@ html {
   align-items: center; /* Center items horizontally */
   justify-content: center; /* Center items vertically */
   gap: 20px; /* Space between items */
+}
+/* Nav specific styles */
+nav {
+  background-color: var(--theme2-primary); /* Highlight navigation sections */
+  color: var(--theme3-light);
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Main section styling for a prominent effect */
+main {
+  background-color: var(
+    --theme3-light
+  ); /* Neutral background for main content */
+  padding: 2rem;
+  max-width: 1200px; /* Wider layout for main content */
+}
+
+/* Specific to articles for extra differentiation */
+article {
+  border-left: 10px solid var(--theme2-primary); /* Extra bold border for articles */
+  padding-left: 2.5rem; /* Spacious padding for content readability */
+}
+
+/* Aside, for smaller side content */
+aside {
+  background-color: var(--theme2-light); /* Light variant for aside */
+  border-left: 5px solid var(--theme2-dark); /* Slightly different accent border */
+  padding-left: 1.5rem;
+  max-width: 400px; /* More constrained width for side content */
 }
 
 p {
@@ -118,7 +178,6 @@ p:hover {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
 }
 div {
-
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
@@ -127,7 +186,8 @@ div {
   border-radius: 4px; /* Slightly increased rounding for a softer look */
 }
 /* Reset default styles for unordered and ordered lists */
-ul, ol {
+ul,
+ol {
   margin: 0;
   padding: 0;
 }
@@ -163,8 +223,10 @@ ol li::before {
   content: counter(list-counter) ". "; /* Add a period after the counter */
   position: absolute; /* Positioning the counter */
   left: -2rem; /* Positioning left to avoid overlap */
-  color: var(--theme2-primary); /* Give a distinctive color for ordered list numbers */
-} 
+  color: var(
+    --theme2-primary
+  ); /* Give a distinctive color for ordered list numbers */
+}
 .underline {
   text-decoration: underline;
   color: var(--theme3-contrast);
@@ -325,4 +387,22 @@ a.light:active {
 a.dark:active {
   color: var(--theme1-dark); /* Brief change during click */
   border-bottom: 2px solid var(--theme1-dark);
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  section,
+  article,
+  aside,
+  nav,
+  main {
+    padding: 1rem;
+    max-width: 100%; /* Allow full width on smaller screens */
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  aside {
+    max-width: 100%; /* Expand asides to full width on smaller screens */
+  }
 }

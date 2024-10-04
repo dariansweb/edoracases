@@ -128,12 +128,20 @@
     width: 25vh; /* Slide out to 50% of header width */
     left: 0; /* Keep it aligned to the right */
   }
+  /* Icon styles */
+  .star-menu-icon,
+  .hamburger-icon {
+    font-size: 1.2rem; /* Slightly larger for hamburger */
+    cursor: pointer; /* Change cursor on hover */
+    color: var(--theme5-contrast); /* Shared color for icons */
+  }
+
 }
 /* Ensure full-width menu in desktop mode */
 @media (min-width: 769px) {
   .hamburger-menu,
   .star-dropdown {
     display: block; /* Always show the menu in desktop mode */
-    width: 75vh; /* Full width for desktop */
+    width: 50vh; /* Full width for desktop */
   }
 }

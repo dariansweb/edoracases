@@ -4,7 +4,7 @@ import React, { useState } from "react";
 const Hero = () => {
   return (
     <>
-      <section className="hero-container full-width-container">
+      <div className="hero-container full-width-container">
         <div className="hero-content">
           <h1 className="light hero-title">EDORA</h1>
           <h2 className="light">Software</h2>
@@ -17,7 +17,7 @@ const Hero = () => {
             <span className="underline">A</span>nalytics.
           </p>
         </div>
-      </section>
+      </div>
     </>
   );
 };

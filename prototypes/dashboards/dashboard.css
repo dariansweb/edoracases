@@ -1,0 +1,110 @@
+#root {
+    box-shadow: 0;
+}
+/* Navbar styles */
+.dashboard-nav ul {
+  display: flex;
+  list-style-type: none;
+  background-color: var(--theme1-dark);
+  margin: 0;
+  padding: 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.dashboard-nav ul li a {
+  display: block;
+  color: var(--theme3-light);
+  padding: 1rem;
+  text-decoration: none;
+}
+
+.dashboard-nav ul li a:hover {
+  background-color: var(--theme2-light);
+  color: var(--theme2-dark);
+  border-radius: 15px;
+}
+
+/* Main section styles */
+/* .dashboard-main {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  margin: 0 auto;
+  background-color: var(--theme3-light);
+} */
+
+/* Overview card styles */
+.card {
+  background-color: var(--theme3-light);
+  padding: 1.5rem;
+  border-radius: 8px;
+  flex: 1;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.card h3 {
+  color: var(--theme2-primary);
+  margin-top: 0;
+}
+
+/* Tasks section */
+.tasks h2 {
+  color: var(--theme2-secondary);
+  margin-top: 0;
+}
+
+.tasks ul li {
+  background-color: var(--theme3-light);
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+/* Placements and Services sections */
+.placements h2,
+.services h2 {
+  color: var(--theme2-primary);
+}
+
+.placements ul li,
+.services ul li {
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+  border-radius: 8px;
+  color: var(--theme1-dark);
+}
+
+.placements a,
+.services a {
+  display: block;
+  text-align: center;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  color: var(--theme3-light);
+  background-color: var(--theme1-dark);
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.placements a:hover,
+.services a:hover {
+  background-color: var(--theme1-light);
+  color: var(--theme1-dark);
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+
+  .overview {
+    flex-direction: column;
+  }
+  .dashboard-nav ul {
+    display: none;
+  }    flex-direction: column;
+  list-style-type: none;
+  background-color: var(--theme1-dark);
+  overflow: hidden;
+
+}
