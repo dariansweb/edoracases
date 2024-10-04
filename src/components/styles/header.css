@@ -22,11 +22,8 @@
   font-size: 1.5rem; /* Adjust to your desired size */
   font-weight: bold;
   color: var(--theme5-light); /* Text color from your theme */
-  text-shadow: var(--text-shadow-light), var(--text-shadow-medium),
-    var(--text-shadow-dark);
   letter-spacing: 0.1rem;
   position: relative;
-  transition: text-shadow 0.3s ease-in-out; /* Transition for hover */
 }
 
 /* Hover effect for title */
@@ -58,10 +55,6 @@
   font-size: 2.2rem; /* Slightly larger for hamburger */
   cursor: pointer; /* Change cursor on hover */
   color: var(--theme5-contrast); /* Shared color for icons */
-  text-shadow: var(--text-shadow-light), var(--text-shadow-medium),
-    var(--text-shadow-dark); /* Apply shadow effect to icons */
-  transition: transform 0.3s ease,
-    /* Smooth transition for scaling */ text-shadow 0.3s ease; /* Smooth transition for shadow on hover */
 }
 /* Hover effect for icons */
 .star-icon:hover,
@@ -85,7 +78,7 @@
   animation: rotateBackgroundColors 3s linear infinite; /* Continuous color rotation */
   transform: translateY(-10px); /* Start slightly above */
   transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition for visibility */
-}
+} 
 .star-dropdown {
   z-index: 1000;
   left: 0;

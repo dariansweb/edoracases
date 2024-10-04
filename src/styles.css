@@ -1,7 +1,11 @@
+@import "./index.css";
+@import "./components/styles/themes.css";
+@import "./components/styles/button.css";
+
 @import "./components/styles/header.css";
 @import "./components/styles/hero.css";
 @import "./components/styles/App.css";
 @import "./components/styles/footer.css";
-@import "./components/styles/themes.css";
-@import "./components/styles/button.css";
-@import "./index.css";
+@import "./pages/styles/Home.css";
+@import "./pages/styles/Pages.css";
+

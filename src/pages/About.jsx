@@ -1,27 +1,24 @@
 import React from "react";
-import "./styles/Pages.css"; // Importing a separate CSS file for styling
 import ScrollToTop from "../utils/ScrollToTop";
 
 const About = () => {
   return (
     <>
       <ScrollToTop />
-      <div className="pages-container">
         <h1 className="dark">About Us</h1>
+        <h2 className="dark"></h2>
+        <div className="pages-container">
         <p>
-          Welcome to our application! We are a passionate team of software
+          We are a passionate team of software
           engineers dedicated to transforming the landscape of governmental
           human and health services. With a deep commitment to innovation and
           integrity, we leverage our technical expertise to create solutions
           that empower individuals and families in need.
         </p>
         <p>
-          Having witnessed firsthand the misuse of tax dollars and the
-          detrimental impact of contractors taking advantage of underfunded
-          agencies, we understand the urgency for change. Our mission is to
-          bridge the gap between technology and human services, ensuring that
-          every dollar spent translates into meaningful support for those who
-          rely on these vital resources.
+          Our mission is to bridge the gap between technology and human
+          services, ensuring that every dollar spent translates into meaningful
+          support for those who rely on these vital resources.
         </p>
         <p>
           We believe that everyone deserves access to high-quality services that

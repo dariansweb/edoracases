@@ -1,6 +1,5 @@
 import React from "react";
 import ScrollToTop from "../utils/ScrollToTop";
-import "./styles//Pages.css"; // Link to the specific CSS for this component
 
 const Medical = () => {
   return (
@@ -8,7 +7,7 @@ const Medical = () => {
       <ScrollToTop />
       <div className="pages-container">
         <h1 className="dark">Division of Medical Services</h1>
-        <h2 className="dark">Why Choose EDORA for the Division of Medical Services?</h2>
+        <h2 className="dark">Why EDORA?</h2>
         <p>
           The Division of Medical Services plays a pivotal role in ensuring that
           Arkansas Medicaid efficiently delivers essential health care services

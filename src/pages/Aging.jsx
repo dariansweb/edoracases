@@ -1,6 +1,5 @@
 import React from "react";
 import ScrollToTop from "../utils/ScrollToTop";
-import "./styles/Pages.css"; // Link to the specific CSS for this component
 
 const Aging = () => {
   return (

@@ -1,6 +1,5 @@
 import React from "react";
 import ScrollToTop from "../utils/ScrollToTop";
-import "./styles/Pages.css";
 
 const ChildAndFamily = () => {
   return (

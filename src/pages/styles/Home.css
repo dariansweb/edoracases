@@ -1,12 +1,3 @@
-.home-container {
-  color: var(--theme1-dark);
-  max-width: 1000px; /* This helps in centering */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto; /* Centers the container horizontally */
-}
 /* Container for the list */
 .features-list {
   margin-top: 2rem;

@@ -1,22 +1,4 @@
 /* styles/App.css */
-.container {
-  min-height: 100vh;
-  width: 800px; /* Maximum width of the container */
-  margin: 0 auto; /* Center the container */
-  padding: 1.2rem; /* Padding around the container */
-  line-height: 1.6;
-  padding: 1rem;  
-}
-
-/* styles/App.css */
-.flex-container {
-  display: flex;
-  flex-direction: row; /* Arrange items vertically */
-  align-items: center; /* Center items horizontally */
-  justify-content: center; /* Center items vertically */
-  gap: 20px; /* Space between items */
-}
-
 .align-center {
   display: flex; /* Establishes flex context */
   flex-direction: column; /* Stack children vertically *  /    

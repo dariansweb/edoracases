@@ -1,6 +1,5 @@
 import React from "react";
 import ScrollToTop from "../utils/ScrollToTop";
-import "./styles/Pages.css"; // Link to the specific CSS for this component
 
 const JuvenileJustice = () => {
   return (
@@ -8,7 +7,7 @@ const JuvenileJustice = () => {
       <ScrollToTop />
       <div className="pages-container">
         <h1 className="dark">The Division of Youth Services</h1>
-        <h2 className="dark">Why Choose EDORA for Juvenile Justice?</h2>
+        <h2 className="dark">Why EDORA?</h2>
         <p>
           In the ever-evolving landscape of juvenile justice, where the focus is
           on rehabilitation and support rather than punishment,{" "}

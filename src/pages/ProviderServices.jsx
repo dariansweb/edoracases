@@ -1,6 +1,5 @@
 import React from "react";
 import ScrollToTop from "../utils/ScrollToTop";
-import "./styles/Pages.css"; // Link to the specific CSS for this component
 
 const ProviderServices = () => {
   return (
@@ -9,7 +8,7 @@ const ProviderServices = () => {
       <div className="pages-container">
         <h1 className="dark">Division of Provider Services and Quality Assurance</h1>
         <h2 className="dark">
-          Why EDORA for the Division of Provider Services and Quality Assurance?
+          Why EDORA?
         </h2>
         <p>
           The Division of Provider Services and Quality Assurance (DPSQA) is at
