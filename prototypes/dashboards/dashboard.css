@@ -58,12 +58,14 @@
 .styled-list li {
   background-color: var(--theme6-light); /* Background from theme */
   color: var(--theme6-dark); /* Text color */
+  word-wrap: break-word; /* Ensure long words break on smaller screens */
+  overflow-wrap: break-word;  
   font-weight: 800;
   margin-bottom: 1rem;
   padding: 1.2rem;
   border-radius: 8px;
   display: block;
-  width: 100%;
+  max-width: 100%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s, box-shadow 0.2s; /* Smooth transition */
 }
@@ -76,7 +78,7 @@
 /* Responsive media query */
 @media (max-width: 768px) {
   .styled-list li {
-    padding: 1rem; /* Slightly smaller padding on mobile */
+    padding: 0.8rem; /* Slightly smaller padding on mobile */
   }
 }
 
