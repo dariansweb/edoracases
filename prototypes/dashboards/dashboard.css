@@ -41,6 +41,7 @@
 .tasks ul li {
   background-color: var(--theme5-light);
   color: var(--theme5-dark);
+  font-weight: 600;
   margin-bottom: 0.5rem;
   padding: 1rem;
   border-radius: 8px;
@@ -57,6 +58,7 @@
 .styled-list li {
   background-color: var(--theme6-light); /* Background from theme */
   color: var(--theme6-dark); /* Text color */
+  font-weight: 800;
   margin-bottom: 1rem;
   padding: 1.2rem;
   border-radius: 8px;
