@@ -2,10 +2,10 @@
 .dashboard-nav ul {
   display: flex;
   list-style-type: none;
-  background-color: var(--theme1-dark);
+  background-color: var(--theme5-dark);
   margin: 0;
   padding: 0;
-  border-radius: 10px;
+  border-radius: 5px;
   overflow: hidden;
 }
 
@@ -24,94 +24,60 @@
 .dashboard-nav ul li a:hover {
   background-color: var(--theme2-light);
   color: var(--theme2-dark);
-  border-radius: 15px;
+  border-radius: 50px;
 }
-
-/* Main section styles */
-/* .dashboard-main {
-  display: flex;
-  flex-direction: column;
-  padding: 2rem;
-  margin: 0 auto;
-  background-color: var(--theme3-light);
-} */
 
 /* Overview card styles */
 .card {
   background-color: var(--theme3-light);
   padding: 1.5rem;
-  margin:20px 20px 20px 0;
+  margin: 20px 20px 20px 0;
   border-radius: 8px;
   flex: 1;
   text-align: center;
   transition: all 0.3s ease-in-out;
 }
 
-.card h3 {
-  color: var(--theme2-primary);
-  margin-top: 0;
-}
-
-/* Tasks section */
-.tasks h2 {
-  color: var(--theme2-secondary);
-  margin-top: 0;
-}
-
 .tasks ul li {
-  background-color: var(--theme3-light);
+  background-color: var(--theme5-light);
+  color: var(--theme5-dark);
   margin-bottom: 0.5rem;
   padding: 1rem;
   border-radius: 8px;
 }
 
-/* Placements and Services sections */
-.placements h2,
-.services h2 {
-  color: var(--theme2-primary);
+/* General list styling */
+.styled-list {
+  list-style-type: none; /* Removes bullets */
+  padding: 0;
+  margin: 0;
+  width: 100%; /* Full width of container */
 }
 
-.placements ul li,
-.services ul li {
-  margin-bottom: 0.5rem;
-  padding: 1rem;
+.styled-list li {
+  background-color: var(--theme6-light); /* Background from theme */
+  color: var(--theme6-dark); /* Text color */
+  margin-bottom: 1rem;
+  padding: 1.2rem;
   border-radius: 8px;
-  color: var(--theme1-dark);
-}
-
-.placements a,
-.services a {
   display: block;
-  text-align: center;
-  margin-top: 1rem;
-  padding: 0.5rem;
-  color: var(--theme3-light);
-  background-color: var(--theme1-dark);
-  border-radius: 5px;
-  text-decoration: none;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s; /* Smooth transition */
 }
 
-.placements a:hover,
-.services a:hover {
-  background-color: var(--theme1-light);
-  color: var(--theme1-dark);
+.styled-list li:hover {
+  transform: translateY(-5px); /* Hover effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
 }
 
-/* Media query for smaller screens */
+/* Responsive media query */
 @media (max-width: 768px) {
-  .overview {
-    flex-direction: column;
+  .styled-list li {
+    padding: 1rem; /* Slightly smaller padding on mobile */
   }
+}
 
-  .dashboard-nav ul {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    background-color: var(--theme1-dark);
-    overflow: hidden;
-  }
-
-    }
 /* Floating action button (FAB) */
 .fab {
   z-index: 999;
@@ -137,7 +103,18 @@
 }
 
 /* Optional: If you want to only show the last 3 items instead */
+/* Media query for smaller screens */
 @media (max-width: 768px) {
+  .overview {
+    flex-direction: column;
+  }
+  .dashboard-nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    background-color: var(--theme1-dark);
+    overflow: hidden;
+  }
   .fab {
     display: flex; /* Show the FAB */
     z-index: 999;
@@ -150,7 +127,7 @@
     left: 0;
     width: 100%;
     background-color: var(--theme4-light);
-    color: var(--theme4-dark  );
+    color: var(--theme4-dark);
     transform: translateX(-100%);
     transition: transform 0.3s ease;
   }
@@ -161,5 +138,8 @@
   .dashboard-nav ul li {
     background-color: var(--theme5-dark);
     color: var(--theme5-light);
+  }
+  .styled-list li {
+    padding: 1rem; /* Slightly smaller padding on mobile */
   }
 }
