@@ -10,11 +10,10 @@ button {
   cursor: pointer;
 }
 .cta-button {
-  margin: 25px;
-  padding: 1rem 2rem;
+  margin: 25px 0 25px 0;
+  padding: 0.8rem 1.2rem;
   background-color: var(--theme3-dark);
   color: var(--theme6-light);
-  border: none;
   border-radius: 5px;
   font-size: 1.2rem;
   cursor: pointer;
@@ -24,4 +23,6 @@ button {
 .cta-button:hover {
   background-color: var(--theme6-light);
   color: var(--theme1-dark);
+  border: 3px solid var(--theme6-dark);
+
 }

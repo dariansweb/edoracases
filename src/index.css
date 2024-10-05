@@ -68,7 +68,6 @@ html {
 section,
 article,
 aside,
-nav,
 main {
   font-size: 18px; /* Same font size as the paragraph for consistency */
   font-weight: 500;
@@ -112,15 +111,6 @@ main {
   justify-content: center; /* Center items vertically */
   gap: 20px; /* Space between items */
 }
-/* Nav specific styles */
-nav {
-  background-color: var(--theme2-primary); /* Highlight navigation sections */
-  color: var(--theme3-light);
-  text-align: center;
-  padding: 1.5rem;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
 
 /* Main section styling for a prominent effect */
 main {
@@ -158,7 +148,6 @@ p {
   padding: 1rem; /* More breathing room inside the paragraph */
   background-color: var(--theme3-light); /* Light background for contrast */
   border-radius: 8px; /* Slightly increased rounding for a softer look */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Deeper shadow for a more pronounced effect */
   transition: all 0.3s ease-in-out; /* Smooth transitions for interaction */
 
   /* New styles for added vibrancy */
@@ -176,14 +165,6 @@ p:hover {
   ); /* Slightly darker background on hover */
   transform: translateY(-2px); /* Lift effect on hover */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
-}
-div {
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  margin: 0 auto; /* Centers the container horizontally */
-  padding: 0.8rem; /* More breathing room inside the paragraph */
-  border-radius: 4px; /* Slightly increased rounding for a softer look */
 }
 /* Reset default styles for unordered and ordered lists */
 ul,
@@ -394,7 +375,6 @@ a.dark:active {
   section,
   article,
   aside,
-  nav,
   main {
     padding: 1rem;
     max-width: 100%; /* Allow full width on smaller screens */
