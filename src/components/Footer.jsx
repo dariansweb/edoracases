@@ -5,8 +5,9 @@ const Footer = () => {
     <footer className="footer-bar">
       <div className="footer-left"></div>
       <nav className="footer-nav">
+      <hr /><hr />        
         <h3 className="light">Explore</h3>
-        <hr /><hr /><hr /><hr /><hr />
+        <hr /><hr />
         <ul className="footerListItems">
           <li className="footerListItems">
             <a href="/">Home</a>
@@ -23,9 +24,13 @@ const Footer = () => {
           <li>
             <a href="/prototypes">Prototypes</a>
           </li>
+          <li>
+            <a href="https://www.github.com/dariansweb/edoracases">Prototypes</a>
+          </li>          
         </ul>
+        <hr /><hr />
         <h3 className="light">Programs</h3>
-        <hr /><hr /><hr /><hr /><hr />          
+        <hr /><hr />          
         <ul>
           <li>
             <a href="/child-and-family">Child & Family</a>

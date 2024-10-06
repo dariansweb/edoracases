@@ -12,6 +12,7 @@ export const starMenuItems = [
   { id: 8, name: "About", link: "/about" },
   { id: 9, name: "Services", link: "/services" },  
   { id: 10, name: "Prototypes", link: "/prototypes" },
+  { id: 110, name: "GitHub", link: "https://www.github.com/dariansweb/edoracases" },  
 ];
 
 export const adminMenuItems = [
