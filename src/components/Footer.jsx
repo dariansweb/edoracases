@@ -25,7 +25,7 @@ const Footer = () => {
             <a href="/prototypes">Prototypes</a>
           </li>
           <li>
-            <a href="https://www.github.com/dariansweb/edoracases">Prototypes</a>
+            <a href="https://www.github.com/dariansweb/edoracases">GitHub</a>
           </li>          
         </ul>
         <hr /><hr />

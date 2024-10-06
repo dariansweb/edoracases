@@ -11,10 +11,7 @@ const ProviderServices = () => {
           Why EDORA?
         </h2>
         <p>
-          The Division of Provider Services and Quality Assurance (DPSQA) is at
-          the forefront of enhancing the quality of life for Arkansans through
-          meticulous provider engagement and oversight. With responsibilities
-          ranging from certification to workforce development, DPSQA requires a
+          The Division of Provider Services and Quality Assurance (DPSQA) requires a
           robust management solution that not only meets its current needs but
           also anticipates future challenges. Enter <strong>EDORA</strong>, the
           game-changing platform that revolutionizes how DPSQA operates and
