@@ -14,7 +14,6 @@ const Medical = () => {
       </div>
 
       <div className="pages-container">
-        <h1 className="dark"></h1>
         <h2 className="dark">Why EDORA?</h2>
         <p>
           Medical Services plays a pivotal role in ensuring that
