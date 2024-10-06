@@ -7,7 +7,7 @@ const Services = () => {
       <ScrollToDiv targetDiv=".hero-container" />
       <div className="hero-container full-width-container">
         <div className="hero-content">
-          <h1 className="light hero-title">Solutions</h1>
+          <h1 className="light hero-title">085D</h1>
           <h2 className="light">Our Service and Support</h2>
           <h3 className="light">Client Management Solutions</h3>
         </div>

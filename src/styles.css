@@ -5,7 +5,6 @@
 @import "./components/styles/header.css";
 @import "./components/styles/hero.css";
 @import "./components/styles/App.css";
-@import "./components/styles/footer.css";
 @import "./pages/styles/Home.css";
 @import "./pages/styles/Pages.css";
-
+@import "./components/styles/footer.css";

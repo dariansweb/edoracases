@@ -7,7 +7,7 @@ const About = () => {
       <ScrollToDiv targetDiv=".hero-container" />
       <div className="hero-container full-width-container">
         <div className="hero-content">
-          <h1 className="light hero-title">TEAMWORK</h1>
+          <h1 className="light hero-title">About</h1>
           <h2 className="light">It takes a team to fulfill a vision</h2>
           <h3 className="light">Join our team!</h3>
         </div>
