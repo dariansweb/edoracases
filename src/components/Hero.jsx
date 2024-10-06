@@ -7,8 +7,8 @@ const Hero = () => {
       <div className="hero-container full-width-container">
         <div className="hero-content">
           <h1 className="light hero-title">EDORA</h1>
-          <h2 className="light">Not another software company it is free and open source.</h2>
-          <h3 className="light">Client Management Solutions</h3>
+          <h2 className="light">Not just software, a system of events.</h2>
+          <h4 className="light">Open Source Technology</h4>
           <h4>
             <span className="underline">E</span>vent-
             <span className="underline">D</span>riven{" "}

@@ -9,8 +9,9 @@ const ProviderServices = () => {
         <div className="hero-content">
           <h1 className="light hero-title">PSQA</h1>
           <h2 className="light">Provider Services and Quality Assurance</h2>
-          <h2 className="light">Improving Quality of Life</h2>
           <h3 className="light">Client Management Solutions</h3>
+          <h4 className="light">Improving Quality of Life</h4>
+
         </div>
       </div>
       <div className="pages-container">

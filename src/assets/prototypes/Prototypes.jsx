@@ -10,8 +10,8 @@ const Prototypes = () => {
       <ScrollToDiv targetDiv=".hero-container" />
       <div className="hero-container full-width-container">
         <div className="hero-content">
-          <h1 className="light hero-title">UX UI Prototypes</h1>
-          <h3 className="light">Client Management Solutions</h3>
+          <h1 className="light hero-title">UX UI</h1>
+          <h3 className="light">Prototypes</h3>
         </div>
       </div>          
         <div className="pages-container">

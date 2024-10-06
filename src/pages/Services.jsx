@@ -9,7 +9,6 @@ const Services = () => {
         <div className="hero-content">
           <h1 className="light hero-title">085D</h1>
           <h2 className="light">Our Service and Support</h2>
-          <h3 className="light">Client Management Solutions</h3>
         </div>
       </div>
       <div className="pages-container">
