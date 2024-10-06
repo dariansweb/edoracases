@@ -14,7 +14,7 @@ const ChildAndFamily = () => {
       </div>
 
       <div className="pages-container">
-        <h4 className="dark">Why EDORA?</h4>
+        <h2 className="dark">Why EDORA?</h2>
 
         <p>
           In an ever-evolving landscape of child and family services, the
@@ -82,7 +82,7 @@ const ChildAndFamily = () => {
         </p>
 
         <p>
-          By integrating <strong>EDORA</strong>, the Division of Children and
+          By integrating <strong>EDORA</strong>, Children and
           Family Services is not merely enhancing our service delivery; we are
           revolutionizing how we approach our mission. Together, we can create a
           future where every child and family thrives, supported by the power of

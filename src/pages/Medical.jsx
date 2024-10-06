@@ -17,13 +17,13 @@ const Medical = () => {
         <h1 className="dark"></h1>
         <h2 className="dark">Why EDORA?</h2>
         <p>
-          The Division of Medical Services plays a pivotal role in ensuring that
+          Medical Services plays a pivotal role in ensuring that
           Arkansas Medicaid efficiently delivers essential health care services
           to eligible residents. In this context, <strong>EDORA</strong> stands
           out as a transformative management solution designed to enhance
           operations, improve beneficiary support, and facilitate seamless
           service delivery. Here are key reasons why EDORA is indispensable for
-          the Division of Medical Services:
+          the Medical Services:
         </p>
 
         <h3 className="dark">1. Streamlined Provider Enrollment and Management</h3>
@@ -60,7 +60,7 @@ const Medical = () => {
         <h3 className="dark">4. Data-Driven Insights for Program Improvement</h3>
         <p>
           EDORA provides robust analytics and reporting capabilities that enable
-          the Division of Medical Services to make data-driven decisions. By
+          the Medical Services to make data-driven decisions. By
           analyzing trends in provider performance, beneficiary utilization, and
           health outcomes, MS can identify areas for improvement and implement
           targeted strategies that enhance service delivery and program
@@ -69,7 +69,7 @@ const Medical = () => {
 
         <h3 className="dark">5. Seamless Coordination Across Units</h3>
         <p>
-          The Division of Medical Services is structured into various units,
+          The Medical Services is structured into various units,
           each with distinct responsibilities. EDORA facilitates seamless
           coordination and communication among these units—Plan Partnerships,
           Fee for Service, Administration & Operations, and Pharmacy. By
@@ -80,12 +80,12 @@ const Medical = () => {
 
         <h3 className="dark">6. Improved Policy Development and Compliance</h3>
         <p>
-          With EDORA’s comprehensive data management and reporting tools, the
-          Division can more effectively plan, develop, and implement policy
+          With EDORA’s comprehensive data management and reporting tools, Medical
+          Services can more effectively plan, develop, and implement policy
           changes within Medicaid. This capability ensures that MS remains
           compliant with federal and state regulations while continuously
-          adapting to the evolving healthcare landscape. EDORA empowers the
-          Division to respond proactively to changes, ensuring sustained program
+          adapting to the evolving healthcare landscape. EDORA empowers Medical Services
+           to respond proactively to changes, ensuring sustained program
           integrity and excellence.
         </p>
 
@@ -102,7 +102,7 @@ const Medical = () => {
 
         <h3 className="dark">8. Commitment to Quality Improvement</h3>
         <p>
-          EDORA aligns with the Division’s commitment to quality improvement
+          EDORA aligns with Medical Services commitment to quality improvement
           through its emphasis on data transparency and performance measurement.
           By facilitating ongoing monitoring and evaluation of health services,
           EDORA supports continuous quality improvement initiatives that enhance
@@ -115,7 +115,7 @@ const Medical = () => {
           medically necessary healthcare services to its beneficiaries. By
           enhancing administrative operations, streamlining service delivery,
           and promoting collaboration among stakeholders, EDORA empowers the
-          Division of Medical Services to fulfill its mission of ensuring that
+          Medical Services to fulfill its mission of ensuring that
           every Arkansan receives the care they need—from birth through
           end-of-life.
         </p>

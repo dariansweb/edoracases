@@ -20,7 +20,7 @@ const ProviderServices = () => {
           current needs but also anticipates future challenges. Enter{" "}
           <strong>EDORA</strong>, the game-changing platform that revolutionizes
           how PSQA operates and delivers value. Here’s why EDORA is the
-          ultimate choice for the Division of Provider Services and Quality
+          ultimate choice for the Provider Services and Quality
           Assurance:
         </p>
 
@@ -115,7 +115,7 @@ const ProviderServices = () => {
 
         <p>
           In conclusion, embracing <strong>EDORA</strong> means equipping the
-          Division of Provider Services and Quality Assurance with a powerful
+          Provider Services and Quality Assurance with a powerful
           toolset designed to enhance provider engagement, streamline quality
           assurance processes, and foster a culture of continuous improvement.
           With EDORA, DPSQA is not just keeping pace with the evolving
