@@ -1,6 +1,9 @@
-import React, { useState } from "react";
+// CASE MANAGEMENT DASHBOARD
 
-import "../../src/pages/styles/Pages.css";
+import React, { useState } from "react";
+import { DashboardMenusItems } from "../../../data/menuData"; // Import the array
+
+import "../../../pages/styles/Pages.css";
 import "./dashboard.css";
 
 const Dashboard1 = () => {
@@ -17,35 +20,25 @@ const Dashboard1 = () => {
           &#9776; {/* This is the hamburger icon */}
         </button>
 
+        {/* Adjusted styling for the nav */}
         <nav className={`dashboard-nav ${showMenu ? "show" : ""}`}>
-          <ul>
-            <li>
-              <a href="#">Cases</a>
-            </li>
-            <li>
-              <a href="#">Events</a>
-            </li>
-            <li>
-              <a href="#">Clients</a>
-            </li>            
-            <li>
-              <a href="#">Reports</a>
-            </li>
-            <li>
-              <a href="#">Billing</a>
-            </li>
-            <li>
-              <a href="#">Help</a>
-            </li>
-            <li>
-              <a href="#">Settings</a>
-            </li>
+          <ul className="menu-list">
+            {DashboardMenusItems.map((item) => (
+              <li key={item.id} className="menu-item">
+                <a href={item.link} className="menu-link">
+                  {item.name}
+                </a>
+              </li>
+            ))}
           </ul>
         </nav>
 
         <div className="overview">
-        <p>John Dowersay, how are you today?<br />
-          Do you need assistance?</p>
+          <p>
+            John Dowersay, how ar e you today?
+            <br />
+            Do you need assistance?
+          </p>
           <div className="tasks">
             <h2 className="dark">Your Tasks</h2>
             <ul className="styled-list">
@@ -92,25 +85,25 @@ const Dashboard1 = () => {
           </div>
           <div className="card">
             <h2 className="dark">Recent Placements</h2>
-              <ul className="styled-list">
-                <li>Client ABC placed at State Facility on 08/25/2024</li>
-                <li>Client DEF transitioned to Provider XYZ on 08/28/2024</li>
-                <li>Client GHI returned to aftercare with Provider LMN</li>
-              </ul>
-              <a href="#" className="cta-button">
-                View All
-              </a>
+            <ul className="styled-list">
+              <li>Client ABC placed at State Facility on 08/25/2024</li>
+              <li>Client DEF transitioned to Provider XYZ on 08/28/2024</li>
+              <li>Client GHI returned to aftercare with Provider LMN</li>
+            </ul>
+            <a href="#" className="cta-button">
+              View All
+            </a>
           </div>
           <div className="card  ">
             <h2 className="dark">Services Rendered</h2>
-              <ul className="styled-list">
-                <li>Therapy session completed for Client ABC on 09/01/2024</li>
-                <li>Group counseling provided by Provider XYZ on 09/02/2024</li>
-                <li>Aftercare planning initiated for Client DEF</li>
-              </ul>
-              <a href="#" className="cta-button">
-                View All
-              </a>
+            <ul className="styled-list">
+              <li>Therapy session completed for Client ABC on 09/01/2024</li>
+              <li>Group counseling provided by Provider XYZ on 09/02/2024</li>
+              <li>Aftercare planning initiated for Client DEF</li>
+            </ul>
+            <a href="#" className="cta-button">
+              View All
+            </a>
           </div>
         </div>
       </div>

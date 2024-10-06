@@ -2,11 +2,11 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around; /* Improved alignment */
   align-items: center;
   padding: 1.5rem 2rem; /* Slightly increased padding for a spacious feel */
-  background-color: var(--theme1-light); /* Lighter background for contrast */
-  color: var(--theme1-dark); /* Darker text for better readability */
+  background-color: var(--theme1-dark); /* Lighter background for contrast */
+  color: var(--theme1-light); /* Darker text for better readability */
   box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.15); /* Softer shadow */
 }
 
@@ -14,7 +14,13 @@
   display: flex;
   align-items: left; /* Align icon and brand text */
 }
-
+.footer-search {
+  display: flex; /* Flex for better alignment */
+  align-items: center; /* Center items vertically */
+}
+.footer-search input {
+  margin-right: 0.5rem; /* Space between input and button */
+}
 .footer-icon {
   font-size: 2rem; /* Icon size */
   margin-right: 0.5rem; /* Space between icon and brand name */
@@ -28,6 +34,7 @@
 .footer-center {
   text-align: center; /* Center-align the text and icons */
   flex: 2; /* Center section takes up more space */
+  margin: 1rem 0; /* Vertical spacing */
 }
 
 .footer-text {
@@ -35,12 +42,9 @@
   margin-bottom: 0.5rem; /* Space below description */
 }
 
-.social-icons {
+.social-icons a {
   display: flex; /* Flexbox for social icons */
   justify-content: center; /* Center the icons */
-}
-
-.social-icon {
   font-size: 1.5rem; /* Icon size */
   margin: 0 0.5rem; /* Space between icons */
   cursor: pointer; /* Pointer on hover */
@@ -53,6 +57,7 @@
 
 .footer-right {
   text-align: right; /* Align links to the right */
+  margin-top: auto; /* Pushes the footer-right to the bottom */
 }
 
 .footer-links {
@@ -68,7 +73,7 @@
 
 .footer-link:hover {
   background-color: var(--theme1-dark);
-  color: var(--theme6-light); /* Change color on hover */
+  color: var(--theme6-liight); /* Change color on hover */
 }
 
 /* Footer Styles */
@@ -76,11 +81,13 @@
   background-color: var(--theme1-dark);
   padding: 20px;
   color: var(--theme1-light);
+  padding: 20px; /* Padding for spacing */
+  margin: 0 10px; /* Added margin for spacing */  
 }
-
 .footer-nav h4 {
   color: var(--theme4-light);
   font-size: 16px;
+  margin-top: 1rem; /* Space above headings */
   margin-bottom: 10px;
 }
 
@@ -103,7 +110,9 @@
 }
 
 .footer-nav ul li a:hover {
-  color: var(--theme-alert1);
+  background-color: var(--theme1-dark);
+  color: var(--theme6-liight); /* Change color on hover */
+  text-decoration: underline; /* Adding underline on hover for visibility */
 }
 
 /* Custom bullets (example: stars) */
@@ -134,7 +143,7 @@
 
 .social-icons a {
   text-decoration: none; /* Removes underline from links */
-  color: #0073e6; /* Base color for the links */
+  color: var(--theme4-light); /* Base color for the links */
   font-weight: bold; /* Makes the text bold */
   font-size: 18px; /* Increases the font size */
   position: relative; /* For positioning pseudo-elements */
@@ -142,7 +151,7 @@
 }
 
 .social-icons a:hover {
-  color: #005bb5; /* Darker blue on hover */
+  color: var(--theme6-light); /* Darker blue on hover */
 }
 
 .social-icons a::before {
@@ -159,6 +168,7 @@
 
 .social-icons a:hover::before {
   transform: scaleX(1); /* Scale to full width on hover */
+
 }
 
 .footer-quick-links {
@@ -180,7 +190,9 @@
 .back-to-top.show {
   display: block; /* Show the button when needed */
   opacity: 1; /* Make it fully visible */
+  transition: opacity 0.3s; /* Smooth appearance */
 }
+
 
 /* Media Query for Responsive Design */
 @media (max-width: 768px) {
@@ -198,14 +210,10 @@
     margin-bottom: 1rem; /* Space between sections */
   }
 
-  .social-icons {
-    justify-content: center; /* Center social icons in column layout */
-  }
-
   .footer-links {
     display: flex; /* Use flexbox for the links */
-    justify-content: center; /* Center the links */
-    margin: 0; /* Reset margin for consistent spacing */
+    justify-content: left; /* Center the links */
+    margin-right: 0; /* Reset margin for consistent spacing */
   }
 
   .footer-link {

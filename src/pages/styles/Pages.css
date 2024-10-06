@@ -4,7 +4,7 @@
   align-items:center;
   justify-content:center;
   margin: 0 auto; /* Centers the container horizontally */
-  overflow: hidden    ;
+  overflow: hidden;
 }
 @media (max-width: 768px) {
   .pages-container {

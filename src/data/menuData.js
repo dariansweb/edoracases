@@ -10,8 +10,8 @@ export const mainMenuItems = [
 export const starMenuItems = [
   // { id: 7, name: "Home", link: "/" },
   { id: 8, name: "About", link: "/about" },
-  // { id: 9, name: "Services", link: "/services" },
-  // { id: 10, name: "Contact", link: "/contact" },
+  { id: 9, name: "Services", link: "/services" },  
+  { id: 10, name: "Prototypes", link: "/prototypes" },
 ];
 
 export const adminMenuItems = [
@@ -19,3 +19,83 @@ export const adminMenuItems = [
   { id: 12, name: "User Management", link: "#" },
   { id: 13, name: "Reports", link: "#" },
 ];
+
+export const DashboardMenusItems = [
+  { id: 14, name: "Cases", link: "/cases" },
+  { id: 15, name: "Events", link: "/events" },
+  { id: 16, name: "Client", link: "/client" },
+  { id: 17, name: "Treatment", link: "/treatment" },
+  { id: 18, name: "Placements", link: "/placement" },
+  { id: 19, name: "Billing", link: "/billing" },
+];
+
+// src/data/menuItems.js
+export const prototypes = {
+  Dashboards: {
+    id: 20,
+    items: [
+      { name: "Main Dashboard", link: "/dashboard1" },
+      { name: "Client Overview Dashboard", link: "/dashboard/client-overview" },
+      { name: "Case Management Dashboard", link: "/dashboard/case-management" },
+    ],
+  },
+  "Client Details": {
+    id: 21,
+    items: [
+      { name: "Client Profile", link: "/client/profile" },
+      { name: "Client History", link: "/client/history" },
+      { name: "Family Information", link: "/client/family-info" },
+    ],
+  },
+  Billing: {
+    id: 22,
+    items: [
+      { name: "Billing Summary", link: "/billing/summary" },
+      { name: "Invoice Generation", link: "/billing/invoice" },
+      { name: "Payment Records", link: "/billing/payments" },
+    ],
+  },
+  Forms: {
+    id: 23,
+    items: [
+      { name: "Intake Form", link: "/forms/intake" },
+      { name: "Progress Notes", link: "/forms/progress-notes" },
+      { name: "Service Plan", link: "/forms/service-plan" },
+    ],
+  },
+  Reports: {
+    id: 24,
+    items: [
+      { name: "Case Report", link: "/reports/case" },
+      { name: "Billing Report", link: "/reports/billing" },
+      {
+        name: "Service Utilization Report",
+        link: "/reports/service-utilization",
+      },
+    ],
+  },
+  Scheduling: {
+    id: 25,
+    items: [
+      { name: "Appointment Calendar", link: "/scheduling/calendar" },
+      { name: "Session Tracker", link: "/scheduling/session-tracker" },
+      { name: "Court Dates", link: "/scheduling/court-dates" },
+    ],
+  },
+  Notifications: {
+    id: 26,
+    items: [
+      { name: "Client Alerts", link: "/notifications/alerts" },
+      { name: "Case Updates", link: "/notifications/updates" },
+      { name: "System Notifications", link: "/notifications/system" },
+    ],
+  },
+  Settings: {
+    id: 27,
+    items: [
+      { name: "User Preferences", link: "/settings/preferences" },
+      { name: "System Configurations", link: "/settings/configurations" },
+      { name: "Data Import/Export", link: "/settings/data-import-export" },
+    ],
+  },
+};

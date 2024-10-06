@@ -17,7 +17,8 @@ import Privacy from "../pages/Privacy";
 import Terms from "../pages/Terms";
 
 // PROTOTYPES
-import Dashboard1 from "../../prototypes/dashboards/Dashboard1";
+import Prototypes from "../assets/prototypes/Prototypes";
+import Dashboard1 from "../assets/prototypes/dashboards/Dashboard1";
 
 const AppRoutes = () => {
   return (
@@ -36,6 +37,7 @@ const AppRoutes = () => {
       <Route path="/privacy" element={<Privacy />} />
       <Route path="/terms" element={<Terms />} />      
 
+      <Route path="/prototypes" element={<Prototypes />} />
       <Route path="/dashboard1" element={<Dashboard1 />} />
 
       {/* Default route: redirects to Home or could be a 404 page */}
