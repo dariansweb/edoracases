@@ -7,8 +7,13 @@ import ScrollToDiv from "../../utils/ScrollToDiv";
 const Prototypes = () => {
     return (
       <>
-      <ScrollToDiv targetDiv=".pages-container" />          
-        <h1 className="dark">EDORA Prototypes</h1>
+      <ScrollToDiv targetDiv=".hero-container" />
+      <div className="hero-container full-width-container">
+        <div className="hero-content">
+          <h1 className="light hero-title">UX UI Prototypes</h1>
+          <h3 className="light">Client Management Solutions</h3>
+        </div>
+      </div>          
         <div className="pages-container">
           {Object.entries(prototypes).map(([category, { id, items }]) => (
             <div key={id} className="prototype-section">

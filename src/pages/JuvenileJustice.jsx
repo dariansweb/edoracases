@@ -4,16 +4,23 @@ import ScrollToDiv from "../utils/ScrollToDiv";
 const JuvenileJustice = () => {
   return (
     <>
-      <ScrollToDiv targetDiv=".pages-container" />        
+      <ScrollToDiv targetDiv=".hero-container" />
+      <div className="hero-container full-width-container">
+        <div className="hero-content">
+          <h1 className="light hero-title">JS</h1>
+          <h2 className="light">Juvenile Services</h2>
+          <h2 className="light">Treatment !not Punishment</h2>
+          <h3 className="light">Client Management Solutions</h3>
+        </div>
+      </div>
 
       <div className="pages-container">
-        <h1 className="dark">The Division of Youth Services</h1>
         <h2 className="dark">Why EDORA?</h2>
         <p>
           In the ever-evolving landscape of juvenile justice, where the focus is
           on rehabilitation and support rather than punishment,{" "}
           <strong>EDORA</strong> emerges as an indispensable tool for the
-          Division of Youth Services (DYS). EDORA is not just a management
+          Juvenile Services. EDORA is not just a management
           application; it is a comprehensive system designed to empower youth,
           families, and service providers alike. Here are compelling reasons to
           choose EDORA as the cornerstone of your juvenile justice efforts:
@@ -35,7 +42,7 @@ const JuvenileJustice = () => {
         <p>
           Effective communication is paramount in the juvenile justice system.
           EDORA facilitates real-time communication between all stakeholders,
-          including DYS staff, treatment providers, educators, and families.
+          including JS staff, treatment providers, educators, and families.
           This transparency ensures that everyone involved is informed and
           engaged in the youth's progress, enabling timely adjustments to
           treatment plans and educational pathways. With EDORA, families can
@@ -43,12 +50,14 @@ const JuvenileJustice = () => {
           reinforcing the idea that they are crucial partners in the process.
         </p>
 
-        <h3 className="dark">3. Data-Driven Insights for Informed Decision-Making</h3>
+        <h3 className="dark">
+          3. Data-Driven Insights for Informed Decision-Making
+        </h3>
         <p>
           EDORA leverages advanced analytics and data-driven insights to monitor
           and evaluate the effectiveness of programs and interventions. By
           analyzing trends in youth behavior, treatment outcomes, and service
-          utilization, DYS can make informed decisions that enhance program
+          utilization, JS can make informed decisions that enhance program
           efficacy and resource allocation. This evidence-based approach ensures
           that the strategies employed are tailored to the unique challenges
           faced by Arkansas youth, ultimately leading to better outcomes.
@@ -69,7 +78,7 @@ const JuvenileJustice = () => {
         <p>
           Education is a critical component of rehabilitation and successful
           re-entry into society. EDORA bridges the gap between treatment and
-          education, allowing for seamless coordination between DYS and
+          education, allowing for seamless coordination between JS and
           educational institutions. This ensures that youth receive appropriate
           educational programming—whether earning a high school diploma, a GED,
           or vocational training—that aligns with their personal goals and
@@ -113,7 +122,7 @@ const JuvenileJustice = () => {
         <p>
           In conclusion, choosing <strong>EDORA</strong> is choosing a future
           where every youth in the juvenile justice system has the opportunity
-          to succeed. By equipping DYS with a comprehensive, user-friendly, and
+          to succeed. By equipping JS with a comprehensive, user-friendly, and
           data-driven management tool, EDORA not only enhances service delivery
           but also cultivates hope and empowerment among youth and families.
           Together, we can pave the way for a brighter future for Arkansas’s

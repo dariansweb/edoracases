@@ -4,20 +4,22 @@ import ScrollToDiv from "../utils/ScrollToDiv";
 const Disability = () => {
   return (
     <>
-      <ScrollToDiv targetDiv=".pages-container" />
-      <div className="pages-container">
-        <h1 className="dark">Disability Services Management Application</h1>
+      <ScrollToDiv targetDiv=".hero-container" />
+      <div className="hero-container full-width-container">
+        <div className="hero-content">
+          <h1 className="light hero-title">DD</h1>
+          <h2 className="light">Developmental Disabilities</h2>
+          <h3 className="light">Client Management Solutions</h3>
+        </div>
+      </div>
 
+      <div className="pages-container">
         <h2 className="dark">Why EDORA?</h2>
         <p>
           In a world where individuals with developmental disabilities and
-          delays deserve every opportunity to thrive, <strong>EDORA</strong>{" "}
-          emerges as a beacon of hope and empowerment. The name EDORA signifies
-          "Empowerment, Development, and Outreach for Residents with Abilities,"
-          and this innovative application is designed to transform how the
-          Division of Developmental Disabilities Services (DDS) interacts with
-          clients and families, ensuring that services are accessible, tailored,
-          and efficient.
+          delays deserve every opportunity to thrive, <strong>EDORA</strong> is
+            designed to transform how the DD interacts with clients and families, ensuring that
+          services are accessible, tailored, and efficient.
         </p>
 
         <p>
@@ -136,7 +138,7 @@ const Disability = () => {
           interface, EDORA empowers users to make informed choices and fosters a
           supportive community.
         </p>
-      </div>  
+      </div>
     </>
   );
 };

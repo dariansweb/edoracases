@@ -4,9 +4,15 @@ import ScrollToDiv from "../utils/ScrollToDiv";
 const Services = () => {
   return (
     <>
-      <ScrollToDiv targetDiv=".pages-container" />
+      <ScrollToDiv targetDiv=".hero-container" />
+      <div className="hero-container full-width-container">
+        <div className="hero-content">
+          <h1 className="light hero-title">Solutions</h1>
+          <h2 className="light">Our Service and Support</h2>
+          <h3 className="light">Client Management Solutions</h3>
+        </div>
+      </div>
       <div className="pages-container">
-        <h1 className="dark">Support and Services</h1>
         <p>
           At EDORA, we believe in empowering agencies with a robust,
           customizable, and open-source solution to their client case management

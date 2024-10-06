@@ -4,16 +4,21 @@ import ScrollToDiv from "../utils/ScrollToDiv";
 const Aging = () => {
   return (
     <>
-      <ScrollToDiv targetDiv=".pages-container" />    
+      <ScrollToDiv targetDiv=".hero-container" />
+      <div className="hero-container full-width-container">
+        <div className="hero-content">
+          <h1 className="light hero-title">AABHS</h1>
+          <h2 className="light">Aging and Adult Services</h2>
+          <h2 className="light">- Behavioral Services</h2>
+          <h3 className="light">Client Management Solutions</h3>
+        </div>
+      </div>  
 
       <div className="pages-container">
-        <h1 className="dark">
-          Division of Aging, Adult, and Behavioral Health Services
-        </h1>
         <h2 class="dark">Why EDORA?</h2>
         <p>
           EDORA is more than just a case management system; it is a
-          transformative tool that empowers DAABHS to fulfill its mission of
+          transformative tool that empowers AABHS to fulfill its mission of
           providing essential services with efficiency and effectiveness.
         </p>
         <h3 className="dark">Here is why EDORA is crucial for our operations:</h3>

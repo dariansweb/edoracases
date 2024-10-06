@@ -4,10 +4,17 @@ import ScrollToDiv from "../utils/ScrollToDiv";
 const ChildAndFamily = () => {
   return (
     <>
-      <ScrollToDiv targetDiv=".pages-container" />    
+      <ScrollToDiv targetDiv=".hero-container" />
+      <div className="hero-container full-width-container">
+        <div className="hero-content">
+          <h1 className="light hero-title">CFS</h1>
+          <h2 className="light">Children and Family Services</h2>
+          <h3 className="light">Client Management Solutions</h3>
+        </div>
+      </div>
+
       <div className="pages-container">
-        <h1 className="dark">Division of Children and Family Services</h1>
-        <h2 className="dark">Why EDORA?</h2>
+        <h4 className="dark">Why EDORA?</h4>
 
         <p>
           In an ever-evolving landscape of child and family services, the
@@ -66,7 +73,7 @@ const ChildAndFamily = () => {
 
         <h3 className="dark">6. A Commitment to Innovation</h3>
         <p>
-          At DCFS, we understand that the challenges facing children and
+          At CFS, we understand that the challenges facing children and
           families are complex and multifaceted. EDORA embodies our commitment
           to innovation, allowing us to adapt to changing needs and embrace new
           opportunities. By leveraging technology, we are not just keeping pace

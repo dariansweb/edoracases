@@ -4,9 +4,17 @@ import ScrollToDiv from "../utils/ScrollToDiv";
 const Medical = () => {
   return (
     <>
-      <ScrollToDiv targetDiv=".pages-container" />        
+      <ScrollToDiv targetDiv=".hero-container" />
+      <div className="hero-container full-width-container">
+        <div className="hero-content">
+          <h1 className="light hero-title">MS</h1>
+          <h2 className="light">Medical Services</h2>
+            <h3 className="light">Client Management Solutions</h3>
+        </div>
+      </div>
+
       <div className="pages-container">
-        <h1 className="dark">Division of Medical Services</h1>
+        <h1 className="dark"></h1>
         <h2 className="dark">Why EDORA?</h2>
         <p>
           The Division of Medical Services plays a pivotal role in ensuring that
@@ -54,7 +62,7 @@ const Medical = () => {
           EDORA provides robust analytics and reporting capabilities that enable
           the Division of Medical Services to make data-driven decisions. By
           analyzing trends in provider performance, beneficiary utilization, and
-          health outcomes, DMS can identify areas for improvement and implement
+          health outcomes, MS can identify areas for improvement and implement
           targeted strategies that enhance service delivery and program
           effectiveness.
         </p>
@@ -74,7 +82,7 @@ const Medical = () => {
         <p>
           With EDORA’s comprehensive data management and reporting tools, the
           Division can more effectively plan, develop, and implement policy
-          changes within Medicaid. This capability ensures that DMS remains
+          changes within Medicaid. This capability ensures that MS remains
           compliant with federal and state regulations while continuously
           adapting to the evolving healthcare landscape. EDORA empowers the
           Division to respond proactively to changes, ensuring sustained program

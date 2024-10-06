@@ -4,19 +4,24 @@ import ScrollToDiv from "../utils/ScrollToDiv";
 const ProviderServices = () => {
   return (
     <>
-      <ScrollToDiv targetDiv=".pages-container" />        
+      <ScrollToDiv targetDiv=".hero-container" />
+      <div className="hero-container full-width-container">
+        <div className="hero-content">
+          <h1 className="light hero-title">PSQA</h1>
+          <h2 className="light">Provider Services and Quality Assurance</h2>
+          <h2 className="light">Improving Quality of Life</h2>
+          <h3 className="light">Client Management Solutions</h3>
+        </div>
+      </div>
       <div className="pages-container">
-        <h1 className="dark">Division of Provider Services and Quality Assurance</h1>
-        <h2 className="dark">
-          Why EDORA?
-        </h2>
+        <h2 className="dark">Why EDORA?</h2>
         <p>
-          The Division of Provider Services and Quality Assurance (DPSQA) requires a
-          robust management solution that not only meets its current needs but
-          also anticipates future challenges. Enter <strong>EDORA</strong>, the
-          game-changing platform that revolutionizes how DPSQA operates and
-          delivers value. Here’s why EDORA is the ultimate choice for the
-          Division of Provider Services and Quality Assurance:
+          PSQA requires a robust management solution that not only meets its
+          current needs but also anticipates future challenges. Enter{" "}
+          <strong>EDORA</strong>, the game-changing platform that revolutionizes
+          how PSQA operates and delivers value. Here’s why EDORA is the
+          ultimate choice for the Division of Provider Services and Quality
+          Assurance:
         </p>
 
         <h3 className="dark">1. Transformative Provider Engagement</h3>
@@ -33,20 +38,22 @@ const ProviderServices = () => {
         <h3 className="dark">2. Comprehensive Quality Assurance Oversight</h3>
         <p>
           With EDORA, quality assurance is taken to the next level. The platform
-          equips DPSQA with powerful analytics and reporting tools that allow
+          equips PSQA with powerful analytics and reporting tools that allow
           for comprehensive oversight of outcomes and compliance across all
           provider services. By leveraging data-driven insights, EDORA enables
           proactive identification of potential issues, ensuring that the
           highest standards of care are upheld in every facility.
         </p>
 
-        <h3 className="dark">3. Streamlined Complaint Investigation and Resolution</h3>
+        <h3 className="dark">
+          3. Streamlined Complaint Investigation and Resolution
+        </h3>
         <p>
           EDORA simplifies the process of investigating complaints within
           long-term care facilities, ensuring that allegations of abuse,
           neglect, and exploitation are addressed swiftly and effectively. By
           providing a centralized platform for managing complaints and
-          facilitating investigations, EDORA empowers DPSQA to act decisively in
+          facilitating investigations, EDORA empowers PSQA to act decisively in
           safeguarding Arkansans' well-being.
         </p>
 
@@ -56,12 +63,14 @@ const ProviderServices = () => {
           long-term settings. EDORA supports this initiative by offering
           comprehensive training management and oversight for programs like the
           Certified Nurse Aid Training Program and the Certified Nursing Home
-          Administrator program. With EDORA, DPSQA can track training progress,
+          Administrator program. With EDORA, PSQA can track training progress,
           ensuring that staff are adequately prepared to meet the diverse needs
           of their clients.
         </p>
 
-        <h3 className="dark">5. Facilitated Options Counseling and Respite Services</h3>
+        <h3 className="dark">
+          5. Facilitated Options Counseling and Respite Services
+        </h3>
         <p>
           EDORA enhances service delivery by streamlining the options counseling
           process for nursing facility clients seeking to transition to less
@@ -73,19 +82,21 @@ const ProviderServices = () => {
           distributed and tracked.
         </p>
 
-        <h3 className="dark">6. Dynamic Regulation and Compliance Management</h3>
+        <h3 className="dark">
+          6. Dynamic Regulation and Compliance Management
+        </h3>
         <p>
           The regulatory landscape for long-term care facilities is complex and
-          ever-changing. EDORA ensures that DPSQA remains compliant with all
+          ever-changing. EDORA ensures that PSQA remains compliant with all
           licensing and certification requirements by providing up-to-date
           information and automated alerts regarding regulatory changes. This
-          feature enables DPSQA to proactively adapt to new standards, ensuring
+          feature enables PSQA to proactively adapt to new standards, ensuring
           continued excellence in provider oversight.
         </p>
 
         <h3 className="dark">7. Integrated Communication Across Units</h3>
         <p>
-          The DPSQA structure, which includes the Office of Long-term Care,
+          The PSQA structure, which includes the Office of Long-term Care,
           Community Services, and Performance & Engagement, benefits immensely
           from EDORA’s integrated communication capabilities. By fostering
           collaboration among these units, EDORA ensures that all aspects of
@@ -97,7 +108,7 @@ const ProviderServices = () => {
         <p>
           At its core, EDORA embodies a commitment to continuous improvement. By
           facilitating ongoing monitoring and evaluation of provider services,
-          EDORA supports DPSQA’s mission to not only meet but exceed the
+          EDORA supports PSQA’s mission to not only meet but exceed the
           expectations of Arkansans. This commitment to excellence translates
           into tangible improvements in care quality and client satisfaction.
         </p>
