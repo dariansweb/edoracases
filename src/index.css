@@ -341,10 +341,4 @@ a.dark:active {
   aside {
     max-width: 100%; /* Expand asides to full width on smaller screens */
   }
-  p {
-    max-width: 90vw; /* Adjust the max width to be closer to the edges */
-    padding: 0.8rem; /* Slightly reduce padding */
-    margin-left: 1rem;
-    margin-right: 1rem; /* Add right margin to balance things out */
-  }  
 }
