@@ -1,13 +1,29 @@
 .pages-container {
   display: flex;
   flex-direction: column;
-  align-items:center;
-  justify-content:center;
-  margin: 0 auto; /* Centers the container horizontally */
+  align-items: stretch; /* Allow child elements to stretch to full width */
+  justify-content: center;
+  margin: 0 auto;
   overflow: hidden;
 }
+
 @media (max-width: 768px) {
   .pages-container {
-    padding: 0.8rem; /* Less padding on smaller screens */
+    padding: 0.8rem;
+    align-items: stretch; /* Ensure full width on smaller screens */
   }
 }
+
+/* .pages-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+  /* margin: 0 auto; Centers the container horizontally */
+  /* overflow: hidden;
+} */
+/* @media (max-width: 768px) {
+  .pages-container { */
+    /* padding: 0.8rem; Less padding on smaller screens
+  }
+} */
