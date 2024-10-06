@@ -64,6 +64,24 @@
   bottom: 28%;
   right: 15%;
 }
+.rotating-features {
+  list-style: none; /* Remove default list styles */
+  padding: 0;
+  margin: 2rem 0; /* Adjust margin as needed */
+  font-size: 1.5rem; /* Adjust font size for features */
+  transition: opacity 0.5s ease-in-out; /* Smooth transition */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 @keyframes floating {
   0% {
@@ -114,6 +132,15 @@
 
   /* You can even hide the circles if necessary on very small screens */
   .circle {
-    display: none;
+    display: none;.rotating-features {
+      list-style: none; /* Remove default list styles */
+      padding: 0;
+      margin: 2rem 0; /* Adjust margin as needed */
+      font-size: 1.5rem; /* Adjust font size for features */
+      transition: opacity 0.5s ease-in-out; /* Smooth transition */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 }

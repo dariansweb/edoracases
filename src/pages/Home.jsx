@@ -9,20 +9,25 @@ const Home = () => {
     <>
       <div className="pages-container">
         <h1 className="dark">Human and Health Services</h1>
-
-        {/* <p>
-        <ul className="rotating-features">
-          {shuffledFeatures.map((feature, index) => (
-            <li key={index} className="feature-item">
-              {feature}
-            </li>
-          ))}
-        </ul>
-        </p> */}
-        <h2 className="dark">Client Case Management Solutions</h2>
-        <h3 className="dark">Objective:</h3>
-
         <p>
+        <blockquote>"Events direct outcomes, outcomes empower futures"</blockquote>
+
+          Our software is a lifeline, turning events into opportunities. We
+          empower clients to navigate challenges and reclaim their strength for
+          a brighter future.
+        </p>
+          <h2 className="dark">Client Case Management Solutions</h2>
+          <h3 className="dark">Objective:</h3>
+          {/* Our software isn't just a tool; it’s a lifeline for those navigating
+          the complexities of life. Every event sparks a chance for
+          transformation, turning obstacles into stepping stones. With a
+          profound commitment to our clients, we craft dynamic solutions that
+          truly listen and respond, helping individuals reclaim their power.
+          Together, we offer support and guidance, helping clients navigate
+          their journeys toward a hopeful and fulfilling future. Discover how
+          our approach can truly make a difference in your life, empowering you
+          to tackle the challenges ahead. */}
+          <p>
           The overarching goal of Event Driven Operations in Human and Health
           Services is to ensure that clients receive timely and appropriate
           assistance while maximizing the agency's resources and operational

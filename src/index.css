@@ -122,6 +122,35 @@ p:hover {
   transform: translateY(-2px); /* Lift effect on hover */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
 }
+blockquote {
+  margin: 1.5rem 0; /* Space around the blockquote */
+  padding: 1.5rem; /* Padding inside the blockquote */
+  border-left: 4px solid var(--theme6-light); /* Green left border for emphasis */
+  font-style: italic; /* Italic text for style */
+  font-size: 1.2em; /* Slightly larger text */
+  color: #333; /* Dark grey text color for readability */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  position: relative; /* For positioning the pseudo-element */
+  overflow: hidden; /* Ensures content stays within rounded corners */
+}
+
+/* Optional: Adding a pseudo-element for extra pizzazz */
+blockquote::before {
+  /* content: "“"; Opening quote */
+  font-size: 3em; /* Large size for the quote mark */
+  position: absolute; /* Positioning it absolutely */
+  left: 1rem; /* Space from the left */
+  top: -1rem; /* Position it above the blockquote */
+  opacity: 0.1; /* Slight transparency */
+}
+
+blockquote footer {
+  margin-top: 1rem; /* Space above the footer */
+  text-align: right; /* Align text to the right */
+  font-weight: bold; /* Bold for the author */
+}
+
 /* Reset default styles for unordered and ordered lists */
 ul,
 ol {
@@ -174,10 +203,15 @@ ol li::before {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow */
 }
 
+/* Common styles for all headers */
+h1, h2, h3, h4, h5, h6 {
+  text-align: center; /* Centered text for consistency */
+  margin: 1rem 0; /* Vertical spacing around headers */
+}
+
 /* Heading 1 */
 h1.dark,
 h1.light {
-  text-align: center;
   font-size: 2.5em; /* Slightly smaller for better harmony with paragraphs */
   line-height: 1.3; /* Space between lines of text */
   font-weight: 700; /* Strong font-weight for emphasis */
@@ -195,7 +229,6 @@ h1.light {
 /* Heading 2 */
 h2.dark,
 h2.light {
-  text-align: center;
   font-size: 2em; /* Smaller than h1, still bold */
   line-height: 1.4; /* Adjusted for readability */
 }
@@ -211,7 +244,6 @@ h2.light {
 /* Heading 3 */
 h3.dark,
 h3.light {
-  text-align: center;
   font-size: 1.75em; /* Stepping down size for h3 */
   line-height: 1.5;
 }
@@ -227,7 +259,6 @@ h3.light {
 /* Heading 4 */
 h4.dark,
 h4.light {
-  text-align: center;
   font-size: 1.5em; /* Smaller size for h4 */
   line-height: 1.5;
 }
@@ -243,7 +274,6 @@ h4.light {
 /* Heading 5 */
 h5.dark,
 h5.light {
-  text-align: center;
   font-size: 1.25em; /* Further reduction for h5 */
   line-height: 1.6;
 }
@@ -259,7 +289,6 @@ h5.light {
 /* Heading 6 */
 h6.dark,
 h6.light {
-  text-align: center;
   font-size: 1em; /* Smallest heading size */
   line-height: 1.6;
 }
