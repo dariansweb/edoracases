@@ -79,8 +79,9 @@ const Hero = () => {
           </li>
         </ul> 
         <hr />
-        <h4 className="light">🤘 Open Source Technology means free to use 🤘</h4>
-      </div>
+        <h4 class="light">EDORA is powered by Open Source Technology, making it free for everyone to use! 💛</h4>
+    
+        </div>
     </div>
   );
 };

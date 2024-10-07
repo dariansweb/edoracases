@@ -14,7 +14,7 @@ const Home = () => {
             <blockquote>
               <p>
                 In every event lies the seed of opportunity; EDORA nurtures
-                these seeds, transforming lives into brighter futures.{" "}
+                these seeds 🌱, transforming lives into brighter futures.☀️ {" "}
               </p>
               <footer>— EDORA</footer>
             </blockquote>
