@@ -15,6 +15,33 @@
   margin: 0 auto; 
   overflow: hidden;
 }
+/* use text-block with div instead of paragraph tags*/
+/* paragraph tags should only be used for formatting double spaces*/
+.text-block {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.8;
+  color: var(--theme1-dark);
+  margin-bottom: 1.5rem;
+  margin-left: 0.8rem;
+  margin-right: 0;
+  text-align: left;
+  max-width: 800px;
+  padding: 1rem;
+  background-color: var(--theme3-light);
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  border-left: 5px solid var(--theme3-dark);
+  padding-left: 1.5rem;
+  text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.1);
+}
+
+/* Optional hover effect for interactivity */
+.text-block:hover {
+  background-color: var(--theme5  -light);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
 
   @media (max-width: 768px) {
   .pages-container {

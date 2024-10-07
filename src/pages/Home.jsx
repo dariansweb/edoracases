@@ -8,85 +8,93 @@ const Home = () => {
   return (
     <>
       <div className="pages-container">
-        <h1 className="dark">Human and Health Services</h1>
-        <p>
-          <blockquote>
-            "Events direct outcomes, outcomes empower futures"
-          </blockquote>
-          Our software is a lifeline, turning events into opportunities. We
-          empower clients to navigate challenges and reclaim their strength for
-          a brighter future.
-        </p>
-        <h2 className="dark">Client Case Management Solutions</h2>
-        <h3 className="dark">Objective:</h3>
-        {/* Our software isn't just a tool; it’s a lifeline for those navigating
-          the complexities of life. Every event sparks a chance for
-          transformation, turning obstacles into stepping stones. With a
-          profound commitment to our clients, we craft dynamic solutions that
-          truly listen and respond, helping individuals reclaim their power.
-          Together, we offer support and guidance, helping clients navigate
-          their journeys toward a hopeful and fulfilling future. Discover how
-          our approach can truly make a difference in your life, empowering you
-          to tackle the challenges ahead. */}
-        <p>
-          The overarching goal of Event Driven Operations in Human and Health
-          Services is to ensure that clients receive timely and appropriate
-          assistance while maximizing the agency's resources and operational
-          capacity. By focusing on events that directly impact service delivery,
-          agencies can create a more responsive and adaptive framework that
-          enhances client outcomes and supports community health and well-being.
-        </p>
-        <p>
-          <h3 className="dark">Event Driven Operations</h3>
-          <h4 className="dark">Definition:</h4>
-          Event Driven Operations is a methodology employed by governmental
-          agencies to streamline the delivery of Human and Health Services by
-          responding proactively to identified events or triggers. These events
-          may include:
-        </p>
-        <p>
-          <h4 className="dark">Client Interactions:</h4>
-          Instances where clients seek assistance, such as applying for
-          services, reporting changes in circumstances, or requesting support
-          for specific health concerns.
-        </p>
-        <p>
-          <h4 className="dark">Regulatory Updates:</h4>
-          Changes in laws, regulations, or policies that necessitate immediate
-          operational adjustments to remain compliant and effective in service
-          delivery.
-        </p>
+        <section>
 
-        <p>
-          <h4 className="dark">Service Outcomes:</h4>
-          Monitoring and evaluation results that indicate a need for
-          intervention, program modifications, or enhancements in service
-          offerings.
-        </p>
-        <p>
-          <h3 className="dark">Key Features:</h3>
-          <h4 className="dark">Proactivity:</h4>
-          Anticipating client needs and regulatory requirements based on
-          real-time data and event tracking to initiate timely responses and
-          support.
-        </p>
-        <p>
-          <h4 className="dark">Data-Driven Decision Making:</h4>
-          Utilizing data analytics and event monitoring systems to gather
-          insights that inform operational strategies and service improvements.
-        </p>
-        <p>
-          <h4 className="dark">Collaboration:</h4>
-          Facilitating partnerships between various departments and agencies to
-          ensure a comprehensive response to events that affect client
-          well-being.
-        </p>
+                <h1 className="dark">Human and Health Services</h1>
+            <blockquote>
+              <p>
+                In every event lies the seed of opportunity; EDORA nurtures
+                these seeds, transforming lives into brighter futures.{" "}
+              </p>
+              <footer>— EDORA</footer>
+            </blockquote>
 
-        <p>
-          <h4 className="dark">Accountability:</h4>
-          Establishing clear protocols and responsibilities for responding to
-          events, enhancing transparency and trust in government services.
-        </p>
+          <h2 className="dark">Client Case Management Solutions</h2>
+          <h3 className="dark">Objective</h3>
+          <div className="text-block">
+            The overarching goal of Event Driven Operations in Human and Health
+            Services is to ensure that clients receive timely and appropriate
+            assistance while maximizing the agency's resources and operational
+            capacity. By focusing on events that directly impact service
+            delivery, agencies can create a more responsive and adaptive
+            framework that enhances client outcomes and supports community
+            health and well-being.
+          </div>
+
+          <h2 className="dark">Event Driven Operations</h2>
+          <h3 className="dark">Definition</h3>
+          <dl>
+            <dt>Event Driven Operations</dt>
+            <dd>
+              A <span className="underline">methodology</span> employed by
+              governmental agencies to streamline the delivery of Human and
+              Health Services by responding proactively to identified events or
+              triggers.
+            </dd>
+
+            <dt>Client Interactions</dt>
+            <dd>
+              Instances where clients seek assistance, such as applying for
+              services, reporting changes in circumstances, or requesting
+              support for specific health concerns.
+            </dd>
+
+            <dt>Regulatory Updates</dt>
+            <dd>
+              Changes in laws, regulations, or policies that necessitate
+              immediate operational adjustments to remain compliant and
+              effective in service delivery.
+            </dd>
+
+            <dt>Service Outcomes</dt>
+            <dd>
+              Monitoring and evaluation results that indicate a need for
+              intervention, program modifications, or enhancements in service
+              offerings.
+            </dd>
+          </dl>
+
+          <h2 className="dark">Key Features</h2>
+          <dl>
+            <dt>Proactivity</dt>
+            <dd>
+              Anticipating client needs and regulatory requirements based on
+              real-time data and event tracking to initiate timely responses and
+              support.
+            </dd>
+
+            <dt>Data-Driven Decision Making</dt>
+            <dd>
+              Utilizing data analytics and event monitoring systems to gather
+              insights that inform operational strategies and service
+              improvements.
+            </dd>
+
+            <dt>Collaboration</dt>
+            <dd>
+              Facilitating partnerships between various departments and agencies
+              to ensure a comprehensive response to events that affect client
+              well-being.
+            </dd>
+
+            <dt>Accountability</dt>
+            <dd>
+              Establishing clear protocols and responsibilities for responding
+              to events, enhancing transparency and trust in government
+              services.
+            </dd>
+          </dl>
+        </section>
       </div>
     </>
   );

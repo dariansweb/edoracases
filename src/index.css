@@ -91,58 +91,17 @@ aside {
   max-width: 400px; /* More constrained width for side content */
 }
 
-p {
-  font-size: 18px; /* Slightly larger font size for better readability */
-  font-weight: 500;
-  line-height: 1.8; /* Increased line height for enhanced spacing between lines */
-  color: var(--theme1-dark); /* Keep dark gray for text color */
-  margin-bottom: 1.5rem; /* Maintains good spacing between paragraphs */
-  margin-left: 0.8rem;
-  margin-right: 0;
-  text-align: left; /* Uniform text distribution for a clean look */
-  max-width: 800px; /* Prevents overly long lines */
-  padding: 1rem; /* More breathing room inside the paragraph */
-  background-color: var(--theme3-light); /* Light background for contrast */
-  border-radius: 8px; /* Slightly increased rounding for a softer look */
-  transition: all 0.3s ease-in-out; /* Smooth transitions for interaction */
-
-  /* New styles for added vibrancy */
-  border-left: 5px solid var(--theme2-primary); /* Colorful left border to create visual interest */
-  padding-left: 1.5rem; /* Extra padding on the left for the border */
-
-  /* Optional: subtle text shadow for added depth */
-  text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.1); /* Light shadow for a slight 3D effect */
-}
-
-/* Optional hover effect for interactivity */
-p:hover {
-  background-color: var(
-    --theme1-light-hover
-  ); /* Slightly darker background on hover */
-  transform: translateY(-2px); /* Lift effect on hover */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
-}
 blockquote {
   margin: 1.5rem 0; /* Space around the blockquote */
   padding: 1.5rem; /* Padding inside the blockquote */
   border-left: 4px solid var(--theme6-light); /* Green left border for emphasis */
   font-style: italic; /* Italic text for style */
   font-size: 1.2em; /* Slightly larger text */
-  color: #333; /* Dark grey text color for readability */
+  color: var(--theme1-dark);
   border-radius: 8px; /* Rounded corners */
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   position: relative; /* For positioning the pseudo-element */
   overflow: hidden; /* Ensures content stays within rounded corners */
-}
-
-/* Optional: Adding a pseudo-element for extra pizzazz */
-blockquote::before {
-  /* content: "“"; Opening quote */
-  font-size: 3em; /* Large size for the quote mark */
-  position: absolute; /* Positioning it absolutely */
-  left: 1rem; /* Space from the left */
-  top: -1rem; /* Position it above the blockquote */
-  opacity: 0.1; /* Slight transparency */
 }
 
 blockquote footer {
@@ -150,7 +109,76 @@ blockquote footer {
   text-align: right; /* Align text to the right */
   font-weight: bold; /* Bold for the author */
 }
+/* Definition List Styling */
+dl {
+  margin: 2rem 0;
+  padding: 1rem 1.5rem;
+  background-color: var(--theme3-light); /* Pale Mint */
+  border-left: 4px solid var(--theme3-dark); /* Seafoam left border */
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
 
+dt {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: var(--theme1-dark); /* Muted Forest */
+  margin-bottom: 0.5rem;
+  text-transform: uppercase; /* Modern touch */
+  letter-spacing: 1px;
+  position: relative;
+  padding-bottom: 0.25rem;
+  transition: color 0.3s ease-in-out; /* Subtle hover animation */
+}
+
+dt::before {
+  content: "• "; /* Bullet point before term */
+  color: var(--theme6-dark); /* Pistachio Peach */
+  font-size: 1.2em;
+  position: relative;
+  margin-right: 5px;
+  opacity: 0.8;
+}
+
+dt:hover {
+  color: var(--theme2-dark); /* Olive Green */
+}
+
+dd {
+  margin: 0;
+  padding: 0.5rem 0 1rem 1.2rem; /* Indented */
+  font-size: 1em;
+  line-height: 1.6;
+  color: var(--theme1-dark); /* Muted Forest */
+  border-bottom: 1px solid var(--theme5-light); /* Light Sand separator */
+  transition: background-color 0.3s ease-in-out;
+}
+
+dd:last-of-type {
+  border-bottom: none; /* Remove bottom border on the last item */
+}
+
+dd:hover {
+  background-color: var(--theme4-light); /* Pale Peach */
+  border-left: 3px solid var(--theme4-dark); /* Siege Green border on hover */
+}
+
+/* Optional: Animation for modern feel */
+dl {
+  animation: fadeInUp 0.5s ease both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+  
 /* Reset default styles for unordered and ordered lists */
 ul,
 ol {
@@ -204,7 +232,12 @@ ol li::before {
 }
 
 /* Common styles for all headers */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   text-align: center; /* Centered text for consistency */
   margin: 1rem 0; /* Vertical spacing around headers */
 }
