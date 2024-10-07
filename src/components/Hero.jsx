@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import features from "../data/features";
 import { shuffleArray } from "../utils/shuffleArray";
 
@@ -6,59 +6,41 @@ import { shuffleArray } from "../utils/shuffleArray";
 const shuffledFeatures = shuffleArray(features);
 
 const Hero = () => {
-  // `currentFeatureIndex` keeps track of which feature is being displayed
-  // `setCurrentFeatureIndex` is used to update this index
   const [currentFeatureIndex, setCurrentFeatureIndex] = useState(0);
-
-  // `maxWidth` holds the maximum width of the largest feature text
-  // `setMaxWidth` updates the max width
-  const [maxWidth, setMaxWidth] = useState(0);
+  const [maxFeatureLength, setMaxFeatureLength] = useState(0);
+  const rotatingContainerRef = useRef(null); // Reference to the rotating container
 
   // useEffect for rotating the features
   useEffect(() => {
-    // Create an interval that updates `currentFeatureIndex` every 3 seconds (3000 ms)
     const interval = setInterval(() => {
       setCurrentFeatureIndex((prevIndex) =>
-        // If we've reached the last feature, go back to the first one (index 0)
-        // Otherwise, increment to the next feature
         prevIndex === shuffledFeatures.length - 1 ? 0 : prevIndex + 1
       );
-    }, 3000); // Interval set for 3 seconds (3000 ms)
+    }, 3000);
 
-    // Cleanup function to clear the interval when the component is unmounted
     return () => clearInterval(interval);
-  }, []); // Empty array as a dependency means this effect runs once after the component mounts
-  // useEffect for calculating the maximum width of all the feature items
+  }, []);
+
+  // Calculate the length of the longest feature
   useEffect(() => {
-    let maxElementWidth = 0; // Variable to store the maximum width
+    let maxLength = 0;
 
-    // Loop through each feature to measure its width
+    // Loop through each feature and find the longest one based on character length
     shuffledFeatures.forEach((feature) => {
-      // Create a temporary div element to measure the width of the feature's text
-      const tempDiv = document.createElement("div");
-
-      // Style the temp div so it doesn't affect the layout or take up space
-      tempDiv.style.position = "absolute"; // Position it absolutely so it won't affect the flow of the document
-      tempDiv.style.visibility = "hidden"; // Make it invisible
-      tempDiv.style.whiteSpace = "nowrap"; // Ensure that the text doesn't wrap to the next line
-
-      // Set the text of the temp div to the current feature text
-      tempDiv.innerText = feature;
-
-      // Add the temp div to the DOM (document body) to measure its width
-      document.body.appendChild(tempDiv);
-
-      // Compare the width of the current feature's text with `maxElementWidth`
-      // and store the maximum width found so far
-      maxElementWidth = Math.max(maxElementWidth, tempDiv.offsetWidth);
-
-      // Remove the temp div from the DOM after measuring
-      document.body.removeChild(tempDiv);
+      maxLength = Math.max(maxLength, feature.length);
     });
 
-    // Update the `maxWidth` state with the largest width found
-    setMaxWidth(maxElementWidth);
-  }, [shuffledFeatures]); // Dependency array: this effect runs whenever `shuffledFeatures` changes
+    // Update the maxFeatureLength state with the length of the longest feature
+    setMaxFeatureLength(maxLength);
+  }, []);
+
+  // Set the width of the rotating features container based on the longest feature
+  useEffect(() => {
+    if (rotatingContainerRef.current) {
+      // Set the width of the container based on the longest feature's character length
+      rotatingContainerRef.current.style.width = `${maxFeatureLength}ch`;
+    }
+  }, [maxFeatureLength]);
 
   return (
     <div className="hero-container full-width-container">
@@ -72,13 +54,18 @@ const Hero = () => {
           <span className="underline">A</span>nalytics
         </h4>
 
-        <ul className="rotating-features">
-          <li key={currentFeatureIndex} className="feature-item">
+        {/* Rotating features list */}
+        <ul
+          className="rotating-features"
+          aria-live="polite"
+          ref={rotatingContainerRef} // Attach the ref to the container
+        >
+          <li className="feature-item">
             {shuffledFeatures[currentFeatureIndex]}
           </li>
         </ul>
         <hr />
-        <h4 class="light">
+        <h4 className="light">
           EDORA is powered by Open Source Technology, making it free for
           everyone to use! 💛
         </h4>
