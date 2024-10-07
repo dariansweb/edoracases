@@ -73,15 +73,16 @@ const Hero = () => {
         </h4>
 
         <ul className="rotating-features">
-
           <li key={currentFeatureIndex} className="feature-item">
             {shuffledFeatures[currentFeatureIndex]}
           </li>
-        </ul> 
+        </ul>
         <hr />
-        <h4 class="light">EDORA is powered by Open Source Technology, making it free for everyone to use! 💛</h4>
-    
-        </div>
+        <h4 class="light">
+          EDORA is powered by Open Source Technology, making it free for
+          everyone to use! 💛
+        </h4>
+      </div>
     </div>
   );
 };

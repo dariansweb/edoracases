@@ -9,7 +9,7 @@
     align-items: center;
     padding: 1rem;
     text-align: center;
-    
+        
     color: var(--theme3-light);
     padding: 1rem 0; /* Adjust padding to just top and bottom */    
 
@@ -117,7 +117,7 @@
     .hero-title {
       font-size: 5rem; /* Larger text on big screens */
     }
-        
+
     .rotating-features {
       max-width: 50vw; /* Limit width on very large screens */
     }
