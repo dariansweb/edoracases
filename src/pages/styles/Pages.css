@@ -37,13 +37,13 @@
 }
 
 /* Adding a bit of pizzazz to the first letter */
-.text-block::first-letter {
+/* .text-block::first-letter {
   font-size: 2.5rem; 
-  font-weight: 700; 
-  color: var(--theme1-dark); /* You can change this to add a different color */
-  margin-right: 0.1rem;
-  float: left; /* Makes the first letter pop out from the paragraph */
-}
+  font-weight: 700;  */
+  /* color: var(--theme1-dark); You can change this to add a different color */
+  /* margin-right: 0.1rem; */
+  /* float: left; /* Makes the first letter pop out from the paragraph */
+/* } */ */
 
 /* Adding a custom visual indent with flair */
 .text-block::before {
