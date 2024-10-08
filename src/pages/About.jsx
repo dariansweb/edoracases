@@ -29,9 +29,12 @@ const About = () => {
               world, we’re crafting solutions that are not only transparent and
               adaptable but also reflect the rich diversity of our community.
             </p>
-            So, if you’re ready to jump into the mix and add your flavor, come
-            on in! This is where your passion and creativity can drive real
-            change, and together, we can create something truly extraordinary.I
+            <p>
+              {" "}
+              So, if you’re ready to jump into the mix and add your flavor, come
+              on in! This is where your passion and creativity can drive real
+              change, and together, we can create something truly extraordinary.
+            </p>
           </div>
           <h2 className="dark">Our Vision</h2>
           <div className="text-block">
@@ -46,10 +49,12 @@ const About = () => {
               efficient software solutions, we aim to enhance the operational
               capacity of agencies, allowing them to serve their clients more
               effectively and compassionately.
-            </p>{" "}
-            Join us on this journey as we strive to bring the best we have to
-            offer, fostering a supportive environment for those who need it
-            most.
+            </p>
+            <p>
+              Join us on this journey as we strive to bring the best we have to
+              offer, fostering a supportive environment for those who need it
+              most.
+            </p>
           </div>
           <h2 className="dark">Our Mission</h2>
           <div className="text-block">
@@ -67,12 +72,14 @@ const About = () => {
               advocate for those we serve, ensuring that their voices are heard
               and their needs are met.
             </p>
-            In our pursuit of excellence, we leverage Event Driven Operations to
-            focus on the critical events and triggers that impact service
-            delivery. This proactive approach enables us to respond swiftly to
-            the evolving needs of our clients, maximizing our agency's resources
-            and operational capacity to create a more responsive and adaptive
-            framework.
+            <p>
+              In our pursuit of excellence, we leverage Event Driven Operations
+              to focus on the critical events and triggers that impact service
+              delivery. This proactive approach enables us to respond swiftly to
+              the evolving needs of our clients, maximizing our agency's
+              resources and operational capacity to create a more responsive and
+              adaptive framework.
+            </p>
             <p>
               We are dedicated to making a lasting positive impact, enhancing
               client outcomes, and supporting the overall health and well-being
@@ -80,9 +87,11 @@ const About = () => {
               network of support that uplifts those who are hurting, helping
               them navigate their journeys toward healing and empowerment.
             </p>
-            Join us in our mission to transform lives through service, advocacy,
-            and collaboration, ensuring that everyone in our community has the
-            opportunity to thrive and live with dignity.
+            <p>
+              Join us in our mission to transform lives through service,
+              advocacy, and collaboration, ensuring that everyone in our
+              community has the opportunity to thrive and live with dignity.
+            </p>
           </div>
         </section>
       </div>

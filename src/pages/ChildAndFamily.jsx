@@ -17,9 +17,17 @@ const ChildAndFamily = () => {
           <h2 className="dark">Why EDORA?</h2>
           <div className="text-block">
             In an ever-evolving landscape of child and family services, the
-            integration of <strong>EDORA</strong> into our operations stands as
-            a beacon of hope and efficiency. Here’s why EDORA is not just a
-            choice but a vital partner in our mission:
+            integration of EDORA into our operations stands as a beacon of hope,
+            innovation, and efficiency. EDORA empowers us to break down
+            barriers, streamline processes, and provide better outcomes for the
+            families we serve.{" "}
+            <p>
+              {" "}
+              Here’s why EDORA is not just a choice but a vital partner in our
+              mission: fostering brighter futures, supporting stronger
+              communities, and driving meaningful change that will impact
+              generations to come.
+            </p>
           </div>
           <h3 className="dark">Data-Driven Decision Making</h3>
           <div className="text-block">
@@ -61,9 +69,19 @@ const ChildAndFamily = () => {
           <div className="text-block">
             Ultimately, EDORA is about improving the well-being of children and
             families. By providing our staff with the tools and information they
-            need, we can create a more responsive and supportive environment.
-            This leads to better outcomes in safety, stability, and permanency
-            for the children in our care.
+            need—such as real-time data analytics, streamlined case management,
+            and comprehensive reporting capabilities—we can create a more
+            responsive and supportive environment. These innovative tools
+            enhance collaboration among team members, enabling them to share
+            insights and best practices seamlessly. This leads to better
+            outcomes in safety, stability, and permanency for the children in
+            our care.{" "}
+            <p>
+              {" "}
+              With EDORA, we can ensure that every child receives the tailored
+              support they deserve, ultimately transforming lives and fostering
+              resilience within families.
+            </p>
           </div>
           <h3 className="dark">A Commitment to Innovation</h3>
           <div className="text-block">

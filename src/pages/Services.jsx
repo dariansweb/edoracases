@@ -21,7 +21,6 @@ const Services = () => {
           engineers will work alongside you to ensure the solution is built
           specifically for your unique needs.
           <p>
-            {" "}
             At EDORA, we believe in empowering agencies with a robust,
             customizable, and open-source solution to their client case
             management needs. Our team is dedicated to providing the expertise

@@ -61,8 +61,8 @@ const JuvenileJustice = () => {
             tailored to the unique challenges faced by Arkansas youth,
             ultimately leading to better outcomes.
           </div>
+          <h3 className="dark">Customizable Treatment Plans</h3>
           <div className="text-block">
-            <h3 className="dark">Customizable Treatment Plans</h3>
             Each youth presents a unique set of circumstances and needs. EDORA
             allows for the development of individualized treatment plans that
             cater to the specific requirements of each youth. By incorporating
