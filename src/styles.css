@@ -8,3 +8,34 @@
 @import "./pages/styles/Home.css";
 @import "./pages/styles/Pages.css";
 @import "./components/styles/footer.css";
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/Montserrat-Regular.ttf') format('truetype');
+    font-weight: 400; /* Regular */
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/Montserrat-Bold.ttf') format('truetype');
+    font-weight: 700; /* Bold */
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/Montserrat-Italic.ttf') format('truetype');
+    font-style: italic;
+    font-weight: 400; /* Regular Italic */
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/Montserrat-BoldItalic.ttf') format('truetype');
+    font-style: italic;
+    font-weight: 700; /* Bold Italic */
+    font-display: swap;
+}
+
+/* Add more font-face declarations as needed for other styles/weights */

@@ -8,7 +8,7 @@
   background-color: var(--theme1-dark); /* Use your desired background color */
 
   position: sticky;
-  z-index: 100;
+  z-index: 1000;
 
   display: flex;
   flex-direction: row;
@@ -52,7 +52,7 @@
 /* Icon styles */
 .star-menu-icon,
 .hamburger-icon {
-  font-size: 2.2rem; /* Slightly larger for hamburger */
+  font-size: 1.8rem; /* Slightly larger for hamburger */
   cursor: pointer; /* Change cursor on hover */
   color: var(--theme5-contrast); /* Shared color for icons */
 }

@@ -58,7 +58,7 @@ const Header = () => {
           <span className="material-symbols-outlined star-menu-icon">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              height="30px"
+              height="2.2rem"
               viewBox="0 -960 960 960"
               width="30px"
               fill="#e8eaed"

@@ -11,6 +11,7 @@
 body,
 html {
   font-family: "Montserrat", sans-serif;
+  font-size: 100%; /* Or try using rem units for consistency */
 
   margin: 0;
   padding: 0;
@@ -19,6 +20,12 @@ html {
   overflow-x: hidden; /* Prevent horizontal overflow */
   background-color: var(--theme2-light);
   color: var(--theme1-dark);
+}
+body {
+  -webkit-font-smoothing: antialiased; /* Chrome, Safari */
+  -moz-osx-font-smoothing: grayscale; /* Firefox */  
+  text-rendering: optimizeLegibility;
+  font-smoothing: antialiased;
 }
 /* Styles for Section, Article, Aside, and other semantic containers */
 section,
@@ -178,7 +185,7 @@ dl {
     transform: translateY(0);
   }
 }
-  
+
 /* Reset default styles for unordered and ordered lists */
 ul,
 ol {
