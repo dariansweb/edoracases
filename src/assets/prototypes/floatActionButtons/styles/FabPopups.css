@@ -117,20 +117,18 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.2); /* Transparent frosted glass */
   z-index: 9999;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   transition: transform 0.4s ease-in-out;
-  backdrop-filter: blur(8px);
-  background-color: var(--theme6-dark);
+  background-color: var(--theme2-light);
 }
 .fancy-popup-header {
   background-color: var(--theme1-dark);
   padding: 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   color: var(--theme1-dark-contrast);
 }
@@ -156,7 +154,6 @@
   cursor: pointer;
   border-radius: 5px;
   transition: background-color 0.3s ease;
-  float: right;
 }
 .fancy-primary-action:hover {
   background-color: var(--theme2-dark); /* Slight change on hover */
@@ -181,6 +178,7 @@
   border: none;
   font-size: 16px;
   cursor: pointer;
+  margin-left: auto;
 }
 /* -------- ----------------*/
 /* FABPopupMiddle.jsx .profile-*/
