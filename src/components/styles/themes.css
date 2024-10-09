@@ -2,6 +2,9 @@
   /* Primary */
   --theme3-dark: rgb(60, 179, 113); /* Seafoam */
   --theme3-light: rgb(241, 250, 245); /* Pale Mint */
+  --theme3-dark-contrast:rgb(245, 245, 245);
+  --theme3-light-contrast: rgb(33, 33, 33); 
+  --theme3-gradient: linear-gradient(135deg, var(--theme6-light), var(--theme1-light));
 
   --theme1-dark: rgb(74, 112, 108); /* Muted Forest */
   --theme1-light: rgb(245, 245, 220); /* Light Sand */
@@ -18,9 +21,9 @@
   --theme6-dark: rgb(147, 197, 114); /* Pistachio Peach */
   --theme6-light: rgb(255, 245, 225); /* Pale Peach */
 
-  --theme1-alert1: rgb(218, 165, 32);
-  --theme1-alert2: rgb(255, 127, 80);
-  --theme1-alert3: rgb(125, 20, 160);
+  --theme-alert1: rgb(218, 165, 32);
+  --theme-alert2: rgb(255, 127, 80);
+  --theme-alert3: rgb(101, 71, 11);     
 
   --text-shadow-light: 2px 2px 5px rgba(255, 255, 255, 0.4); /* Soft glowing white shadow */
   --text-shadow-medium: 0px 0px 5px rgba(255, 255, 255, 0.6); /* Fainter glow effect */

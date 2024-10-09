@@ -20,3 +20,5 @@ export { default as Contact } from '../pages/Contact';
 export { default as Privacy } from '../pages/Privacy'; 
 export { default as Services } from '../pages/Services'; 
 export { default as Terms } from '../pages/Terms'; 
+
+export { default as Prototypes } from '../assets/prototypes/Prototypes'; 

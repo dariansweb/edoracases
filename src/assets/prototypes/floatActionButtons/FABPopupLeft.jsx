@@ -18,7 +18,7 @@ const FABPopupLeft = () => {
       {isOpen && (
         <div className="fancy-fullscreen-popup">
           <div className="fancy-popup-header">
-            <h2>Provider Information</h2>
+            <h2 className="light">Provider Information</h2>
             <button className="fancty-close-button" onClick={togglePopup}>Close</button>
           </div>
           <div className="fancy-popup-body">
