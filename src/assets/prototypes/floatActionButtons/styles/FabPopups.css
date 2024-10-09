@@ -37,7 +37,6 @@
   max-height: 80vh; /* Set a max-height to control the popup size */
 }
 
-
 /* -------- ----------------*/
 /* FABPopupRight.jsx .simple-*/
 /* -------- ----------------*/
@@ -86,17 +85,27 @@
   align-items: center;
   color: var(--theme1-light);
 }
-/* .simple-popup-body {
+.simple-popup-body {
   padding: 20px;
   display: flex;
   flex-direction: column;
-} */
-.simple-info-card {
+}
+*/ .simple-info-card {
   background-color: var(--theme1-light);
   padding: 20px;
   margin-bottom: 15px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
+.image-container {
+  display: flex;
+  justify-content: center; /* Horizontally centers the image */
+}
+
+.image-container img {
+  max-width: 100%; /* Ensures the image scales properly */
+  height: auto;
+}
+
 .simple-primary-action {
   background-color: var(--theme1-dark);
   color: var(--theme6-light);
@@ -218,7 +227,7 @@
   border: none;
   font-size: 16px;
   cursor: pointer;
-  margin- : auto;
+  margin-: auto;
 }
 /* -------- ----------------*/
 /* FABPopupMiddle.jsx .profile-*/

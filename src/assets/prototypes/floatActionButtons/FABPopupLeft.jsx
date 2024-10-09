@@ -18,7 +18,7 @@ const FABPopupLeft = () => {
       {isOpen && (
         <div className="fancy-fullscreen-popup">
           <div className="fancy-popup-header">
-            <h2 className="light">Last Three Placement Information</h2>
+            <h2 className="light">Placement Information</h2>
           </div>
           <div className="fancy-popup-body">
             {/* Add Buttons or Client Details here */}

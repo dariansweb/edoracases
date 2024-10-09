@@ -1,6 +1,7 @@
 // FAB Component
 import React, { useState } from "react";
 import "./styles/FabPopups.css";
+import face1 from "../../images/people/faces/face1.jpg";
 
 const FABPopupRight = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,15 +25,22 @@ const FABPopupRight = () => {
             {/* Dynamic Cards Here */}
             <div className="simple-info-card">
               <h3 className="dark">Client Details</h3>
-              <div className="text-block">Duck, DonaldMale </div>
-              <div className="text-block">Male</div>
-              <div className="text-block">15.2 years old</div>
-              <div className="text-block">SXO, EJJ, Blended</div>
+              <div className="image-container">
+                <img src={face1} alt="Client Donald Duck" />
+              </div>
+
+              <div className="text-block">Daisy Duckers</div>
+              <div className="text-block">
+                Male: 15.2 years old: American Native
+              </div>
               <div className="text-block">AJATC-ROP Intake</div>
+              <div className="text-block">SXO, EJJ, Blended</div>
               <button className="simple-primary-action">View Profile</button>
               <button className="simple-secondary-action">Edit Details</button>
             </div>
-            <button className="close-button" onClick={togglePopup}>Close</button>
+            <button className="close-button" onClick={togglePopup}>
+              Close
+            </button>
           </div>
         </div>
       )}
