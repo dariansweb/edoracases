@@ -1,6 +1,6 @@
 // FancyFAB Component
 import React, { useState } from "react";
-import './styles/FabPopupLeft.css';
+import './styles/FabPopups.css';
 
 const FABPopupLeft = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,7 +10,7 @@ const FABPopupLeft = () => {
   return (
     <>
       {/* Fancy Floating FAB Button */}
-      <button className="fancy-fab" onClick={togglePopup}>
+      <button className="fancy-fab-button" onClick={togglePopup}>
         {isOpen ? "X" : "+"}
       </button>
 
@@ -19,15 +19,15 @@ const FABPopupLeft = () => {
         <div className="fancy-fullscreen-popup">
           <div className="fancy-popup-header">
             <h2>Provider Information</h2>
-            <button className="close-button" onClick={togglePopup}>Close</button>
+            <button className="fancty-close-button" onClick={togglePopup}>Close</button>
           </div>
           <div className="fancy-popup-body">
             {/* Add Buttons or Client Details here */}
-            <div className="info-card">
+            <div className="fancy-info-card">
               <h3 className="dark">Provider: ABC Services</h3>
               <h4 className="dark">Status: Active</h4>
-              <button className="primary-action">View Details</button>
-              <button className="secondary-action">Edit Provider</button>
+              <button className="fancy-primary-action">View Details</button>
+              <button className="fancy-secondary-action">Edit Provider</button>
             </div>
           </div>
         </div>
