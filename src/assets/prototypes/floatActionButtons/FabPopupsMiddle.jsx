@@ -19,11 +19,11 @@ const FabPopupMiddle = () => {
           <svg
             xmlns="http://www.w3.org/2000/svg"
             height="24px"
-            viewBox="0 0 24 24"
+            viewBox="0 -960 960 960"
             width="24px"
-            fill="#e8eaed"
+            fill="currentColor"
           >
-            <path d="M18.36 6.64L12 12l-6.36-6.36L4.24 7.76 10.59 12 4.24 16.24l1.41 1.41L12 13.41l6.36 6.36 1.41-1.41L13.41 12l5.95-5.95-1.41-1.41z" />
+            <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z" />
           </svg>
         ) : (
           // Star icon when the popup is closed
