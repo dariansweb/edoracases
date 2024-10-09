@@ -18,14 +18,14 @@ const FABPopupRight = () => {
       {isOpen && (
         <div className="simple-full-screen-popup">
           <div className="simple-popup-header">
-            <h2>Client Information</h2>
+            <h2 className="light">Client Information</h2>
             <button className="close-button" onClick={togglePopup}>Close</button>
           </div>
           <div className="simple-popup-body">
             {/* Dynamic Cards Here */}
             <div className="simple-info-card">
-              <h3>Client Name</h3>
-              <p>Provider: XYZ Corp</p>
+              <h3 className="dark">Client Name</h3>
+              <div className="text-block">Provider: XYZ Corp</div>
               <button className="simple-primary-action">View Profile</button>
               <button className="simple-secondary-action">Edit Details</button>
             </div>

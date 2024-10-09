@@ -45,8 +45,7 @@ const FabPopupMiddle = () => {
           <div className="middle-fancy-popup-body middle-center-menu">
             <h3 className="dark">Client Management Hub</h3>
             <div className="text-block">
-              > Navigate through client information, provider details, and
-              service records.
+                Client, Provider and Service Records
             </div>
             <div className="middle-menu-item">
               <span>📂</span> <a href="#">Client Profile</a>
@@ -58,10 +57,7 @@ const FabPopupMiddle = () => {
               <span>📅</span> <a href="#">Service History</a>
             </div>
             <div className="middle-menu-item">
-              <span>🧾</span> <a href="#">Financial Overview</a>
-            </div>
-            <div className="middle-menu-item">
-              <span>🔍</span> <a href="#">Case Review</a>
+              <span>🔍</span> <a href="#">Case Review</a>              
             </div>
             <button className="middle-close-button" onClick={togglePopup}>
               Close
