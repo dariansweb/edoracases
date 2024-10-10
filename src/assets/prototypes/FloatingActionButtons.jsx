@@ -12,17 +12,9 @@ const FloatingActionButtons = () => {
       <ScrollToDiv targetDiv=".hero-container" />
       <FABPopupLeft /> <FABPopupMiddle /> <FABPopupRight />
 
-      <div className="hero-container full-width-container">
-        <div className="hero-content">
-          <h1 className="light hero-title">UX UI</h1>
-          <h3 className="light">Prototypes</h3>
-        </div>
-      </div>
       <div className="pages-container">
         <h1 className="dark">Floating Action Buttons</h1>
-        <h2 className="dar">Mobile Design Only</h2>
-
-        <h3 className="dark">Left, Middle, Right</h3>
+        <h2 className="dark">Mobile Design System</h2>
       </div>
     </>
   );
