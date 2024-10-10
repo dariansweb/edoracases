@@ -43,10 +43,7 @@ const FabPopupMiddle = () => {
       {isOpen && (
         <div className="middle-fancy-fullscreen-popup">
           <div className="middle-fancy-popup-body middle-center-menu">
-            <h3 className="dark">Client Management Hub</h3>
-            <div className="text-block">
-                Client, Provider and Service Records
-            </div>
+            <h3 className="light">Client Management Hub</h3>
             <div className="middle-menu-item">
               <span>📂</span> <a href="#">Client Profile</a>
             </div>
