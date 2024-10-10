@@ -18,6 +18,7 @@ import Terms from "../pages/Terms";
 
 // PROTOTYPES
 import Prototypes from "../assets/prototypes/Prototypes";
+import FloatingActionButtons from "../assets/prototypes/FloatingActionButtons";
 import Dashboard1 from "../assets/prototypes/dashboards/Dashboard1";
 
 const AppRoutes = () => {
@@ -38,6 +39,7 @@ const AppRoutes = () => {
       <Route path="/terms" element={<Terms />} />      
 
       <Route path="/prototypes" element={<Prototypes />} />
+      <Route path="/floatingactionbuttons" element={<FloatingActionButtons />} />      
       <Route path="/dashboard1" element={<Dashboard1 />} />
 
       {/* Default route: redirects to Home or could be a 404 page */}

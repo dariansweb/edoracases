@@ -34,12 +34,16 @@ const Dashboard1 = () => {
         </nav>
 
         <div className="overview">
-          <p>
-            John Dowersay, how ar e you today?
-            <br />
-            Do you need assistance?
-          </p>
+          <div className="text-block">
+            Welcome, John Dowersayk!
+            </div>
           <div className="tasks">
+          <div className="card">
+            <h2 className="dark">You are currently tracking</h2>
+            <h3 className="dark">28 Residential Clients</h3>
+            <h3 className="dark">8 Re-Entry Clients</h3>
+          </div>
+
             <h2 className="dark">Your Tasks</h2>
             <ul className="styled-list">
               <li>Conduct intake interview for Case #JC-C-2024-567890</li>
@@ -47,11 +51,6 @@ const Dashboard1 = () => {
               <li>Prepare court report for Case #JC-C-2024-554321</li>
               <li>Coordinate aftercare with Provider DEF</li>
             </ul>
-          </div>
-          <div className="card">
-            <h2 className="dark">You are currently tracking</h2>
-            <h3 className="dark">28 Active Clients</h3>
-            <h3 className="dark">8 Inactive Clients</h3>
           </div>
           <div className="card">
             <h2 className="dark">Pending Actions</h2>

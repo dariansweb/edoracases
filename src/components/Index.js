@@ -22,3 +22,5 @@ export { default as Services } from '../pages/Services';
 export { default as Terms } from '../pages/Terms'; 
 
 export { default as Prototypes } from '../assets/prototypes/Prototypes'; 
+export { default as Dashboard1 } from '../assets/prototypes/dashboards/Dashboard1'; 
+export { default as FloatingActionButtons } from '../assets/prototypes/FloatingActionButtons'; 

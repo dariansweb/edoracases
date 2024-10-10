@@ -37,6 +37,14 @@ export const DashboardMenusItems = [
 
 // src/data/menuItems.js
 export const prototypes = {
+  "Floating Action Buttons": {
+    id: 28,
+    items: [
+      { name: "Design System 1", link: "/floatingactionbuttons" },
+      { name: "Design System 2", link: "/settings/configurations" },
+      { name: "Design System 3", link: "/settings/data-import-export" },
+    ],
+  },
   Dashboards: {
     id: 20,
     items: [
