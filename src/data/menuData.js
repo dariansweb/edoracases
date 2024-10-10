@@ -1,18 +1,23 @@
+// export const mainMenuItems = [
+//   { id: 1, name: "Child and Family", link: "/child-and-family" },
+//   { id: 2, name: "Aging", link: "/aging" },
+//   { id: 3, name: "Disability", link: "/disability" },
+//   { id: 4, name: "Juvenile Justice", link: "/juvenile-justice" },
+//   { id: 5, name: "Medical", link: "/medical" },
+//   { id: 6, name: "Provider Services", link: "/provider-services" },
+// ];
+
 export const mainMenuItems = [
-  { id: 1, name: "Child and Family", link: "/child-and-family" },
-  { id: 2, name: "Aging", link: "/aging" },
-  { id: 3, name: "Disability", link: "/disability" },
   { id: 4, name: "Juvenile Justice", link: "/juvenile-justice" },
-  { id: 5, name: "Medical", link: "/medical" },
-  { id: 6, name: "Provider Services", link: "/provider-services" },
 ];
 
 export const starMenuItems = [
   // { id: 7, name: "Home", link: "/" },
+  { id: 7, name: "Home", link: "/" },
   { id: 8, name: "About", link: "/about" },
   { id: 9, name: "Services", link: "/services" },  
   { id: 10, name: "Prototypes", link: "/prototypes" },
-  { id: 110, name: "GitHub", link: "https://www.github.com/dariansweb/edoracases" },  
+  // { id: 110, name: "GitHub", link: "https://www.github.com/dariansweb/edoracases" },  
 ];
 
 export const adminMenuItems = [

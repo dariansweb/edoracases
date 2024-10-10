@@ -87,8 +87,10 @@ const Header = () => {
       <div className="header-center">
         <h1 className="header-title">
           <a className="light" href="/">
-        <span className="material-symbols-outlined hamburger-icon">home</span>
-        </a>
+            <span className="material-symbols-outlined hamburger-icon">
+              home
+            </span>
+          </a>
         </h1>
       </div>
 
@@ -120,6 +122,15 @@ const Header = () => {
           )}
         </div>
       </div>
+      {/* Wide Screen Menu */}
+      <div className="wide-menu">
+        {starMenuItems.concat(mainMenuItems).map((item) => (
+          <Link key={item.id} to={item.link} className="wide-menu-item">
+            {item.name}
+          </Link>
+        ))}
+      </div>
+
     </header>
   );
 };

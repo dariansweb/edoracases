@@ -233,9 +233,46 @@ ol li::before {
   color: var(--theme3-contrast);
   width: 0;
   height: 2px;
+  font-weight: 600;
   left: 0;
   bottom: -3px; /* Adjust based on the space below text */
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow */
+}
+.strong {
+  font-weight: 800; /* Super bold for extra emphasis */
+  color: var(--theme3-light); /* Maintain color consistency */
+  position: relative; /* Needed for effects like before/after pseudo-elements */
+  display: inline-block; /* Ensures the element can scale and animate cleanly */
+  margin:0 0.5rem;
+  
+  /* Underline Effect with Animation */
+  overflow: hidden; /* Ensures the underline animation is smooth */
+  letter-spacing: 0.1em; /* Adds a sleek touch to text spacing */
+  transition: color 0.3s ease-in-out; /* Smooth color transition */
+
+  /* Optional, adds flair with text transformation */
+  text-transform: uppercase;
+}
+
+.strong::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px; /* Thickness of the animated underline */
+  background-color: var(--theme3-highlight); /* Different color for the underline */
+  transform: scaleX(0)  ; /* Initially hidden */
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out; /* Smooth reveal animation */
+}
+
+.strong:hover::before {
+  transform: scaleX(0.1); /* Reveals the underline on hover */
+}
+
+.strong:hover {
+  color: var(--theme3-highlight); /* Changes text color on hover */
 }
 
 /* Common styles for all headers */

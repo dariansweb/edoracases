@@ -4,9 +4,6 @@
   left: 0;
   width: 100%;
 
-  color: var(--theme6-light); /* Text color */
-  background-color: var(--theme1-dark); /* Use your desired background color */
-
   position: sticky;
   z-index: 1000;
 
@@ -15,6 +12,11 @@
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  background-color: var(--theme1-dark); /* Use your desired background color */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4); /* Adds subtle shadow to text */
+  color: var(--theme6-light); /* Text color */
+  opacity: 0.8;
 }
 
 /* Title styles */
@@ -78,7 +80,7 @@
   animation: rotateBackgroundColors 3s linear infinite; /* Continuous color rotation */
   transform: translateY(-10px); /* Start slightly above */
   transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition for visibility */
-} 
+}
 .star-dropdown {
   z-index: 1000;
   left: 0;
@@ -117,7 +119,6 @@
   animation: explode 1s ease forwards; /* Animation name and duration */
 }
 
-
 /* Media query for smaller screens */
 @media (max-width: 768px) {
   .hamburger-menu {
@@ -128,13 +129,91 @@
     width: 25vh; /* Slide out to 25% of header width */
     left: 0; /* Keep it aligned to the right */
   }
-
 }
 /* Ensure full-width menu in desktop mode */
 @media (min-width: 769px) {
   .hamburger-menu,
   .star-dropdown {
-    display: block; /* Always show the menu in desktop mode */
+    display: inline; /* Always show the menu in desktop mode */
     width: 100vh; /* Full width for desktop */
+  }
+  .star-icon,
+  .hamburger-icon {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* Wide Menu Styles */
+  .header-left, .header-right, .header-center {
+    display: none;
+  }
+  .wide-menu {
+    display: flex;
+    justify-content: center; /* Center the menu items horizontally */
+    align-items: center; /* Center them vertically */
+    margin: 0 auto;
+    padding: 15px 30px; /* Padding for the menu container */
+    background: var(--theme3-light); /* Light Mint background */
+    border-radius: 8px; /* Rounded corners for a sleek look */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); /* Soft drop shadow */
+    transition: all 0.3s ease; /* Smooth transitions */
+    z-index: 100; /* Ensure the wide menu is on top */
+  }
+
+  /* Menu Links */
+  .wide-menu a {
+    text-decoration: none; /* Remove default underlining */
+    color: var(--theme3-dark-contrast); /* Darker contrast text */
+    font-size: 1.2rem; /* Larger font for a more modern look */
+    padding: 10px 20px; /* Spacing inside each link */
+    text-transform: uppercase; /* Capitalize text */
+    letter-spacing: 0.05em; /* Add slight spacing between letters */
+    font-weight: 600; /* Make the text bold */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover and scaling */
+    cursor: pointer; /* Show pointer cursor on hover */
+  }
+
+  /* Hover effect on menu links */
+  .wide-menu a:hover {
+    background: var(--theme2-dark); /* Olive Green on hover */
+    color: var(--theme3-light); /* Light text color on hover */
+    transform: scale(1.05); /* Slightly scale the link on hover */
+    border-radius: 5px; /* Add a slight rounding on hover */
+  }
+
+  /* Active link effect */
+  .wide-menu a:active {
+    transform: scale(0.95); /* Shrink link on click */
+    background: var(--theme1-dark); /* Darker background on click */
+  }
+
+  /* Specific styles for dropdown menus (to override the wide menu) */
+  .dropdown-menu,
+  .star-dropdown {
+    position: absolute; /* Dropdowns are positioned absolutely */
+    background: var(--theme4-light); /* Pale Peach for dropdown background */
+    border-radius: 6px; /* Rounded corners for dropdown */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    padding: 10px; /* Padding inside the dropdown */
+    z-index: 200; /* Ensure dropdowns are on top of the wide menu */
+  }
+
+  /* Dropdown menu links */
+  .dropdown-menu a,
+  .star-dropdown a {
+    padding: 8px 12px; /* Spacing for dropdown items */
+    font-size: 1rem; /* Slightly smaller font */
+    color: var(--theme5-dark); /* Moss Green text for dropdowns */
+    text-transform: none; /* Regular text (no uppercase) */
+    font-weight: normal; /* Normal font weight */
+    letter-spacing: normal; /* Default letter spacing */
+  }
+
+  /* Hover effect for dropdown items */
+  .dropdown-menu a:hover,
+  .star-dropdown a:hover {
+    background: var(--theme6-dark); /* Pistachio Peach on hover */
+    color: var(--theme3-light); /* Light text color */
+    border-radius: 4px; /* Slight rounding on hover */
   }
 }
