@@ -10,6 +10,10 @@
 
 body,
 html {
+  scroll-behavior: smooth; /* Smooth scrolling */
+  height: 100%; /* Ensure body and HTML take up full height */
+  overflow: auto; /* Make sure scrolling is allowed */
+    
   font-family: "Montserrat", sans-serif;
   font-size: 100%; /* Or try using rem units for consistency */
 
