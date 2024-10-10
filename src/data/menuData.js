@@ -8,7 +8,7 @@
 // ];
 
 export const mainMenuItems = [
-  { id: 4, name: "Juvenile Justice", link: "/juvenile-justice" },
+  { id: 4, name: "JJIS", link: "/juvenile-justice" },
 ];
 
 export const starMenuItems = [

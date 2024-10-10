@@ -9,8 +9,6 @@ const Home = () => {
     <>
       <div className="pages-container">
         <section>
-
-                <h1 className="dark">Human and Health Services</h1>
             <blockquote>
               <p>
                 In every event lies the seed of opportunity; EDORA nurtures

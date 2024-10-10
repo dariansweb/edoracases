@@ -7,8 +7,8 @@ const JuvenileJustice = () => {
       <ScrollToDiv targetDiv=".hero-container" />
       <div className="hero-container full-width-container">
         <div className="hero-content">
-          <h1 className="light hero-title">JS</h1>
-          <h2 className="light">Juvenile Services</h2>
+          <h1 className="light hero-title">JJIS</h1>
+          <h2 className="light">Juvenile Justice Information System</h2>
           <h3 className="light">Client Management Solutions</h3>
           <h4 className="light">Treatment !not Punishment</h4>
         </div>
