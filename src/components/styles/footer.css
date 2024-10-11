@@ -34,6 +34,12 @@
   color: var(--theme3-liight); /* Change color on hover */
 }
 
+.footer-links a::before {
+  color: var(--theme5-light); /* Link color */
+}.footer-links a::after {
+  color: var(--theme5-light); /* Link color */
+}.
+
 /* Styling for the footer links */
 .footer-link {
   color: var(--theme3-dark); /* Link color */
