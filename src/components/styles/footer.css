@@ -2,18 +2,50 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
-  justify-content: space-around; /* Improved alignment */
+  justify-content:space-evenly; /* Improved alignment */
   align-items: center;
   padding: 1.5rem 2rem; /* Slightly increased padding for a spacious feel */
   background-color: var(--theme1-dark); /* Lighter background for contrast */
-  color: var(--theme1-light); /* Darker text for better readability */
+  color: var(--theme5-light); /* Darker text for better readability */
   box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.15); /* Softer shadow */
 }
 
 .footer-left {
-  display: flex;
-  align-items: left; /* Align icon and brand text */
+  text-align: left; /* Align links to the right */
+  margin-top: 0 auto; /* Pushes the footer-right to the bottom */
 }
+.footer-center {
+  text-align: left; /* Center-align the text and icons */
+  margin: 0 auto; /* Vertical spacing */
+}
+.footer-right {
+  text-align: right; /* Align links to the right */
+  margin-top: 0 auto; /* Pushes the footer-right to the bottom */
+}
+
+.footer-links {
+  font-size: 0.9rem; /* Smaller font size for links */
+  color: var(--theme5-light); /* Link color */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s; /* Transition for hover effect */
+}
+.footer-links:hover {
+  background-color: var(--theme3-dark);
+  color: var(--theme3-liight); /* Change color on hover */
+}
+
+/* Styling for the footer links */
+.footer-link {
+  color: var(--theme3-dark); /* Link color */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s; /* Transition for hover effect */
+}
+
+.footer-link:hover {
+  background-color: var(--theme1-dark);
+  color: var(--theme6-liight); /* Change color on hover */
+}
+
 .footer-search {
   display: flex; /* Flex for better alignment */
   align-items: center; /* Center items vertically */
@@ -29,12 +61,6 @@
 .footer-brand {
   font-size: 1.5rem; /* Brand name size */
   font-weight: bold; /* Bold for emphasis */
-}
-
-.footer-center {
-  text-align: center; /* Center-align the text and icons */
-  flex: 2; /* Center section takes up more space */
-  margin: 1rem 0; /* Vertical spacing */
 }
 
 .footer-text {
@@ -55,26 +81,7 @@
   transform: scale(1.1); /* Slightly enlarge on hover */
 }
 
-.footer-right {
-  text-align: right; /* Align links to the right */
-  margin-top: auto; /* Pushes the footer-right to the bottom */
-}
 
-.footer-links {
-  font-size: 0.9rem; /* Smaller font size for links */
-}
-
-/* Styling for the footer links */
-.footer-link {
-  color: var(--theme3-dark); /* Link color */
-  text-decoration: none; /* Remove underline */
-  transition: color 0.3s; /* Transition for hover effect */
-}
-
-.footer-link:hover {
-  background-color: var(--theme1-dark);
-  color: var(--theme6-liight); /* Change color on hover */
-}
 
 /* Footer Styles */
 .footer-nav {
@@ -101,18 +108,6 @@
   margin-bottom: 8px;
   position: relative;
   padding-left: 20px;
-}
-
-.footer-nav ul li a {
-  color: var(--theme1-light);
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.footer-nav ul li a:hover {
-  background-color: var(--theme1-dark);
-  color: var(--theme6-liight); /* Change color on hover */
-  text-decoration: underline; /* Adding underline on hover for visibility */
 }
 
 /* Custom bullets (example: stars) */
