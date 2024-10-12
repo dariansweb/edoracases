@@ -1,0 +1,52 @@
+/* LoginForm.css */
+
+.login-form {
+  max-width: 400px; /* Limiting the form width for better readability */
+  margin: 50px auto; /* Centering the form */
+  padding: 20px; /* Padding inside the form */
+  background-color: var(--theme3-light); /* White background for the form */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  display: flex; /* Flexbox for better alignment */
+  flex-direction: column; /* Stack elements vertically */
+}
+
+input {
+  padding: 12px 15px; /* Padding for input fields */
+  margin-bottom: 15px; /* Space between inputs */
+  border: 1px solid var(--theme6-dark); /* Light border for inputs */
+  border-radius: 5px; /* Rounded input corners */
+  font-size: 16px; /* Font size for inputs */
+  transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+input:focus {
+  border-color:var(--theme1-dark); /* Blue border on focus */
+  outline: none; /* Remove outline */
+}
+
+input.error {
+  border-color: #ff4d4d; /* Red border for error state */
+}
+
+.login-form-button {
+  padding: 12px; /* Padding for the button */
+  background-color: var(--theme5-dark); /* Blue background for button */
+  color:var(--theme5-light); /* White text for button */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded button corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Font size for button */
+  transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.login-form-button:hover {
+  background-color: var(--theme2-dark); /* Darker blue on hover */
+}
+
+.login-form-error-message {
+  color: #ff4d4d; /* Red color for error messages */
+  margin-top: -10px; /* Slightly negative margin for spacing */
+  margin-bottom: 15px; /* Space below error messages */
+  font-size: 14px; /* Smaller font for error messages */
+}

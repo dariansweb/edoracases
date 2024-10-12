@@ -1,5 +1,5 @@
 import React from "react";
-import "../../pages/styles/Pages.css";
+import "../../components/Pages/styles/Pages.css";
 import ScrollToDiv from "../../utils/ScrollToDiv";
 
 import FABPopupLeft from "./floatActionButtons/FABPopupLeft";

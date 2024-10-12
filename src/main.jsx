@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { StrictMode } from "react";
 import { BrowserRouter as Router, useLocation } from "react-router-dom";
-import { Header, Hero, Footer } from "./components/Index";
+import { Header, Hero, Footer } from "./components/Index.js";
 import { AppRoutes } from "./components/Index.js"; // Ensure correct path
 import ScrollToTop from "./utils/ScrollToDiv.jsx"; // Assuming you use this for scroll behavior
 import "./styles.css";

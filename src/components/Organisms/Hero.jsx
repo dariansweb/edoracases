@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
-import features from "../data/features";
-import { shuffleArray } from "../utils/shuffleArray";
+import features from "../../data/features";
+import { shuffleArray } from "../../utils/shuffleArray";
 
 // Shuffling the array of features to keep it dynamic
 const shuffledFeatures = shuffleArray(features);
@@ -85,7 +85,7 @@ const Hero = () => {
         {/* <ul className="rotating-features">
             <li key={currentFeatureIndex} className="feature-item">
               {shuffledFeatures[currentFeatureIndex]}
-            </li>
+            </li>./components/styles/
           </ul> */}
         <hr />
           <span className="strong">

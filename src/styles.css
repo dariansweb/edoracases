@@ -1,13 +1,13 @@
 @import "./index.css";
-@import "./components/styles/themes.css";
-@import "./components/styles/button.css";
+@import "./components/Organisms/styles/themes.css";
+@import "./components/Organisms/styles/button.css";
 
-@import "./components/styles/header.css";
-@import "./components/styles/hero.css";
-@import "./components/styles/App.css";
-@import "./pages/styles/Home.css";
-@import "./pages/styles/Pages.css";
-@import "./components/styles/footer.css";
+@import "./components/Organisms/styles/header.css";
+@import "./components/Organisms/styles/hero.css";
+@import "./components/Organisms/styles/App.css";
+@import "./components/Pages/styles/Home.css";
+@import "./components/Pages/styles/Pages.css";
+@import "./components/Organisms/styles/footer.css";
 @font-face {
     font-family: 'Montserrat';
     src: url('/fonts/Montserrat-Regular.ttf') format('truetype');

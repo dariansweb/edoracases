@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { DashboardMenusItems } from "../../../data/menuData"; // Import the array
 
-import "../../../pages/styles/Pages.css";
+import "../../../components/Pages/styles/Pages.css";
 import "./dashboard.css";
 
 const Dashboard1 = () => {

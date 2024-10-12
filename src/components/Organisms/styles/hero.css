@@ -30,7 +30,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: url("../../assets/images/people/people6.jpg") center center /
+  background: url("../../../assets/images/people/people6.jpg") center center /
     cover; /* Image layer */
   opacity: 0.4; /* Adjust image opacity */
   z-index: 1; /* Ensure it stays behind the content */

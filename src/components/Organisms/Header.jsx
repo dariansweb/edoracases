@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { mainMenuItems, starMenuItems } from "../data/menuData"; // Importing both main and star menu items
+import { mainMenuItems, starMenuItems } from "../../data/menuData"; // Importing both main and star menu items
 
 // The Header component
 const Header = () => {

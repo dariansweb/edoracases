@@ -1,5 +1,5 @@
 import React from "react";
-import "../../pages/styles/Pages.css";
+import "../../components/Pages/styles/Pages.css";
 import "./styles/Prototype.css";
 import { prototypes } from "../../data/menuData"; // Adjust path as necessary
 import ScrollToDiv from "../../utils/ScrollToDiv";
