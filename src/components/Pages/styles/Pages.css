@@ -1,0 +1,103 @@
+/* .pages-container {
+  display: flex;
+  flex-direction: column; */
+/* Allow child elements to stretch to full width */
+  /* align-items: stretch; 
+  justify-content: center;
+  margin: 0 auto;
+  overflow: hidden;
+} */
+.pages-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  margin: 0 auto; 
+  min-height: 50vh;
+  overflow: hidden;
+}
+.text-block {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.8;
+  color: var(--theme1-dark);
+  margin-bottom: 1.5rem;
+  margin-left: 0.8rem;
+  margin-right: 0;
+  text-align: left;
+  max-width: 800px;
+  padding: 1rem;
+  background-color: var(--theme3-light);
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  border-left: 5px solid var(--theme3-dark);
+  padding-left: 1.5rem;
+  text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.1);
+  position: relative;
+  text-indent: 2rem; /* Adding the actual text indentation */
+}
+
+/* Adding a bit of pizzazz to the first letter */
+/* .text-block::first-letter {
+  font-size: 2.5rem; 
+  font-weight: 700;  */
+  /* color: var(--theme1-dark); You can change this to add a different color */
+  /* margin-right: 0.1rem; */
+  /* float: left; /* Makes the first letter pop out from the paragraph */
+/* } */ */
+
+/* Adding a custom visual indent with flair */
+.text-block::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 6px;
+  background-color: var(--theme3-dark); /* A stylized line on the left */
+  border-radius: 4px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease-in-out;
+}
+
+/* Optional hover effect for interactivity */
+.text-block:hover {
+  background-color: var(--theme5-light);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* On hover, also make the left stylized line "appear" */
+.text-block:hover::before {
+  transform: scaleX(1); /* Expands the left border on hover */
+}
+
+/* Scroll reveal effect (optional): adds an animation when the text enters the viewport */
+@keyframes revealIndent {
+  0% {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.text-block {
+  animation: revealIndent 0.6s ease-in-out;
+}
+
+  @media (max-width: 768px) {
+  .pages-container {
+    padding: 0.8rem;
+    align-items: stretch; /* Ensure full width on smaller screens */
+  }
+}
+
+/* @media (max-width: 768px) {
+  .pages-container { */
+    /* padding: 0.8rem; Less padding on smaller screens
+  }
+} */
