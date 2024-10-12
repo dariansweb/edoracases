@@ -1,0 +1,58 @@
+/* Input container styles */
+.input-container {
+  margin-bottom: 1.5rem; /* Spacing between inputs */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Label styling */
+.input-label {
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem; /* Slightly smaller font for labels */
+  color: var(--theme1-dark);
+}
+
+/* Input field styles */
+.input-field {
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--theme6-dark);
+  border-radius: 0.375rem;
+  background-color: var(--theme3-light);
+  color: var(--theme1-dark);
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Focus and hover states */
+.input-field:focus {
+  outline: none;
+  border-color: var(--theme4-dark);
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Subtle shadow on focus */
+}
+
+.input-field:hover {
+  border-color: var(--theme4-dark); /* Change border color on hover */
+}
+
+/* Error state styles */
+.input-field--error {
+  border-color: var(--theme-alert3);
+}
+
+.input-field--error:focus {
+  box-shadow: 0 0 5px rgba(255, 76, 76, 0.5); /* Red shadow for errors */
+}
+
+/* Error message styles */
+.input-error {
+  margin-top: 0.25rem;
+  color: var(--theme-alert3);
+  font-size: 0.875rem;
+  font-weight: 500; /* Bold to make the error stand out */
+}
+
+/* Subtle transitions for the classy feel */
+input,
+label {
+  transition: all 0.3s ease;
+}

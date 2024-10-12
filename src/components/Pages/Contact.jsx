@@ -6,11 +6,11 @@ const Contact = () => {
 
   return (
     <>
+          <ScrollToDiv targetDiv=".top" />
       <h1 className="dark">Contact Us</h1>
 
       <div className="pages-container">
         <LoginForm />
-
       </div>
     </>
   );

@@ -4,7 +4,7 @@ import ScrollToDiv from "../../utils/ScrollToDiv";
 const About = () => {
   return (
     <>
-      <ScrollToDiv targetDiv=".hero-container" />
+      <ScrollToDiv targetDiv=".top" />
       <div className="hero-container full-width-container">
         <div className="hero-content">
           <h1 className="light hero-title">About</h1>

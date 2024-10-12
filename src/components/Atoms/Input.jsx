@@ -1,49 +1,49 @@
-import React from 'react'; // Importing React to create the component
-import PropTypes from 'prop-types'; // Importing PropTypes for type checking of props
+import React from 'react'; 
+import PropTypes from 'prop-types'; 
 
-// Functional component that represents an input field
-const Input = ({ 
-  type,              // Type of input (e.g., text, password)
-  label,             // Optional label for the input
-  placeholder,       // Placeholder text to show when the input is empty
-  value,             // Controlled value of the input
-  onChange,          // Event handler for input value changes
-  error              // Error message to display if there are validation issues
+// Functional component for a modern, stylish input field
+const Input = ({
+  type,
+  label,
+  placeholder,
+  value,
+  onChange,
+  error
 }) => {
   return (
-    <div className="input-wrapper"> {/* Wrapper for styling the input and label */}
-      {label && <label className="input-label">{label}</label>} {/* Conditionally render the label if provided */}
+    <div className="input-container"> {/* Container for input and label */}
+      {label && <label className="input-label">{label}</label>}
       
       <input
-        type={type}                       // Setting the input type
-        placeholder={placeholder}         // Setting placeholder text
-        value={value}                     // Controlled value of the input
-        onChange={onChange}               // Function to call on value change
-        className={`input ${error ? 'input--error' : ''}`} // Add error class if there's an error
+        type={type}
+        placeholder={placeholder}
+        value={value}
+        onChange={onChange}
+        className={`input-field ${error ? 'input-field--error' : ''}`} // Conditional class based on error
+        aria-invalid={!!error} // Accessibility: mark input as invalid if error exists
       />
       
-      {error && <span className="input-error-message">{error}</span>} {/* Display error message if there is one */}
+      {error && <span className="input-error">{error}</span>}
     </div>
   );
 };
 
 // PropTypes validation to enforce the correct data types for props
 Input.propTypes = {
-  type: PropTypes.string.isRequired,  // 'type' is a required string
-  label: PropTypes.string,              // 'label' is an optional string
-  placeholder: PropTypes.string,        // 'placeholder' is an optional string
-  value: PropTypes.string.isRequired,   // 'value' is a required string
-  onChange: PropTypes.func.isRequired,  // 'onChange' is a required function
-  error: PropTypes.string,              // 'error' is an optional string
+  type: PropTypes.string.isRequired,
+  label: PropTypes.string,
+  placeholder: PropTypes.string,
+  value: PropTypes.string.isRequired,
+  onChange: PropTypes.func.isRequired,
+  error: PropTypes.string,
 };
 
 // Default props for the component in case they are not provided
 Input.defaultProps = {
-  type: 'text',     // Default input type is 'text'
-  label: '',        // Default label is an empty string
-  placeholder: '',  // Default placeholder is an empty string
-  error: '',        // Default error message is an empty string
+  type: 'text',
+  label: '',
+  placeholder: '',
+  error: '',
 };
 
-// Exporting the Input component to be used in other parts of the application
 export default Input;

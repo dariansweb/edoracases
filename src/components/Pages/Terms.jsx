@@ -5,7 +5,7 @@ const Terms = () => {
   return (
 
     <div className="pages-container">
-    <ScrollToDiv targetDiv=".header-bar" />
+      <ScrollToDiv targetDiv=".top" />
 
       <h1 className="dark">Terms of Service</h1>
       <div className="text-block">

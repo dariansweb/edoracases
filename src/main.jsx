@@ -16,7 +16,7 @@ const AppWrapper = () => {
 
   return (
     <>
-      <span id="top"></span> {/* Anchor point for scrolling to top */}
+      <span class="top"></span> {/* Anchor point for scrolling to top */}
       <Header />
       
       {/* Conditionally render Hero only on the home path */}

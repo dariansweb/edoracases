@@ -11,23 +11,6 @@
   flex-direction: column; /* Stack elements vertically */
 }
 
-input {
-  padding: 12px 15px; /* Padding for input fields */
-  margin-bottom: 15px; /* Space between inputs */
-  border: 1px solid var(--theme6-dark); /* Light border for inputs */
-  border-radius: 5px; /* Rounded input corners */
-  font-size: 16px; /* Font size for inputs */
-  transition: border-color 0.3s; /* Smooth transition for border color */
-}
-
-input:focus {
-  border-color:var(--theme1-dark); /* Blue border on focus */
-  outline: none; /* Remove outline */
-}
-
-input.error {
-  border-color: #ff4d4d; /* Red border for error state */
-}
 
 .login-form-button {
   padding: 12px; /* Padding for the button */

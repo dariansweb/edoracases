@@ -5,7 +5,7 @@ import ScrollToDiv from "../../utils/ScrollToDiv";
 const Home = () => {
   return (
     <>
-      <ScrollToDiv targetDiv=".hero-container" />
+      <ScrollToDiv targetDiv=".top" />
 
       <div className="pages-container">
         <section>

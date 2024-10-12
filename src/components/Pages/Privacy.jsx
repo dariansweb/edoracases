@@ -4,7 +4,7 @@ import ScrollToDiv from "../../utils/ScrollToDiv";
 const Privacy = () => {
   return (
     <div className="pages-container">
-      <ScrollToDiv targetDiv=".header-bar" />      
+      <ScrollToDiv targetDiv=".top" />
       <h1 className="dark">Privacy Statement for EDORA</h1>
       <div className="text-block">
         At EDORA, we value your privacy and are committed to protecting your
