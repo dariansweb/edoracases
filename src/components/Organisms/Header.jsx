@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { mainMenuItems, starMenuItems } from "../../data/menuData"; // Importing both main and star menu items
 
 // The Header component
@@ -115,7 +115,7 @@ const Header = () => {
                   onClick={closeMenu} // Close the menu on link click
                   onMouseDown={(e) => e.stopPropagation()} // Prevent click from closing the menu on mousedown
                 >
-                  <Link to={item.link}>{item.name}</Link>
+                  <NavLink to={item.link}>{item.name}</NavLink>
                 </div>
               ))}
             </div>
@@ -125,9 +125,9 @@ const Header = () => {
       {/* Wide Screen Menu */}
       <div className="wide-menu">
         {starMenuItems.concat(mainMenuItems).map((item) => (
-          <Link key={item.id} to={item.link} className="wide-menu-item">
+          <NavLink key={item.id} to={item.link} className="wide-menu-item">
             {item.name}
-          </Link>
+          </NavLink>
         ))}
       </div>
 

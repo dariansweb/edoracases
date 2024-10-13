@@ -174,7 +174,7 @@
   }
 
   /* Hover effect on menu links */
-  .wide-menu a:hover {
+  .wide-menu a:hover, .active {
     background: var(--theme2-dark); /* Olive Green on hover */
     color: var(--theme3-light); /* Light text color on hover */
     transform: scale(1.05); /* Slightly scale the link on hover */
@@ -182,7 +182,7 @@
   }
 
   /* Active link effect */
-  .wide-menu a:active {
+  .wide-men a:active {
     transform: scale(0.95); /* Shrink link on click */
     background: var(--theme1-dark); /* Darker background on click */
   }
