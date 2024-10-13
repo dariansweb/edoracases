@@ -5,18 +5,18 @@ import "./styles/NotFound.css"; // Assuming you'll create a separate CSS file fo
 
 const NotFound = () => {
   return (
-    <div className="not-found-container">
-      <div className="content">
-        <h1>🌿 Oops, This Place Doesn't Exist 🌿</h1>
-        <p>
+    <div className="notfound-container">
+      <div className="notfound-content">
+        <h1 className="notfound-h1">🌿 Oops, This Place Doesn't Exist 🌿</h1>
+        <p className="notfound-p">
           You've wandered into an unfamiliar corner, but no worries. Like an
           oasis in the desert, you're still surrounded by serenity.
         </p>
-        <p>
+        <p className="notfound-p">
           Take a deep breath, relax, and let the gentle breeze of peace guide
           you back. 
         </p>
-        <Link to="/" className="back-home-link">
+        <Link to="/" className="notfound-back-home-link">
           Return Home
         </Link>
       </div>
