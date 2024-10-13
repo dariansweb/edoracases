@@ -8,6 +8,7 @@ import Services from "../components/Pages/Services";
 import Contact from "../components/Pages/Contact"; 
 import Privacy from "../components/Pages/Privacy";
 import Terms from "../components/Pages/Terms";
+import NotFound from "./Pages/NotFound";
 
 // SERVICES
 import ChildAndFamily from "./Pages/Services/ChildAndFamily";
@@ -44,9 +45,9 @@ const AppRoutes = () => {
       <Route path="/dashboard1" element={<Dashboard1 />} />
 
       {/* Default route: redirects to Home or could be a 404 page */}
-      <Route path="*" element={<Navigate to="/" />} />
+      {/* <Route path="*" element={<Navigate to="/" />} /> */}
       {/* If you want a 404 page instead of redirecting to Home, you could create a 404 component */}
-      {/* <Route path="*" element={<NotFound />} /> */}
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 };
