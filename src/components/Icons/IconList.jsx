@@ -1,13 +1,18 @@
 // src/components/IconsList.js
 
 import React from "react";
+import ScrollToDiv from "../../utils/ScrollToDiv";
+
 import iconsData from "../../data/iconData";
+
 import "./styles/IconList.css"; // Ensure your CSS is imported
-import "../Pages/styles/Pages.css"
+import "../Pages/styles/Pages.css";
+
 const IconsList = () => {
   return (
     <>
-    <div className="pages-container">
+      <div className="pages-container">
+      <ScrollToDiv targetDiv=".top" />        
         <section>
           <h1 className="dark">Case Icons</h1>
           <h2 className="dark">Meanings and Usage</h2>
@@ -35,7 +40,8 @@ const IconsList = () => {
               </div>
             ))}
           </dl>
-        </section></div>
+        </section>
+      </div>
     </>
   );
 };
