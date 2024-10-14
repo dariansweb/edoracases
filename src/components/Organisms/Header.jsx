@@ -124,7 +124,7 @@ const Header = () => {
       </div>
       {/* Wide Screen Menu */}
       <div className="wide-menu">
-        {starMenuItems.concat(mainMenuItems).map((item) => (
+        {starMenuItems.map((item) => (
           <NavLink key={item.id} to={item.link} className="wide-menu-item">
             {item.name}
           </NavLink>

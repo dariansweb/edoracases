@@ -1,0 +1,40 @@
+/* src/components/IconsList.css */
+
+.icon-container {
+  display: flex; /* Use flexbox for alignment */
+  align-items: flex-start; /* Align items at the start */
+  margin: 1rem 0; /* Space between icons */
+  color: var(--theme3-dark);
+  font-weight: 700;
+}
+
+.icon-wrapper {
+  font-size: 3rem; /* Adjust size as needed */
+  margin-right: 1rem; /* Space between icon and text */
+}
+
+.icon-title {
+  font-weight: 500; /* Adjust font weight for the title */
+  min-width: 300px;
+}
+
+.tooltip {
+  font-weight: 400;
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+  .icon-container {
+    flex-direction: column; /* Stack icon and text vertically */
+    align-items: flex-start; /* Align items at the start */
+  }
+
+  .icon-wrapper {
+    margin-bottom: 0.5rem; /* Space below icon for better spacing */
+    font-size: 2.5rem; /* Optional: Reduce icon size for smaller screens */
+  }
+
+  .icon-title {
+    font-size: 1.2em; /* Adjust title font size if needed */
+  }
+}

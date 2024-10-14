@@ -23,6 +23,9 @@ import Prototypes from "../assets/prototypes/Prototypes";
 import FloatingActionButtons from "../assets/prototypes/FloatingActionButtons";
 import Dashboard1 from "../assets/prototypes/dashboards/Dashboard1";
 
+//ICONS 
+import IconsList from "../components/Icons/IconList";
+
 const AppRoutes = () => {
   return (
     <Routes>
@@ -44,9 +47,9 @@ const AppRoutes = () => {
       <Route path="/floatingactionbuttons" element={<FloatingActionButtons />} />      
       <Route path="/dashboard1" element={<Dashboard1 />} />
 
-      {/* Default route: redirects to Home or could be a 404 page */}
-      {/* <Route path="*" element={<Navigate to="/" />} /> */}
-      {/* If you want a 404 page instead of redirecting to Home, you could create a 404 component */}
+      <Route path="/icons" element={<IconsList />} />
+
+      {/* 404 page a 404 component */}
       <Route path="*" element={<NotFound />} />
     </Routes>
   );
