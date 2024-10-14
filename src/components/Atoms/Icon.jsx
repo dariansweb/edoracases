@@ -1,11 +1,13 @@
-import React from 'react'
+// Icon.jsx
+// Used for Icons that are file in a directory
+// Don't use for Icons that in an array in data directory
 
-const Icon = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+import React from 'react';
 
-export default Icon
+const Icon = ({ src, alt, style }) => {
+    return (
+        <img src={src} alt={alt} style={style} />
+    );
+};
+
+export default Icon;
