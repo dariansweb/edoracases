@@ -46,6 +46,14 @@ export const prototypes = {
       { name: "Design System 3", link: "/settings/data-import-export" },
     ],
   },
+  "Client Stories": {
+    id: 28,
+    items: [
+      { name: "Client Story 1", link: "/client-start" },
+      { name: "Client Story 2", link: "/settings/configurations" },
+      { name: "Client Story 3", link: "/settings/data-import-export" },
+    ],
+  },  
   Dashboards: {
     id: 20,
     items: [

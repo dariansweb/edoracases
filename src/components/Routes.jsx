@@ -23,6 +23,9 @@ import Prototypes from "../assets/prototypes/Prototypes";
 import FloatingActionButtons from "../assets/prototypes/FloatingActionButtons";
 import Dashboard1 from "../assets/prototypes/dashboards/Dashboard1";
 
+// CLIENT JOURNEY
+import CaseStory1 from "./CaseStories/Story1/CaseStoryPage"
+
 //ICONS 
 import IconsList from "../components/Icons/IconList";
 
@@ -43,11 +46,16 @@ const AppRoutes = () => {
       <Route path="/privacy" element={<Privacy />} />
       <Route path="/terms" element={<Terms />} />      
 
+      {/* Guides and Terms */}
+      <Route path="/icons" element={<IconsList />} />
+
+      {/* Prototype Components */}
       <Route path="/prototypes" element={<Prototypes />} />
       <Route path="/floatingactionbuttons" element={<FloatingActionButtons />} />      
       <Route path="/dashboard1" element={<Dashboard1 />} />
 
-      <Route path="/icons" element={<IconsList />} />
+      {/* Client Journeys */}
+      <Route path="/client-start/*" element={<CaseStory1 />} />
 
       {/* 404 page a 404 component */}
       <Route path="*" element={<NotFound />} />
