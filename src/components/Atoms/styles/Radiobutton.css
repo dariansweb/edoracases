@@ -1,0 +1,77 @@
+.radio-group-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.radio-group-label {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--theme3-dark);
+  margin-bottom: 0.5rem;
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.radio-option {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  cursor: pointer;
+  padding-left: 30px; /* Makes space for the custom radio */
+}
+
+.radio-input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.radio-custom {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 18px;
+  width: 18px;
+  border: 2px solid var(--theme6-dark );
+  border-radius: 50%;
+  transition: background-color 0.2s;
+}
+
+.radio-option .radio-input:checked ~ .radio-custom {
+  background-color: var(--theme6-dark );
+  border-color:var(--theme1-dark );
+}
+
+.radio-custom::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color:var(--theme3-light );
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.2s ease-in-out;
+}
+
+.radio-input:checked ~ .radio-custom::after {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.radio-option:hover .radio-custom {
+  border-color:var(--theme1-dark );
+}
+
+.radio-error {
+  font-size: 0.9rem;
+  color: red;
+  margin-top: 0.25rem;
+}

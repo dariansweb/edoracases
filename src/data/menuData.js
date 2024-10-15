@@ -18,7 +18,6 @@ export const starMenuItems = [
   { id: 9, name: "Services", link: "/services" },  
   { id: 10, name: "Contact", link: "/contact" },
   { id: 107, name: "Guides", link: "/icons" },
-  // { id: 110, name: "GitHub", link: "https://www.github.com/dariansweb/edoracases" },  
 ];
 
 export const adminMenuItems = [
@@ -39,11 +38,22 @@ export const DashboardMenusItems = [
 // src/data/menuItems.js
 export const prototypes = {
   "Floating Action Buttons": {
-    id: 28,
+    id: 282,
     items: [
       { name: "Design System 1", link: "/floatingactionbuttons" },
       { name: "Design System 2", link: "/settings/configurations" },
       { name: "Design System 3", link: "/settings/data-import-export" },
+    ],
+  },
+  "Form Controls": {
+    id: 292,
+    items: [
+      { name: "Input", link: "/forminput" },
+      { name: "Select", link: "/formselect" },
+      { name: "Listbox", link: "/formlistbox" },
+      { name: "Radio", link: "/formradiobutton" },
+      { name: "Textarea", link: "/formtextarea" },
+      { name: "Toggleswitch", link: "/formtoggleswitch" },      
     ],
   },
   "Client Stories": {

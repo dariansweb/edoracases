@@ -3,9 +3,9 @@ import { Routes, Route, Navigate } from "react-router-dom"; // Import Navigate f
 
 // HOME PAGE
 import Home from "../components/Pages/Home";
-import About from "../components/Pages/About"; 
-import Services from "../components/Pages/Services"; 
-import Contact from "../components/Pages/Contact"; 
+import About from "../components/Pages/About";
+import Services from "../components/Pages/Services";
+import Contact from "../components/Pages/Contact";
 import Privacy from "../components/Pages/Privacy";
 import Terms from "../components/Pages/Terms";
 import NotFound from "./Pages/NotFound";
@@ -23,10 +23,17 @@ import Prototypes from "../assets/prototypes/Prototypes";
 import FloatingActionButtons from "../assets/prototypes/FloatingActionButtons";
 import Dashboard1 from "../assets/prototypes/dashboards/Dashboard1";
 
-// CLIENT JOURNEY
-import CaseStory1 from "./CaseStories/Story1/CaseStoryPage"
+import FormInput from "../assets/Prototypes/formControls/Input";
+import FormListbox from "../assets/Prototypes/formControls/Listbox";
+import FormSelect from "../assets/Prototypes/formControls/Select";
+import FormTextarea from "../assets/Prototypes/formControls/Textarea";
+import FormRadiobuton from "../assets/Prototypes/formControls/Radiobutton"
+import FormToggleswitch from "../assets/Prototypes/formControls/ToggleSwitch"
 
-//ICONS 
+// PROTOTYPES CLIENT JOURNEY
+import CaseStory1 from "./CaseStories/Story1/CaseStoryPage";
+
+//ICONS
 import IconsList from "../components/Icons/IconList";
 
 const AppRoutes = () => {
@@ -44,15 +51,25 @@ const AppRoutes = () => {
       <Route path="/medical" element={<Medical />} />
       <Route path="/provider-services" element={<ProviderServices />} />
       <Route path="/privacy" element={<Privacy />} />
-      <Route path="/terms" element={<Terms />} />      
+      <Route path="/terms" element={<Terms />} />
 
       {/* Guides and Terms */}
       <Route path="/icons" element={<IconsList />} />
 
       {/* Prototype Components */}
       <Route path="/prototypes" element={<Prototypes />} />
-      <Route path="/floatingactionbuttons" element={<FloatingActionButtons />} />      
+      <Route
+        path="/floatingactionbuttons"
+        element={<FloatingActionButtons />}
+      />
       <Route path="/dashboard1" element={<Dashboard1 />} />
+
+      <Route path="/forminput" element={<FormInput />} />
+      <Route path="/formlistbox" element={<FormListbox />} />
+      <Route path="/formselect" element={<FormSelect />} />
+      <Route path="/formtextarea" element={<FormTextarea />} />
+      <Route path="/formradiobutton" element={ <FormRadiobuton />} />
+      <Route path="/formtoggleswitch" element={<FormToggleswitch />} />
 
       {/* Client Journeys */}
       <Route path="/client-start/*" element={<CaseStory1 />} />

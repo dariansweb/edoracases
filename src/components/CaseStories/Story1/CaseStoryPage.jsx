@@ -1,64 +1,96 @@
-import React from 'react';
-import { useNavigate, useLocation } from 'react-router-dom';
+import React, { useState } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
+import ListBox from '../../Atoms/Listbox'; 
 
 const CaseStoryPage = () => {
   const navigate = useNavigate();
   const location = useLocation();
-  
+
   // Extract the current steps in the case journey
-  const pathSegments = location.pathname.split('/').filter(Boolean);
+  const pathSegments = location.pathname.split("/").filter(Boolean);
 
   // Get the current step in the journey or default to 'client-start'
-  const currentStep = pathSegments[pathSegments.length - 1] || 'client-start';
+  const currentStep = pathSegments[pathSegments.length - 1] || "client-start";
 
   // Define possible stages and available next steps
   const stages = {
-    'client-start': ['referral', 'emergency-intervention'],
-    referral: ['intake', 'case-closure'],
-    intake: ['assessment', 'court-review'],
-    assessment: ['services', 'home-visit'],
-    services: ['counseling', 'residential'],
-    counseling: ['graduation', 'extended-support'],
-    'case-closure': ['closed-success', 'closed-failure'],
-    // ... more stages as needed
+    "client-start": ["Commitment", "Re-Commitment"],
+    Commitment: ["Intake", "Residential Placement", "JDC Diverted"],
+    intake: ["Assessment", "Treatment"],
+    assessment: ["Complete", "Incomplete"],
+    services: ["Counseling", "Residential"],
+    counseling: ["graduation", "extended-support"],
+    graduation: ["case-closure"],
+    "case-closure": ["closed-success", "closed-failure"],
   };
 
-  // Available actions based on the current step
-  const availableActions = stages[currentStep] || [];
+  // Track the selected action for the current stage
+  const [selectedAction, setSelectedAction] = useState('');
 
-  // Handle navigation to the next part of the client's story
-  const handleChoice = (action) => {
-    navigate(`${location.pathname}/${action}`); // Append the chosen stage to the current URL
+  // Handle moving to the next stage
+  const handleNext = () => {
+    if (selectedAction) {
+      const newPath = `${location.pathname.replace(/\/$/, "")}/${selectedAction}`;
+      navigate(newPath);
+      setSelectedAction(''); // Reset selection after moving to the next stage
+    }
   };
+
+  // Handle resetting the journey back to 'client-start'
+  const handleReset = () => {
+    navigate("/client-start");
+    setSelectedAction(''); // Reset selection
+  };
+
+  // Determine if the case is in its final stage ('case-closure')
+  const isCaseClosed = currentStep.includes("case-closure");
 
   return (
-    <div>
-    <nav>
-      {pathSegments.map((segment, index) => (
-        <span key={index}>
-          {segment.replace('-', ' ')}
-          {index < pathSegments.length - 1 && ' > '}
-        </span>
-      ))}
-    </nav>      
-      <h1>Case Story: {currentStep.replace('-', ' ')}</h1>
-      {availableActions.length > 0 ? (
-        <div>
-          <h2>What happens next?</h2>
-          <ul>
-            {availableActions.map((action, index) => (
-              <li key={index}>
-                <button onClick={() => handleChoice(action)}>
-                  {action.replace('-', ' ')}
-                </button>
-              </li>
-            ))}
-          </ul>
-        </div>
-      ) : (
-        <h2>Case Completed. View Report or Close Case.</h2>
-      )}
-    </div>
+    <>
+      {/* Display the path segments as navigation */}
+      <nav>
+        {pathSegments.map((segment, index) => (
+          <span key={index} className="text-block">
+            {segment.replace("-", " ")}
+            {index < pathSegments.length - 1 && " > "}
+          </span>
+        ))}
+      </nav>
+
+      {/* "New Client" button to restart the journey */}
+      <button onClick={handleReset} className="btn-reset">
+        New Client
+      </button>
+
+      <div className="pages-container">
+        <h1 className="dark">Case Story: {currentStep.replace("-", " ")}</h1>
+        
+        {isCaseClosed ? (
+          <h2 className="dark">Case Completed. View Report or Close Case.</h2>
+        ) : stages[currentStep] && stages[currentStep].length > 0 ? (
+          <div>
+            <h2 className="dark">What happens next?</h2>
+
+            {/* Use the ListBox component for the user to choose options */}
+            <ListBox
+              label="Select Next Action"
+              selectedValue={selectedAction}
+              onChange={setSelectedAction}
+              options={stages[currentStep].map(action => ({
+                label: action.replace("-", " "),
+                value: action,
+              }))}
+            />
+
+            <button onClick={handleNext} className="btn-next">
+              Next
+            </button>
+          </div>
+        ) : (
+          <h2 className="dark">No further actions available for this stage.</h2>
+        )}
+      </div>
+    </>
   );
 };
 

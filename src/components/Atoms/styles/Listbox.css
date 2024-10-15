@@ -1,0 +1,54 @@
+/* ListBox container styles */
+.listbox-container {
+  margin-bottom: 1.5rem; /* Spacing between list boxes */
+}
+
+/* Label styling */
+.listbox-label {
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem; /* Slightly smaller font for labels */
+  color: var(--theme1-dark);
+}
+
+/* ListBox field styles */
+.listbox-field {
+  border: 1px solid var(--theme6-dark);
+  border-radius: 0.375rem;
+  background-color: var(--theme3-light);
+  color: var(--theme1-dark);
+}
+
+/* ListBox option styles */
+.listbox-option {
+  padding: 0.75rem 1rem;
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.3s ease;
+}
+
+/* Selected state */
+.listbox-option.selected {
+  background-color: var(--theme4-dark); /* Highlight selected option */
+  color: white; /* Change text color for selected */
+}
+
+/* Hover state */
+.listbox-option:hover {
+  background-color: rgba(0, 123, 255, 0.1); /* Light blue background on hover */
+}
+
+/* Error state styles */
+.listbox-field--error {
+  border-color: var(--theme-alert3);
+}
+
+.listbox-field--error:focus {
+  box-shadow: 0 0 5px rgba(255, 76, 76, 0.5); /* Red shadow for errors */
+}
+
+/* Error message styles */
+.listbox-error {
+  margin-top: 0.25rem;
+  color: var(--theme-alert3);
+  font-size: 0.875rem;
+  font-weight: 500; /* Bold to make the error stand out */
+}

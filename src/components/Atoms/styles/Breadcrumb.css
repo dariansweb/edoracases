@@ -1,0 +1,16 @@
+.breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    font-size: 1.1em; /* Adjust font size as necessary */
+  }
+  
+  .breadcrumb-item {
+    margin-right: 5px;
+    color: #333; /* Change to desired color */
+  }
+  
+  .breadcrumb-separator {
+    color: #aaa; /* Change to desired color */
+  }
+  

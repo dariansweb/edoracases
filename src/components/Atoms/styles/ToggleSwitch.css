@@ -1,0 +1,79 @@
+/* Container for the toggle switch */
+.toggle-switch-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+/* Label styles */
+.toggle-switch-label {
+  margin-right: 1rem;
+  font-size: 1rem;
+}
+
+/* Toggle switch wrapper */
+.toggle-switch {
+  position: relative;
+}
+
+/* Hide the default checkbox input */
+.toggle-input {
+  display: none;
+}
+
+/* Styles for the toggle slider */
+.toggle-slider {
+  position: relative;
+  width: 50px; /* Base width */
+  height: 24px; /* Height of the toggle */
+  background-color: var(--theme3-dark); /* Background color when off */
+  border-radius: 50px; /* Rounded edges */
+  cursor: pointer; /* Pointer on hover */
+  transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+/* Circle inside the toggle slider */
+.toggle-slider:before {
+  content: '';
+  position: absolute;
+  width: 22px; /* Diameter of the circle */
+  height: 22px; /* Diameter of the circle */
+  background-color: var(--theme3-dark); /* Circle color */
+  border-radius: 50%; /* Make it round */
+  transition: transform 0.3s ease; /* Smooth movement transition */
+  left: 1px; /* Initial position */
+}
+
+/* Change background color when toggle is checked */
+.toggle-input:checked + .toggle-slider {
+  background-color: var(--theme3-light); /* Background when toggled on */
+}
+
+/* Move the circle when toggle is checked */
+.toggle-input:checked + .toggle-slider:before {
+  transform: translateX(26px); /* Move the circle */
+}
+
+/* Icon styles */
+.toggle-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); /* Center icons vertically */
+  font-size: 18px; /* Icon size */
+  color: white; /* Icon color */
+}
+
+/* Position for left icon */
+.toggle-icon-left {
+  left: 5px; /* Distance from left */
+}
+
+/* Position for right icon */
+.toggle-icon-right {
+  right: 5px; /* Distance from right */
+}
+
+/* Adjustments when using icons */
+.toggle-switch-container.with-icons .toggle-slider {
+  width: 60px; /* Increase width to fit icons */
+}

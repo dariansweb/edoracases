@@ -1,49 +1,38 @@
-import React from 'react'; 
-import PropTypes from 'prop-types'; 
+import React from 'react';
+import PropTypes from 'prop-types';
+import "./styles/Input.css"; // Make sure you have the necessary styles
 
-// Functional component for a modern, stylish input field
 const Input = ({
-  type,
-  label,
-  placeholder,
-  value,
+  type = 'text',
+  label = '',
+  placeholder = '',
+  value = '',
   onChange,
-  error
+  error = ''
 }) => {
   return (
-    <div className="input-container"> {/* Container for input and label */}
+    <div className="input-container">
       {label && <label className="input-label">{label}</label>}
-      
       <input
         type={type}
         placeholder={placeholder}
         value={value}
         onChange={onChange}
-        className={`input-field ${error ? 'input-field--error' : ''}`} // Conditional class based on error
-        aria-invalid={!!error} // Accessibility: mark input as invalid if error exists
+        className={`input-field ${error ? 'input-field--error' : ''}`}
+        aria-invalid={!!error}
       />
-      
       {error && <span className="input-error">{error}</span>}
     </div>
   );
 };
 
-// PropTypes validation to enforce the correct data types for props
 Input.propTypes = {
-  type: PropTypes.string.isRequired,
+  type: PropTypes.string,
   label: PropTypes.string,
   placeholder: PropTypes.string,
-  value: PropTypes.string.isRequired,
+  value: PropTypes.string,
   onChange: PropTypes.func.isRequired,
   error: PropTypes.string,
-};
-
-// Default props for the component in case they are not provided
-Input.defaultProps = {
-  type: 'text',
-  label: '',
-  placeholder: '',
-  error: '',
 };
 
 export default Input;
