@@ -18,6 +18,7 @@ export const starMenuItems = [
   { id: 8, name: "About", link: "/about" },
   { id: 9, name: "Services", link: "/services" },  
   { id: 10, name: "Contact", link: "/contact" },
+  { id: 137, name: "Guides", link: "/icons" },
 ];
 
 export const adminMenuItems = [
