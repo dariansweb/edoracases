@@ -23,12 +23,12 @@ import Prototypes from "../assets/prototypes/Prototypes";
 import FloatingActionButtons from "../assets/prototypes/FloatingActionButtons";
 import Dashboard1 from "../assets/prototypes/dashboards/Dashboard1";
 
-import FormInput from "../assets/Prototypes/formControls/Input";
-import FormListbox from "../assets/Prototypes/formControls/Listbox";
-import FormSelect from "../assets/Prototypes/formControls/Select";
-import FormTextarea from "../assets/Prototypes/formControls/Textarea";
-import FormRadiobuton from "../assets/Prototypes/formControls/Radiobutton"
-import FormCheckbox from "../assets/Prototypes/formControls/Checkbox"
+import FormInput from "../assets/prototypes/formControls/Input";
+import FormListbox from "../assets/prototypes/formControls/Listbox";
+import FormSelect from "../assets/prototypes/formControls/Select";
+import FormTextarea from "../assets/prototypes/formControls/Textarea";
+import FormRadiobuton from "../assets/prototypes/formControls/Radiobutton"
+import FormCheckbox from "../assets/prototypes/formControls/Checkbox"
 
 // PROTOTYPES CLIENT JOURNEY
 import CaseStory1 from "./CaseStories/Story1/CaseStoryPage";
