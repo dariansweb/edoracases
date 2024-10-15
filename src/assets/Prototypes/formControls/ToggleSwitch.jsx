@@ -1,33 +1,37 @@
 import React, { useState } from "react";
 import ToggleSwitch from "../../../components/Atoms/ToggleSwitch";
+import ErrorBoundary from "../.././../utils/ErrorBoundary"; // The ErrorBoundary we just created
 
 const ToggleSwitchPrototypes = () => {
-  const [isToggled, setIsToggled] = useState(false);
+  // Separate states for each toggle
+  const [isBasicToggled, setIsBasicToggled] = useState(false);
 
-  const handleToggle = () => {
-    setIsToggled(!isToggled);
+  const handleBasicToggle = (newCheckedState) => {
+    setIsBasicToggled(newCheckedState); // Set state to the passed value
   };
 
   return (
     <div className="pages-container">
       <h1 className="dark">Toggle Switch Examples</h1>
-      
-      {/* Basic Toggle */}
-      <ToggleSwitch
-        label="Basic Toggle"
-        checked={isToggled} // Use isToggled here
-        onChange={handleToggle} // Use handleToggle function
-      />
-      
-      {/* Toggle with Icons */}
-      <ToggleSwitch
-        label="Toggle with Icons"
-        checked={isToggled} // Use isToggled here
-        onChange={handleToggle} // Use handleToggle function
-        variant="with-icons"
-        iconLeft="🌙" // Icon when off
-        iconRight="☀️" // Icon when on
-      />
+      <ErrorBoundary>
+        {/* Basic Toggle */}
+        <ToggleSwitch
+          label="Basic Toggle"
+          checked={isBasicToggled} // Controlled component
+          onChange={handleBasicToggle} // Update state correctly
+        />
+
+        {/* Conditionally rendered div based on toggle state */}
+        {isBasicToggled ? (
+          <div className="toggle-content">
+            <p>The toggle is ON! 🎉</p>
+          </div>
+        ) : (
+          <div className="toggle-content">
+            <p>The toggle is OFF! 😢</p>
+          </div>
+        )}
+      </ErrorBoundary>
     </div>
   );
 };

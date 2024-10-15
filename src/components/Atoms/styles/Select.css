@@ -6,16 +6,17 @@
     flex-direction: column;
   }
 
-  .select-row {
+  .select-column {
     display: flex; /* Use flexbox for horizontal layout */
     flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    flex-direction: column;
     gap: 20px; /* Space between selects */
   }
   
   /* Label styling */
   .select-label {
     margin-bottom: 0.5rem;
-    font-size: 0.875rem; /* Matching font size with Input label */
+    font-size: 1.2rem; /* Matching font size with Input label */
     color: var(--theme1-dark);
   }
   
@@ -23,22 +24,26 @@
   .select-field {
     padding: 0.75rem 1rem;
     border: 1px solid var(--theme6-dark);
-    border-radius: 0.375rem;
+    border-radius: 0.8rem;
     background-color: var(--theme3-light);
     color: var(--theme1-dark);
-    font-size: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
   }
   
   /* Focus and hover states */
   .select-field:focus {
     outline: none;
-    border-color: var(--theme4-dark);
+    border-color: var(--theme6-dark);
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Same subtle focus shadow */
   }
   
   .select-field:hover {
-    border-color: var(--theme4-dark); /* Change border color on hover */
+    border-color: var(--theme1-dark); /* Change border color on hover */
+    font-weight: 800;
+    background-color: var(--theme3-dark);
+    color: var(--theme3-light)
   }
   
   /* Error state styles */
@@ -62,5 +67,6 @@
   select,
   label {
     transition: all 0.3s ease;
+    font-weight: 600;
   }
   

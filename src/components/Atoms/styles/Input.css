@@ -8,25 +8,26 @@
 /* Label styling */
 .input-label {
   margin-bottom: 0.5rem;
-  font-size: 0.875rem; /* Slightly smaller font for labels */
+  font-size: 1.2rem; /* Slightly smaller font for labels */
   color: var(--theme1-dark);
 }
 
 /* Input field styles */
 .input-field {
   padding: 0.75rem 1rem;
-  border: 1px solid var(--theme6-dark);
+  border: 1px solid var(--theme3-dark);
   border-radius: 0.375rem;
   background-color: var(--theme3-light);
   color: var(--theme1-dark);
-  font-size: 1rem;
+  font-weight: 600;
+  font-size: 1.2rem;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Focus and hover states */
 .input-field:focus {
   outline: none;
-  border-color: var(--theme4-dark);
+  border-color: var(--theme1-dark);
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Subtle shadow on focus */
 }
 
@@ -55,4 +56,5 @@
 input,
 label {
   transition: all 0.3s ease;
+  font-weight: 700;
 }

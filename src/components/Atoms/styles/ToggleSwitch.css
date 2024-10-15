@@ -5,75 +5,142 @@
   margin-bottom: 1rem;
 }
 
-/* Label styles */
 .toggle-switch-label {
   margin-right: 1rem;
   font-size: 1rem;
 }
 
-/* Toggle switch wrapper */
+/* Toggle switch outer container */
 .toggle-switch {
   position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
 }
 
-/* Hide the default checkbox input */
+/* Hide the original checkbox */
 .toggle-input {
-  display: none;
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
 
-/* Styles for the toggle slider */
+/* The slider or the "track" of the toggle */
 .toggle-slider {
-  position: relative;
-  width: 50px; /* Base width */
-  height: 24px; /* Height of the toggle */
-  background-color: var(--theme3-dark); /* Background color when off */
-  border-radius: 50px; /* Rounded edges */
-  cursor: pointer; /* Pointer on hover */
-  transition: background-color 0.3s ease; /* Smooth background transition */
-}
-
-/* Circle inside the toggle slider */
-.toggle-slider:before {
-  content: '';
   position: absolute;
-  width: 22px; /* Diameter of the circle */
-  height: 22px; /* Diameter of the circle */
-  background-color: var(--theme3-dark); /* Circle color */
-  border-radius: 50%; /* Make it round */
-  transition: transform 0.3s ease; /* Smooth movement transition */
-  left: 1px; /* Initial position */
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc; /* Default background (OFF state) */
+  transition: 0.4s;
+  border-radius: 24px; /* Rounds the edges */
 }
 
-/* Change background color when toggle is checked */
+/* The circle that moves when toggled */
+.toggle-slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+/* When checked, change the background color to ON state */
 .toggle-input:checked + .toggle-slider {
-  background-color: var(--theme3-light); /* Background when toggled on */
+  background-color: #66bb6a; /* ON state color */
 }
 
-/* Move the circle when toggle is checked */
+/* Move the toggle handle (the circle) when checked */
 .toggle-input:checked + .toggle-slider:before {
-  transform: translateX(26px); /* Move the circle */
+  transform: translateX(26px);
 }
 
-/* Icon styles */
+/* Optional: Icon styles for the toggle */
 .toggle-icon {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%); /* Center icons vertically */
-  font-size: 18px; /* Icon size */
-  color: white; /* Icon color */
+  transform: translateY(-50%);
+  font-size: 14px;
 }
 
-/* Position for left icon */
 .toggle-icon-left {
-  left: 5px; /* Distance from left */
+  left: 5px;
 }
 
-/* Position for right icon */
 .toggle-icon-right {
-  right: 5px; /* Distance from right */
+  right: 5px;
 }
 
-/* Adjustments when using icons */
+/* Adjust the width of the slider if icons are present */
 .toggle-switch-container.with-icons .toggle-slider {
-  width: 60px; /* Increase width to fit icons */
+  width: 60px;
+}
+
+
+/* src/pages/ToggleRadioButtonPrototypes.css */
+
+.toggle-radio-prototype-section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.toggle-radio-button {
+  position: relative;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.toggle-input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.toggle-label {
+  padding: 10px 20px;
+  background-color: #e0e0e0;
+  border-radius: 30px;
+  border: 2px solid transparent;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s, border 0.3s, color 0.3s;
+}
+
+.toggle-label:hover {
+  background-color: #d5d5d5;
+}
+
+.toggle-custom {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border: 2px solid #aaa;
+  border-radius: 50%;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.toggle-input:checked + .toggle-label {
+  background-color: #4caf50;
+  border-color: #4caf50;
+  color: white;
+}
+
+.toggle-input:checked + .toggle-label .toggle-custom {
+  background-color: #4caf50;
+  transform: scale(1.2);
 }

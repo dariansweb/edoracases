@@ -5,23 +5,24 @@
 }
 
 .radio-group-label {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: bold;
   color: var(--theme3-dark);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.8rem;
 }
 
 .radio-group {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  font-weight: 600;
+  gap: 0.8rem;
 }
 
 .radio-option {
   position: relative;
   display: flex;
   align-items: center;
-  font-size: 1rem;
+  font-size: 1.2rem;
   cursor: pointer;
   padding-left: 30px; /* Makes space for the custom radio */
 }

@@ -4,16 +4,19 @@ import './styles/ToggleSwitch.css';
 
 const ToggleSwitch = ({ 
   label = '', // Default parameter
-  checked = false, // Default parameter
+  checked = true, // Default parameter
   onChange, 
   variant = 'basic', // Default parameter
   iconLeft = null, // Default parameter
   iconRight = null // Default parameter
 }) => {
+  const handleChange = (event) => {
+    onChange(event.target.checked); // Pass the actual checked value
+  };
+
   const renderIcons = () => (
     <>
       {iconLeft && <span className="toggle-icon toggle-icon-left">{iconLeft}</span>}
-      <span className="toggle-slider"></span>
       {iconRight && <span className="toggle-icon toggle-icon-right">{iconRight}</span>}
     </>
   );
@@ -26,10 +29,12 @@ const ToggleSwitch = ({
           type="checkbox" 
           className="toggle-input" 
           checked={checked} 
-          onChange={onChange} 
+          onChange={handleChange} // Use the local handleChange function
           id={`toggle-${label}`} 
         />
-        {variant === 'with-icons' ? renderIcons() : <span className="toggle-slider"></span>}
+        <span className="toggle-slider">
+          {variant === 'with-icons' && renderIcons()}
+        </span>
       </div>
     </div>
   );

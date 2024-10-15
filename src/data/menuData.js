@@ -53,7 +53,7 @@ export const prototypes = {
       { name: "Listbox", link: "/formlistbox" },
       { name: "Radio", link: "/formradiobutton" },
       { name: "Textarea", link: "/formtextarea" },
-      { name: "Toggleswitch", link: "/formtoggleswitch" },      
+      { name: "Checkbox", link: "/formcheckbox" },
     ],
   },
   "Client Stories": {

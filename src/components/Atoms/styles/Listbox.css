@@ -6,13 +6,13 @@
 /* Label styling */
 .listbox-label {
   margin-bottom: 0.5rem;
-  font-size: 0.875rem; /* Slightly smaller font for labels */
+  font-size: 1.4rem; /* Slightly smaller font for labels */
   color: var(--theme1-dark);
 }
 
 /* ListBox field styles */
 .listbox-field {
-  border: 1px solid var(--theme6-dark);
+  border: 2px inset var(--theme4-dark);
   border-radius: 0.375rem;
   background-color: var(--theme3-light);
   color: var(--theme1-dark);
@@ -22,18 +22,23 @@
 .listbox-option {
   padding: 0.75rem 1rem;
   cursor: pointer; /* Change cursor to pointer on hover */
+  background-color: var(--theme3-light);
+  color: var(--theme1-dark);
+  font-weight: 600;
   transition: background-color 0.3s ease;
 }
 
 /* Selected state */
 .listbox-option.selected {
-  background-color: var(--theme4-dark); /* Highlight selected option */
-  color: white; /* Change text color for selected */
+  background-color: var(--theme1-dark); /* Highlight selected option */
+  color: var(--theme6-light); /* Change text color for selected */
+  font-weight: 700;
 }
 
 /* Hover state */
 .listbox-option:hover {
-  background-color: rgba(0, 123, 255, 0.1); /* Light blue background on hover */
+  background-color: var(--theme1-dark); /* Light blue background on hover */
+  color: var(--theme1-light)
 }
 
 /* Error state styles */

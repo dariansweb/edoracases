@@ -28,7 +28,7 @@ import FormListbox from "../assets/Prototypes/formControls/Listbox";
 import FormSelect from "../assets/Prototypes/formControls/Select";
 import FormTextarea from "../assets/Prototypes/formControls/Textarea";
 import FormRadiobuton from "../assets/Prototypes/formControls/Radiobutton"
-import FormToggleswitch from "../assets/Prototypes/formControls/ToggleSwitch"
+import FormCheckbox from "../assets/Prototypes/formControls/Checkbox"
 
 // PROTOTYPES CLIENT JOURNEY
 import CaseStory1 from "./CaseStories/Story1/CaseStoryPage";
@@ -69,7 +69,7 @@ const AppRoutes = () => {
       <Route path="/formselect" element={<FormSelect />} />
       <Route path="/formtextarea" element={<FormTextarea />} />
       <Route path="/formradiobutton" element={ <FormRadiobuton />} />
-      <Route path="/formtoggleswitch" element={<FormToggleswitch />} />
+      <Route path="/formcheckbox" element={<FormCheckbox />} />
 
       {/* Client Journeys */}
       <Route path="/client-start/*" element={<CaseStory1 />} />

@@ -28,6 +28,6 @@ export { default as ListboxPrototype } from "../assets/Prototypes/formControls/L
 export { default as SelectPrototype } from "../assets/Prototypes/formControls/Select"
 export { default as TextareaPrototype } from "../assets/Prototypes/formControls/Textarea"
 export { default as RadiobuttonPrototype } from "../assets/Prototypes/formControls/Radiobutton"
-export { default as ToggleSwitchPrototypes } from "../assets/Prototypes/formControls/ToggleSwitch"
+export { default as CheckboxPrototypes } from "../assets/Prototypes/formControls/Checkbox"
 
 export { default as CaseStory1 } from './CaseStories/Story1/CaseStoryPage';
