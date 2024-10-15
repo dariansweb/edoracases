@@ -8,7 +8,8 @@
 // ];
 
 export const mainMenuItems = [
-  { id: 4, name: "JJIS", link: "/juvenile-justice" },
+  { id: 107, name: "Guides", link: "/icons" },
+  { id: 108, name: "Client Story 1", link: "/client-start" },
 ];
 
 export const starMenuItems = [
@@ -17,7 +18,6 @@ export const starMenuItems = [
   { id: 8, name: "About", link: "/about" },
   { id: 9, name: "Services", link: "/services" },  
   { id: 10, name: "Contact", link: "/contact" },
-  { id: 107, name: "Guides", link: "/icons" },
 ];
 
 export const adminMenuItems = [
