@@ -76,7 +76,7 @@ const InputPrototype = () => {
   return (
     <div className="pages-container">
       <section>
-        <h1 className="dark">Form Input Types</h1>
+        <h1 className="dark">Input Prototypes</h1>
         <div className="input-row">
           <Input
             type="text"
