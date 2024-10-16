@@ -61,7 +61,6 @@ const ListboxPrototype = () => {
 
   return (
     <div className="pages-container">
-      <section>
         <div className="text-block">Listbox Prototypes</div>
 
         {/* Breadcrumb Component */}
@@ -107,7 +106,6 @@ const ListboxPrototype = () => {
             error={sizeError}
           />
         </div>
-      </section>{" "}
     </div>
   );
 };

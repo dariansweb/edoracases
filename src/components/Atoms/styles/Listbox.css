@@ -1,6 +1,7 @@
 /* ListBox container styles */
 .listbox-container {
   margin-bottom: 1.5rem; /* Spacing between list boxes */
+  min-width: 300px;
 }
 
 /* Label styling */
@@ -37,8 +38,9 @@
 
 /* Hover state */
 .listbox-option:hover {
-  background-color: var(--theme1-dark); /* Light blue background on hover */
-  color: var(--theme1-light)
+  background-color: var(--theme6-light);
+  color: var(--theme1-dark);
+  border: 1px outset var(--theme3-dark);
 }
 
 /* Error state styles */
@@ -56,4 +58,11 @@
   color: var(--theme-alert3);
   font-size: 0.875rem;
   font-weight: 500; /* Bold to make the error stand out */
+}
+
+@media (max-width: 768px) {
+  .listbox-container {
+    width: 80vw; /* Set minimum width to 80% of the viewport */
+    margin-right: 0.4rem;
+  }
 }

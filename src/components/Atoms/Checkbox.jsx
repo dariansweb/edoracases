@@ -1,10 +1,16 @@
-// Checkbox.js
 import React from 'react';
 import PropTypes from 'prop-types';
 import './styles/Checkbox.css'; // Assuming you'll put the CSS here
 
 // Functional component for a modern, stylish checkbox group
-const Checkbox = ({ label, options, selectedValues, onChange, isLarge, error }) => {
+const Checkbox = ({
+  label = '', // Default value
+  options,
+  selectedValues = [], // Default value
+  onChange,
+  isLarge = false, // Default value
+  error = '', // Default value
+}) => {
   return (
     <div className="checkbox-group-container">
       {label && <label className="checkbox-group-label">{label}</label>}
@@ -44,11 +50,6 @@ Checkbox.propTypes = {
   selectedValues: PropTypes.arrayOf(PropTypes.string).isRequired,
   onChange: PropTypes.func.isRequired,
   error: PropTypes.string,
-};
-
-Checkbox.defaultProps = {
-  label: '',
-  error: '',
 };
 
 export default Checkbox;

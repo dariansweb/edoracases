@@ -75,7 +75,6 @@ const InputPrototype = () => {
 
   return (
     <div className="pages-container">
-      <section>
         <div className="text-block">Input Prototypes</div>
         <div className="input-row">
           <Input
@@ -150,7 +149,6 @@ const InputPrototype = () => {
           />
           <Input type="color" label="Color Input" />
         </div>
-      </section>
     </div>
   );
 };

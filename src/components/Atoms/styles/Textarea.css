@@ -8,7 +8,7 @@
   /* Label styling */
   .textarea-label {
     margin-bottom: 0.5rem;
-    font-size: 1.2rem; /* Matching font size with Input label */
+    font-size: 1.1rem; /* Matching font size with Input label */
     color: var(--theme1-dark);
   }
   
@@ -19,7 +19,7 @@
     border-radius: 0.375rem;
     background-color: var(--theme3-light);
     color: var(--theme1-dark);
-    font-size: 1.4rem;
+    font-size: 0.8rem;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
     resize: vertical; /* Allows vertical resizing, but not horizontal */
     min-height: 5rem; /* Sets a minimum height */
@@ -28,7 +28,8 @@
   /* Focus and hover states */
   .textarea-field:focus {
     outline: none;
-    border-color: var(--theme3-dark);
+    border-color: var(--theme1-dark);
+    background-color: var(--theme6-light);
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Same subtle focus shadow */
   }
   
@@ -64,4 +65,8 @@
     overflow: auto; /* Ensures content is scrollable if it overflows */
   }
   
-  
+  @media (max-width: 768px) {
+    .textarea-container {
+      width: 70vw; /* Set minimum width to 80% of the viewport */
+    }
+  }

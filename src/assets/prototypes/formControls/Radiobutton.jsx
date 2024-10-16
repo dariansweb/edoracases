@@ -31,7 +31,6 @@ const RadiobuttonPrototypes = () => {
 
   return (
     <div className="pages-container">
-      <section>
         <div className="text-block">Radio Button Prototypes</div>
 
         {/* Basic Radio Group */}
@@ -86,7 +85,6 @@ const RadiobuttonPrototypes = () => {
             onChange={setSelectedSwitch}
           />
         </div>
-      </section>{" "}
     </div>
   );
 };

@@ -5,7 +5,7 @@ import "./styles/Prototype.css";
 const Prototypes = () => {
   return (
     <>
-      <h1 className="dark">Prototypes</h1>
+      <h1 className="dark">Input Prototypes</h1>
 
       {/* Submenu Navigation */}
       <div className="submenu">

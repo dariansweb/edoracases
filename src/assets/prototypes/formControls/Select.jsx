@@ -29,7 +29,6 @@ const SelectPrototype = () => {
 
   return (
     <div className="pages-container">
-      <section>
         <div className="text-block">Select Prototypes</div>
 
         <Breadcrumb selections={selections} />
@@ -106,7 +105,6 @@ const SelectPrototype = () => {
             onChange={handleVehicleChange}
           />
         </div>
-      </section>
     </div>
   );
 };

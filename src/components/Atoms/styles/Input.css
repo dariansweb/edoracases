@@ -32,7 +32,8 @@
 }
 
 .input-field:hover {
-  border-color: var(--theme4-dark); /* Change border color on hover */
+  border-color: var(--theme1-dark); /* Change border color on hover */
+  background-color: var(--theme5-light);
 }
 
 /* Error state styles */
@@ -57,4 +58,10 @@ input,
 label {
   transition: all 0.3s ease;
   font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .input-container {
+    width: 80vw; /* Set minimum width to 80% of the viewport */
+  }
 }

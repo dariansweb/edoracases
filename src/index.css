@@ -13,7 +13,7 @@ html {
   scroll-behavior: smooth; /* Smooth scrolling */
   height: 100%; /* Ensure body and HTML take up full height */
   overflow: auto; /* Make sure scrolling is allowed */
-    
+
   font-family: "Montserrat", sans-serif;
   font-size: 100%; /* Or try using rem units for consistency */
 
@@ -27,7 +27,7 @@ html {
 }
 body {
   -webkit-font-smoothing: antialiased; /* Chrome, Safari */
-  -moz-osx-font-smoothing: grayscale; /* Firefox */  
+  -moz-osx-font-smoothing: grayscale; /* Firefox */
   text-rendering: optimizeLegibility;
   font-smoothing: antialiased;
 }
@@ -238,8 +238,8 @@ ol li::before {
   color: var(--theme3-light); /* Maintain color consistency */
   position: relative; /* Needed for effects like before/after pseudo-elements */
   display: inline-block; /* Ensures the element can scale and animate cleanly */
-  margin:0 0.5rem;
-  
+  margin: 0 0.5rem;
+
   /* Underline Effect with Animation */
   overflow: hidden; /* Ensures the underline animation is smooth */
   letter-spacing: 0.1em; /* Adds a sleek touch to text spacing */
@@ -250,14 +250,16 @@ ol li::before {
 }
 
 .strong::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 3px; /* Thickness of the animated underline */
-  background-color: var(--theme3-highlight); /* Different color for the underline */
-  transform: scaleX(0)  ; /* Initially hidden */
+  background-color: var(
+    --theme3-highlight
+  ); /* Different color for the underline */
+  transform: scaleX(0); /* Initially hidden */
   transform-origin: left;
   transition: transform 0.3s ease-in-out; /* Smooth reveal animation */
 }
@@ -441,5 +443,19 @@ a.dark:active {
 
   aside {
     max-width: 100%; /* Expand asides to full width on smaller screens */
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0rem 0; /* Remove vertical spacing around headers */
+    padding: 0 1rem; /* Add horizontal padding for breathing space */
+    font-size: calc(1rem + 1vw); /* Responsive font size */
+    overflow-wrap: break-word; /* Break long words to prevent overflow */
+    word-wrap: break-word; /* Legacy support for word wrapping */
+    white-space: normal; /* Allow text to wrap onto the next line */
+    width: 80vw;
   }
 }

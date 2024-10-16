@@ -24,7 +24,7 @@
   .select-field {
     padding: 0.75rem 1rem;
     border: 1px solid var(--theme6-dark);
-    border-radius: 0.8rem;
+    border-radius: 0.4rem;
     background-color: var(--theme3-light);
     color: var(--theme1-dark);
     font-size: 1.2rem;
@@ -41,9 +41,9 @@
   
   .select-field:hover {
     border-color: var(--theme1-dark); /* Change border color on hover */
-    font-weight: 800;
-    background-color: var(--theme3-dark);
-    color: var(--theme3-light)
+    font-weight: 600;
+    background-color: var(--theme6-light);
+    color: var(--theme1-dark)
   }
   
   /* Error state styles */
@@ -69,4 +69,8 @@
     transition: all 0.3s ease;
     font-weight: 600;
   }
-  
+  @media (max-width: 768px) {
+    .select-container {
+      width: 80vw; /* Set minimum width to 80% of the viewport */
+    }
+  }
