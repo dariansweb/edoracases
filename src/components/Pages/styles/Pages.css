@@ -34,7 +34,7 @@
   padding-left: 1.5rem;
   text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.1);
   position: relative;
-  text-indent: 2rem; /* Adding the actual text indentation */
+  /* text-indent: 2rem;  Adding the actual text indentation */
 }
 
 /* Adding a bit of pizzazz to the first letter */
@@ -47,7 +47,7 @@
 /* } */ */
 
 /* Adding a custom visual indent with flair */
-.text-block::before {
+.texts-block::before {
   content: "";
   position: absolute;
   left: 0;
