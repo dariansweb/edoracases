@@ -95,7 +95,7 @@
   @media (max-width: 768px) {
   .pages-container {
     padding: 0.8rem;
-    min-width: 412px;
+    min-width: 320px;
     align-items: stretch; /* Ensure full width on smaller screens */
   }
   .text-block {
