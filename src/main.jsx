@@ -10,9 +10,11 @@ import "./styles.css";
 const AppWrapper = () => {
   const location = useLocation();
 
-  // Get the current pathname to apply conditional logic
+  // Check if the current route is Home
   const isHome = location.pathname === '/';
-  const isFABPrototype = location.pathname === '/floatingactionbuttons'; // Replace with actual path for FAB
+
+  // Check if the current route starts with '/prototypes'
+  const isPrototype = location.pathname.startsWith('/prototypes');
 
   return (
     <>
@@ -27,11 +29,12 @@ const AppWrapper = () => {
 
       <AppRoutes /> {/* Your main routing component */}
       
-      {/* Conditionally show Footer, but hide on FAB prototype pages */}
-      {!isFABPrototype && <Footer />}
+      {/* Conditionally show Footer, hide on all prototype-related pages */}
+      {!isPrototype && <Footer />}
     </>
   );
 };
+
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <StrictMode>

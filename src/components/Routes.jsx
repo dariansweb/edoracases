@@ -27,8 +27,8 @@ import FormInput from "../assets/prototypes/formControls/Input";
 import FormListbox from "../assets/prototypes/formControls/Listbox";
 import FormSelect from "../assets/prototypes/formControls/Select";
 import FormTextarea from "../assets/prototypes/formControls/Textarea";
-import FormRadiobuton from "../assets/prototypes/formControls/Radiobutton"
-import FormCheckbox from "../assets/prototypes/formControls/Checkbox"
+import FormRadiobutton from "../assets/prototypes/formControls/Radiobutton";
+import FormCheckbox from "../assets/prototypes/formControls/Checkbox";
 
 // PROTOTYPES CLIENT JOURNEY
 import CaseStory1 from "./CaseStories/Story1/CaseStoryPage";
@@ -56,25 +56,22 @@ const AppRoutes = () => {
       {/* Guides and Terms */}
       <Route path="/icons" element={<IconsList />} />
 
-      {/* Prototype Components */}
-      <Route path="/prototypes" element={<Prototypes />} />
-      <Route
-        path="/floatingactionbuttons"
-        element={<FloatingActionButtons />}
-      />
-      <Route path="/dashboard1" element={<Dashboard1 />} />
-
-      <Route path="/forminput" element={<FormInput />} />
-      <Route path="/formlistbox" element={<FormListbox />} />
-      <Route path="/formselect" element={<FormSelect />} />
-      <Route path="/formtextarea" element={<FormTextarea />} />
-      <Route path="/formradiobutton" element={ <FormRadiobuton />} />
-      <Route path="/formcheckbox" element={<FormCheckbox />} />
+      {/* Prototype Routes with Nested Child Components */}
+      <Route path="/prototypes" element={<Prototypes />}>
+        <Route path="floatingactionbuttons" element={<FloatingActionButtons />} />
+        <Route path="dashboard1" element={<Dashboard1 />} />
+        <Route path="forminput" element={<FormInput />} />
+        <Route path="formlistbox" element={<FormListbox />} />
+        <Route path="formselect" element={<FormSelect />} />
+        <Route path="formtextarea" element={<FormTextarea />} />
+        <Route path="formradiobutton" element={<FormRadiobutton />} />
+        <Route path="formcheckbox" element={<FormCheckbox />} />
+      </Route>
 
       {/* Client Journeys */}
       <Route path="/client-start/*" element={<CaseStory1 />} />
 
-      {/* 404 page a 404 component */}
+      {/* 404 page */}
       <Route path="*" element={<NotFound />} />
     </Routes>
   );

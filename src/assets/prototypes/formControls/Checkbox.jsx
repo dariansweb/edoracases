@@ -33,7 +33,7 @@ const CheckboxPrototype = () => {
   return (
     <div className="pages-container">
       <section>
-        <h2 className="dark">Checkbox Prototypes</h2>
+        <h1 className="dark">Checkbox Prototypes</h1>
 
         {/* Example Group 1 */}
         <h3 className="dark">Example Group 1</h3>

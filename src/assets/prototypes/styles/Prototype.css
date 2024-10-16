@@ -50,4 +50,31 @@
     flex: 1 0 auto; /* Allow items to take full width of the container */
     width: 100%; /* Ensure items take the full width in mobile view */
   }  
+  .submenu {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 items per row */
+    gap: 15px; /* Optional, adjust the gap between items */
+  }  
 }         
+
+
+.submenu {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap; /* Allow items to wrap */
+}
+
+.submenu a {
+  text-decoration: none;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: black;
+}
+
+.submenu a.active {
+  background-color: #007bff;
+  color: white;
+}
