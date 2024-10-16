@@ -21,7 +21,6 @@ const TextareaPage = () => {
 
   return (
     <div className="pages-container">
-      <section>
         <div className="text-block">Textarea Prototypes</div>
 
         {/* Wrap each Textarea in an ErrorBoundary */}
@@ -68,7 +67,6 @@ const TextareaPage = () => {
             />
           </ErrorBoundary>
         </div>
-      </section>{" "}
     </div>
   );
 };

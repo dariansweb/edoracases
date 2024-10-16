@@ -452,10 +452,21 @@ a.dark:active {
   h6 {
     margin: 0rem 0; /* Remove vertical spacing around headers */
     padding: 0 1rem; /* Add horizontal padding for breathing space */
-    font-size: calc(1rem + 1vw); /* Responsive font size */
+    font-size: calc(0.8rem + 0.8vw); /* Responsive font size */
     overflow-wrap: break-word; /* Break long words to prevent overflow */
     word-wrap: break-word; /* Legacy support for word wrapping */
     white-space: normal; /* Allow text to wrap onto the next line */
     width: 80vw;
+    font-weight: 400;
   }
+  dd, dl, blockquote {
+    margin: 0;
+    padding: 0.1rem 0 0.5rem 1.2rem; /* Adjusted padding */
+    font-size: 0.8em;
+    line-height: 1.4;
+    color: var(--theme1-dark); /* Muted Forest */
+    border-bottom: 1px solid var(--theme6-light); /* Light Sand separator */
+    transition: background-color 0.3s ease-in-out;
+  }
+  
 }

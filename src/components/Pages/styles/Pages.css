@@ -99,7 +99,12 @@
     align-items: stretch; /* Ensure full width on smaller screens */
   }
   .text-block {
-    width: 80vw;
+    margin: 0;
+    font-size: 0.8em;
+    line-height: 1.4;
+    color: var(--theme1-dark); /* Muted Forest */
+    border-bottom: 1px solid var(--theme6-light); /* Light Sand separator */
+    transition: background-color 0.3s ease-in-out;
   }  
 }
 
