@@ -51,7 +51,7 @@
   
   .service-title {
     font-size: 1.3rem; /* Title font size */
-    color: #1976d2; /* Blue color */
+    color: var(--theme3-dark); /* Blue color */
     margin: 5px 0; /* Space around the title */
   }
   
