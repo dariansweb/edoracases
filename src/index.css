@@ -271,7 +271,9 @@ ol li::before {
 .strong:hover {
   color: var(--theme3-highlight); /* Changes text color on hover */
 }
-
+.centered {
+    text-align: center; /* Centered text for consistency */
+}
 /* Common styles for all headers */
 h1,
 h2,
@@ -279,7 +281,6 @@ h3,
 h4,
 h5,
 h6 {
-  text-align: center; /* Centered text for consistency */
   margin: 1rem 0; /* Vertical spacing around headers */
 }
 
@@ -455,12 +456,9 @@ a.dark:active {
   h6 {
     margin: 0rem 0; /* Remove vertical spacing around headers */
     padding: 0 1rem; /* Add horizontal padding for breathing space */
-    font-size: calc(0.8rem + 0.8vw); /* Responsive font size */
     overflow-wrap: break-word; /* Break long words to prevent overflow */
     word-wrap: break-word; /* Legacy support for word wrapping */
     white-space: normal; /* Allow text to wrap onto the next line */
-    width: 80vw;
-    font-weight: 400;
   }
   dd, dl, blockquote {
     margin: 0;
