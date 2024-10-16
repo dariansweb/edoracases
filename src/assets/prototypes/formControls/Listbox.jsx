@@ -62,7 +62,7 @@ const ListboxPrototype = () => {
   return (
     <div className="pages-container">
       <section>
-        <h1 className="dark">Listbox Prototypes</h1>
+        <div className="text-block">Listbox Prototypes</div>
 
         {/* Breadcrumb Component */}
         <Breadcrumb items={breadcrumbItems} />

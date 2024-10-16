@@ -30,7 +30,7 @@ const SelectPrototype = () => {
   return (
     <div className="pages-container">
       <section>
-        <h1 className="dark">Select Prototypes</h1>
+        <div className="text-block">Select Prototypes</div>
 
         <Breadcrumb selections={selections} />
 

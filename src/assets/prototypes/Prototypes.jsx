@@ -49,7 +49,7 @@ const Prototypes = () => {
           to="formradiobutton"
           className={({ isActive }) => (isActive ? "active" : "")}
         >
-          Button
+          Radio
         </NavLink>
         <NavLink
           to="formcheckbox"

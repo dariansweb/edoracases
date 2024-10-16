@@ -32,11 +32,11 @@ const RadiobuttonPrototypes = () => {
   return (
     <div className="pages-container">
       <section>
-        <h1 className="dark">Radio Button Prototypes</h1>
+        <div className="text-block">Radio Button Prototypes</div>
 
         {/* Basic Radio Group */}
         <div className="radio-prototype-section">
-          <h2 className="dark">Basic Radio Buttons</h2>
+          <h3 className="dark">Basic Radio Buttons</h3>
           <RadioButton
             label="Select an option"
             name="basic"
@@ -48,7 +48,7 @@ const RadiobuttonPrototypes = () => {
 
         {/* Inline Radio Group */}
         <div className="radio-prototype-section">
-          <h2 className="dark">Inline Radio Buttons</h2>
+          <h3 className="dark">Inline Radio Buttons</h3>
           <div className="inline-radio">
             <RadioButton
               label=""
@@ -62,7 +62,7 @@ const RadiobuttonPrototypes = () => {
 
         {/* Radio Buttons with Images */}
         <div className="radio-prototype-section">
-          <h2 className="dark">Radio Buttons with Images</h2>
+          <h3 className="dark">Radio Buttons with Images</h3>
           <RadioButton
             label="Pick your favorite food"
             name="imageRadio"
@@ -77,7 +77,7 @@ const RadiobuttonPrototypes = () => {
 
         {/* Switch-style Radio Buttons */}
         <div className="radio-prototype-section">
-          <h2 className="dark">Switch-style Radio Buttons</h2>
+          <h3 className="dark">Switch-style Radio Buttons</h3>
           <RadioButton
             label="Choose mode"
             name="switchRadio"

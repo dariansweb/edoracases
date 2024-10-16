@@ -22,7 +22,7 @@ const TextareaPage = () => {
   return (
     <div className="pages-container">
       <section>
-        <h1 className="dark">Textarea Prototypes</h1>
+        <div className="text-block">Textarea Prototypes</div>
 
         {/* Wrap each Textarea in an ErrorBoundary */}
         <ErrorBoundary>
