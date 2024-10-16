@@ -14,11 +14,10 @@ const Home = () => {
               In every event lies the seed of opportunity; EDORA nurtures these
               seeds 🌱, transforming lives into brighter futures.☀️{" "}
             </p>
-            <footer>— EDORA</footer>
+            <footer>EDORA</footer>
           </blockquote>
 
-          <h2 className="dark">Client Case Management Solutions</h2>
-          <h3 className="dark">Objective</h3>
+          <h2 className="dark">Case Goals</h2>
           <div className="text-block">
             The overarching goal of Event Driven Operations in Human and Health
             Services is to ensure that clients receive timely and appropriate
@@ -29,8 +28,7 @@ const Home = () => {
             health and well-being.
           </div>
 
-          <h2 className="dark">Event Driven Operations</h2>
-          <h3 className="dark">Definition</h3>
+          <h3 className="dark">Definitions</h3>
           <dl>
             <dt>Event Driven Operations</dt>
             <dd>
@@ -62,7 +60,7 @@ const Home = () => {
             </dd>
           </dl>
 
-          <h2 className="dark">Key Features</h2>
+          <h2 className="dark">Features</h2>
           <dl>
             <dt>Proactivity</dt>
             <dd>
