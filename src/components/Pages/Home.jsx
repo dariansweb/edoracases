@@ -17,12 +17,13 @@ const Home = () => {
               seeds 🌱, transforming lives into brighter futures.☀️{" "}
             </p>
             <footer>EDORA</footer>
-          </blockquote>
-          <h3 className="dark">View Client Events</h3>
-        <section>
-          <ServiceSelector />
-        </section>
+            <p>Make a Story by clicking the Stories Menu Link Above with Events</p>
 
+          </blockquote>
+
+          <div className="text-block">View EDORA Events Below</div>
+
+          <ServiceSelector />
           <h2 className="dark">Case Goals</h2>
           <div className="text-block">
             The overarching goal of Event Driven Operations in Human and Health

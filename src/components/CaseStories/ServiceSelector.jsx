@@ -21,13 +21,13 @@ const ServiceSelector = () => {
         onChange={(e) => setSelectedDivision(e.target.value)} 
         value={selectedDivision}
       >
-        <option value="">-- Select a Division --</option> {/* Placeholder option */}
+        <option value="">-- Select Events by Division --</option> {/* Placeholder option */}
         {divisions.map((division) => (
           <option key={division} value={division}>{division}</option>
         ))}
       </select>
 
-      <h2 className='dark services-header'>{selectedDivision ? `Services in ${selectedDivision}` : "Select a division to see its Events"}</h2>
+      <h2 className='dark services-header'>{selectedDivision ? `Services in ${selectedDivision}` : "Events by Division"}</h2>
       {filteredServices.length > 0 ? (
         filteredServices.map((service) => (
           <div key={service.id} className='service-card'>

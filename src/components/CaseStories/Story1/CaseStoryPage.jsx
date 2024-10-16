@@ -2,12 +2,10 @@ import React, { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import ClientStoryReview from "./ClientStoryReview"; // Ensure the import matches your filename
 import ScrollToDiv from "../../../utils/ScrollToDiv";
-import ServiceSelector from "../ServiceSelector";
 import ListBox from "../../Atoms/Listbox";
 import "./styles/CaseStoryPage.css";
 
 const CaseStoryPage = () => {
-  <ScrollToDiv targetDiv=".top" />;
 
   const navigate = useNavigate();
   const location = useLocation();
@@ -114,6 +112,7 @@ const CaseStoryPage = () => {
 
   return (
     <>
+    <ScrollToDiv targetDiv=".top" />
       <div className="pages-container">
         <nav>{/* Navigation code... */}</nav>
         <h1 className="dark">Case Story: {currentStep.replace("-", " ")}</h1>
