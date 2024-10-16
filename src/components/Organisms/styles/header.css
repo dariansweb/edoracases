@@ -1,21 +1,17 @@
 /* Header Bar */
 .header-bar {
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
-
-  position: sticky;
   z-index: 1000;
-
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
-  background-color: var(--theme1-dark); /* Use your desired background color */
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4); /* Adds subtle shadow to text */
-  color: var(--theme6-light); /* Text color */
+  background-color: var(--theme1-dark);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+  color: var(--theme6-light);
   opacity: 0.8;
 }
 
@@ -97,8 +93,9 @@
 
 .star-menu-item,
 .hamburger-menu-item {
-  display: block; /* Make each item a block for easier clicking */
-  padding: 0.5rem 1rem; /* Padding for each link */
+  display: block; /* Ensures the item takes the full width */
+  padding: 0.5rem 1rem; /* Adjust padding as needed */
+  cursor: pointer; /* Change cursor on hover */
 }
 .star-menu-item a,
 .hamburger-menu-item a {
@@ -108,26 +105,30 @@
   transition: color 0.3s;
 }
 
-.star-menu-item:hover a:hover,
-.hamburger-menu-item:hover a:hover {
-  color: var(--theme6-light); /* Change text color on hover */
-  background-color: var(--theme6-dark); /* Change background color on hover */
+/* Hover effect for star menu items */
+.star-menu-item:hover {
+  background-color: rgba(var(--theme6-dark), 0.2); /* Change background color on hover */
+  color: var(--theme5-dark); /* Change text color on hover */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
 }
 
-/* Define the explosion effect */
-.explode-effect {
-  animation: explode 1s ease forwards; /* Animation name and duration */
+/* Hover effect for hamburger menu items */
+.hamburger-menu-item:hover {
+  background-color: rgba(var(--theme6-dark), 0.2); /* Change background color on hover */
+  color: var(--theme5-dark); /* Change text color on hover */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
 }
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
   .hamburger-menu {
-    width: 25vh; /* Slide out to 25% of header width */
+    width: 50vw; /* Slide out to 25% of header width */
     right: 0; /* Keep it aligned to the right */
   }
   .star-dropdown {
-    width: 25vh; /* Slide out to 25% of header width */
+    width: 50vw; /* Slide out to 25% of header width */
     left: 0; /* Keep it aligned to the right */
+
   }
 }
 /* Ensure full-width menu in desktop mode */
@@ -135,7 +136,7 @@
   .hamburger-menu,
   .star-dropdown {
     display: inline; /* Always show the menu in desktop mode */
-    width: 100vh; /* Full width for desktop */
+    width: 25vw; /* Full width for desktop */
   }
   .star-icon,
   .hamburger-icon {
@@ -182,7 +183,7 @@
   }
 
   /* Active link effect */
-  .wide-men a:active {
+  .wide-menu a:active {
     transform: scale(0.95); /* Shrink link on click */
     background: var(--theme1-dark); /* Darker background on click */
   }

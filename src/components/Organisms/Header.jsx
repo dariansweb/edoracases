@@ -51,6 +51,7 @@ const Header = () => {
   return (
     <header className="header-bar">
       <div className="header-left">
+        {/* Star Icon */}
         <span
           className={`star-icon ${isExploding ? "explode-effect" : ""}`} // Apply explosion effect conditionally
           onClick={() => toggleMenu("star-icon")} // Toggle star menu on click
@@ -67,6 +68,8 @@ const Header = () => {
             </svg>
           </span>
         </span>
+
+        {/* Star Dropdown Menu */}
         {isStarMenuOpen && (
           <div className="star-dropdown">
             {starMenuItems.map((item) => (
@@ -95,6 +98,7 @@ const Header = () => {
       </div>
 
       <div className="header-right">
+        {/* Hamburger Icon */}
         <span
           className={`hamburger-icon ${isExploding ? "explode-effect" : ""}`} // Apply explosion effect conditionally
           onClick={() => toggleMenu("hamburger-icon")} // Toggle hamburger menu on click
@@ -102,26 +106,24 @@ const Header = () => {
           <span className="material-symbols-outlined hamburger-icon">menu</span>
         </span>
 
-        <div
-          ref={menuRef}
-          className={`hamburger-menu ${isMenuOpen ? "open" : ""}`}
-        >
-          {isMenuOpen && ( // Ensure the menu is only rendered when open
-            <div>
-              {mainMenuItems.map((item) => (
-                <div
-                  key={item.id} // Unique key for each item
-                  className="hamburger-menu-item" // CSS class for styling
-                  onClick={closeMenu} // Close the menu on link click
-                  onMouseDown={(e) => e.stopPropagation()} // Prevent click from closing the menu on mousedown
-                >
-                  <NavLink to={item.link}>{item.name}</NavLink>
-                </div>
-              ))}
-            </div>
-          )}
-        </div>
+        {/* Hamburger Menu */}
+        {isMenuOpen && (
+          <div className={`hamburger-menu ${isMenuOpen ? "open" : ""}`}>
+            {mainMenuItems.map((item) => (
+              <NavLink
+                key={item.id}
+                to={item.link}
+                className="hamburger-menu-item" // CSS class for styling
+                onClick={closeMenu} // Close the menu on link click
+                onMouseDown={(e) => e.stopPropagation()} // Prevent click from closing the menu on mousedown
+              >
+                {item.name}
+              </NavLink>
+            ))}
+          </div>
+        )}
       </div>
+
       {/* Wide Screen Menu */}
       <div className="wide-menu">
         {starMenuItems.map((item) => (
@@ -130,7 +132,6 @@ const Header = () => {
           </NavLink>
         ))}
       </div>
-
     </header>
   );
 };
