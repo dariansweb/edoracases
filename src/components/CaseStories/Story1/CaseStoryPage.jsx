@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import ClientStoryReview from "./ClientStoryReview"; // Ensure the import matches your filename
 import ScrollToDiv from "../../../utils/ScrollToDiv";
+import ServiceSelector from "../ServiceSelector";
 import ListBox from "../../Atoms/Listbox";
 import "./styles/CaseStoryPage.css";
 
@@ -42,6 +43,10 @@ const CaseStoryPage = () => {
       "Medical",
     ],
     "Youth-Services": ["Commitment", "CBP Referral"],
+    "Family-and-Child": ["Visit", "Case"],
+    Disability: ["Intake", "Outake"],
+    Aging: ["Nursing-Home", "Housing"],
+    Medical: ["Prescription", "Doctor-Visit"],
     Commitment: ["Interview", "Assessment", "Residential", "JDC"],
     CBPReferral: ["Court", "DYS", "Parent"],
     Interview: ["Complete", "Incomplete"],
@@ -80,13 +85,16 @@ const CaseStoryPage = () => {
     }
   };
 
-  // Handle moving back to the previous stage
   const handleBack = () => {
-    if (pathSegments.length > 1) {
-      const newPath = `/${pathSegments.slice(0, -1).join("/")}`;
-      navigate(newPath);
-    } else {
-      navigate("/client-start");
+    // Check if there is a previous step to go back to
+    if (currentStep !== "start") {
+      setCurrentStep((prevStep) => {
+        // Logic to determine the previous step
+        // You should already have an array or logic for this
+        const currentIndex = steps.indexOf(prevStep);
+        const newIndex = Math.max(0, currentIndex - 1);
+        return steps[newIndex];
+      });
     }
   };
 
@@ -158,7 +166,6 @@ const CaseStoryPage = () => {
             </p>
           </div>
         )}
-
         <div className="flex-container">
           <div className="story-selection">
             {isCaseClosed ? (
@@ -178,7 +185,7 @@ const CaseStoryPage = () => {
                   }))}
                 />
                 <div>
-                  <button onClick={handleBack} className="btn-next">
+                  <button onClick={handleBack} className="btn-back">
                     Back
                   </button>
                   <button onClick={handleNext} className="btn-next">

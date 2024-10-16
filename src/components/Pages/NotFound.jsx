@@ -1,7 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../CaseStories/ServiceSelector"
 
 import "./styles/NotFound.css"; // Assuming you'll create a separate CSS file for styles
+import ServiceSelector from "../CaseStories/ServiceSelector";
 
 const NotFound = () => {
   return (

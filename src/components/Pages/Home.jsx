@@ -1,6 +1,8 @@
 // Home.jsx
 import React from "react";
 import ScrollToDiv from "../../utils/ScrollToDiv";
+import "../CaseStories/ServiceSelector";
+import ServiceSelector from "../CaseStories/ServiceSelector";
 
 const Home = () => {
   return (
@@ -16,6 +18,10 @@ const Home = () => {
             </p>
             <footer>EDORA</footer>
           </blockquote>
+          <h3 className="dark">View Client Events</h3>
+        <section>
+          <ServiceSelector />
+        </section>
 
           <h2 className="dark">Case Goals</h2>
           <div className="text-block">

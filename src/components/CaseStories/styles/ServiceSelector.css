@@ -1,0 +1,163 @@
+.service-selector {
+    max-width: 800px; /* Set a max-width for better readability */
+    margin: 20px auto; /* Center the component */
+    padding: 20px; /* Add padding */
+    background: linear-gradient(to right, var(--theme3-light), var(--theme3-light)); /* Light background gradient */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .title {
+    font-size: 2rem; /* Larger title font */
+    color: var(--theme3-dark); /* Dark green color */
+    text-align: center; /* Centered text */
+    margin-bottom: 20px; /* Space below the title */
+  }
+  
+  .division-select {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding */
+    border: 2px solid #388e3c; /* Border color */
+    border-radius: 5px; /* Rounded edges */
+    font-size: 1rem; /* Font size */
+    background-color: #fff; /* White background */
+    cursor: pointer; /* Pointer cursor */
+    transition: border 0.3s; /* Transition for border color */
+  }
+  
+  .division-select:hover {
+    border-color: #66bb6a; /* Change border color on hover */
+  }
+  
+  .services-header {
+    font-size: 1.5rem; /* Medium header font size */
+    color: #5d4037; /* Dark brown color */
+    margin-top: 20px; /* Space above header */
+    margin-bottom: 10px; /* Space below header */
+  }
+  
+  .service-card {
+    background: #fff; /* White background for cards */
+    margin: 15px 0; /* Space between cards */
+    padding: 15px; /* Padding inside cards */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: transform 0.2s; /* Transition for hover effect */
+  }
+  
+  .service-card:hover {
+    transform: scale(1.02); /* Slight zoom on hover */
+  }
+  
+  .service-title {
+    font-size: 1.3rem; /* Title font size */
+    color: #1976d2; /* Blue color */
+    margin: 5px 0; /* Space around the title */
+  }
+  
+  .service-description {
+    font-size: 1rem; /* Description font size */
+    color: #555; /* Dark gray color */
+    margin-bottom: 10px; /* Space below description */
+  }
+  
+  .options-list {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+  }
+  
+  .option-item {
+    background-color: var(--theme5-light); /* Light blue background */
+    padding: 5px; /* Padding for items */
+    border-radius: 4px; /* Rounded edges */
+    font-weight: 600;
+    margin: 5px 0; /* Space between items */
+    color: var(--theme3-dark);
+  }
+  
+  .no-services {
+    color: #d32f2f; /* Red color for no services message */
+    font-style: italic; /* Italics for emphasis */
+    text-align: center; /* Centered text */
+  }
+  /* Mobile Styles */
+@media (max-width: 768px) {
+    .service-selector {
+      padding: 10px; /* Reduce padding for smaller screens */
+    }
+  
+    .title {
+      font-size: 1.5rem; /* Smaller title font size */
+    }
+  
+    .division-select {
+      padding: 8px; /* Less padding on the dropdown */
+      font-size: 0.9rem; /* Smaller font size */
+    }
+  
+    .services-header {
+      font-size: 1.2rem; /* Smaller header font size */
+    }
+  
+    .service-card {
+      padding: 10px; /* Reduce padding inside cards */
+    }
+  
+    .service-title {
+      font-size: 1.1rem; /* Smaller title font size */
+    }
+  
+    .service-description {
+      font-size: 0.9rem; /* Smaller description font size */
+    }
+  
+    .option-item {
+      font-size: 0.9rem; /* Smaller font size for options */
+    }
+  
+    .no-services {
+      font-size: 0.9rem; /* Smaller font size for no services message */
+    }
+  }
+  
+  /* Extra Small Screens */
+  @media (max-width: 480px) {
+    .service-selector {
+      max-width: 100%; /* Make selector full width */
+      padding: 5px; /* Further reduce padding */
+    }
+  
+    .title {
+      font-size: 1.3rem; /* Further reduce title font size */
+    }
+  
+    .division-select {
+      padding: 6px; /* Further reduce padding on the dropdown */
+      font-size: 0.8rem; /* Even smaller font size */
+    }
+  
+    .services-header {
+      font-size: 1rem; /* Smaller header font size */
+    }
+  
+    .service-card {
+      margin: 10px 0; /* Reduce margin for cards */
+    }
+  
+    .service-title {
+      font-size: 1rem; /* Smaller title font size */
+    }
+  
+    .service-description {
+      font-size: 0.8rem; /* Smaller description font size */
+    }
+  
+    .option-item {
+      font-size: 0.8rem; /* Smaller font size for options */
+    }
+  
+    .no-services {
+      font-size: 0.8rem; /* Smaller font size for no services message */
+    }
+  }
+  

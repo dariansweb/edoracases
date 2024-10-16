@@ -32,6 +32,7 @@ import FormCheckbox from "../assets/prototypes/formControls/Checkbox";
 
 // PROTOTYPES CLIENT JOURNEY
 import CaseStory1 from "./CaseStories/Story1/CaseStoryPage";
+import ServiceSelector from "./CaseStories/ServiceSelector";
 
 //ICONS
 import IconsList from "../components/Icons/IconList";
@@ -70,6 +71,7 @@ const AppRoutes = () => {
 
       {/* Client Journeys */}
       <Route path="/client-start/*" element={<CaseStory1 />} />
+      <Route path="/serviceselector/*" element={<ServiceSelector />} />
 
       {/* 404 page */}
       <Route path="*" element={<NotFound />} />
