@@ -431,12 +431,15 @@ a.dark:active {
 
 /* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
+  body {
+    width: 100vw;
+  };
   section,
   article,
   aside,
   main {
     padding: 1rem;
-    max-width: 100%; /* Allow full width on smaller screens */
+    max-width: 90vh; 
     margin-left: 0.5rem;
     margin-right: 0.5rem;
   }
