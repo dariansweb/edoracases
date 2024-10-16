@@ -60,9 +60,3 @@
   font-weight: 500; /* Bold to make the error stand out */
 }
 
-@media (max-width: 768px) {
-  .listbox-container {
-    width: 80vw; /* Set minimum width to 80% of the viewport */
-    margin-right: 0.4rem;
-  }
-}

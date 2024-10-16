@@ -67,6 +67,6 @@
   
   @media (max-width: 768px) {
     .textarea-container {
-      width: 70vw; /* Set minimum width to 80% of the viewport */
+      margin-right: 1rem;
     }
   }

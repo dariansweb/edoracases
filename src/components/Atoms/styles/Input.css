@@ -59,9 +59,3 @@ label {
   transition: all 0.3s ease;
   font-weight: 700;
 }
-
-@media (max-width: 768px) {
-  .input-container {
-    width: 80vw; /* Set minimum width to 80% of the viewport */
-  }
-}

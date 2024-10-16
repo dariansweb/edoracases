@@ -76,9 +76,3 @@
   color: red;
   margin-top: 0.25rem;
 }
-
-@media (max-width: 768px) {
-  .radio-group-container {
-    width: 80vw; /* Set minimum width to 80% of the viewport */
-  }
-}
