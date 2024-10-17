@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import allServices from "../../../data/hhsServices";
 import "./styles/CaseStoryPage.css";
 import ScrollToDiv from "../../../utils/ScrollToDiv";
+import HelpDescription from "./helpDescription";
 
 const CaseStoryPage = () => {
   const [selectedDivision, setSelectedDivision] = useState("");
@@ -35,7 +36,7 @@ const CaseStoryPage = () => {
 
   const handleOptionChange = (option) => {
     setSelectedOption(option);
-    const selected = selectedService.options.find((opt) => opt.next === option);
+    const selected = selectedService?.options.find((opt) => opt.next === option);
     setNextInput(selected ? "" : nextInput);
   };
 
@@ -68,13 +69,6 @@ const CaseStoryPage = () => {
   const selectedService = allServices.find(
     (service) => service.title === selectedTitle
   );
-  const handleItemClick = (event) => {
-    // Automatically scroll the selected list item into view
-    event.currentTarget.scrollIntoView({
-      behavior: "smooth",
-      block: "nearest",
-    });
-  };
 
   useEffect(() => {
     // Add event listeners to list items after component mounts
@@ -89,7 +83,15 @@ const CaseStoryPage = () => {
         item.removeEventListener("click", handleItemClick);
       });
     };
-  }, []); // Empty dependency array ensures this runs once on mount
+  }, []);
+
+  const handleItemClick = (event) => {
+    // Automatically scroll the selected list item into view
+    event.currentTarget.scrollIntoView({
+      behavior: "smooth",
+      block: "nearest",
+    });
+  };
 
   return (
     <div className="pages-container">
@@ -97,6 +99,9 @@ const CaseStoryPage = () => {
       <div className="case-story-page">
         <h1 className="dark header-title">Bring Your Client's Story to Life</h1>
         <h2 className="dark header-title">Meeting Clients Where They Are</h2>
+
+        {/* Help Description Component */}
+        <HelpDescription />
 
         {/* Division Selector */}
         <div className="selector division-selector">
@@ -125,7 +130,7 @@ const CaseStoryPage = () => {
         {selectedDivision && (
           <div className="selector title-selector">
             <label htmlFor="title" className="label">
-              Select Title:
+              Select Event:
             </label>
             <div className="list-box">
               <div className="list-item" onClick={() => handleTitleChange("")}>
@@ -158,7 +163,7 @@ const CaseStoryPage = () => {
         {selectedService && selectedService.options.length > 0 && (
           <div className="selector options-selector">
             <label htmlFor="options" className="label">
-              Select Additional Service Option:
+              Select Additional Event Option:
             </label>
             <div className="list-box">
               <div className="list-item" onClick={() => handleOptionChange("")}>
@@ -186,12 +191,12 @@ const CaseStoryPage = () => {
           ) && (
             <div className="next-input">
               <label htmlFor="nextInput" className="label">
-                What's next?
+                What's next for the client?
               </label>
               <textarea
                 id="nextInput"
                 className="textbox"
-                placeholder="Enter your next steps..."
+                placeholder="Notes ..."
                 value={nextInput}
                 onChange={handleNextInputChange}
               />

@@ -7,17 +7,20 @@ const CaseStoryPage = () => {
   const [selectedDivision, setSelectedDivision] = useState("");
   const [selectedTitle, setSelectedTitle] = useState("");
   const [description, setDescription] = useState("");
-  const [selectedOption, setSelectedOption] = useState(""); // Track selected option
-  const [selectedServices, setSelectedServices] = useState([]); // Array for selected services
-  const [nextInput, setNextInput] = useState(""); // State for the next input
+  const [selectedOption, setSelectedOption] = useState("");
+  const [selectedServices, setSelectedServices] = useState([]);
+  const [nextInput, setNextInput] = useState("");
+  
+  // New state to toggle the description visibility
+  const [showDescription, setShowDescription] = useState(false);
 
   const handleDivisionChange = (event) => {
     setSelectedDivision(event.target.value);
-    setSelectedTitle(""); // Reset title when division changes
-    setDescription(""); // Clear description when division changes
-    setSelectedOption(""); // Clear options when division changes
-    setNextInput(""); // Reset next input when division changes
-    ScrollToDiv(".top"); // This will scroll to the top of the div with class "top"
+    setSelectedTitle("");
+    setDescription("");
+    setSelectedOption("");
+    setNextInput("");
+    ScrollToDiv(".top");
   };
 
   const handleTitleChange = (event) => {
@@ -30,8 +33,8 @@ const CaseStoryPage = () => {
     if (service) {
       setSelectedTitle(title);
       setDescription(service.description);
-      setSelectedOption(""); // Clear the previously selected option when title changes
-      setNextInput(""); // Reset next input when title changes
+      setSelectedOption("");
+      setNextInput("");
     }
   };
 
@@ -39,30 +42,27 @@ const CaseStoryPage = () => {
     const value = event.target.value;
     setSelectedOption(value);
     const selected = selectedService.options.find(option => option.next === value);
-    // Reset the next input when an option is selected
     setNextInput(selected ? "" : nextInput);
   };
 
   const handleNextInputChange = (event) => {
-    setNextInput(event.target.value); // Update the state for the next input
+    setNextInput(event.target.value);
   };
 
   const handleAddService = () => {
-    // Add selected service and option to the selectedServices array
     const newService = {
       division: selectedDivision,
       title: selectedTitle,
       option: selectedOption || "No extra option",
-      nextInput: nextInput || "", // Include next input in the service
+      nextInput: nextInput || "",
     };
 
     setSelectedServices((prevServices) => [...prevServices, newService]);
-    // Clear selections after adding
     setSelectedDivision("");
     setSelectedTitle("");
     setDescription("");
     setSelectedOption("");
-    setNextInput(""); // Reset the next input after adding the service
+    setNextInput("");
   };
 
   const divisions = [
@@ -83,10 +83,25 @@ const CaseStoryPage = () => {
       <div className="case-story-page">
         <h1 className="dark header-title">Bring Your Client's Story to Life</h1>
         <h2 className="dark header-title">Meeting Clients Where They Are</h2>
+
+        {/* Button to toggle description */}
+        <button className="toggle-btn" onClick={() => setShowDescription(!showDescription)}>
+          {showDescription ? "Hide Description" : "Show Description"}
+        </button>
+
+        {/* Conditionally rendering the description based on the state */}
+        {showDescription && (
+          <div className="description-content">
+            <p>
+              EDORA focuses on empowering clients by providing customized services, 
+              facilitating case management, and helping users keep track of various 
+              support options for their clients.
+            </p>
+          </div>
+        )}
+
         <div className="selector division-selector">
-          <label htmlFor="division" className="label">
-            Select Division:
-          </label>
+          <label htmlFor="division" className="label">Select Division:</label>
           <select
             id="division"
             className="dropdown"
@@ -104,9 +119,7 @@ const CaseStoryPage = () => {
 
         {selectedDivision && (
           <div className="selector title-selector">
-            <label htmlFor="title" className="label">
-              Select Title:
-            </label>
+            <label htmlFor="title" className="label">Select Title:</label>
             <select
               id="title"
               className="dropdown"
@@ -132,9 +145,7 @@ const CaseStoryPage = () => {
 
         {selectedService && selectedService.options.length > 0 && (
           <div className="selector options-selector">
-            <label htmlFor="options" className="label">
-              Select Additional Service Option:
-            </label>
+            <label htmlFor="options" className="label">Select Additional Service Option:</label>
             <select
               id="options"
               className="dropdown"
@@ -151,12 +162,9 @@ const CaseStoryPage = () => {
           </div>
         )}
 
-        {/* Textarea for the next input only when there is a 'next' option selected */}
         {selectedOption && selectedService.options.some(option => option.next === selectedOption) && (
           <div className="next-input">
-            <label htmlFor="nextInput" className="label">
-              What's next?
-            </label>
+            <label htmlFor="nextInput" className="label">What's next?</label>
             <textarea
               id="nextInput"
               className="textbox"
@@ -174,7 +182,6 @@ const CaseStoryPage = () => {
           </div>
         )}
 
-        {/* Add Service Button */}
         {selectedTitle && (
           <div className="add-service-button">
             <button className="btn" onClick={handleAddService}>
@@ -183,10 +190,9 @@ const CaseStoryPage = () => {
           </div>
         )}
 
-        {/* Selected Services List */}
         {selectedServices.length > 0 && (
           <div className="selected-services-list">
-            <h2 className="subheader">Client Journey with EDORA</h2>
+            <h2 className="subheader">Client's Journey with EDORA</h2>
             <ul>
               {selectedServices.map((service, index) => (
                 <li key={index}>

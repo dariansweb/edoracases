@@ -77,7 +77,7 @@
 
 .btn {
   background: var(--theme2-dark); /* Olive Green button */
-  color: var(--theme3-light-contrast); /* Light contrast color for text */
+  color: var(--theme3-light); /* Light contrast color for text */
   padding: 12px 24px; /* Slightly larger button */
   border: none;
   border-radius: 6px; /* More rounded corners */
@@ -87,6 +87,8 @@
 
 .btn:hover {
   background: var(--theme2-light); /* Ivory on hover */
+  color: var(--theme2-dark);
+  border: 1px outset var(--theme1-dark);
   transform: scale(1.05); /* Slight grow effect on hover */
 }
 

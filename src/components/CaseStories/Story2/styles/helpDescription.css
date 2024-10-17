@@ -1,0 +1,37 @@
+.help-description-container {
+    background: var(--theme3-light); /* Pale Mint background for consistency */
+    padding: 20px; /* Padding to match the spacious feel */
+    border-radius: 10px; /* Slightly rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    margin-bottom: 30px; /* Space below for separation */
+  }
+  
+  .help-description-title {
+    font-size: 1.8rem; /* Large, clear title */
+    font-weight: 700; /* Bold for emphasis */
+    color: var(--theme3-dark-contrast); /* Dark contrast color for text */
+    text-align: left; /* Align left to differentiate from the page title */
+    margin-bottom: 15px; /* Space below the title */
+  }
+  
+  .help-description-text {
+    font-size: 1.1rem; /* Slightly smaller than the page text */
+    color: var(--theme1-dark); /* Muted Forest for the text */
+    line-height: 1.6; /* Comfortable line spacing */
+  }
+  
+  .help-description-list {
+    margin-top: 20px; /* Space above list */
+    padding-left: 20px; /* Indent for bullet points */
+  }
+  
+  .help-description-list li {
+    font-size: 1rem; /* Regular size for list items */
+    color: var(--theme2-dark); /* Olive Green for list items */
+    margin-bottom: 8px; /* Space between list items */
+  }
+  
+  .help-description-list li::marker {
+    color: var(--theme5-dark); /* Moss Green bullet points */
+  }
+  
