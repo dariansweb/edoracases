@@ -1,25 +1,17 @@
-/* .pages-container {
-  display: flex;
-  flex-direction: column; */
-/* Allow child elements to stretch to full width */
-  /* align-items: stretch; 
-  justify-content: center;
-  margin: 0 auto;
-  overflow: hidden;
-} */
 .pages-container {
   display: flex;
   background-color: var(--theme3-light);
   flex-direction: column;
-  align-items: stretch;  /* Stretch children to full width, but center the container itself */
-  justify-content: flex-start; /* Let content start at the top */
-  margin: 0 auto;
-  padding: 1rem; /* Added padding to give breathing room */
-  min-width: 300px; /* Adapted for smaller screens */
-  max-width: 1200px; /* Avoid massive containers on large screens */
-  min-height: 50vh;
-  overflow: hidden;
+  align-items: center;  /* Children still stretch to full width */
+  justify-content: center; /* Content starts at the top */
+  padding: 1rem; 
+  min-width: 300px; 
+  max-width: 1200px; 
+  min-height: 50vh; /* Keeps the container's minimum height */
+  overflow: hidden; 
+  margin: 0 auto;  /* Centers it horizontally */
 }
+
 
 .text-block {
   font-size: 18px;
