@@ -9,7 +9,13 @@
 
 export const mainMenuItems = [
   { id: 107, name: "Guides", link: "/icons" },
-  { id: 108, name: "Stories", link: "/casestory" },
+  { id: 108, name: "Stories", link: "/casestory2" },
+  { id: 1, name: "Child and Family", link: "/child-and-family" },
+  { id: 2, name: "Aging", link: "/aging" },
+  { id: 3, name: "Disability", link: "/disability" },
+  { id: 4, name: "Juvenile Justice", link: "/juvenile-justice" },
+  { id: 5, name: "Medical", link: "/medical" },
+  { id: 6, name: "Provider Services", link: "/provider-services" },
 ];
 
 export const starMenuItems = [

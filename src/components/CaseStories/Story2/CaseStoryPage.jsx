@@ -15,6 +15,7 @@ const CaseStoryPage = () => {
     setSelectedTitle(""); // Reset title when division changes
     setDescription(""); // Clear description when division changes
     setSelectedOption(""); // Clear options when division changes
+    ScrollToDiv(".top"); // This will scroll to the top of the div with class "top"    
   };
 
   const handleTitleChange = (event) => {
@@ -65,8 +66,7 @@ const CaseStoryPage = () => {
 
   return (
     <div className="pages-containger">
-          <ScrollToDiv targetDiv=".top" />
-
+      <ScrollToDiv targetDiv=".top" />
       <div className="case-story-page">
         <h1 className="dark header-title">Create Client Story</h1>
         <h2 className="dark header-title">A List of Services</h2>
