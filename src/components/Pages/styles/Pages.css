@@ -20,7 +20,6 @@
   color: var(--theme1-dark);
   margin: 1rem 0; /* Simplified margins */
   text-align: left;
-  max-width: 800px;
   padding: 1rem; /* Balanced padding */
   background-color: var(--theme3-light);
   border-radius: 8px;

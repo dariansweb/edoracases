@@ -39,10 +39,8 @@ main {
   font-size: 18px; /* Same font size as the paragraph for consistency */
   font-weight: 500;
   line-height: 1.8;
-  color: var(--theme1-dark); /* Ensure readable text color */
   margin-bottom: 2rem; /* Increased margin for more breathing room between sections */
-  margin-left: 1rem;
-  margin-right: 0;
+  margin: 0 auto;
   text-align: left;
   max-width: 1000px; /* Wider sections to hold more content comfortably */
   padding: 1.5rem; /* Extra padding to differentiate section containers */
@@ -50,12 +48,12 @@ main {
     --theme3-light
   ); /* Light background to maintain readability */
   border-radius: 10px; /* Slightly larger border-radius for softer containers */
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1); /* More pronounced shadow for a subtle pop */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* More pronounced shadow for a subtle pop */
   transition: all 0.3s ease-in-out;
 
   /* Additional styling to differentiate containers */
-  border-left: 8px solid var(--theme2-primary); /* Bolder left border for containers */
-  padding-left: 2rem; /* More padding for the section's internal content */
+  border-left: 1px solid var(--theme2-dark); /* Bolder left border for containers */
+  padding-left: 0.5rem; /* More padding for the section's internal content */
   text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for depth */
 }
 .container {
