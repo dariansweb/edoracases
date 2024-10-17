@@ -1,24 +1,24 @@
 import React, { useState } from "react";
 
 const ClientStoryReview = ({ selectedActions }) => {
-  const [storedClientStories, setStoredClientStories] = useState([]); // Array to store multiple client stories
-  const [showSelections, setShowSelections] = useState(false); // Track visibility of stored selections
-  const [editIndex, setEditIndex] = useState(null); // Track which story is being edited
-  const [editValue, setEditValue] = useState(""); // Store value for editing
+  const [storedClientStories, setStoredClientStories] = useState([]);
+  const [showSelections, setShowSelections] = useState(false);
+  const [editIndex, setEditIndex] = useState(null);
+  const [editValue, setEditValue] = useState("");
 
   const handleStoreSelections = () => {
     if (selectedActions.length > 0) {
       setStoredClientStories((prevStories) => [
         ...prevStories,
-        selectedActions, // Store the current selection as a new client story
+        selectedActions,
       ]);
-      setShowSelections(true); // Show selections when stored
+      setShowSelections(true);
     }
   };
 
   const handleEdit = (index) => {
-    setEditIndex(index); // Set the index of the story to be edited
-    setEditValue(storedClientStories[index].join(", ")); // Set the value to be edited
+    setEditIndex(index);
+    setEditValue(storedClientStories[index].join(", "));
   };
 
   const handleUpdate = () => {
@@ -26,21 +26,20 @@ const ClientStoryReview = ({ selectedActions }) => {
       const updatedStories = [...storedClientStories];
       updatedStories[editIndex] = editValue.split(", ").map(item => item.trim());
       setStoredClientStories(updatedStories);
-      setEditIndex(null); // Reset the edit index
-      setEditValue(""); // Clear the edit value
+      setEditIndex(null);
+      setEditValue("");
     }
   };
 
   const handleDelete = (index) => {
     const updatedStories = storedClientStories.filter((_, i) => i !== index);
-    setStoredClientStories(updatedStories); // Update the stories after deletion
+    setStoredClientStories(updatedStories);
   };
 
   return (
     <div>
       <button onClick={handleStoreSelections}>Store Selections</button>
 
-      {/* Show stored selections only when the button is clicked */}
       {showSelections && storedClientStories.length > 0 && (
         <div>
           <h3>Stored Selections:</h3>

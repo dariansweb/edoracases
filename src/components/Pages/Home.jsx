@@ -17,8 +17,6 @@ const Home = () => {
               seeds 🌱, transforming lives into brighter futures.☀️{" "}
             </p>
             <footer>EDORA</footer>
-            <p>Make a Story by clicking the Stories Menu Link Above with Events</p>
-
           </blockquote>
 
           <div className="text-block">View EDORA Events Below</div>

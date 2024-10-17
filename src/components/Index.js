@@ -22,6 +22,7 @@ export { default as ProviderServices } from './Pages/Services/ProviderServices';
 
 // Client Case Stories
 export { default as CaseStory1 } from './CaseStories/Story1/CaseStoryPage';
+export { default as CaseStory2 } from './CaseStories/Story2/CaseStoryPage';
 export { default as ServiceSelector } from './CaseStories/ServiceSelector';
 
 // PROTOTYPES
