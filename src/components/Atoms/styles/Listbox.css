@@ -1,22 +1,30 @@
 /* ListBox container styles */
 .listbox-container {
   margin-bottom: 1.5rem; /* Spacing between list boxes */
-  min-width: 300px;
+  width: 100%; /* Ensure it adapts to different screen sizes */
+  max-width: 400px; /* Keep it in check for larger screens */
+  margin: 0 auto; /* Centering the listbox */
 }
 
 /* Label styling */
 .listbox-label {
   margin-bottom: 0.5rem;
-  font-size: 1.4rem; /* Slightly smaller font for labels */
+  font-size: 1.2rem; /* Harmonize with other input labels */
   color: var(--theme1-dark);
+  font-weight: 600; /* Bold for stronger emphasis */
+  text-align: left; /* Align the label with the left edge */
 }
 
 /* ListBox field styles */
 .listbox-field {
-  border: 2px inset var(--theme4-dark);
+  border: 1px solid var(--theme4-dark);
   border-radius: 0.375rem;
   background-color: var(--theme3-light);
   color: var(--theme1-dark);
+  overflow-y: auto; /* Add scroll for longer option lists */
+  max-height: 200px; /* Limit height so it's not a monster */
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+  padding: 0.5rem; /* Add some inner padding for aesthetics */
 }
 
 /* ListBox option styles */
@@ -25,7 +33,8 @@
   cursor: pointer; /* Change cursor to pointer on hover */
   background-color: var(--theme3-light);
   color: var(--theme1-dark);
-  font-weight: 600;
+  font-weight: 500;
+  border-bottom: 1px solid var(--theme4-dark); /* Add subtle dividers */
   transition: background-color 0.3s ease;
 }
 
@@ -33,14 +42,13 @@
 .listbox-option.selected {
   background-color: var(--theme1-dark); /* Highlight selected option */
   color: var(--theme6-light); /* Change text color for selected */
-  font-weight: 700;
+  font-weight: 700; /* Stronger emphasis on selected */
 }
 
 /* Hover state */
 .listbox-option:hover {
-  background-color: var(--theme6-light);
+  background-color: var(--theme5-light); /* Softer hover effect */
   color: var(--theme1-dark);
-  border: 1px outset var(--theme3-dark);
 }
 
 /* Error state styles */
@@ -60,3 +68,8 @@
   font-weight: 500; /* Bold to make the error stand out */
 }
 
+/* Smooth transitions */
+.listbox-field,
+.listbox-option {
+  transition: all 0.3s ease;
+}

@@ -9,14 +9,16 @@
 } */
 .pages-container {
   display: flex;
+  background-color: var(--theme3-light);
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: stretch;  /* Stretch children to full width, but center the container itself */
+  justify-content: flex-start; /* Let content start at the top */
   margin: 0 auto;
+  padding: 1rem; /* Added padding to give breathing room */
+  min-width: 300px; /* Adapted for smaller screens */
+  max-width: 1200px; /* Avoid massive containers on large screens */
   min-height: 50vh;
-  min-width: 800px;
   overflow: hidden;
-  box-shadow: 0 8px 20px rgba(--theme1-dark, 1.45); 
 }
 
 .text-block {
@@ -24,20 +26,21 @@
   font-weight: 500;
   line-height: 1.8;
   color: var(--theme1-dark);
-  margin-bottom: 1.5rem;
-  margin-left: 0.8rem;
-  margin-right: 0;
+  margin: 1rem 0; /* Simplified margins */
   text-align: left;
   max-width: 800px;
-  padding: 1rem;
+  padding: 1rem; /* Balanced padding */
   background-color: var(--theme3-light);
   border-radius: 8px;
-  transition: all 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease;
   border-left: 5px solid var(--theme3-dark);
-  padding-left: 1.5rem;
-  text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.1);
   position: relative;
-  /* text-indent: 2rem;  Adding the actual text indentation */
+}
+
+.text-block:hover {
+  background-color: var(--theme5-light);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
 /* Adding a bit of pizzazz to the first letter */
@@ -50,19 +53,19 @@
 /* } */ */
 
 /* Adding a custom visual indent with flair */
-.texts-block::before {
+/* .texts-block::before {
   content: "";
   position: absolute;
   left: 0;
-  top: 0;
+  top: 0m: scaleX(0);
+  transform-origin: left;
+  transition;
   height: 100%;
   width: 6px;
-  background-color: var(--theme3-dark); /* A stylized line on the left */
-  border-radius: 4px;
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.4s ease-in-out;
-}
+  /* background-color: var(--theme3-dark); A stylized line on the left */
+  /* border-radius: 4px; */
+  /* transfor: transform 0.4s ease-in-out;
+} */ *
 
 /* Optional hover effect for interactivity */
 .text-block:hover {
@@ -92,24 +95,16 @@
   animation: revealIndent 0.6s ease-in-out;
 }
 
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
   .pages-container {
-    padding: 0.8rem;
-    min-width: 320px;
-    align-items: stretch; /* Ensure full width on smaller screens */
+    padding: 1rem;
+    min-width: 100%; /* Ensure it stretches fully */
   }
+  
   .text-block {
-    margin: 0;
-    font-size: 0.8em;
+    margin: 0.5rem 0; /* Smaller margin */
+    font-size: 0.9em;
     line-height: 1.4;
-    color: var(--theme1-dark); /* Muted Forest */
-    border-bottom: 1px solid var(--theme6-light); /* Light Sand separator */
-    transition: background-color 0.3s ease-in-out;
+    border-bottom: 1px solid var(--theme6-light);
   }  
 }
-
-/* @media (max-width: 768px) {
-  .pages-container { */
-    /* padding: 0.8rem; Less padding on smaller screens
-  }
-} */

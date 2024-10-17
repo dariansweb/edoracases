@@ -1,30 +1,59 @@
 .prototype-section {
   width: 100%;
-  margin-bottom: 30px;
+  margin: 0 auto 30px; /* Fixing margin and simplifying */
   padding: 20px;
-  box-sizing: border-box;
+}
+.submenu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.submenu a {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-decoration: none;
+  color: var(--theme3-dark);
+  transition: background-color 0.3s ease;
+}
+
+.submenu a:hover {
+  background-color: var(--theme3-dark);
+  color: var(--theme1-light);
+}
+
+.submenu a.active {
+  background-color: var(--theme3-light);
+  color: var(--theme1-dark);
 }
 
 .menu-list {
   display: flex;
-  flex-wrap: wrap; /* Allow items to wrap onto the next line */
-  gap: 20px; /* Add space between items */
-  justify-content: center; /* Center all the list items */
-  padding: 0; /* Remove default ul padding */
-  list-style: none; /* Remove bullet points */  
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
 }
 
 .prototype-item {
-  flex: 1 0 200px; /* Flex-grow: 1, Flex-shrink: 0, Base-width: 200px */
-  min-width: 200px; /* Set minimum width for responsiveness */
-  max-width: 300px; /* Optional: Control the maximum width of each item */
-  margin-bottom: 10px; /* Optional: Add space between items */
-  text-align: center; /* Center text inside the list item */
-  border: 1px solid var(--theme3-dark); /* Optional: Add borders for clarity */
-  box-sizing: border-box; /* Include padding in the width */
+  text-align: center;
+  border: 1px solid var(--theme3-dark);
   background-color: var(--theme1-light);
   color: var(--theme1-dark);
+  padding: 10px; /* Adding padding for spacing */
+  min-width: 150px; /* Ensuring a reasonable size */
+  flex-grow: 1;
+  margin: 10px;
+  transition: transform 0.3s ease-in-out;
+}
 
+.prototype-item:hover {
+  transform: translateY(-5px); /* Adding a simple hover effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Subtle shadow */
 }
 
 .menu-link {
@@ -44,37 +73,36 @@
 @media (max-width: 768px) {
   .menu-list {
     flex-direction: column; /* Stack items in a column */
-    align-items:center; /* Stretch to take full width */
+    align-items: center; /* Stretch to take full width */
   }
   .prototype-item {
     flex: 1 0 auto; /* Allow items to take full width of the container */
     width: 100%; /* Ensure items take the full width in mobile view */
-  }  
+  }
   .submenu {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 items per row */
-    gap: 15px; /* Optional, adjust the gap between items */
-  }  
-}         
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
 
+  .submenu a {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-decoration: none;
+    color: var(--theme3-dark);
+    transition: background-color 0.3s ease;
+  }
 
-.submenu {
-  display: flex;
-  justify-content: center; /* Center horizontally */
-  gap: 10px;
-  margin-bottom: 20px;
-  flex-wrap: wrap; /* Allow items to wrap */
-}
+  .submenu a:hover {
+    background-color: var(--theme3-dark);
+    color: var(--theme1-light);
+  }
 
-.submenu a {
-  text-decoration: none;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  color: black;
-}
-
-.submenu a.active {
-  background-color: #007bff;
-  color: white;
+  .submenu a.active {
+    background-color: var(--theme3-light);
+    color: var(--theme1-dark);
+  }
 }

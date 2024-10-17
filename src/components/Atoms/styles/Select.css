@@ -1,71 +1,71 @@
-
 /* Select container styles */
 .select-container {
-    margin-bottom: 1.5rem; /* Same spacing between components */
-    display: flex;
-    flex-direction: column;
-  }
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
 
-  .select-column {
-    display: flex; /* Use flexbox for horizontal layout */
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
-    flex-direction: column;
-    gap: 20px; /* Space between selects */
-  }
-  
-  /* Label styling */
-  .select-label {
-    margin-bottom: 0.5rem;
-    font-size: 1.2rem; /* Matching font size with Input label */
-    color: var(--theme1-dark);
-  }
-  
-  /* Select field styles */
-  .select-field {
-    padding: 0.75rem 1rem;
-    border: 1px solid var(--theme6-dark);
-    border-radius: 0.4rem;
-    background-color: var(--theme3-light);
-    color: var(--theme1-dark);
-    font-size: 1.2rem;
-    font-weight: 500;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  /* Focus and hover states */
-  .select-field:focus {
-    outline: none;
-    border-color: var(--theme6-dark);
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Same subtle focus shadow */
-  }
-  
-  .select-field:hover {
-    border-color: var(--theme1-dark); /* Change border color on hover */
-    font-weight: 600;
-    background-color: var(--theme6-light);
-    color: var(--theme1-dark)
-  }
-  
-  /* Error state styles */
-  .select-field--error {
-    border-color: var(--theme-alert3);
-  }
-  
-  .select-field--error:focus {
-    box-shadow: 0 0 5px rgba(255, 76, 76, 0.5); /* Red shadow for errors */
-  }
-  
-  /* Error message styles */
-  .select-error {
-    margin-top: 0.25rem;
-    color: var(--theme-alert3);
-    font-size: 0.875rem;
-    font-weight: 500; /* Bold to make the error stand out */
-  }
-  
-  /* Subtle transitions */
-  select,
-  label {
-    transition: all 0.3s ease;
-    font-weight: 600;
-  }
+/* Column layout for multiple selects */
+.select-column {
+  display: flex;
+  flex-wrap: wrap; /* Make it responsive for smaller screens */
+  gap: 20px; /* Space between selects */
+}
+
+/* Label styling */
+.select-label {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  color: var(--theme1-dark);
+  font-weight: 600; /* Increased font weight for consistency */
+}
+
+/* Select field styling */
+.select-field {
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--theme6-dark);
+  border-radius: 0.4rem;
+  background-color: var(--theme3-light);
+  color: var(--theme1-dark);
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer; /* Add cursor to indicate it's interactive */
+}
+
+/* Hover and focus states */
+.select-field:hover {
+  border-color: var(--theme1-dark); /* Border color on hover */
+  font-weight: 600; /* Slightly bold for hover effect */
+  background-color: var(--theme6-light);
+  color: var(--theme1-dark);
+}
+
+.select-field:focus {
+  outline: none;
+  border-color: var(--theme6-dark);
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Consistent focus shadow */
+}
+
+/* Error state styling */
+.select-field--error {
+  border-color: var(--theme-alert3); /* Red for error state */
+}
+
+.select-field--error:focus {
+  box-shadow: 0 0 5px rgba(255, 76, 76, 0.5); /* Red focus shadow */
+}
+
+/* Error message styling */
+.select-error {
+  margin-top: 0.25rem;
+  color: var(--theme-alert3);
+  font-size: 0.875rem;
+  font-weight: 500; /* Bold error message */
+}
+
+/* Transition for smoother interactions */
+select,
+label {
+  transition: all 0.3s ease;
+}

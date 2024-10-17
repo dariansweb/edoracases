@@ -16,6 +16,7 @@ const RadioButton = ({ name, label, options, value, onChange, error }) => {
               checked={value === option.value}
               onChange={() => onChange(option.value)}
               className="radio-input"
+              aria-checked={value === option.value} 
             />
             <span className="radio-custom"></span>
             {option.label}
