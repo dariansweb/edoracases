@@ -3,6 +3,8 @@ import React from "react";
 import ScrollToDiv from "../../utils/ScrollToDiv";
 import "../CaseStories/ServiceSelector";
 import ServiceSelector from "../CaseStories/ServiceSelector";
+import { Link } from "react-router-dom";
+
 
 const Home = () => {
   return (
@@ -22,6 +24,8 @@ const Home = () => {
           <div className="text-block">View EDORA Events Below</div>
 
           <ServiceSelector />
+          <Link to="/casestory2">Or - make a unique story for a client</Link>
+
           <h2 className="dark">Case Goals</h2>
           <div className="text-block">
             The overarching goal of Event Driven Operations in Human and Health

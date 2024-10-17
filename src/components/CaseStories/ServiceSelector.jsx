@@ -1,20 +1,19 @@
+// ServiceSelector.jsx
 import React, { useState } from "react";
+import { Link } from "react-router-dom"; // Import Link
 import allServices from "../../data/hhsServices";
 import "./styles/ServiceSelector.css";
 
 const ServiceSelector = () => {
-  // Set the initial state to an empty string to start with a blank selection
   const [selectedDivision, setSelectedDivision] = useState("");
 
-  // Get unique divisions from the services
   const divisions = [
     ...new Set(allServices.map((service) => service.division)),
   ];
 
-  // Filter services based on the selected division
   const filteredServices = selectedDivision
     ? allServices.filter((service) => service.division === selectedDivision)
-    : []; // Return an empty array if no division is selected
+    : [];
 
   return (
     <>
@@ -24,8 +23,7 @@ const ServiceSelector = () => {
           onChange={(e) => setSelectedDivision(e.target.value)}
           value={selectedDivision}
         >
-          <option value="">-- Select Events by Division --</option>{" "}
-          {/* Placeholder option */}
+          <option value="">-- Select Events by Division --</option>
           {divisions.map((division) => (
             <option key={division} value={division}>
               {division}
@@ -38,6 +36,7 @@ const ServiceSelector = () => {
             ? `Services in ${selectedDivision}`
             : "Events by Division"}
         </h2>
+        
         {filteredServices.length > 0
           ? filteredServices.map((service) => (
               <div key={service.id} className="service-card">
@@ -58,8 +57,14 @@ const ServiceSelector = () => {
               <p className="no-services">
                 No services available for this division.
               </p>
-            ) // Display this only if a division is selected
-        }
+            )}
+
+        {/* Add the Link to /casestory2 inside the ServiceSelector */}
+        <div className="link-container">
+          <Link to="/casestory2" className="unique-story-link">
+            Or - click here to make a unique story for a client
+          </Link>
+        </div>
       </div>
     </>
   );
