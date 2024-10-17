@@ -1,130 +1,116 @@
-/* caseStoryPage.css */
 .case-story-page {
-  background: linear-gradient(135deg, var(--theme3-light), var(--theme1-light));
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  padding: 2rem;
-  font-family: 'Poppins', sans-serif;
-  max-width: 700px;
-  margin: 2rem auto;
+  background: var(--theme3-light); /* Pale Mint background */
+  border-radius: 12px; /* Slightly rounded corners */
+  padding: 25px; /* Increased padding for a more spacious feel */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Deeper shadow for modern look */
 }
 
 .header-title {
-  color: var(--theme3-dark);
-  font-size: 2.5rem;
-  font-weight: bold;
+  color: var(--theme3-dark-contrast); /* Dark contrast color */
   text-align: center;
-  margin-bottom: 2rem;
+  font-size: 2em; /* Larger title for emphasis */
+  margin-bottom: 20px; /* Space below title */
+  text-shadow: var(--text-shadow-light); /* Subtle shadow for depth */
 }
 
 .selector {
-  margin-bottom: 1.5rem;
+  margin: 30px 0; /* Increased margin for a balanced layout */
 }
 
 .label {
-  font-size: 1.2rem;
+  font-weight: 700; /* Increased font weight */
+  margin-bottom: 8px; /* Space below labels */
+  color: var(--theme1-dark); /* Muted Forest for labels */
+}
+
+.list-box {
+  border: 1px solid var(--theme2-dark); /* Olive Green border */
+  border-radius: 6px; /* Slightly more rounded corners */
+  overflow-y: auto; /* Scrollable */
+  font-size: 1rem; /* Consistent text size */
+  max-height: 200px; /* Increased max height for list */
+  background-color: var(--theme3-light); /* Pale Mint for list background */
+  transition: border-color 0.3s ease; /* Smooth border transition */
+}
+
+.list-box:hover {
+  border-color: var(--theme3-dark); /* Darker border on hover */
   color: var(--theme3-dark);
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-  display: block;
 }
 
-.dropdown {
-  width: 100%;
-  padding: 0.75rem;
-  font-size: 1rem;
-  border: 2px solid #2980b9;
-  border-radius: 6px;
-  background: #ecf0f1;
-  color: #34495e;
-  outline: none;
-  transition: all 0.3s ease;
+.list-item {
+  padding: 6px; /* More padding for comfort */
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease; /* Smooth transition */
+  font-weight: 600; /* Increased font weight */
 }
 
-.dropdown:focus {
-  border-color: #3498db;
-  box-shadow: 0 0 8px rgba(52, 152, 219, 0.4);
+.list-item:hover {
+  background: var(--theme1-light); /* Pale Peach on hover */
+  color: var(--theme1-dark);
+  transform: translateY(-2px); /* Lift effect on hover */
 }
 
-.subheader {
-  color: #16a085;
-  font-size: 1.8rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
+.selected {
+  background: var(--theme6-dark); /* Pistachio Peach background for selected items */
+  color: var(--theme6-light); /* Pale Peach text for selected items */
 }
 
-.description-text {
-  font-size: 1.1rem;
-  color: #2c3e50;
-  line-height: 1.6;
-  background-color: rgba(255, 255, 255, 0.7);
-  padding: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+.next-input {
+  margin: 30px 0; /* More space for next input */
 }
 
-.selected-option {
-  margin-top: 1.5rem;
-}
-
-.selected-option .description-text {
-  font-size: 1.2rem;
-  color: #8e44ad;
-}
-
-h2.subheader,
-.description-text,
-.dropdown,
-.selector,
-.header-title {
-  transition: all 0.3s ease;
-}
-
-.selector:hover .label,
-.selector:hover .dropdown {
-  color: #2980b9;
-}
-
-.service-description,
-.selected-option {
-  animation: fadeInUp 0.5s ease both;
-}
-
-@keyframes fadeInUp {
-  from {
-    transform: translateY(20px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-/* Style for the input textbox */
 .textbox {
   width: 100%;
-  padding: 0.75rem;
-  font-size: 1rem;
-  border: 2px solid #2980b9; /* Same as dropdown for consistency */
-  border-radius: 6px;
-  background: #ecf0f1; /* Same background as dropdown */
-  color: #34495e;
-  outline: none;
-  transition: all 0.3s ease;
-  margin-top: 1rem; /* Space between the dropdown and textbox */
+  height: 120px; /* Slightly taller textbox */
+  border-radius: 6px; /* More rounded corners */
+  border: 1px solid var(--theme1-dark); /* Muted Forest border */
+  resize: none; /* Prevent resizing */
+  font-size: 1.4em; /* Consistent text size */
+  transition: border-color 0.3s ease; /* Smooth transition */
 }
 
-/* Focus state for the textbox */
 .textbox:focus {
-  border-color: #3498db;
-  box-shadow: 0 0 8px rgba(52, 152, 219, 0.4);
+  border-color: var(--theme3-dark); /* Dark border on focus */
+  outline: none; /* Remove outline */
 }
 
-/* Optional: Add a label style for the textbox */
-.textbox-label {
-  font-size: 1.2rem;
-  color: var(--theme3-dark);
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-  display: block; /* Makes label block-level */
+.btn {
+  background: var(--theme2-dark); /* Olive Green button */
+  color: var(--theme3-light-contrast); /* Light contrast color for text */
+  padding: 12px 24px; /* Slightly larger button */
+  border: none;
+  border-radius: 6px; /* More rounded corners */
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease; /* Smooth transition */
+}
+
+.btn:hover {
+  background: var(--theme2-light); /* Ivory on hover */
+  transform: scale(1.05); /* Slight grow effect on hover */
+}
+
+.selected-services-list, 
+.description-text {
+  margin-top: 30px; /* More space above the list */
+  font-size: 1.2rem; /* Consistent text size */
+  font-weight: 700;
+}
+
+.selected-services-list ul {
+  list-style-type: none; /* Remove bullets */
+  padding: 0;
+}
+
+.selected-services-list li {
+  background: var(--theme4-light); /* Pale Peach background for list items */
+  padding: 12px; /* More padding for comfort */
+  border-radius: 6px; /* More rounded corners */
+  margin: 8px 0; /* Space between items */
+  transition: background 0.3s ease; /* Smooth transition */
+}
+
+.selected-services-list li:hover {
+  background: var(--theme5-dark); /* Moss Green on hover */
+  color: white; /* White text for readability */
 }

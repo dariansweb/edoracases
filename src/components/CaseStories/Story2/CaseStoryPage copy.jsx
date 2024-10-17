@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import allServices from "../../../data/hhsServices";
 import "./styles/CaseStoryPage.css";
 import ScrollToDiv from "../../../utils/ScrollToDiv";
@@ -7,19 +7,21 @@ const CaseStoryPage = () => {
   const [selectedDivision, setSelectedDivision] = useState("");
   const [selectedTitle, setSelectedTitle] = useState("");
   const [description, setDescription] = useState("");
-  const [selectedOption, setSelectedOption] = useState("");
-  const [selectedServices, setSelectedServices] = useState([]);
-  const [nextInput, setNextInput] = useState("");
+  const [selectedOption, setSelectedOption] = useState(""); // Track selected option
+  const [selectedServices, setSelectedServices] = useState([]); // Array for selected services
+  const [nextInput, setNextInput] = useState(""); // State for the next input
 
-  const handleDivisionChange = (division) => {
-    setSelectedDivision(division);
-    setSelectedTitle("");
-    setDescription("");
-    setSelectedOption("");
-    setNextInput("");
+  const handleDivisionChange = (event) => {
+    setSelectedDivision(event.target.value);
+    setSelectedTitle(""); // Reset title when division changes
+    setDescription(""); // Clear description when division changes
+    setSelectedOption(""); // Clear options when division changes
+    setNextInput(""); // Reset next input when division changes
+    ScrollToDiv(".top"); // This will scroll to the top of the div with class "top"
   };
 
-  const handleTitleChange = (title) => {
+  const handleTitleChange = (event) => {
+    const title = event.target.value;
     const service = allServices.find(
       (service) =>
         service.title === title && service.division === selectedDivision
@@ -28,68 +30,52 @@ const CaseStoryPage = () => {
     if (service) {
       setSelectedTitle(title);
       setDescription(service.description);
-      setSelectedOption("");
-      setNextInput("");
+      setSelectedOption(""); // Clear the previously selected option when title changes
+      setNextInput(""); // Reset next input when title changes
     }
   };
 
-  const handleOptionChange = (option) => {
-    setSelectedOption(option);
-    const selected = selectedService.options.find((opt) => opt.next === option);
+  const handleOptionChange = (event) => {
+    const value = event.target.value;
+    setSelectedOption(value);
+    const selected = selectedService.options.find(option => option.next === value);
+    // Reset the next input when an option is selected
     setNextInput(selected ? "" : nextInput);
   };
 
   const handleNextInputChange = (event) => {
-    setNextInput(event.target.value);
+    setNextInput(event.target.value); // Update the state for the next input
   };
 
   const handleAddService = () => {
+    // Add selected service and option to the selectedServices array
     const newService = {
       division: selectedDivision,
       title: selectedTitle,
       option: selectedOption || "No extra option",
-      nextInput: nextInput || "",
+      nextInput: nextInput || "", // Include next input in the service
     };
 
     setSelectedServices((prevServices) => [...prevServices, newService]);
+    // Clear selections after adding
     setSelectedDivision("");
     setSelectedTitle("");
     setDescription("");
     setSelectedOption("");
-    setNextInput("");
+    setNextInput(""); // Reset the next input after adding the service
   };
 
   const divisions = [
     ...new Set(allServices.map((service) => service.division)),
   ];
+
   const filteredServices = allServices.filter(
     (service) => service.division === selectedDivision
   );
+
   const selectedService = allServices.find(
     (service) => service.title === selectedTitle
   );
-  const handleItemClick = (event) => {
-    // Automatically scroll the selected list item into view
-    event.currentTarget.scrollIntoView({
-      behavior: "smooth",
-      block: "nearest",
-    });
-  };
-
-  useEffect(() => {
-    // Add event listeners to list items after component mounts
-    const listItems = document.querySelectorAll(".list-item");
-    listItems.forEach((item) => {
-      item.addEventListener("click", handleItemClick);
-    });
-
-    // Cleanup function to remove the event listeners when the component unmounts
-    return () => {
-      listItems.forEach((item) => {
-        item.removeEventListener("click", handleItemClick);
-      });
-    };
-  }, []); // Empty dependency array ensures this runs once on mount
 
   return (
     <div className="pages-container">
@@ -97,56 +83,46 @@ const CaseStoryPage = () => {
       <div className="case-story-page">
         <h1 className="dark header-title">Bring Your Client's Story to Life</h1>
         <h2 className="dark header-title">Meeting Clients Where They Are</h2>
-
-        {/* Division Selector */}
         <div className="selector division-selector">
           <label htmlFor="division" className="label">
             Select Division:
           </label>
-          <div className="list-box">
-            <div className="list-item" onClick={() => handleDivisionChange("")}>
-              --Choose Division--
-            </div>
+          <select
+            id="division"
+            className="dropdown"
+            value={selectedDivision}
+            onChange={handleDivisionChange}
+          >
+            <option value="">--Choose Division--</option>
             {divisions.map((division, index) => (
-              <div
-                key={index}
-                className={`list-item ${
-                  selectedDivision === division ? "selected" : ""
-                }`}
-                onClick={() => handleDivisionChange(division)}
-              >
+              <option key={index} value={division}>
                 {division}
-              </div>
+              </option>
             ))}
-          </div>
+          </select>
         </div>
 
-        {/* Title Selector */}
         {selectedDivision && (
           <div className="selector title-selector">
             <label htmlFor="title" className="label">
               Select Title:
             </label>
-            <div className="list-box">
-              <div className="list-item" onClick={() => handleTitleChange("")}>
-                --Choose Title--
-              </div>
+            <select
+              id="title"
+              className="dropdown"
+              value={selectedTitle}
+              onChange={handleTitleChange}
+            >
+              <option value="">--Choose Title--</option>
               {filteredServices.map((service) => (
-                <div
-                  key={service.id}
-                  className={`list-item ${
-                    selectedTitle === service.title ? "selected" : ""
-                  }`}
-                  onClick={() => handleTitleChange(service.title)}
-                >
+                <option key={service.id} value={service.title}>
                   {service.title}
-                </div>
+                </option>
               ))}
-            </div>
+            </select>
           </div>
         )}
 
-        {/* Description */}
         {description && (
           <div className="service-description">
             <h2 className="subheader">Description:</h2>
@@ -154,49 +130,42 @@ const CaseStoryPage = () => {
           </div>
         )}
 
-        {/* Options Selector */}
         {selectedService && selectedService.options.length > 0 && (
           <div className="selector options-selector">
             <label htmlFor="options" className="label">
               Select Additional Service Option:
             </label>
-            <div className="list-box">
-              <div className="list-item" onClick={() => handleOptionChange("")}>
-                --Choose Option--
-              </div>
+            <select
+              id="options"
+              className="dropdown"
+              value={selectedOption}
+              onChange={handleOptionChange}
+            >
+              <option value="">--Choose Option--</option>
               {selectedService.options.map((option, index) => (
-                <div
-                  key={index}
-                  className={`list-item ${
-                    selectedOption === option.next ? "selected" : ""
-                  }`}
-                  onClick={() => handleOptionChange(option.next)}
-                >
+                <option key={index} value={option.next}>
                   {option.label}
-                </div>
+                </option>
               ))}
-            </div>
+            </select>
           </div>
         )}
 
-        {/* Next Steps Input */}
-        {selectedOption &&
-          selectedService.options.some(
-            (option) => option.next === selectedOption
-          ) && (
-            <div className="next-input">
-              <label htmlFor="nextInput" className="label">
-                What's next?
-              </label>
-              <textarea
-                id="nextInput"
-                className="textbox"
-                placeholder="Enter your next steps..."
-                value={nextInput}
-                onChange={handleNextInputChange}
-              />
-            </div>
-          )}
+        {/* Textarea for the next input only when there is a 'next' option selected */}
+        {selectedOption && selectedService.options.some(option => option.next === selectedOption) && (
+          <div className="next-input">
+            <label htmlFor="nextInput" className="label">
+              What's next?
+            </label>
+            <textarea
+              id="nextInput"
+              className="textbox"
+              placeholder="Enter your next steps..."
+              value={nextInput}
+              onChange={handleNextInputChange}
+            />
+          </div>
+        )}
 
         {selectedOption && (
           <div className="selected-option">
@@ -224,9 +193,7 @@ const CaseStoryPage = () => {
                   {service.division} - {service.title}{" "}
                   {service.option !== "No extra option" &&
                     `(${service.option})`}
-                  {service.nextInput &&
-                    service.nextInput !== "" &&
-                    ` - Next: ${service.nextInput}`}
+                  {service.nextInput && service.nextInput !== "" && ` - Next: ${service.nextInput}`}
                 </li>
               ))}
             </ul>
