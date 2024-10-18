@@ -1,85 +1,91 @@
-/* Container for the Contact Form */
+/* Contact Form Styling */
 .contact-form {
-  min-width: 400px;  /* Limiting the form width for better readability */
-  margin: 50px auto;  /* Centering the form */
-  padding: 20px;  /* Padding inside the form */
   background-color: var(--theme3-light);  /* Light background for the form */
-  border-radius: 8px;  /* Rounded corners */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);  /* Soft shadow for depth */
-  display: flex;  /* Flexbox for better alignment */
-  flex-direction: column;  /* Stack elements vertically */
-}
-
-/* Input Field and Label Wrapper */
-.contact-form-field {
-  display: flex;  /* Enable flexbox to handle label/input alignment */
-  flex-direction: column;  /* Stack label and input/textarea vertically */
-  margin-bottom: 15px;  /* Space between form fields */
-}
-
-/* Label Styling */
-.contact-form-field label {
-  margin-bottom: 5px;  /* Add spacing between label and input/textarea */
-  font-size: 14px;  /* Adjust label font size */
-  color: var(--theme1-dark);  /* Color for the label */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);  /* Soft shadow for depth */
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  animation: fadeIn 0.5s ease-in-out;  /* Smooth fade-in effect */
 }
 
 /* Input and Textarea Fields */
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form textarea {
-  padding: 12px;  /* Padding inside the fields */
-  border: 2px solid var(--theme3-dark);  /* Darker border for contrast */
-  border-radius: 5px;  /* Rounded corners */
-  font-size: 16px;  /* Font size for input fields */
-  background-color: var(--theme3-light);  /* Light background for fields */
-  color: var(--theme1-dark);  /* Text color */
-  transition: border-color 0.3s ease;  /* Smooth transition for border color */
-  width: 100%;  /* Ensure fields take up the full width of the container */
-  box-sizing: border-box;  /* Ensure padding and border are included in width */
+  padding: 12px;
+  border: 2px solid var(--theme3-dark);
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  background-color: var(--theme3-light);
+  color: var(--theme1-dark);
+  transition: border-color 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* Focus state for inputs and textarea */
 .contact-form input:focus,
 .contact-form textarea:focus {
-  border-color: var(--theme5-dark);  /* Change border color on focus */
-  outline: none;  /* Remove default outline */
-  box-shadow: 0 0 5px rgba(0, 86, 179, 0.2);  /* Add a subtle shadow */
+  border-color: var(--theme5-dark);
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 86, 179, 0.2);
 }
 
-/* Button styling */
+/* Submit button */
 .contact-form-button {
-  padding: 12px;  /* Padding for the button */
-  background-color: var(--theme5-dark);  /* Blue background for button */
-  color: var(--theme5-light);  /* White text for button */
-  border: none;  /* Remove default border */
-  border-radius: 5px;  /* Rounded button corners */
-  cursor: pointer;  /* Pointer cursor on hover */
-  font-size: 16px;  /* Font size for button */
-  transition: background-color 0.3s ease;  /* Smooth transition for background color */
-  width: 100%;  /* Full width button */
+  padding: 12px;
+  background-color: var(--theme5-dark);
+  color: var(--theme5-light);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  margin-top: 15px;
 }
 
-/* Button hover state */
 .contact-form-button:hover {
-  background-color: var(--theme2-dark);  /* Darker blue on hover */
+  background-color: var(--theme2-dark);
 }
 
 /* Success and Error Messages */
 .contact-form-message {
   text-align: center;
-  margin-top: 15px;
-  font-size: 16px;
-  color: var(--theme1-dark);  /* Default message color */
+  font-size: 1.2rem;
+  margin-top: 20px;
 }
 
 .contact-form-success {
-  color: var(--theme-success);  /* Green color for success message */
+  color: var(--theme-success);  /* Green for success messages */
 }
 
 .contact-form-error {
-  color: #ff4d4d;  /* Red color for error message */
-  margin-top: -10px;  /* Slightly negative margin for spacing */
-  margin-bottom: 15px;  /* Space below error messages */
-  font-size: 14px;  /* Smaller font for error messages */
+  color: #ff4d4d;  /* Red for error messages */
+}
+
+/* "Sending..." Message Styling */
+.sending-message {
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--theme2-dark);  /* The same blue as your form buttons */
+  font-weight: bold;
+  margin-top: 20px;
+  animation: fadeIn 0.5s ease-in-out;  /* Smooth fade-in effect */
+}
+
+/* Fade-in animation for the form and sending message */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
