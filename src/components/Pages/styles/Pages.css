@@ -85,7 +85,10 @@
 .text-block {
   animation: revealIndent 0.6s ease-in-out;
 }
-
+.icon-size  {
+  font-size: 1.8rem;
+  font-weight: 800;
+}
 @media (max-width: 768px) {
   .pages-container {
     padding: 1rem;

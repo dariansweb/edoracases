@@ -1,7 +1,6 @@
 import React from "react";
 import ScrollToDiv from "../../utils/ScrollToDiv";
 
-
 const Services = () => {
   return (
     <>
@@ -13,48 +12,72 @@ const Services = () => {
         </div>
       </div>
       <div className="pages-container">
-        <h2 className="dark">Tailored for Your Agency</h2>
-        <div className="text-block">
-          The EDORA team is committed to analyzing your agency's current
-          technologies and workflows to create a system that seamlessly
-          integrates with your existing infrastructure. Whether you're starting
-          from scratch or need to optimize and upgrade your current systems, our
-          engineers will work alongside you to ensure the solution is built
-          specifically for your unique needs.
-          <p>
-            At EDORA, we believe in empowering agencies with a robust,
-            customizable, and open-source solution to their client case
-            management needs. Our team is dedicated to providing the expertise
-            and support you need to build a powerful system that aligns
-            perfectly with your operational goals.
-          </p>
-        </div>
-        <h2 className="dark">Open Source, Endless Possibilities</h2>
-        <div className="text-block">
-          EDORA is an open-source platform, which means you have the freedom to
-          customize every aspect of your case management system. You're not tied
-          to any single vendor or proprietary software. With EDORA, you get the
-          best of both worlds: a feature-rich platform that is fully adaptable
-          and a skilled team of developers ready to assist in taking your system
-          to the next level.
-        </div>
-        <h2 className="dark">Dedicated Engineering Support</h2>
-        <div className="text-block">
-          Our dedicated engineers are here to provide guidance, troubleshoot
-          issues, and help you fully implement your vision. We bring years of
-          technical experience and industry knowledge to the table, making sure
-          your agency’s client management system is not only efficient and
-          reliable but also scalable for future growth.
-        </div>
-        <h2 className="dark">Let’s Build Something Awesome</h2>
-        <div className="text-block">
-          Whether you need consultation, customization, or full-scale
-          development, the EDORA team is here to support you every step of the
-          way. Let us help you build an awesome client case management system
-          that’s as unique as your agency. Get in touch with us today and take
-          the first step towards a more streamlined, efficient, and innovative
-          case management solution.
-        </div>
+        <section>
+          <h2 className="dark">
+            "Our" Services <span className="icon-size">🛠️</span>
+          </h2>
+          <div className="text-block">
+            <span className="icon-size">🌍</span> You, alongside our growing
+            community, offer a wide range of services to empower communities and
+            improve lives, especially for Health and Human Organizations.
+            Whether it's technical solutions, community outreach, or educational
+            initiatives, your efforts help drive meaningful change in Health and
+            Human Organizations. <span className="icon-size">💡</span>
+            <p>
+              <span className="icon-size">🌐</span>{" "}
+              <strong>Tech Solutions:</strong> From custom software to
+              open-source tools, you help create technology that empowers
+              agencies to serve the public more effectively. Our solutions are
+              user-friendly, efficient, and adaptable.{" "}
+              <span className="icon-size">💻</span>
+            </p>
+            <p>
+              <span className="icon-size">🤝</span>{" "}
+              <strong>Community Outreach:</strong> You bring people together
+              through outreach programs, fostering support for individuals in
+              need. We believe in collaboration and connection.{" "}
+              <span className="icon-size">🧩</span>
+            </p>
+            <p>
+              <span className="icon-size">📚</span>{" "}
+              <strong>Educational Initiatives:</strong> Knowledge is power. You
+              provide resources and training that empower both individuals and
+              organizations, building the skills needed to succeed.{" "}
+              <span className="icon-size">🎓</span>
+            </p>
+          </div>
+
+          <h2 className="dark">
+            Why be a part of us{" "}<span className="icon-size">❓</span>
+          </h2>
+          <div className="text-block">
+            You are part of a passionate community using skills for the greater
+            good. These services are designed with empathy and innovation to
+            make a real difference, thanks to your dedication.{" "}
+            <span className="icon-size">❤️</span>
+            <p>
+              {" "}
+              <span className="icon-size">🚀</span>{" "}
+              <strong>Impact-Driven:</strong> Every service we offer is aimed at
+              creating tangible positive change. We measure success by the
+              impact we have on people's lives.{" "}
+            </p>
+            <p>
+              {" "}
+              <span className="icon-size">🔧</span>{" "}
+              <strong>Customizable:</strong> We adapt our services to fit the
+              unique needs of each community we serve. Flexibility is key to
+              making sure our solutions truly work.{" "}
+            </p>
+            <p>
+              {" "}
+              <span className="icon-size">🤗</span>{" "}
+              <strong>Human-Centered:</strong> People come first. Our services
+              are designed to be inclusive, compassionate, and responsive to the
+              needs of the community.{" "}
+            </p>
+          </div>
+        </section>
       </div>
     </>
   );

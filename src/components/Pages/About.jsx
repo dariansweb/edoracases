@@ -13,84 +13,84 @@ const About = () => {
         </div>
       </div>
       <div className="pages-container">
-        <h1 className="dark">About Us</h1>
         <section>
+          <h1 className="dark">About Us</h1>
+          <h2 className="dark">
+            Make an Impact with Your Talent!{" "}
+            <span className="icon-size">🎯</span>
+          </h2>
+
           <div className="text-block">
-            We are a vibrant tapestry of volunteers hailing from every corner of
-            the globe, united by a singular purpose: to revolutionize human and
-            health services for the greater good. Our team isn’t just a bunch of
-            tech whizzes; we’re a lively crew of artists, musicians, educators,
-            and data wizards—all rolling up our sleeves to make a difference.
+            <br />
+            We’re a diverse group of volunteers from around the world—artists,
+            techies, musicians, educators, and more—working together to improve
+            human and health services for everyone.{" "}
+            <span className="icon-size">💪</span>
             <p>
-              This is open-source at its finest—an ever-evolving collaboration
-              where your unique skills, whether they be in coding, graphic
-              design, community organizing, or even good old-fashioned
-              problem-solving, can spark innovation. By opening our work to the
-              world, we’re crafting solutions that are not only transparent and
-              adaptable but also reflect the rich diversity of our community.
+              {" "}
+              <span className="icon-size">✨</span> Got a skill? Bring it!
+              Coding, design, organizing, problem-solving—every talent can help
+              drive change in our open-source community. Your creativity makes a
+              difference, and our project is waiting for <strong>you</strong> to
+              leave your mark. <span className="icon-size">👍🏻</span>{" "}
             </p>
             <p>
               {" "}
-              So, if you’re ready to jump into the mix and add your flavor, come
-              on in! This is where your passion and creativity can drive real
-              change, and together, we can create something truly extraordinary.
+              <span className="icon-size">🙌</span> Ready to jump in? Let’s make
+              something extraordinary, together!{" "}
+              <span className="icon-size">🤝🏻</span>{" "}
             </p>
           </div>
-          <h2 className="dark">Our Vision</h2>
+
+          <h2 className="dark">
+            Our Vision <span className="icon-size">🌟</span>{" "}
+          </h2>
           <div className="text-block">
-            Our vision is to create a future where technology and human services
-            work in harmony, driving positive change and accountability.
-            Together, we are committed to making a difference, ensuring that
-            governmental agencies can fulfill their mission of serving the
-            community with transparency and purpose.
+            We dream of a future where tech and human services go
+            hand-in-hand—making life better for everyone, with transparency and
+            purpose. <span className="icon-size">💻</span>
             <p>
-              We believe that everyone deserves access to high-quality services
-              that address their unique challenges. By developing intuitive and
-              efficient software solutions, we aim to enhance the operational
-              capacity of agencies, allowing them to serve their clients more
-              effectively and compassionately.
+              {" "}
+              By building efficient and intuitive software, we help agencies
+              serve communities with more care and efficiency.{" "}
+              <span className="icon-size">📈</span> Everyone deserves
+              high-quality, accessible services—let’s make that a reality.
             </p>
             <p>
-              Join us on this journey as we strive to bring the best we have to
-              offer, fostering a supportive environment for those who need it
-              most.
+              {" "}
+              Join us and be part of the change.{" "}
+              <span className="icon-size">🤝</span> Together, we’ll create a
+              future where technology brings out the best in humanity.{" "}
             </p>
           </div>
-          <h2 className="dark">Our Mission</h2>
+
+          <h2 className="dark">
+            Our Mission <span className="icon-size">💙</span>{" "}
+          </h2>
           <div className="text-block">
-            At the heart of our mission is a profound commitment to empower
-            every member of our community, especially those who are vulnerable
-            and in need of support. We strive to provide accessible,
-            compassionate, and comprehensive services that promote well-being,
-            resilience, and personal growth.
+            We’re here to empower our community—especially those in need. We
+            believe in accessible, compassionate services that foster growth and
+            resilience. <span className="icon-size">🧠</span>
             <p>
-              We recognize that individuals facing challenges—whether due to
-              health issues, personal circumstances, or societal
-              barriers—deserve timely and appropriate assistance that meets
-              their unique needs. By fostering a collaborative environment that
-              unites our staff, community partners, and stakeholders, we
-              advocate for those we serve, ensuring that their voices are heard
-              and their needs are met.
+              {" "}
+              We unite staff, partners, and stakeholders to make sure everyone’s
+              voice is heard and needs are met—bringing hope to those facing
+              barriers. <span className="icon-size">💝</span>{" "}
             </p>
             <p>
-              In our pursuit of excellence, we leverage Event Driven Operations
-              to focus on the critical events and triggers that impact service
-              delivery. This proactive approach enables us to respond swiftly to
-              the evolving needs of our clients, maximizing our agency's
-              resources and operational capacity to create a more responsive and
-              adaptive framework.
+              {" "}
+              Using Event Driven Operations, we stay responsive and proactive,
+              meeting needs as they arise. <span className="icon-size">
+                🛰️
+              </span>{" "}
+              It’s all about maximizing impact and creating a supportive
+              environment for everyone.
             </p>
             <p>
-              We are dedicated to making a lasting positive impact, enhancing
-              client outcomes, and supporting the overall health and well-being
-              of our community. Together, we aim to build a compassionate
-              network of support that uplifts those who are hurting, helping
-              them navigate their journeys toward healing and empowerment.
-            </p>
-            <p>
-              Join us in our mission to transform lives through service,
-              advocacy, and collaboration, ensuring that everyone in our
-              community has the opportunity to thrive and live with dignity.
+              {" "}
+              Join our mission to uplift lives and transform communities.
+              Together, we’ll help everyone thrive and live with dignity.{" "}
+              <span className="icon-size">🙌</span>{" "}
             </p>
           </div>
         </section>
