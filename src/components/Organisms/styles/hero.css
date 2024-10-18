@@ -145,6 +145,24 @@
 .wide-menu {
   display: none; /* Hide by default */
 }
+/* Ticker styling */
+.ticker {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: var(--theme1-dark);  /* Adjust to your theme */
+  text-align: center;
+}
+
+/* Call to action styling */
+.call-to-action {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.call-to-action strong {
+  color: var(--theme6-light);  /* Adjust to your theme */
+}
 
 @media (min-width: 769px) {
   .wide-menu {

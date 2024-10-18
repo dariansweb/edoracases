@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import features from "../../data/features";
 import { shuffleArray } from "../../utils/shuffleArray";
 
@@ -6,64 +6,64 @@ import { shuffleArray } from "../../utils/shuffleArray";
 const shuffledFeatures = shuffleArray(features);
 
 const Hero = () => {
-  // `currentFeatureIndex` keeps track of which feature is being displayed
-  // `setCurrentFeatureIndex` is used to update this index
-  const [currentFeatureIndex, setCurrentFeatureIndex] = useState(0);
+  // State to track time since the start of EDORA
+  const [timeSinceStart, setTimeSinceStart] = useState({
+    years: "00",
+    months: "00",
+    days: "00",
+    hours: "00",
+    minutes: "00",
+    seconds: "00",
+  });
 
-  // `maxWidth` holds the maximum width of the largest feature text
-  // `setMaxWidth` updates the max width
-  const [maxWidth, setMaxWidth] = useState(0);
+  // Function to calculate the difference between start date and current date
+  const calculateTimeSinceStart = () => {
+    const startDate = new Date("2024-07-01T00:00:00"); // Start date (July 1st, 2024)
+    const now = new Date(); // Current date and time
 
-  // useEffect for rotating the features
+    const years = "00"; // Since it's less than a year, this will always be "00"
+
+    // Calculate the difference in months, days, hours, minutes, and seconds
+    const months =
+      now.getMonth() -
+      startDate.getMonth() +
+      (now.getFullYear() - startDate.getFullYear()) * 12;
+    const days = Math.floor(
+      (now - new Date(now.getFullYear(), now.getMonth(), startDate.getDate())) /
+        (1000 * 60 * 60 * 24)
+    );
+    const hours = String(now.getHours()).padStart(2, "0");
+    const minutes = String(now.getMinutes()).padStart(2, "0");
+    const seconds = String(now.getSeconds()).padStart(2, "0");
+
+    // Return an object with the updated time values
+    return {
+      years,
+      months: String(months).padStart(2, "0"), // Ensure two-digit months
+      days: String(days).padStart(2, "0"), // Ensure two-digit days
+      hours,
+      minutes,
+      seconds,
+    };
+  };
+
+  // useEffect to update the ticker every second
   useEffect(() => {
-    // Create an interval that updates `currentFeatureIndex` every 3 seconds (3000 ms)
     const interval = setInterval(() => {
-      setCurrentFeatureIndex((prevIndex) =>
-        // If we've reached the last feature, go back to the first one (index 0)
-        // Otherwise, increment to the next feature
-        prevIndex === shuffledFeatures.length - 1 ? 0 : prevIndex + 1
-      );
-    }, 3000); // Interval set for 3 seconds (3000 ms)
+      setTimeSinceStart(calculateTimeSinceStart());
+    }, 1000); // Update the ticker every second
 
-    // Cleanup function to clear the interval when the component is unmounted
+    // Cleanup the interval when the component is unmounted
     return () => clearInterval(interval);
-  }, []); // Empty array as a dependency means this effect runs once after the component mounts
-  // useEffect for calculating the maximum width of all the feature items
-  useEffect(() => {
-    let maxElementWidth = 0; // Variable to store the maximum width
-
-    // Loop through each feature to measure its width
-    shuffledFeatures.forEach((feature) => {
-      // Create a temporary div element to measure the width of the feature's text
-      const tempDiv = document.createElement("div");
-
-      // Style the temp div so it doesn't affect the layout or take up space
-      tempDiv.style.position = "absolute"; // Position it absolutely so it won't affect the flow of the document
-      tempDiv.style.visibility = "hidden"; // Make it invisible
-      tempDiv.style.whiteSpace = "nowrap"; // Ensure that the text doesn't wrap to the next line
-
-      // Set the text of the temp div to the current feature text
-      tempDiv.innerText = feature;
-
-      // Add the temp div to the DOM (document body) to measure its width
-      document.body.appendChild(tempDiv);
-
-      // Compare the width of the current feature's text with `maxElementWidth`
-      // and store the maximum width found so far
-      maxElementWidth = Math.max(maxElementWidth, tempDiv.offsetWidth);
-
-      // Remove the temp div from the DOM after measuring
-      document.body.removeChild(tempDiv);
-    });
-
-    // Update the `maxWidth` state with the largest width found
-    setMaxWidth(maxElementWidth);
-  }, [shuffledFeatures]); // Dependency array: this effect runs whenever `shuffledFeatures` changes
+  }, []);
 
   return (
     <div className="hero-container full-width-container">
       <div className="hero-content">
+        {/* Main Title */}
         <h2 className="light hero-title">EDORA</h2>
+
+        {/* Subtitle breaking down EDORA */}
         <h4 className="light">
           <span className="strong">
             <span className="underline">E</span>vent
@@ -82,16 +82,30 @@ const Hero = () => {
           </span>
         </h4>
 
-        {/* <ul className="rotating-features">
-            <li key={currentFeatureIndex} className="feature-item">
-              {shuffledFeatures[currentFeatureIndex]}
-            </li>./components/styles/
-          </ul> */}
         <hr />
-          <span className="strong">
-          EDORA is Open Source, free to use for
-            everyone! 💛
-          </span>
+
+        {/* Ticker for time since project started */}
+        <div className="ticker">
+          <h6 className="light">
+            EDORA has been growing strong for <hr /> {timeSinceStart.years} Years,{" "}
+            {timeSinceStart.months} Months, {timeSinceStart.days} Days,{" "}
+            {timeSinceStart.hours}:{timeSinceStart.minutes}:
+            {timeSinceStart.seconds} and counting!
+          </h6>
+        </div>
+        {/* Open source message */}
+        <span className="strong">
+          EDORA is Open Source, free to use for everyone! 💛
+        </span>
+
+
+        {/* Call to action to get involved */}
+        <div className="call-to-action">
+          <h6 className="light">Get Involed at</h6>
+          <p>
+            <strong className="strong">info@edoracases.com</strong>
+          </p>
+        </div>
       </div>
     </div>
   );
