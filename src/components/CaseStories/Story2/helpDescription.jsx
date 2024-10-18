@@ -19,39 +19,37 @@ const HelpDescription = () => {
         <div className="description-content text-block">
           <h2>Case Story Page Overview</h2>
           <p>
-            Welcome to the Case Story Page, a tool crafted to help you bring
-            transformative change to your clients' lives. This isn’t just about
-            selecting services—it's about capturing the essence of their story
-            and connecting them to the right pathways for a brighter future.
+            <strong>
+              Welcome to the Case Story Page, where you build impactful stories
+              for your clients using Human and Health Services.
+            </strong>
           </p>
+
           <p>
-            As you navigate through selecting divisions, titles, and additional
-            service options, you’re not just filling out fields; you’re laying
-            the foundation for hope and resilience. Every click represents a new
-            opportunity—every option you choose has the potential to change a
-            life.
+            This tool allows you to select services from different departments,
+            adding them one by one to craft a comprehensive journey for each
+            client. As you make your selections—division by division, service by
+            service—you’re creating a personalized roadmap that addresses their
+            unique needs.
           </p>
+
           <p>
-            The Case Story Page is designed with you, the case worker, in mind. We
-            know how challenging yet rewarding your job can be. With this tool,
-            we aim to simplify the complexities of case management so you can
-            focus on what really matters: uplifting and empowering your clients.
-            We want you to feel confident knowing that every division selected,
-            every service added, and every journey documented is a crucial step
-            in creating an impactful story for those who need it most.
+            You can keep adding services across various areas, building a
+            detailed and evolving story for each client. Every selection becomes
+            part of their journey, ensuring they get the support they need from
+            multiple services within Human and Health Services.
           </p>
+
           <p>
-            The journey you’re building here will enable your clients to receive
-            the support they deserve, where they need it, when they need it.
-            Your dedication to their journey can help them grow, overcome
-            barriers, and ultimately succeed. Let this tool be your partner in
-            delivering real, meaningful outcomes—because when clients thrive,
-            entire communities thrive.
+            This platform simplifies case management, enabling you to focus on
+            what matters most: empowering your clients. Let each addition bring
+            them closer to success, with a story that grows and evolves as their
+            needs do.
           </p>
+
           <p>
-            Thank you for being the guiding force in your clients’ lives.
-            Together, let’s make each story not just a journey but a success
-            story.
+            Thank you for using this tool to build stories that change lives,
+            one service at a time.
           </p>
         </div>
       )}
