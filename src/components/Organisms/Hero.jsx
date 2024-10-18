@@ -82,29 +82,25 @@ const Hero = () => {
           </span>
         </h4>
 
-        <hr />
-
         {/* Ticker for time since project started */}
         <div className="ticker">
+          {" "}
+          <hr />
           <h6 className="light">
-            EDORA has been growing strong for <hr /> {timeSinceStart.years} Years,{" "}
-            {timeSinceStart.months} Months, {timeSinceStart.days} Days,{" "}
+            EDORA has been growing strong for <br /> {timeSinceStart.years}{" "}
+            Years, {timeSinceStart.months} Months, {timeSinceStart.days} Days,{" "}
             {timeSinceStart.hours}:{timeSinceStart.minutes}:
             {timeSinceStart.seconds} and counting!
-          </h6>
+          </h6>{" "}
+          <hr />
         </div>
-        {/* Open source message */}
-        <span className="strong">
-          EDORA is Open Source, free to use for everyone! 💛
-        </span>
-
-
-        {/* Call to action to get involved */}
         <div className="call-to-action">
-          <h6 className="light">Get Involed at</h6>
-          <p>
-            <strong className="strong">info@edoracases.com</strong>
-          </p>
+          {/* Open source message */}
+          <span className="strong">
+            EDORA is Open Source, free to use for everyone! 💛
+          </span>
+          {/* Call to action to get involved */}
+          <p><strong className="strong">info@edoracases.com</strong></p>
         </div>
       </div>
     </div>
