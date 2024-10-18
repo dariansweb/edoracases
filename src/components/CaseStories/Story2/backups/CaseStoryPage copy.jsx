@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import allServices from "../../../data/hhsServices";
 import "./styles/CaseStoryPage.css";
 import ScrollToDiv from "../../../utils/ScrollToDiv";
-import HelpDescription from "./helpDescription";
 
 const CaseStoryPage = () => {
   const [selectedDivision, setSelectedDivision] = useState("");
@@ -11,16 +10,21 @@ const CaseStoryPage = () => {
   const [selectedOption, setSelectedOption] = useState("");
   const [selectedServices, setSelectedServices] = useState([]);
   const [nextInput, setNextInput] = useState("");
+  
+  // New state to toggle the description visibility
+  const [showDescription, setShowDescription] = useState(false);
 
-  const handleDivisionChange = (division) => {
-    setSelectedDivision(division);
+  const handleDivisionChange = (event) => {
+    setSelectedDivision(event.target.value);
     setSelectedTitle("");
     setDescription("");
     setSelectedOption("");
     setNextInput("");
+    ScrollToDiv(".top");
   };
 
-  const handleTitleChange = (title) => {
+  const handleTitleChange = (event) => {
+    const title = event.target.value;
     const service = allServices.find(
       (service) =>
         service.title === title && service.division === selectedDivision
@@ -34,9 +38,10 @@ const CaseStoryPage = () => {
     }
   };
 
-  const handleOptionChange = (option) => {
-    setSelectedOption(option);
-    const selected = selectedService?.options.find((opt) => opt.next === option);
+  const handleOptionChange = (event) => {
+    const value = event.target.value;
+    setSelectedOption(value);
+    const selected = selectedService.options.find(option => option.next === value);
     setNextInput(selected ? "" : nextInput);
   };
 
@@ -63,35 +68,14 @@ const CaseStoryPage = () => {
   const divisions = [
     ...new Set(allServices.map((service) => service.division)),
   ];
+
   const filteredServices = allServices.filter(
     (service) => service.division === selectedDivision
   );
+
   const selectedService = allServices.find(
     (service) => service.title === selectedTitle
   );
-
-  useEffect(() => {
-    // Add event listeners to list items after component mounts
-    const listItems = document.querySelectorAll(".list-item");
-    listItems.forEach((item) => {
-      item.addEventListener("click", handleItemClick);
-    });
-
-    // Cleanup function to remove the event listeners when the component unmounts
-    return () => {
-      listItems.forEach((item) => {
-        item.removeEventListener("click", handleItemClick);
-      });
-    };
-  }, []);
-
-  const handleItemClick = (event) => {
-    // Automatically scroll the selected list item into view
-    event.currentTarget.scrollIntoView({
-      behavior: "smooth",
-      block: "nearest",
-    });
-  };
 
   return (
     <div className="pages-container">
@@ -100,58 +84,58 @@ const CaseStoryPage = () => {
         <h1 className="dark header-title">Bring Your Client's Story to Life</h1>
         <h2 className="dark header-title">Meeting Clients Where They Are</h2>
 
-        {/* Help Description Component */}
-        <HelpDescription />
+        {/* Button to toggle description */}
+        <button className="toggle-btn" onClick={() => setShowDescription(!showDescription)}>
+          {showDescription ? "Hide Description" : "Show Description"}
+        </button>
 
-        {/* Division Selector */}
-        <div className="selector division-selector">
-          <label htmlFor="division" className="label">
-            Select Division:
-          </label>
-          <div className="list-box">
-            <div className="list-item" onClick={() => handleDivisionChange("")}>
-              --Choose Division--
-            </div>
-            {divisions.map((division, index) => (
-              <div
-                key={index}
-                className={`list-item ${
-                  selectedDivision === division ? "selected" : ""
-                }`}
-                onClick={() => handleDivisionChange(division)}
-              >
-                {division}
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Title Selector */}
-        {selectedDivision && (
-          <div className="selector title-selector">
-            <label htmlFor="title" className="label">
-              Select Event:
-            </label>
-            <div className="list-box">
-              <div className="list-item" onClick={() => handleTitleChange("")}>
-                --Choose Title--
-              </div>
-              {filteredServices.map((service) => (
-                <div
-                  key={service.id}
-                  className={`list-item ${
-                    selectedTitle === service.title ? "selected" : ""
-                  }`}
-                  onClick={() => handleTitleChange(service.title)}
-                >
-                  {service.title}
-                </div>
-              ))}
-            </div>
+        {/* Conditionally rendering the description based on the state */}
+        {showDescription && (
+          <div className="description-content">
+            <p>
+              EDORA focuses on empowering clients by providing customized services, 
+              facilitating case management, and helping users keep track of various 
+              support options for their clients.
+            </p>
           </div>
         )}
 
-        {/* Description */}
+        <div className="selector division-selector">
+          <label htmlFor="division" className="label">Select Division:</label>
+          <select
+            id="division"
+            className="dropdown"
+            value={selectedDivision}
+            onChange={handleDivisionChange}
+          >
+            <option value="">--Choose Division--</option>
+            {divisions.map((division, index) => (
+              <option key={index} value={division}>
+                {division}
+              </option>
+            ))}
+          </select>
+        </div>
+
+        {selectedDivision && (
+          <div className="selector title-selector">
+            <label htmlFor="title" className="label">Select Title:</label>
+            <select
+              id="title"
+              className="dropdown"
+              value={selectedTitle}
+              onChange={handleTitleChange}
+            >
+              <option value="">--Choose Title--</option>
+              {filteredServices.map((service) => (
+                <option key={service.id} value={service.title}>
+                  {service.title}
+                </option>
+              ))}
+            </select>
+          </div>
+        )}
+
         {description && (
           <div className="service-description">
             <h2 className="subheader">Description:</h2>
@@ -159,49 +143,37 @@ const CaseStoryPage = () => {
           </div>
         )}
 
-        {/* Options Selector */}
         {selectedService && selectedService.options.length > 0 && (
           <div className="selector options-selector">
-            <label htmlFor="options" className="label">
-              Select Additional Event Option:
-            </label>
-            <div className="list-box">
-              <div className="list-item" onClick={() => handleOptionChange("")}>
-                --Choose Option--
-              </div>
+            <label htmlFor="options" className="label">Select Additional Service Option:</label>
+            <select
+              id="options"
+              className="dropdown"
+              value={selectedOption}
+              onChange={handleOptionChange}
+            >
+              <option value="">--Choose Option--</option>
               {selectedService.options.map((option, index) => (
-                <div
-                  key={index}
-                  className={`list-item ${
-                    selectedOption === option.next ? "selected" : ""
-                  }`}
-                  onClick={() => handleOptionChange(option.next)}
-                >
+                <option key={index} value={option.next}>
                   {option.label}
-                </div>
+                </option>
               ))}
-            </div>
+            </select>
           </div>
         )}
 
-        {/* Next Steps Input */}
-        {selectedOption &&
-          selectedService.options.some(
-            (option) => option.next === selectedOption
-          ) && (
-            <div className="next-input">
-              <label htmlFor="nextInput" className="label">
-                What's next for the client?
-              </label>
-              <textarea
-                id="nextInput"
-                className="textbox"
-                placeholder="Notes ..."
-                value={nextInput}
-                onChange={handleNextInputChange}
-              />
-            </div>
-          )}
+        {selectedOption && selectedService.options.some(option => option.next === selectedOption) && (
+          <div className="next-input">
+            <label htmlFor="nextInput" className="label">What's next?</label>
+            <textarea
+              id="nextInput"
+              className="textbox"
+              placeholder="Enter your next steps..."
+              value={nextInput}
+              onChange={handleNextInputChange}
+            />
+          </div>
+        )}
 
         {selectedOption && (
           <div className="selected-option">
@@ -210,7 +182,6 @@ const CaseStoryPage = () => {
           </div>
         )}
 
-        {/* Add Service Button */}
         {selectedTitle && (
           <div className="add-service-button">
             <button className="btn" onClick={handleAddService}>
@@ -219,19 +190,16 @@ const CaseStoryPage = () => {
           </div>
         )}
 
-        {/* Selected Services List */}
         {selectedServices.length > 0 && (
           <div className="selected-services-list">
-            <h2 className="subheader">Client Journey with EDORA</h2>
+            <h2 className="subheader">Client's Journey with EDORA</h2>
             <ul>
               {selectedServices.map((service, index) => (
                 <li key={index}>
                   {service.division} - {service.title}{" "}
                   {service.option !== "No extra option" &&
                     `(${service.option})`}
-                  {service.nextInput &&
-                    service.nextInput !== "" &&
-                    ` - Next: ${service.nextInput}`}
+                  {service.nextInput && service.nextInput !== "" && ` - Next: ${service.nextInput}`}
                 </li>
               ))}
             </ul>

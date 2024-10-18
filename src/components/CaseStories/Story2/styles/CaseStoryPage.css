@@ -14,13 +14,22 @@
 }
 
 .selector {
-  margin: 30px 0; /* Increased margin for a balanced layout */
+  flex: 1;
+  min-width: 200px; /* Ensure that boxes don't get too small */
+  margin: 20px 10px; /* Space around listboxes for better visual flow */
 }
 
 .label {
   font-weight: 700; /* Increased font weight */
   margin-bottom: 8px; /* Space below labels */
   color: var(--theme1-dark); /* Muted Forest for labels */
+}
+
+.listboxes-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between listboxes */
+  justify-content: space-between; /* Space them evenly */
 }
 
 .list-box {
@@ -92,6 +101,23 @@
   transform: scale(1.05); /* Slight grow effect on hover */
 }
 
+.service-description,
+.next-input,
+.add-service-button,
+.selected-services-list {
+  margin-top: 30px;
+  width: 100%;
+}
+.service-description,
+.next-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-service-button {
+  text-align: center;
+}
+
 .selected-services-list, 
 .description-text {
   margin-top: 30px; /* More space above the list */
@@ -115,4 +141,10 @@
 .selected-services-list li:hover {
   background: var(--theme5-dark); /* Moss Green on hover */
   color: white; /* White text for readability */
+}
+
+@media (max-width: 768px) {
+  .listboxes-container {
+    flex-direction: column; /* Stack vertically on small screens */
+  }
 }

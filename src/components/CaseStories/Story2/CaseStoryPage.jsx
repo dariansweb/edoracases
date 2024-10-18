@@ -36,7 +36,9 @@ const CaseStoryPage = () => {
 
   const handleOptionChange = (option) => {
     setSelectedOption(option);
-    const selected = selectedService?.options.find((opt) => opt.next === option);
+    const selected = selectedService?.options.find(
+      (opt) => opt.next === option
+    );
     setNextInput(selected ? "" : nextInput);
   };
 
@@ -103,55 +105,92 @@ const CaseStoryPage = () => {
         {/* Help Description Component */}
         <HelpDescription />
 
-        {/* Division Selector */}
-        <div className="selector division-selector">
-          <label htmlFor="division" className="label">
-            Select Division:
-          </label>
-          <div className="list-box">
-            <div className="list-item" onClick={() => handleDivisionChange("")}>
-              --Choose Division--
-            </div>
-            {divisions.map((division, index) => (
-              <div
-                key={index}
-                className={`list-item ${
-                  selectedDivision === division ? "selected" : ""
-                }`}
-                onClick={() => handleDivisionChange(division)}
-              >
-                {division}
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Title Selector */}
-        {selectedDivision && (
-          <div className="selector title-selector">
-            <label htmlFor="title" className="label">
-              Select Event:
+        {/* Listboxes Container */}
+        <div className="listboxes-container">
+          {/* Division Selector */}
+          <div className="selector division-selector">
+            <label htmlFor="division" className="label">
+              Select Division:
             </label>
             <div className="list-box">
-              <div className="list-item" onClick={() => handleTitleChange("")}>
-                --Choose Title--
+              <div
+                className="list-item"
+                onClick={() => handleDivisionChange("")}
+              >
+                --Choose Division--
               </div>
-              {filteredServices.map((service) => (
+              {divisions.map((division, index) => (
                 <div
-                  key={service.id}
+                  key={index}
                   className={`list-item ${
-                    selectedTitle === service.title ? "selected" : ""
+                    selectedDivision === division ? "selected" : ""
                   }`}
-                  onClick={() => handleTitleChange(service.title)}
+                  onClick={() => handleDivisionChange(division)}
                 >
-                  {service.title}
+                  {division}
                 </div>
               ))}
             </div>
           </div>
-        )}
 
-        {/* Description */}
+          {/* Title Selector */}
+          {selectedDivision && (
+            <div className="selector title-selector">
+              <label htmlFor="title" className="label">
+                Select Event:
+              </label>
+              <div className="list-box">
+                <div
+                  className="list-item"
+                  onClick={() => handleTitleChange("")}
+                >
+                  --Choose Title--
+                </div>
+                {filteredServices.map((service) => (
+                  <div
+                    key={service.id}
+                    className={`list-item ${
+                      selectedTitle === service.title ? "selected" : ""
+                    }`}
+                    onClick={() => handleTitleChange(service.title)}
+                  >
+                    {service.title}
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Options Selector */}
+          {selectedService && selectedService.options.length > 0 && (
+            <div className="selector options-selector">
+              <label htmlFor="options" className="label">
+                Select Additional Event Option:
+              </label>
+              <div className="list-box">
+                <div
+                  className="list-item"
+                  onClick={() => handleOptionChange("")}
+                >
+                  --Choose Option--
+                </div>
+                {selectedService.options.map((option, index) => (
+                  <div
+                    key={index}
+                    className={`list-item ${
+                      selectedOption === option.next ? "selected" : ""
+                    }`}
+                    onClick={() => handleOptionChange(option.next)}
+                  >
+                    {option.label}
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
+
+        {/* Description, Next Steps Input, Add Service Button */}
         {description && (
           <div className="service-description">
             <h2 className="subheader">Description:</h2>
@@ -159,32 +198,6 @@ const CaseStoryPage = () => {
           </div>
         )}
 
-        {/* Options Selector */}
-        {selectedService && selectedService.options.length > 0 && (
-          <div className="selector options-selector">
-            <label htmlFor="options" className="label">
-              Select Additional Event Option:
-            </label>
-            <div className="list-box">
-              <div className="list-item" onClick={() => handleOptionChange("")}>
-                --Choose Option--
-              </div>
-              {selectedService.options.map((option, index) => (
-                <div
-                  key={index}
-                  className={`list-item ${
-                    selectedOption === option.next ? "selected" : ""
-                  }`}
-                  onClick={() => handleOptionChange(option.next)}
-                >
-                  {option.label}
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
-
-        {/* Next Steps Input */}
         {selectedOption &&
           selectedService.options.some(
             (option) => option.next === selectedOption
@@ -203,14 +216,6 @@ const CaseStoryPage = () => {
             </div>
           )}
 
-        {selectedOption && (
-          <div className="selected-option">
-            <h2 className="subheader">Selected Option:</h2>
-            <p className="description-text">You selected: {selectedOption}</p>
-          </div>
-        )}
-
-        {/* Add Service Button */}
         {selectedTitle && (
           <div className="add-service-button">
             <button className="btn" onClick={handleAddService}>
