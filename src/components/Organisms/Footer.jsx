@@ -73,14 +73,14 @@ const Footer = () => {
           </a>
           <a
             className="footer-link"
-            href="divmailto:info@edoracases.com"
+            href="mailto:info@edoracases.com"
             aria-label="Email"
           >
             <span>Email</span>
           </a>
           <a
             className="footer-link"
-            href="https://www.edoracases.com"
+            href="https://www.edoracases.com/contact"
             aria-label="Website"
           >
             <span>EDORA</span>
