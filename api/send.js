@@ -27,7 +27,7 @@ export default async (req, res) => {
 
   // Set up the email details
   const mailOptions = {
-    from: `"${name}" <${email}>`,  // Sender's name and email
+    from: `"${name}" <${process.env.EMAIL_USER}>`,    // Always use your Zoho email in the "from" field
     to: process.env.EMAIL_USER,  // Your admin email (where you receive the messages)
     subject: `New Contact Form Submission from ${name}`,  // Subject of the email
     text: message,  // Plain text version of the message
@@ -37,6 +37,7 @@ export default async (req, res) => {
              <li>Email: ${email}</li>
              <li>Message: ${message}</li>
            </ul>`,  // HTML formatted email
+           replyTo: email  // Set the sender's email in the "reply-to" field
   };
 
   try {
