@@ -54,7 +54,7 @@
 
 /* Error state styles */
 .input-field--error {
-  border-color: var(--theme-alert3);
+  border: 2px solid red;
 }
 
 .input-field--error:focus {
@@ -64,9 +64,9 @@
 /* Error message styles */
 .input-error {
   margin-top: 0.25rem;
-  color: var(--theme-alert3);
-  font-size: 0.875rem;
-  font-weight: 500; /* Bold to make the error stand out */
+  color: red;
+  font-size: 1.2rem;
+  font-weight: 700; /* Bold to make the error stand out */
 }
 
 /* Subtle transitions for the classy feel */

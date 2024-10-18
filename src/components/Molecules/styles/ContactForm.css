@@ -1,0 +1,31 @@
+/* Input.css */
+
+.input-container {
+  margin-bottom: 20px;
+}
+
+.input-label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--theme5-dark);
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.input-field--error {
+  border-color: #ff4d4d;
+}
+
+.input-error {
+  color: #ff4d4d;
+  font-size: 12px;
+  margin-top: 5px;
+  display: block;
+}

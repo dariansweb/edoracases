@@ -1,72 +1,75 @@
 /* Textarea container styles */
 .textarea-container {
-    margin-bottom: 1.5rem; /* Same spacing between components */
-    display: flex;
-    flex-direction: column;
+  margin-bottom: 1.5rem; /* Space between components */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Label styling */
+.textarea-label {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem; /* Match with other input labels */
+  color: var(--theme1-dark);
+}
+
+/* Textarea field styles */
+.textarea-field {
+  padding: 0.75rem 1rem;
+  border: 2px inset var(--theme6-dark);
+  border-radius: 0.375rem;
+  background-color: var(--theme3-light);
+  color: var(--theme1-dark);
+  font-size: 0.9rem; /* Slightly increased for better readability */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  resize: vertical; /* Vertical resizing only */
+  min-height: 5rem; /* Minimum height */
+}
+
+/* Focus and hover states */
+.textarea-field:focus {
+  outline: none;
+  border-color: var(--theme1-dark); /* Dark border on focus */
+  background-color: var(--theme6-light);
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Focus shadow */
+}
+
+.textarea-field:hover {
+  border-color: var(--theme4-dark); /* Change border color on hover */
+}
+
+/* Error state styles */
+.textarea-field--error {
+  border-color: red; /* Red border for error state */
+}
+
+.textarea-field--error:focus {
+  box-shadow: 0 0 5px rgba(255, 76, 76, 0.5); /* Red shadow for errors */
+}
+
+/* Error message styles */
+.textarea-error {
+  margin-top: 0.25rem;
+  color: red; /* Red error text */
+  font-size: 0.875rem; /* Slightly smaller font for error message */
+  font-weight: 600; /* Bold text to highlight the error */
+}
+
+/* Subtle transitions for labels and text areas */
+textarea,
+label {
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+/* Allow resizing both horizontally and vertically */
+.textarea-field.resize {
+  resize: both;
+  overflow: auto; /* Ensures content is scrollable if it overflows */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .textarea-container {
+    margin-right: 1rem;
   }
-  
-  /* Label styling */
-  .textarea-label {
-    margin-bottom: 0.5rem;
-    font-size: 1.1rem; /* Matching font size with Input label */
-    color: var(--theme1-dark);
-  }
-  
-  /* Textarea field styles */
-  .textarea-field {
-    padding: 0.75rem 1rem;
-    border: 2px inset var(--theme6-dark);
-    border-radius: 0.375rem;
-    background-color: var(--theme3-light);
-    color: var(--theme1-dark);
-    font-size: 0.8rem;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
-    resize: vertical; /* Allows vertical resizing, but not horizontal */
-    min-height: 5rem; /* Sets a minimum height */
-  }
-  
-  /* Focus and hover states */
-  .textarea-field:focus {
-    outline: none;
-    border-color: var(--theme1-dark);
-    background-color: var(--theme6-light);
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Same subtle focus shadow */
-  }
-  
-  .textarea-field:hover {
-    border-color: var(--theme4-dark); /* Change border color on hover */
-  }
-  
-  /* Error state styles */
-  .textarea-field--error {
-    border-color: var(--theme-alert3);
-  }
-  
-  .textarea-field--error:focus {
-    box-shadow: 0 0 5px rgba(255, 76, 76, 0.5); /* Red shadow for errors */
-  }
-  
-  /* Error message styles */
-  .textarea-error {
-    margin-top: 0.25rem;
-    color: var(--theme-alert3);
-    font-size: 0.875rem;
-    font-weight: 500; /* Bold to make the error stand out */
-  }
-  
-  /* Subtle transitions */
-  textarea,
-  label {
-    transition: all 0.3s ease;
-    font-weight: 600;
-  }
-  .textarea-field.resize {
-    resize: both; /* Allows both horizontal and vertical resizing */
-    overflow: auto; /* Ensures content is scrollable if it overflows */
-  }
-  
-  @media (max-width: 768px) {
-    .textarea-container {
-      margin-right: 1rem;
-    }
-  }
+}
