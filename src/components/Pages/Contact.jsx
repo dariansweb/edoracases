@@ -11,22 +11,18 @@ const Contact = () => {
         <h3 className="dark">Thank you for your interest in EDORA!</h3>
         <div className="text-block">
           <p>
-            I am genuinely grateful that you're reaching out to connect with me
-            regarding EDORA, the case management system I'm building with
-            passion and dedication. Whether you're here to give feedback, ask a
-            question, or share your thoughts, your input is invaluable.
+            Hey there! I'm Darian Ross, and I'm super excited you're reaching
+            out about EDORA. Whether it’s feedback, questions, or ideas, I’d
+            love to hear from you!
           </p>
           <p>
-            Please include as much detail as possible in your message, such as
-            the specific feature you're interested in, any challenges you might
-            be facing, or your ideas on how I can improve EDORA. I'll make sure
-            to review your message thoroughly and respond to you promptly.
+            Share as much detail as you’d like, and I’ll get back to you as soon
+            as possible. Let’s make this project awesome together!
           </p>
           <ContactForm />
-          <h5>I'm here to helh5, and I look forward to hearing from you!</h5>
+          <h5 className="dark">Can’t wait to hear from you!</h5>
         </div>
       </div>
-
     </>
   );
 };
