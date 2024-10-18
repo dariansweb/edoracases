@@ -192,7 +192,10 @@ const CaseStoryPage = () => {
         {selectedOption && (
           <div className="selected-option">
             <h2 className="subheader">Selected Option:</h2>
-            <p className="description-text">You selected: {selectedOption}</p>
+            <p className="text-block">
+              You selected:{" "}
+              {selectedDivision + " with " + selectedTitle + " and " + selectedOption}
+            </p>
           </div>
         )}
         {/* Description, Next Steps Input, Add Service Button */}
