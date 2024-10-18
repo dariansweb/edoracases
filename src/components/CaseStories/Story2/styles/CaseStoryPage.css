@@ -12,7 +12,6 @@
   margin-bottom: 20px; /* Space below title */
   text-shadow: var(--text-shadow-light); /* Subtle shadow for depth */
 }
-
 .selector {
   flex: 1;
   min-width: 200px; /* Ensure that boxes don't get too small */
@@ -61,7 +60,9 @@
 }
 
 .selected {
-  background: var(--theme6-dark); /* Pistachio Peach background for selected items */
+  background: var(
+    --theme6-dark
+  ); /* Pistachio Peach background for selected items */
   color: var(--theme6-light); /* Pale Peach text for selected items */
 }
 
@@ -118,7 +119,7 @@
   text-align: center;
 }
 
-.selected-services-list, 
+.selected-services-list,
 .description-text {
   margin-top: 30px; /* More space above the list */
   font-size: 1.2rem; /* Consistent text size */
@@ -141,6 +142,75 @@
 .selected-services-list li:hover {
   background: var(--theme5-dark); /* Moss Green on hover */
   color: white; /* White text for readability */
+}
+
+.search-box {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid var(--theme2-dark);
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.search-box:focus {
+  border-color: var(--theme3-dark);
+  outline: none;
+}
+
+.subheader {
+  margin: 0 auto;
+}
+.selected-overview {
+  margin: 0 auto;
+  background-color: var(--theme3-light);
+  padding: 0px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.selection-list {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0;
+  display: flex; /* Use Flexbox to align items in a row */
+  gap: 20px; /* Space between items for better visual separation */
+}
+
+.selection-list li {
+  margin-bottom: 0; /* Remove margin bottom */
+  font-size: 1.1rem;
+  color: var(--theme1-dark);
+}
+
+.rich-text-editor {
+  border: 1px solid var(--theme1-dark);
+  border-radius: 6px;
+  padding: 10px;
+  min-height: 150px;
+  background-color: var(--theme3-light);
+}
+.char-count {
+  font-size: 0.9rem;
+  color: var(--theme1-dark);
+  margin-top: 5px;
+  text-align: right; /* Align to the right for a cleaner look */
+}
+
+.pdf-content {
+  font-size: 12px !important; /* Make the text size more appropriate for PDFs */
+  color: #000 !important;      /* Use black for better contrast */
+  background: none !important; /* Remove any background styling */
+  padding: 10px;
+}
+
+.pdf-content ul {
+  list-style-type: none;       /* Remove bullet points for a cleaner look */
+  padding-left: 0;
+}
+
+.pdf-content h2 {
+  font-size: 14px !important;  /* Smaller header size for the PDF */
 }
 
 @media (max-width: 768px) {
