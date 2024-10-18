@@ -1,0 +1,42 @@
+/* Form Wrapper */
+.contact-form-wrapper {
+  background-color: var(
+    --theme3-light
+  ); /* Light background for the form card */
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15); /* Deep shadow for card effect */
+  max-width: 500px;
+  width: 100%; /* Ensure form container is responsive */
+  animation: fadeIn 0.8s ease-in-out; /* Smooth fade-in effect */
+  transform: translateY(0); /* Start position for animation */
+}
+
+/* Add smooth fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px); /* Start lower on the page */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Smoothly slide into position */
+  }
+}
+
+/* Form Title Styling */
+.contact-form h2 {
+  font-size: 2rem;
+  color: var(--theme5-dark); /* Darker color for the title */
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+/* Add a subtle hover effect to the form container */
+.contact-form-wrapper:hover {
+  transform: translateY(-10px); /* Slight upward lift on hover */
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Input fields and button inside the form are already styled properly from before */

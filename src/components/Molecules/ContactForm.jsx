@@ -1,79 +1,106 @@
-import React, { useState } from 'react';
-import Input from '../Atoms/Input';
-import Textarea from '../Atoms/Textarea';
-import axios from 'axios';
+import React, { useState } from "react";
+import axios from "axios";
+import "./styles/ContactForm.css";
 
 const ContactForm = () => {
+  // State to manage form input values (name, email, message)
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
+    name: "",
+    email: "",
+    message: "",
   });
-  const [responseMessage, setResponseMessage] = useState('');
-  const [isSubmitting, setIsSubmitting] = useState(false); // State to track submission status
 
+  // State to handle success/error messages
+  const [responseMessage, setResponseMessage] = useState("");
+
+  // Function to handle input field changes
   const handleChange = (e) => {
     setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
+      ...formData, // Spread existing formData to update only the changed field
+      [e.target.name]: e.target.value, // Dynamically update form data by input name (name, email, message)
     });
   };
 
+  // Function to handle form submission
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    setIsSubmitting(true); // Set submitting state to true
+    e.preventDefault(); // Prevent page reload on form submission
 
     try {
-      const response = await axios.post('/api/send', formData);
-      setResponseMessage('Message sent successfully!');
-    } catch (error) {
-      setResponseMessage('Error sending message. Please try again.');
-    }
+      // Send the form data to the backend (your serverless function on Vercel)
+      const response = await axios.post("/api/send", formData);
 
-    setIsSubmitting(false); // Reset submitting state after response
+      // Update the response message state to show success message
+      setResponseMessage("Message sent successfully!");
+    } catch (error) {
+      // If something goes wrong, set an error message
+      setResponseMessage("Error sending message. Please try again.");
+    }
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <h2>Contact Us</h2>
-      <div>
-        <Input
-          type="text"
-          label="Your Name"
-          placeholder="Enter your name"
-          value={formData.name}
-          onChange={handleChange}
-          name="name"
-          disabled={isSubmitting} // Disable input during submission
-        />
-      </div>
-      <div>
-        <Input
-          type="email"
-          label="Your Email"
-          placeholder="Enter your email"
-          value={formData.email}
-          onChange={handleChange}
-          name="email"
-          disabled={isSubmitting} // Disable input during submission
-        />
-      </div>
-      <div>
-        <Textarea
-          label="Your Message"
-          placeholder="Type your message here..."
-          value={formData.message}
-          onChange={handleChange}
-          name="message"
-          rows={6}
-          disabled={isSubmitting} // Disable textarea during submission
-        />
-      </div>
-      <button type="submit" disabled={isSubmitting}> {/* Disable button if submitting */}
-        {isSubmitting ? 'Sending...' : 'Send'}
-      </button>
-      <p>{responseMessage}</p>
-    </form>
+    <div className="pages-container">
+      <form className="contact-form" onSubmit={handleSubmit}>
+        <h2 className="dark">Contact Us</h2>
+
+        <div className="contact-form-field">
+          {/* Name input field */}
+          <label htmlFor="name">Your Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            value={formData.name}
+            onChange={handleChange}
+            required
+          />
+        </div>
+
+        <div className="contact-form-field">
+          {/* Email input field */}
+          <label htmlFor="email">Your Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+          />
+        </div>
+
+        <div className="contact-form-field">
+          {/* Message textarea field */}
+          <label htmlFor="message">Your Message</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Type your message here..."
+            value={formData.message}
+            onChange={handleChange}
+            rows="6"
+            required
+          />
+        </div>
+
+        {/* Submit button */}
+        <button className="contact-form-button" type="submit">
+          Send
+        </button>
+
+        {/* Display success or error message to the user */}
+        <p
+          className={`contact-form-message ${
+            responseMessage.includes("successfully")
+              ? "contact-form-success"
+              : "contact-form-error"
+          }`}
+        >
+          {responseMessage}
+        </p>
+      </form>
+    </div>
   );
 };
 
