@@ -1,0 +1,90 @@
+/* Client Header Styling */
+.client-header {
+  background-color: #ffffff;
+  padding: 10px 20px;
+  border-bottom: 2px solid #e0e0e0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.client-info-bar {
+  display: flex;
+  align-items: center;
+}
+
+.client-icon {
+  position: relative;
+  cursor: pointer;
+}
+
+.client-icon-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.tooltip {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  white-space: nowrap;
+  z-index: 10;
+  font-size: 14px;
+}
+
+.client-basic-info {
+  margin-left: 15px;
+}
+
+.client-basic-info h2 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.client-basic-info p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Life's Story Message Styling */
+.life-story-message {
+  text-align: center;
+  flex-grow: 1; /* Ensures it stays centered between client info and EDORA link */
+}
+
+.life-story-message h2 {
+  font-size: 24px;
+  color: #007bff;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+/* EDORA Link Styling */
+.edora-link {
+  margin-left: auto; /* Push the EDORA link to the far right */
+}
+
+.edora-link-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #007bff; /* Bright, modern blue color */
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+  letter-spacing: 2px; /* Spacing for modern text style */
+}
+
+.edora-link-text:hover {
+  color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.1); /* Slight grow on hover for modern interaction */
+}

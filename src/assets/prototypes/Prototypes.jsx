@@ -5,7 +5,7 @@ import "./styles/Prototype.css";
 const Prototypes = () => {
   return (
     <>
-      <h1 className="dark centered">Input Prototypes</h1>
+      <h1 className="dark centered">EDORA Design System</h1>
 
       {/* Submenu Navigation */}
       <div className="submenu">
@@ -57,6 +57,12 @@ const Prototypes = () => {
         >
           Checkbox
         </NavLink>
+        <NavLink
+          to="buttonprototypes"
+          className={({ isActive }) => (isActive ? "active" : "")}
+        >
+          Buttons
+        </NavLink>        
       </div>
       <div className="pages-container">
         {/* Render the selected child component */}

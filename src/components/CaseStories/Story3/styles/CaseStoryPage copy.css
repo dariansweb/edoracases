@@ -1,0 +1,207 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7f6;
+  margin: 0;
+  padding: 0;
+}
+
+.case-story-page-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr; /* Sidebar: 1, Event Types: 1, Selected Services: 2 */
+  grid-gap: 20px;
+  padding: 20px;
+  height: 100vh; /* Full height for the layout */
+}
+
+.sidebar, .event-types-column, .selected-services-column {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+/* Right Column for Selected Services (Scrollable) */
+.selected-services-column {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  height: 100%; /* Full height of the page */
+  overflow-y: auto; /* Enable scrolling when content exceeds view height */
+  max-height: 100vh; /* Adjust this height to ensure it's scrollable */
+}
+
+.selected-services {
+  margin-top: 20px;
+}
+
+/* Service cards inside the right column */
+.service-card {
+  background-color: #eaf1f9;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #bcd0e5;
+}
+
+h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Sidebar styles */
+.list-box {
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #fafafa;
+}
+
+.list-item {
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #f4f7f6;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.list-item:hover {
+  background-color: #e0e0e0;
+}
+
+.selected {
+  background-color: #cce5ff;
+  font-weight: bold;
+}
+
+/* Event types container (Middle Column) */
+.event-types-column {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  height: 100%; /* Ensure it uses full height of the page */
+  overflow-y: auto; /* Make the column scrollable */
+}
+
+.event-types-container {
+  display: flex;
+  flex-direction: column; /* Stack the cards vertically */
+  gap: 20px;
+  max-height: 80vh; /* Adjust this height to make it scrollable, without taking the whole page */
+}
+
+.event-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  width: 100%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer; /* Make the entire card clickable */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+  background-color: #e0e0e0; /* Optional hover effect for better UI feedback */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Optional enhanced hover effect */
+}
+
+
+.event-card h4 {
+  margin-bottom: 10px;
+}
+
+.add-service-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  width: fit-content;
+  margin-left: auto; /* Aligns the button to the right */
+}
+
+
+.add-service-btn:hover {
+  background-color: #218838;
+}
+
+/* Selected Services (Right Column) */
+.selected-services {
+  margin-top: 20px;
+}
+
+.service-card {
+  background-color: #eaf1f9;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #bcd0e5;
+}
+
+.next-input .textbox {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  margin-top: 10px;
+}
+
+/* ----- MEDIA QUERIES ----- */
+
+/* For screens between 768px and 1024px (Tablets) */
+@media (max-width: 768px) {
+  .case-story-page-container {
+    grid-template-columns: 1fr 1.5fr; /* Two-column layout: Sidebar and Content */
+    grid-gap: 15px;
+  }
+
+  .event-types-column, .selected-services-column {
+    width: 100%; /* Make these columns take up full width */
+  }
+
+  .selected-services-column {
+    grid-column: 1 / -1; /* Make this span both columns if needed */
+  }
+}
+
+/* For screens up to 420px (Mobile) */
+@media (max-width: 420px) {
+  .case-story-page-container {
+    display: flex;
+    flex-direction: column; /* Stack everything vertically */
+    height: auto; /* Allow page to scroll normally */
+    padding: 10px;
+  }
+
+  .sidebar, .event-types-column, .selected-services-column {
+    width: 100%; /* Full width for each section */
+    padding: 10px; /* Reduce padding for small screens */
+    margin-bottom: 20px; /* Add space between sections */
+  }
+
+  .event-types-container {
+    max-height: 50vh; /* Adjust scroll height to fit mobile */
+  }
+
+  .service-card {
+    padding: 10px;
+  }
+
+  .add-service-btn {
+    padding: 8px 12px;
+  }
+
+  .next-input .textbox {
+    padding: 8px;
+  }
+}

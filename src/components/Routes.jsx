@@ -29,10 +29,12 @@ import FormSelect from "../assets/prototypes/formControls/Select";
 import FormTextarea from "../assets/prototypes/formControls/Textarea";
 import FormRadiobutton from "../assets/prototypes/formControls/Radiobutton";
 import FormCheckbox from "../assets/prototypes/formControls/Checkbox";
+import ButtonPrototypes from "../assets/prototypes/buttons/ButtonPrototypes";
 
 // PROTOTYPES CLIENT JOURNEY
 import CaseStory1 from "./CaseStories/Story1/CaseStoryPage";
 import CaseStory2 from "./CaseStories/Story2/CaseStoryPage";
+import CaseStory3 from "./CaseStories/Story3/CaseStoryPage";
 import ServiceSelector from "./CaseStories/ServiceSelector";
 
 //ICONS
@@ -68,11 +70,13 @@ const AppRoutes = () => {
         <Route path="formtextarea" element={<FormTextarea />} />
         <Route path="formradiobutton" element={<FormRadiobutton />} />
         <Route path="formcheckbox" element={<FormCheckbox />} />
+        <Route path="buttonprototypes" element={<ButtonPrototypes />} />
       </Route>
 
       {/* Client Journeys */}
       <Route path="/client-start/*" element={<CaseStory1 />} />
       <Route path="/casestory2" element={<CaseStory2 />} />
+      <Route path="/casestory3" element={<CaseStory3 />} />      
       <Route path="/serviceselector/*" element={<ServiceSelector />} />
 
       {/* 404 page */}

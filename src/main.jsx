@@ -15,19 +15,22 @@ const AppWrapper = () => {
 
   // Check if the current route starts with '/prototypes'
   const isPrototype = location.pathname.startsWith("/prototypes");
-  const isCaseStory2 = location.pathname === "/casestory2";
+
+  // Check if the current route includes '/ClientStories'
+  const isClientStory = location.pathname.startsWith("/casestory");
 
   return (
     <>
       <span className="top"></span> {/* Anchor point for scrolling to top */}
-      <Header />
-      {/* Conditionally render Hero only on the home path */}
+      
+      {/* Conditionally render Header and Footer */}
+      {!isClientStory && <Header />}
       {isHome && <Hero />}
-      {/* ScrollToTop only if it's not Home */}
       {!isHome && <ScrollToTop />}
+      
       <AppRoutes /> {/* Your main routing component */}
-      {/* Conditionally show Footer, hide on all-related pages */}
-      {!(isPrototype || isCaseStory2) && <Footer />}
+      
+      {!isClientStory && !isPrototype && <Footer />}
     </>
   );
 };

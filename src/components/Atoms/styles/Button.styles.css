@@ -1,0 +1,186 @@
+/* Button.styles.css */
+/* Primary A */
+.btn-primary {
+  background-color: var(--theme1-dark);
+  color: var(--theme1-light);
+  border: 2px solid var(--theme1-dark); 
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  border: 2px solid var(--theme1-dark); 
+  color: var(--theme1-dark); /* Darker blue on hover */
+  background-color: var(--theme1-light); /* Darker blue on hover */
+}
+
+.btn-primary:active {
+  background-color: var(--theme6-dark); /* Even darker blue when pressed */
+}
+
+.btn-primary:disabled {
+  background-color:var(--theme1-light);
+  color: var(--theme3-dark);
+  border: 2px inset greenyellow;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+/* --------  */
+/* Primary B */
+/* --------  */
+.btn-primary-b {
+  background-color: var(--theme2-dark);
+  color: var(--theme2-light);
+  border: 2px solid var(--theme2-dark); 
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary-b:hover {
+  border: 2px solid var(--theme2-dark); 
+  color: var(--theme2-dark); /* Darker blue on hover */
+  background-color: var(--theme2-light); /* Darker blue on hover */
+}
+
+.btn-primary-b:active {
+  background-color: var(--theme2-dark); /* Even darker blue when pressed */
+}
+
+.btn-primary-b:disabled {
+  background-color: #cccccc; /* Gray for disabled state */
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* ---------------- */
+/* Secondary Button */
+/* ---------------- */
+.btn-secondary {
+  background-color: var(--theme3-dark);
+  color: var(--theme3-light);
+  border: 2px solid var(--theme3-dark); 
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+  border: 2px solid var(--theme3-dark); 
+  color: var(--theme3-dark); /* Darker blue on hover */
+  background-color: var(--theme3-light); /* Darker blue on hover */
+}
+
+.btn-secondary:active {
+  background-color: #4e555b; /* Even darker gray when pressed */
+}
+
+.btn-secondary:disabled {
+  background-color:var(--theme3-light);
+  color: var(--theme3-dark);
+  border: 2px inset plum;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* ---------------- */
+/* Secondary B Button */
+/* ---------------- */
+.btn-secondary-b {
+  background-color: var(--theme4-dark);
+  color: var(--theme4-light);
+  border: 2px solid var(--theme4-dark); 
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-secondary-b:hover {
+  border: 2px solid var(--theme4-dark); 
+  color: var(--theme4-dark); /* Darker blue on hover */
+  background-color: var(--theme4-light); /* Darker blue on hover */
+}
+
+.btn-secondary-b:active {
+  background-color: #4e555b; /* Even darker gray when pressed */
+}
+
+.btn-secondary-b:disabled {
+  background-color: #cccccc; /* Gray for disabled state */
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* --------------- */
+/* Tertiary Button */
+/* --------------- */
+.btn-tertiary {
+  background-color: var(--theme5-dark);
+  color: var(--theme5-light);
+  border: 2px solid var(--theme5-dark); 
+  border-radius: 4px;
+  padding: 8px 18px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-tertiary:hover {
+  border: 2px solid var(--theme5-dark); 
+  color: var(--theme5-dark); /* Darker blue on hover */
+  background-color: var(--theme5-light); /* Darker blue on hover */
+}
+
+.btn-tertiary:active {
+  background-color: #0056b3; /* Darker blue when pressed */
+  border-color: #0056b3;
+}
+
+.btn-tertiary:disabled {
+  background-color:var(--theme6-light);
+  color: var(--theme3-dark);
+  border: 2px inset tomato;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+/* --------------- */
+/* Tertiary B Button */
+/* --------------- */
+.btn-tertiary-b {
+  background-color: var(--theme6-dark);
+  color: var(--theme6-light);
+  border: 2px solid var(--theme6-dark); 
+  border-radius: 4px;
+  padding: 8px 18px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-tertiary-b:hover {
+  border: 2px solid var(--theme6-dark); 
+  color: var(--theme6-dark); /* Darker blue on hover */
+  background-color: var(--theme6-light); /* Darker blue on hover */
+}
+
+.btn-tertiary-b:active {
+  background-color: #0056b3; /* Darker blue when pressed */
+  border-color: #0056b3;
+}
+
+.btn-tertiary-b:disabled {
+  background-color: transparent;
+  color: var(--theme3-dark);
+  border: 2px inset red;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
