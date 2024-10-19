@@ -30,6 +30,26 @@
   text-align: center;
   font-weight: 700;
 }
+@media (max-width: 768px) {
+  /* Adjust Ticker Container Styles */
+  .ticker-container {
+    background: linear-gradient(
+      135deg,
+      var(--theme1-dark, 0.5), /* Adjusted transparency */
+      var(--theme3-dark, 0.5)  /* Adjusted transparency */
+    );
+    opacity: 0.9; /* Slightly higher opacity for better visibility */
+    padding: 1px 0; /* Reduced padding for smaller screens */
+  }
+
+  /* Adjust Ticker Styles */
+  .ticker {
+    font-size: 0.875rem; /* Smaller font size for mobile devices */
+    height: 1.2rem; /* Keep height consistent */
+    padding: 0.2rem 0.4rem; /* Reduced padding for smaller screens */
+  }
+}
+
 /*
 @keyframes ticker-scroll {
   0% {
