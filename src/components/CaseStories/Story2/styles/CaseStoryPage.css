@@ -115,8 +115,9 @@
   flex-direction: column;
 }
 
-.add-service-button {
-  text-align: center;
+.add-service-button,
+.export-button {
+  text-align: right;
 }
 
 .selected-services-list,
@@ -191,10 +192,12 @@
   background-color: var(--theme3-light);
 }
 .char-count {
+  font-weight: 500;
   font-size: 0.9rem;
   color: var(--theme1-dark);
+  background-color: var(--theme1-light);
   margin-top: 5px;
-  text-align: right; /* Align to the right for a cleaner look */
+  text-align: left; /* Align to the right for a cleaner look */
 }
 
 .pdf-content {

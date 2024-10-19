@@ -1,0 +1,42 @@
+/* Ticker Styles */
+.ticker-container {
+  color: var(--theme3-light);
+  background: linear-gradient(
+    135deg,
+    var(--theme1-dark, 0.7),
+    var(--theme3-dark, 0.7)
+  );
+  padding: 2px 0; /* Minimal vertical padding */
+
+  opacity: 0.7; /* Adjust image opacity */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  overflow: hidden; /* Prevent overflow */
+  width: 100%; /* Full width of the header */
+}
+
+/* Ticker styling */
+.ticker {
+  white-space: nowrap; /* Prevent line breaks */
+  animation: ticker-scroll 30s linear infinite; /* Animation for scrolling */
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center items vertically */
+  justify-content: center;
+  height: 1.2rem;
+
+  margin: 0 auto;
+  padding: 0.4rem 0.8rem;
+  color: var(--theme3-light);
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: 700;
+}
+/*
+@keyframes ticker-scroll {
+  0% {
+    transform: translateX(100%); 
+  } 
+  100% {
+    transform: translateX(-100%); 
+  }
+} 
+*/

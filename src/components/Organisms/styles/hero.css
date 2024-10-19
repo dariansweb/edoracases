@@ -1,6 +1,6 @@
 .hero-container {
   position: relative;
-  min-height: 60vh; /* Half viewport height */
+  min-height: 50vh; /* Half viewport height */
   background: linear-gradient(
     135deg,
     var(--theme1-dark, 0.7),
@@ -13,7 +13,7 @@
   align-items: center;
   gap: 1rem;
 
-  padding: 1rem 2rem;
+  padding: 0.5rem 1rem;
   text-align: center;
 
   color: var(--theme3-light);
@@ -144,13 +144,6 @@
 
 .wide-menu {
   display: none; /* Hide by default */
-}
-/* Ticker styling */
-.ticker {
-  margin-top: 20px;
-  font-size: 1.5rem;
-  color: var(--theme1-dark);  /* Adjust to your theme */
-  text-align: center;
 }
 
 /* Call to action styling */

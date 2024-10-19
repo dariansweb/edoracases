@@ -1,4 +1,3 @@
-/* Header Bar */
 .header-bar {
   position: sticky;
   top: 0;
@@ -6,13 +5,15 @@
   width: 100%;
   z-index: 1000;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-between; /* Space out items */
+  align-items: center; /* Center items vertically */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: var(--theme1-dark);
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
   color: var(--theme6-light);
   opacity: 0.8;
+  padding: 5px 0; /* Reduced padding for a more compact header */
+  height: 50px; /* Set a fixed height if necessary */
 }
 
 /* Title styles */
@@ -144,49 +145,56 @@
   }
 }
 @media screen and (min-width: 768px) {
-  /* Wide Menu Styles */
-  .header-left, .header-right, .header-center {
-    display: none;
-  }
-  .wide-menu {
-    display: flex;
-    justify-content: center; /* Center the menu items horizontally */
-    align-items: center; /* Center them vertically */
-    margin: 0 auto;
-    padding: 15px 30px; /* Padding for the menu container */
-    background: var(--theme3-light); /* Light Mint background */
-    border-radius: 8px; /* Rounded corners for a sleek look */
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); /* Soft drop shadow */
-    transition: all 0.3s ease; /* Smooth transitions */
-    z-index: 100; /* Ensure the wide menu is on top */
+/* Wide Menu Styles */
+  .header-left,
+  .header-right,
+  .header-center {
+    display: none; /* Hide left and right sections on larger screens */
   }
 
-  /* Menu Links */
-  .wide-menu a {
-    text-decoration: none; /* Remove default underlining */
-    color: var(--theme3-dark-contrast); /* Darker contrast text */
-    font-size: 1.2rem; /* Larger font for a more modern look */
-    padding: 10px 20px; /* Spacing inside each link */
-    text-transform: uppercase; /* Capitalize text */
-    letter-spacing: 0.05em; /* Add slight spacing between letters */
-    font-weight: 600; /* Make the text bold */
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover and scaling */
-    cursor: pointer; /* Show pointer cursor on hover */
-  }
+/* Wide Menu Styles */
+.wide-menu {
+  display: flex; /* Make it a flex container */
+  margin: 0 auto;
+  white-space: nowrap; /* Prevent items from wrapping to the next line */
+  padding: 0px 0; /* Add some padding for aesthetics */
+  background: var(--theme3-light); /* Background color */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); /* Soft drop shadow */
+  z-index: 100; /* Ensure it's on top */
 
-  /* Hover effect on menu links */
-  .wide-menu a:hover, .active {
-    background: var(--theme2-dark); /* Olive Green on hover */
-    color: var(--theme3-light); /* Light text color on hover */
-    transform: scale(1.05); /* Slightly scale the link on hover */
-    border-radius: 5px; /* Add a slight rounding on hover */
-  }
+  overflow-x: auto; /* Enable horizontal scrolling */
+  -ms-overflow-style: none; /* Internet Explorer and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+/* Center the menu items */
+.wide-menu-item {
+  display: inline-block; /* Keep links block-level for padding */
+  margin: 0 10px; /* Space between items */
+}
 
-  /* Active link effect */
-  .wide-menu a:active {
-    transform: scale(0.95); /* Shrink link on click */
-    background: var(--theme1-dark); /* Darker background on click */
-  }
+/* Menu Links */
+.wide-menu a {
+  text-decoration: none; /* Remove default underlining */
+  color: var(--theme3-dark-contrast); /* Darker contrast text */
+  font-size: 1.2rem; /* Larger font for a modern look */
+  padding: 10px 20px; /* Spacing inside each link */
+  text-transform: uppercase; /* Capitalize text */
+  letter-spacing: 0.05em; /* Slight spacing between letters */
+  font-weight: 600; /* Make the text bold */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover and scaling */
+  cursor: pointer; /* Show pointer cursor on hover */
+  display: inline-block; /* Make links behave like blocks to allow for padding */
+}
+
+/* Hover effect on menu links */
+.wide-menu a:hover,
+.active {
+  background: var(--theme2-dark); /* Olive Green on hover */
+  color: var(--theme3-light); /* Light text color on hover */
+  transform: scale(1.05); /* Slightly scale the link on hover */
+  border-radius: 5px; /* Slight rounding on hover */
+}
+
 
   /* Specific styles for dropdown menus (to override the wide menu) */
   .dropdown-menu,

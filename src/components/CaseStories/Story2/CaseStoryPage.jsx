@@ -388,13 +388,6 @@ const CaseStoryPage = () => {
             </button>
           </div>
         )}
-        {selectedServices.length > 0 && (
-          <div className="export-button">
-            <button className="btn" onClick={handleExportPDF}>
-              Export Client Journey as PDF
-            </button>
-          </div>
-        )}
 
         {selectedServices.length > 0 && (
           <div id="client-journey" className="selected-services-list">
@@ -413,6 +406,14 @@ const CaseStoryPage = () => {
             </ul>
           </div>
         )}
+                {selectedServices.length > 0 && (
+          <div className="export-button">
+            <button className="btn" onClick={handleExportPDF}>
+              Export PDF
+            </button>
+          </div>
+        )}
+
       </div>
     </div>
   );

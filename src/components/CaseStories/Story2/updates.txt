@@ -43,6 +43,7 @@ Visual Story Map: You could add a visualization that shows the client journey li
 Use a recommendation engine that suggests services or next steps based on previous selections. For instance, if the user selects a certain division, show popular options or frequently chosen next steps based on past user behavior or predefined logic.
 A simple machine-learning model or even some rule-based heuristics could make it feel like the app is really smart, always guiding users toward relevant choices.
 
+Complete
 11. Enhanced Data Management
 Export Client Journey: Let users export the selected services and notes as a PDF. This can be super useful for documentation or sharing with other team members or stakeholders.
 API Integration: If applicable, integrate with external services to auto-fill information or connect related case data from another platform. This will reduce manual entry, minimize errors, and speed up workflows.
@@ -51,7 +52,7 @@ API Integration: If applicable, integrate with external services to auto-fill in
 Though we used Flexbox for the initial listboxes, using CSS Grid could also help achieve a more complex responsive layout. This will make future additions (like more fields or components) easier to align and adjust.
 Make the “Add Service” button sticky at the bottom of the viewport, so users don’t need to scroll down after every entry—small details like this improve efficiency!
 
-13. Multi-Language Support
+13. Multi-Language Support('13. Multi-Language Support')
 Add multi-language support to the tool, allowing users to switch languages dynamically. This could make the tool more inclusive, especially if people with different linguistic backgrounds need to use it.
 
 14. Collaborative Features
