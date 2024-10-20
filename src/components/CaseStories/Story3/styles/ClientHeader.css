@@ -1,4 +1,4 @@
-/* Client Header Styling */
+/* General Client Header Styling */
 .client-header {
   background-color: #ffffff;
   padding: 10px 20px;
@@ -12,6 +12,7 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+/* Client info and EDORA link stay the same on large screens */
 .client-info-bar {
   display: flex;
   align-items: center;
@@ -28,24 +29,6 @@
   border-radius: 50%;
 }
 
-.tooltip {
-  position: absolute;
-  top: 60px;
-  left: 0;
-  background-color: #333;
-  color: white;
-  padding: 10px;
-  border-radius: 4px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  white-space: nowrap;
-  z-index: 10;
-  font-size: 14px;
-}
-
-.client-basic-info {
-  margin-left: 15px;
-}
-
 .client-basic-info h2 {
   font-size: 18px;
   margin: 0;
@@ -56,7 +39,7 @@
   color: #666;
 }
 
-/* Life's Story Message Styling */
+/* Life's Story Message Styling (centered on large screens) */
 .life-story-message {
   text-align: center;
   flex-grow: 1; /* Ensures it stays centered between client info and EDORA link */
@@ -78,13 +61,63 @@
 .edora-link-text {
   font-size: 24px;
   font-weight: bold;
-  color: #007bff; /* Bright, modern blue color */
+  color: #007bff;
   text-decoration: none;
   transition: color 0.3s ease, transform 0.3s ease;
-  letter-spacing: 2px; /* Spacing for modern text style */
+  letter-spacing: 2px;
 }
 
 .edora-link-text:hover {
-  color: #0056b3; /* Darker blue on hover */
-  transform: scale(1.1); /* Slight grow on hover for modern interaction */
+  color: #0056b3;
+  transform: scale(1.1);
+}
+
+/* ----- Media Queries for Responsive Design ----- */
+
+/* For medium devices (tablets and small desktops) */
+@media (max-width: 768px) {
+  .life-story-message {
+    display: none; /* Hide the slogan on smaller screens */
+  }
+
+  .client-icon-img {
+    width: 40px; /* Reduce client icon size */
+    height: 40px;
+  }
+
+  .client-basic-info h2 {
+    font-size: 16px; /* Adjust text size for smaller screens */
+  }
+
+  .client-basic-info p {
+    font-size: 12px;
+  }
+
+  .edora-link-text {
+    font-size: 20px; /* Adjust EDORA link size for smaller screens */
+  }
+}
+
+/* For small phones (max-width 420px) */
+@media (max-width: 420px) {
+  .client-header {
+    padding: 10px; /* Reduce padding */
+  }
+
+  .client-icon-img {
+    width: 35px; /* Further reduce client icon size for small phones */
+    height: 35px;
+  }
+
+  .client-basic-info h2 {
+    font-size: 14px; /* Smaller font size for small screens */
+  }
+
+  .client-basic-info p {
+    font-size: 12px;
+  }
+
+  .edora-link-text {
+    font-size: 18px; /* Adjust EDORA link size for smaller phones */
+  }
 }
