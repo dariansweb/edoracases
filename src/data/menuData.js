@@ -9,7 +9,7 @@
 
 export const mainMenuItems = [
   { id: 107, name: "Guides", link: "/icons" },
-  { id: 108, name: "Stories", link: "/casestory3" },
+  { id: 108, name: "Demos", link: "/casestory3" },
   { id: 1, name: "Child and Family", link: "/child-and-family" },
   { id: 2, name: "Aging", link: "/aging" },
   { id: 3, name: "Disability", link: "/disability" },
@@ -24,7 +24,7 @@ export const starMenuItems = [
   { id: 8, name: "About", link: "/about" },
   { id: 9, name: "Services", link: "/services" },  
   { id: 10, name: "Contact", link: "/contact" },
-  { id: 1108, name: "Stories", link: "/casestory3" },    
+  { id: 1108, name: "Demos", link: "/casestory3" },    
   { id: 137, name: "Guides", link: "/icons" },
 ];
 

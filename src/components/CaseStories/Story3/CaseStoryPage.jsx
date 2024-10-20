@@ -1,9 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import jsPDF from "jspdf";
 import { motion } from "framer-motion";
 import allServices from "../../../data/hhsServices";
 import "./styles/CaseStoryPage.css";
+import HelpDescription from "./helpDescription";
+import ProgressBar from "./ProgresBar";
 import ClientHeader from "./ClientHeader";
+import Modal from "./DemoModal";
 
 const CaseStoryPage = () => {
   const [selectedDivision, setSelectedDivision] = useState("");
@@ -14,6 +17,28 @@ const CaseStoryPage = () => {
   const [searchTermTitle, setSearchTermTitle] = useState("");
   const [searchTermOption, setSearchTermOption] = useState("");
   const [nextInput, setNextInput] = useState(""); // State for "What's Next"
+
+  // Add this missing state
+  const [showModal, setShowModal] = useState(true);
+
+  const handleCloseModal = () => {
+    setShowModal(false); // Hide modal on close
+  };
+
+  useEffect(() => {
+    // Trigger the modal automatically when the page loads
+    setShowModal(true);
+  }, []);
+
+  // Calculate current step based on user selection
+  const currentStep = selectedDivision
+    ? selectedTitle
+      ? selectedOption
+        ? 3
+        : 2
+      : 1
+    : 0;
+  const totalSteps = 3; // Total steps for the form
 
   const handleExportPDF = () => {
     const pdf = new jsPDF("p", "mm", "a4"); // Create a new jsPDF instance
@@ -167,7 +192,14 @@ const CaseStoryPage = () => {
 
   return (
     <>
+      {showModal && <Modal onClose={handleCloseModal} />}
+
       <ClientHeader />
+
+      <div className="top-section-inline">
+        <HelpDescription />{" "}
+        <ProgressBar currentStep={currentStep} totalSteps={totalSteps} />
+      </div>
 
       <div className="case-story-page-container">
         {/* Sidebar for Divisions */}
@@ -248,11 +280,13 @@ const CaseStoryPage = () => {
 
         {/* Right Column for Selected Services (Cards) */}
         <div className="selected-services-column">
-          <div className="export-button">
-            <button className="btn" onClick={handleExportPDF}>
-              PDF
-            </button>
-          </div>
+          {selectedServices.length > 0 && (
+            <div className="export-button">
+              <button className="btn" onClick={handleExportPDF}>
+                PDF
+              </button>
+            </div>
+          )}
 
           <h3 className="dark">Operations</h3>
 

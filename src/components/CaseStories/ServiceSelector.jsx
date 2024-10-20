@@ -61,7 +61,7 @@ const ServiceSelector = () => {
 
         {/* Add the Link to /casestory2 inside the ServiceSelector */}
         <div className="link-container">
-          <Link to="/casestory2" className="unique-story-link">
+          <Link to="/casestory3" className="unique-story-link">
             Or - click here to make a unique story for a client
           </Link>
         </div>

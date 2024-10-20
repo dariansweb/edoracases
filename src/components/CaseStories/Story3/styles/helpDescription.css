@@ -1,0 +1,61 @@
+.help-description-container {
+  background: var(--theme5-light); /* Consistent with the pale mint */
+  border-radius: 10px;
+  margin-bottom: 0px; 
+  padding: 0;
+  max-width: 100%; /* Ensure it doesn't overflow on smaller screens */
+}
+
+.help-description-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--theme3-dark);
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.help-description-text {
+  font-size: 1.1rem;
+  color: var(--theme1-dark);
+  line-height: 1.6;
+}
+
+.help-description-list {
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+.help-description-list li {
+  font-size: 1rem;
+  color: var(--theme2-dark);
+  margin-bottom: 8px;
+}
+
+.help-description-list li::marker {
+  color: var(--theme5-dark);
+}
+
+.toggle-btn {
+  background-color: var(--theme3-dark); /* Button color */
+  color: var(--theme5-light);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.toggle-btn:hover {
+  background-color: var(--theme5-dark); /* Hover state */
+}
+
+@media (max-width: 768px) {
+  .help-description-container {
+    padding: 15px;
+    margin-bottom: 20px; /* Adjust space for smaller screens */
+  }
+  .help-description-title {
+    font-size: 1.5rem; /* Adjust title size */
+  }
+  .help-description-text {
+    font-size: 1rem; /* Adjust text size */
+  }
+}

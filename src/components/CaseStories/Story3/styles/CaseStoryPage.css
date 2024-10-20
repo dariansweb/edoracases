@@ -4,13 +4,13 @@
   grid-gap: 20px;
   padding: 20px;
   height: 100vh; /* Full height for the layout */
-  background-color: var(--theme5-light);
+  background-color: var(--theme1-light);
 }
 
 .sidebar,
 .event-types-column,
 .selected-services-column {
-  background-color:var(--theme3-light);
+  background-color: var(--theme3-light);
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -39,7 +39,6 @@
   border: 1px solid #bcd0e5;
   position: relative; /* For placing edit/delete buttons */
   background-color: var(--theme3-light);
-
 }
 
 /* Sidebar styles */
@@ -79,7 +78,7 @@
 
 /* Event types container (Middle Column) */
 .event-types-column {
-  background-color:var(--theme3-light);
+  background-color: var(--theme3-light);
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -111,7 +110,6 @@
 .event-card.selected {
   background-color: var(--theme6-light);
 }
-
 
 .event-card:hover {
   background-color: #e0e0e0; /* Optional hover effect for better UI feedback */
@@ -151,12 +149,11 @@
   background-color: #218838;
 }
 
-
 .next-input .textbox {
   width: 100%;
   padding: 10px;
   border-radius: 8px;
-  border: 1px solid #ddd;
+  border: 2px inset var(--theme6-dark);
   margin-top: 10px;
 }
 .clear-link {
@@ -169,6 +166,25 @@
 
 .clear-link:hover {
   color: #0056b3;
+}
+
+.top-section-inline {
+  display: flex;
+  justify-content: space-between; /* Puts Help button on the left and Progress bar on the right */
+  align-items: center; /* Aligns items vertically in the center */
+  background-color: var(--theme5-light);
+  border-radius: 10px;
+  margin-bottom: 0;
+}
+
+.help-description-container {
+  flex-grow: 1; /* Allow the Help button to occupy a small portion of the row */
+  margin-right: 20px; /* Add space between Help and Progress Bar */
+}
+
+.progress-bar-container {
+  flex-grow: 100; /* Make the progress bar take more space */
+  max-width: 90%; /* Ensure the progress bar doesn't get too big */
 }
 
 
@@ -185,13 +201,26 @@
 
   .event-types-column,
   .selected-services-column {
-    background-color:var(--theme3-light);    
+    background-color: var(--theme3-light);
     width: 100%; /* Make these columns take up full width */
   }
 
   .selected-services-column {
     grid-column: 1 / -1; /* Make this span both columns if needed */
-    background-color:var(--theme3-light);
+    background-color: var(--theme3-light);
+  }
+  .top-section-inline {
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    align-items: flex-start; /* Stack Help button and Progress Bar */
+  }
+
+  .progress-bar-container {
+    max-width: 100%; /* Allow the progress bar to take full width */
+  }
+  .progress-label {
+    font-size: 0.4rem;
   }
 }
 
@@ -207,7 +236,7 @@
   .sidebar,
   .event-types-column,
   .selected-services-column {
-    background-color:var(--theme3-light);    
+    background-color: var(--theme3-light);
     width: 100%; /* Full width for each section */
     padding: 10px; /* Reduce padding for small screens */
     margin-bottom: 20px; /* Add space between sections */

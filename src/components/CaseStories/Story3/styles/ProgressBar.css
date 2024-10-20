@@ -1,0 +1,25 @@
+.progress-bar-container {
+    position: relative;
+    height: 20px;
+    background-color: var(--theme3-light);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px 0;
+  }
+  
+  .progress-bar {
+    height: 100%;
+    background-color: var(--theme2-dark);
+    transition: width 0.3s ease;
+  }
+  
+  .progress-label {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--theme1-light);
+  }
+  
