@@ -1,18 +1,21 @@
-/* Main container for FAB */
+/* Main FAB container */
 .fab-scroll-container {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  z-index: 100;
+  z-index: 150;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
-/* Toggle button for FAB menu */
+/* FAB Toggle Button (the main button you click to reveal the menu) */
 .fab-toggle-btn {
-  background-color: #007bff;
+  background-color: var(--theme4-dark); /* Blue background */
   color: white;
   border: none;
   border-radius: 50%;
-  width: 60px;
+  width: 32px;
   height: 60px;
   font-size: 30px;
   cursor: pointer;
@@ -31,30 +34,22 @@
   position: absolute;
   bottom: 80px; /* Position just above the FAB */
   right: 0;
-  gap: 10px;
-  opacity: 0;
-  transform: translateY(20px); /* Move slightly downward */
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  gap: 10px; /* Spacing between buttons */
 }
 
-.fab-menu.show {
-  opacity: 1;
-  transform: translateY(0); /* Move into place */
-}
-/* Buttons in the floating menu */
+/* FAB Buttons for scrolling (in the floating menu) */
 .fab-scroll-btn {
-  background-color: #007bff;
+  background-color: #4CAF50; /* Green button color (matches yours) */
   color: white;
+  padding: 10px 15px;
   border: none;
-  border-radius: 8px;
-  padding: 10px 20px;
-  font-size: 16px;
+  border-radius: 5px;
   cursor: pointer;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  font-size: 16px;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .fab-scroll-btn:hover {
-  background-color: #0056b3;
-  transform: scale(1.05);
+  background-color: #388e3c
 }
