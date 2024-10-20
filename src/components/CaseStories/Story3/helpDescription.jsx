@@ -17,7 +17,7 @@ const HelpDescription = () => {
 
       {isVisible && (
         <div className="description-content text-block">
-          <h2>Case Story Page Overview</h2>
+          <h3 className="dark">Case Story Page Overview</h3>
           <p>
             <strong>
               Welcome to the Case Story Page, where you build impactful stories
