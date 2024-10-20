@@ -166,15 +166,20 @@ const CaseStoryPage = () => {
       division: selectedDivision,
       title: selectedTitle,
       option: selectedOption || "No extra option",
-      nextInput: nextInput || "",
+      nextInput: nextInput || "", // Include "What's Next" input
     };
-
     setSelectedServices((prevServices) => [...prevServices, newService]);
+
+    // Reset the fields after adding
     setSelectedDivision("");
     setSelectedTitle("");
-    setDescription("");
     setSelectedOption("");
     setNextInput("");
+
+    // Reset the search filters too
+    setSearchTermDivision("");
+    setSearchTermTitle("");
+    setSearchTermOption("");
   };
 
   const divisions = [
@@ -406,14 +411,13 @@ const CaseStoryPage = () => {
             </ul>
           </div>
         )}
-                {selectedServices.length > 0 && (
+        {selectedServices.length > 0 && (
           <div className="export-button">
             <button className="btn" onClick={handleExportPDF}>
               Export PDF
             </button>
           </div>
         )}
-
       </div>
     </div>
   );

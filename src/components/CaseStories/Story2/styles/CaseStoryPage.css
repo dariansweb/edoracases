@@ -215,6 +215,17 @@
 .pdf-content h2 {
   font-size: 14px !important;  /* Smaller header size for the PDF */
 }
+.clear-link {
+  margin-left: 10px;
+  color: #007bff;
+  text-decoration: underline;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.clear-link:hover {
+  color: #0056b3;
+}
 
 @media (max-width: 768px) {
   .listboxes-container {
