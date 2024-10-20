@@ -1,32 +1,60 @@
-/* Floating Action Button Scroll Container */
+/* Main container for FAB */
 .fab-scroll-container {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  /* Scroll Buttons Styling */
-  .fab-scroll-btn {
-    background-color: var(--theme6-light);
-    color: white;
-    border: none;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-    font-size: 24px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-  }
-  
-  .fab-scroll-btn:hover {
-    background-color: var(--theme6-light);
-    transform: scale(1.05); /* Slight grow on hover */
-  }
-  
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+}
+
+/* Toggle button for FAB menu */
+.fab-toggle-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 30px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.fab-toggle-btn:hover {
+  transform: scale(1.1);
+}
+
+/* Floating menu that appears when the FAB is clicked */
+.fab-menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 80px; /* Position just above the FAB */
+  right: 0;
+  gap: 10px;
+  opacity: 0;
+  transform: translateY(20px); /* Move slightly downward */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.fab-menu.show {
+  opacity: 1;
+  transform: translateY(0); /* Move into place */
+}
+/* Buttons in the floating menu */
+.fab-scroll-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.fab-scroll-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}

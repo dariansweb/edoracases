@@ -79,9 +79,6 @@ const CaseStoryPage = () => {
     <>
       {" "}
       <ClientHeader />
-      <div className="fab-scroll-container">
-        <FABScrollButtons />
-      </div>
       <div className="case-story-page-container">
         {/* Sidebar for Divisions */}
         <div className="sidebar">
@@ -263,6 +260,10 @@ const CaseStoryPage = () => {
           </div>
         </div>
       </div>
+      <div className="fab-scroll-container">
+        <FABScrollButtons />
+      </div>
+
     </>
   );
 };

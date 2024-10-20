@@ -1,4 +1,14 @@
 /* General Client Header Styling */
+.fab-scroll-container {
+  position: fixed; /* Keeps the FAB in a fixed position relative to the screen */
+  bottom: 20px;    /* Adjust the FAB position at the bottom-right of the screen */
+  right: 20px;
+  z-index: 100;    /* Ensures it's above other content */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .client-header {
   background-color: #ffffff;
   padding: 10px 20px;
@@ -76,6 +86,7 @@
 @media (min-width: 768px) {
   .fab-scroll-container {
     display: none; /* Hide on larger screens */
+    overflow:scroll ;
   }
 }
 
