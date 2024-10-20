@@ -1,0 +1,32 @@
+/* Floating Action Button Scroll Container */
+.fab-scroll-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* Scroll Buttons Styling */
+  .fab-scroll-btn {
+    background-color: var(--theme6-light);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .fab-scroll-btn:hover {
+    background-color: var(--theme6-light);
+    transform: scale(1.05); /* Slight grow on hover */
+  }
+  

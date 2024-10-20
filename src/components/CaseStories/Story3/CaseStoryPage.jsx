@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import allServices from "../../../data/hhsServices";
 import "./styles/CaseStoryPage.css";
+import FABScrollButtons from "../../../assets/prototypes/floatActionButtons/FABScrollButtons";
 import ClientHeader from "./ClientHeader";
 
 const CaseStoryPage = () => {
@@ -78,6 +79,9 @@ const CaseStoryPage = () => {
     <>
       {" "}
       <ClientHeader />
+      <div className="fab-scroll-container">
+        <FABScrollButtons />
+      </div>
       <div className="case-story-page-container">
         {/* Sidebar for Divisions */}
         <div className="sidebar">

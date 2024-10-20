@@ -73,6 +73,11 @@
 }
 
 /* ----- Media Queries for Responsive Design ----- */
+@media (min-width: 768px) {
+  .fab-scroll-container {
+    display: none; /* Hide on larger screens */
+  }
+}
 
 /* For medium devices (tablets and small desktops) */
 @media (max-width: 768px) {
