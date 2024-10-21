@@ -158,6 +158,41 @@
     opacity: 1;
   }
 }
+.filter-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.filter-links button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  color: var(--theme5-dark); /* Use the link color you prefer */
+  cursor: pointer;
+  font-size: 14px; /* Smaller font size */
+  text-decoration: underline; /* Makes them look like links */
+  transition: color 0.3s ease;
+}
+
+.filter-links button:hover {
+  color: var(--theme5-dark); /* Change color on hover */
+}
+.sort-button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  color: var(--theme5-light); /* Use the link color you prefer */
+  cursor: pointer;
+  font-size: 14px; /* Smaller font size */
+  text-decoration: underline; /* Makes them look like links */
+  transition: color 0.3s ease;
+}
+
+.sort-button:hover {
+  color: var(--theme5-dark); /* Change color on hover */
+}
 
 /* Media query for tablets (max-width 768px) */
 @media (max-width: 768px) {
