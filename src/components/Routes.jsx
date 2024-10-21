@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route, Navigate } from "react-router-dom"; // Import Navigate for redirects
+import { Routes, Route } from "react-router-dom"; // Import Navigate for redirects
 
 // HOME PAGE
 import Home from "../components/Pages/Home";
@@ -40,6 +40,9 @@ import ServiceSelector from "./CaseStories/ServiceSelector";
 //ICONS
 import IconsList from "../components/Icons/IconList";
 
+// API Listings
+import ClientsList from "../components/Organisms/APIComponents/ClientList"
+
 const AppRoutes = () => {
   return (
     <Routes>
@@ -47,7 +50,6 @@ const AppRoutes = () => {
       <Route path="/about" element={<About />} />
       <Route path="/services" element={<Services />} />
       <Route path="/contact" element={<Contact />} />
-
       <Route path="/child-and-family" element={<ChildAndFamily />} />
       <Route path="/aging" element={<Aging />} />
       <Route path="/disability" element={<Disability />} />
@@ -56,13 +58,14 @@ const AppRoutes = () => {
       <Route path="/provider-services" element={<ProviderServices />} />
       <Route path="/privacy" element={<Privacy />} />
       <Route path="/terms" element={<Terms />} />
-
       {/* Guides and Terms */}
       <Route path="/icons" element={<IconsList />} />
-
       {/* Prototype Routes with Nested Child Components */}
       <Route path="/prototypes" element={<Prototypes />}>
-        <Route path="floatingactionbuttons" element={<FloatingActionButtons />} />
+        <Route
+          path="floatingactionbuttons"
+          element={<FloatingActionButtons />}
+        />
         <Route path="dashboard1" element={<Dashboard1 />} />
         <Route path="forminput" element={<FormInput />} />
         <Route path="formlistbox" element={<FormListbox />} />
@@ -72,12 +75,16 @@ const AppRoutes = () => {
         <Route path="formcheckbox" element={<FormCheckbox />} />
         <Route path="buttonprototypes" element={<ButtonPrototypes />} />
       </Route>
-
       {/* Client Journeys */}
       <Route path="/client-start/*" element={<CaseStory1 />} />
       <Route path="/casestory2" element={<CaseStory2 />} />
-      <Route path="/casestory3" element={<CaseStory3 />} />      
+      <Route path="/casestory3" element={<CaseStory3 />} />
       <Route path="/serviceselector/*" element={<ServiceSelector />} />
+      {/* API Links */}
+      
+      {/* New route for ClientsList */}      
+      <Route path="/clients" element={<ClientsList />} />{" "}
+
 
       {/* 404 page */}
       <Route path="*" element={<NotFound />} />

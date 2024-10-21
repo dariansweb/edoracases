@@ -19,18 +19,18 @@ const AppWrapper = () => {
   // Check if the current route includes '/ClientStories'
   const isClientStory = location.pathname.startsWith("/casestory");
 
+  // Add your API routes here
+  const isAPIPage = location.pathname.startsWith("/clients");
+
   return (
     <>
       <span className="top"></span> {/* Anchor point for scrolling to top */}
-      
       {/* Conditionally render Header and Footer */}
-      {!isClientStory && <Header />}
+      {!isClientStory && !isPrototype && !isAPIPage && <Header />}
       {isHome && <Hero />}
       {!isHome && <ScrollToTop />}
-      
       <AppRoutes /> {/* Your main routing component */}
-      
-      {!isClientStory && !isPrototype && <Footer />}
+      {!isClientStory && !isPrototype && !isAPIPage && <Footer />}
     </>
   );
 };

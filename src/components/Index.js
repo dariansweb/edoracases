@@ -40,3 +40,6 @@ export { default as SelectPrototype } from "../assets/prototypes/formControls/Se
 export { default as TextareaPrototype } from "../assets/prototypes/formControls/Textarea"
 export { default as RadiobuttonPrototype } from "../assets/prototypes/formControls/Radiobutton"
 export { default as CheckboxPrototypes } from "../assets/prototypes/formControls/Checkbox"
+
+//API Files
+export { default as ClientsList } from './Organisms/APIComponents/ClientList';
