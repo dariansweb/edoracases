@@ -117,7 +117,7 @@
 }
 
 .icon {
-  font-size: 24px; /* Make the icon stand out */
+  font-size: 32px; /* Make the icon stand out */
   margin-right: 10px;
 }
 
@@ -126,7 +126,7 @@
 }
 
 .btn-toggle {
-  background-color: var(--theme5-light);
+  background-color: var(--theme5-dark);
   border: none;
   padding: 8px 12px;
   border-radius: 5px;

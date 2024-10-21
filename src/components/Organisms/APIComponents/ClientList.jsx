@@ -51,13 +51,13 @@ const ClientList = () => {
         <div className="middle-column">
           {selectedClient ? (
             <>
-              <h3>Manage {selectedClient.name}</h3>
+              <p className="text-block-no-hover">Manage {selectedClient.name}</p>
               <ul>
                 {iconsData.map((item) => (
                   <li key={item.id} className="icon-card">
                     <div className="icon-header">
-                      <span className="icon">{item.icon}</span>
-                      <span className="title">{item.title}</span>
+                      <h3 className="icon">{item.icon}</h3>
+                      <span className="text-block-no-hover">{item.title}</span>
                     </div>
                     <div className="icon-actions">
                       {/* Toggle button */}
