@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import ClientHeader from "./ClientHeader";
-import ClientsData from "../../../data/clients.json"; // Correct JSON data import
-import clientManagement from "../../../data/clientmanagement"; // Import client management options
+import ClientsData from "../../../data/clients.json"; // Import JSON data
+import iconsData from "../../../data/iconData"; // Import the icon data
 import "./styles/ClientList.css";
 
 const ClientList = () => {
   const [selectedClient, setSelectedClient] = useState(null); // Selected client
   const [selectedAction, setSelectedAction] = useState(null); // Action for the middle column
+  const [openContext, setOpenContext] = useState({}); // Control context visibility
 
   const handleClientSelect = (client) => {
     setSelectedClient(client);
@@ -15,6 +16,14 @@ const ClientList = () => {
 
   const handleActionSelect = (action) => {
     setSelectedAction(action);
+  };
+
+  // Toggle context visibility for a specific icon
+  const toggleContext = (id) => {
+    setOpenContext((prev) => ({
+      ...prev,
+      [id]: !prev[id], // Toggle between true and false for the selected id
+    }));
   };
 
   return (
@@ -38,14 +47,34 @@ const ClientList = () => {
           </ul>
         </div>
 
+        {/* Middle Column: Now with icons and context */}
         <div className="middle-column">
           {selectedClient ? (
             <>
               <h3>Manage {selectedClient.name}</h3>
               <ul>
-                {clientManagement.map((action, index) => (
-                  <li key={index} onClick={() => handleActionSelect(action)}>
-                    {action}
+                {iconsData.map((item) => (
+                  <li key={item.id} className="icon-card">
+                    <div className="icon-header">
+                      <span className="icon">{item.icon}</span>
+                      <span className="title">{item.title}</span>
+                    </div>
+                    <div className="icon-actions">
+                      {/* Toggle button */}
+                      <button
+                        className="btn-toggle"
+                        onClick={() => toggleContext(item.id)}
+                      >
+                        {openContext[item.id] ? "Hide Details" : "Show Details"}
+                      </button>
+                      {/* If context is open, show the context */}
+                      {openContext[item.id] && (
+                        <div className="context-slide">
+                          <p>{item.meaning}</p>
+                          <p>{item.context}</p>
+                        </div>
+                      )}
+                    </div>
                   </li>
                 ))}
               </ul>
@@ -75,7 +104,6 @@ const ActionDetails = ({ action, client }) => {
         {action} for {client.name}
       </h4>
       <p>Details for {action} will be displayed here.</p>
-      {/* Add specific forms or details for each action */}
       <button className="btn-add">Add</button>
       <button className="btn-history">View History</button>
     </div>

@@ -4,6 +4,7 @@
   gap: 20px;
   height: 100vh;
   padding: 20px;
+  z-index: 1;
 }
 
 .left-column {
@@ -97,4 +98,117 @@
 
 .btn-history:hover {
   background-color: var(--theme6-dark);
+}
+/* Middle column icon cards */
+.icon-card {
+  background-color: #f4f7f6;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.icon-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.icon {
+  font-size: 24px; /* Make the icon stand out */
+  margin-right: 10px;
+}
+
+.icon-actions {
+  margin-top: 10px;
+}
+
+.btn-toggle {
+  background-color: var(--theme5-light);
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-toggle:hover {
+  background-color: var(--theme5-dark);
+}
+
+/* Context section that slides down */
+.context-slide {
+  background-color: #e9e9e9;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    max-height: 0;
+    opacity: 0;
+  }
+  to {
+    max-height: 500px;
+    opacity: 1;
+  }
+}
+
+/* Media query for tablets (max-width 768px) */
+@media (max-width: 768px) {
+  .client-management-container {
+    grid-template-columns: 1fr; /* Stack all columns vertically */
+    height: auto; /* Allow content to grow based on its content */
+    gap: 10px;
+  }
+
+  .left-column,
+  .middle-column,
+  .right-column {
+    width: 100%; /* Full width for each column */
+    padding: 15px;
+  }
+
+  .right-column {
+    max-height: none; /* Remove height limitation on smaller screens */
+  }
+}
+
+/* Media query for small mobile devices (max-width 400px) */
+@media (max-width: 400px) {
+  .client-management-container {
+    grid-template-columns: 1fr; /* Stack all columns vertically */
+    height: auto;
+    gap: 5px;
+    padding: 10px;
+  }
+
+  .left-column,
+  .middle-column,
+  .right-column {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .client-item,
+  .middle-column ul li,
+  .right-column ul li {
+    padding: 8px; /* Reduce padding for better fit */
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  .action-details {
+    padding: 15px;
+  }
+
+  .btn-add,
+  .btn-history {
+    padding: 8px;
+    font-size: 14px; /* Adjust button size */
+  }
 }

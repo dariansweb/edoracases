@@ -3,103 +3,110 @@
   position: sticky;
   top: 0;
   width: 100%;
-  background-color: var(--theme3-dark);
+  background: linear-gradient(135deg, var(--theme3-dark), var(--theme5-dark));
   color: white;
   padding: 15px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 1000;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  box-sizing: border-box; /* Ensure padding doesn’t overflow the header */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
 }
 
-/* Logo styling */
 .clients-client-header .logo h1 {
   margin: 0;
-  font-size: 24px;
-  color: white;
-  white-space: nowrap; /* Prevent text wrapping */
+  font-size: 28px;
+  color: #ffdd57;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  white-space: nowrap;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
-/* Menu and dropdown styles */
+.clients-client-header .logo h1:hover {
+  transform: scale(1.1);
+  color: #ffc107;
+}
+
 #menu {
-  float: left;
-  width: auto; /* Let the width adjust to the content */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%; 
+  gap: 10px; 
 }
 
 #menu ul {
   list-style: none;
-  position: relative;
-  display: inline-table;
   padding: 0;
   margin: 0;
+  display: flex;
 }
 
 #menu ul li {
-  float: left;
-  padding: 10px 15px; /* Adjust padding for better spacing */
-}
-
-#menu ul li:hover > ul {
-  display: block;
-}
-
-#menu ul:after {
-  content: "";
-  clear: both;
-  display: block;
-}
-
-#menu ul li:hover,
-.current {
-  color: rgb(249, 157, 41);
+  padding: 10px;
+  text-align: center;
+  flex: 1; 
 }
 
 #menu ul li a {
   display: block;
   text-decoration: none;
   color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 12px 20px;
+  letter-spacing: 1px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1); 
+  transition: all 0.3s ease;
 }
 
-#menu ul ul {
-  background-color: rgb(112, 111, 111);
-  position: absolute;
-  margin-top: 10px;
-  display: none;
-  padding: 0;
-  z-index: 1100; /* Ensure dropdown appears above everything */
+#menu ul li a:hover {
+  color: #ffdd57;
+  background: rgba(255, 221, 87, 0.2); 
+  transform: scale(1.05); 
 }
 
-#menu ul ul:after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: -20px;
-  left: 0;
-  width: 0;
-  height: 0;
-  border-color: transparent transparent rgb(112, 111, 111) transparent;
-  border-style: solid;
-  border-width: 10px;
-}
-
-#menu ul ul li {
-  float: none;
-  border-bottom: 1px solid white;
-  position: relative;
-  margin-left: 0;
-  padding: 10px;
-  color: white;
-  text-transform: none;
-}
-
-#menu ul ul li:hover {
-  background-color: rgb(249, 157, 41);
-  color: white;
-}
-
-#menu ul ul ul {
-  position: absolute;
+/* Modal styles for full page coverage */
+.modal-container {
+  position: fixed;
   top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.modal-content {
+  background: white;
+  padding: 30px;
+  width: 80%;
+  height: 80%;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Example grid for options */
+  gap: 20px;
+}
+
+.close-button {
+  background-color: #ff5e5e;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  grid-column: span 2; /* Make close button span the full width */
+}
+
+.close-button:hover {
+  background-color: #e65555;
 }

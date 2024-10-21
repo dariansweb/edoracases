@@ -1,87 +1,83 @@
-import React from "react";
+import React, { useState } from "react";
 import "./styles/ClientHeader.css";
 
 const ClientHeader = () => {
+  const [activeModal, setActiveModal] = useState(null); // Tracks which modal is active
+
+  const openModal = (modalName) => {
+    setActiveModal(modalName); // Set the active modal when a button is clicked
+  };
+
+  const closeModal = () => {
+    setActiveModal(null); // Close the modal
+  };
+
   return (
-    <header className="clients-client-header">
-      <nav id="menu">
-        <ul>
-          {/* Client Management Dropdown */}
-          <li>
-            <a href="#">Client Management</a>
-            <ul>
-              <li>
-                <a href="#">Add Client</a>
-              </li>
-              <li>
-                <a href="#">View Clients</a>
-              </li>
-              <li>
-                <a href="#">Reports</a>
-              </li>
-            </ul>
-          </li>
+    <>
+      <header className="clients-client-header">
+        <nav id="menu">
+          <ul>
+            {/* Client Management */}
+            <li>
+              <a href="#" onClick={() => openModal("clientManagement")}>
+                Client
+              </a>
+            </li>
 
-          {/* Services Dropdown */}
-          <li>
-            <a href="#">Services</a>
-            <ul>
-              <li>
-                <a href="#">Human Services</a>
-              </li>
-              <li>
-                <a href="#">Health Services</a>
-              </li>
-              <li>
-                <a href="#">Family Support</a>
-              </li>
-              <li>
-                <a href="#">More Services...</a>
-              </li>
-            </ul>
-          </li>
+            {/* Services */}
+            <li>
+              <a href="#" onClick={() => openModal("services")}>Services</a>
+            </li>
 
-          {/* Settings Dropdown */}
-          <li>
-            <a href="#">Settings</a>
-            <ul>
-              <li>
-                <a href="#">System Preferences</a>
-              </li>
-              <li>
-                <a href="#">User Management</a>
-              </li>
-              <li>
-                <a href="#">Access Control</a>
-              </li>
-            </ul>
-          </li>
+            {/* Settings */}
+            <li>
+              <a href="#" onClick={() => openModal("settings")}>Settings</a>
+            </li>
 
-          {/* Reports Dropdown */}
-          <li>
-            <a href="#">Reports</a>
-            <ul>
-              <li>
-                <a href="#">Client Reports</a>
-              </li>
-              <li>
-                <a href="#">Service Reports</a>
-              </li>
-              <li>
-                <a href="#">Financial Reports</a>
-              </li>
-              <li>
-                <a href="#">Custom Reports</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
+            {/* Reports */}
+            <li>
+              <a href="#" onClick={() => openModal("reports")}>Reports</a>
+            </li>
+          </ul>
+        </nav>
 
-      <div className="logo">
-        <h1>EDORA</h1>
+        <div className="logo">
+          <h1>EDORA</h1>
+        </div>
+      </header>
+
+      {/* Conditionally render modals */}
+      {activeModal === "clientManagement" && (
+        <Modal onClose={closeModal} title="Client Management Options" />
+      )}
+
+      {activeModal === "services" && (
+        <Modal onClose={closeModal} title="Service Options" />
+      )}
+
+      {activeModal === "settings" && (
+        <Modal onClose={closeModal} title="Settings Options" />
+      )}
+
+      {activeModal === "reports" && (
+        <Modal onClose={closeModal} title="Reports Options" />
+      )}
+    </>
+  );
+};
+
+// Modal component for full screen modals
+const Modal = ({ onClose, title }) => {
+  return (
+    <div className="modal-container">
+      <div className="modal-content">
+        <h2>{title}</h2>
+        {/* Add options here */}
+        <button className="close-button" onClick={onClose}>
+          Close
+        </button>
       </div>
-    </header>
+    </div>
   );
 };
 

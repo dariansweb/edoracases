@@ -1,0 +1,70 @@
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.modal-content {
+  background: #f9f9f9;
+  padding: 40px;
+  width: 90%;
+  max-width: 1200px; /* Full width for larger displays */
+  height: 90%; /* Take most of the screen */
+  border-radius: 12px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  overflow-y: auto;
+}
+
+.modal-content h2 {
+  grid-column: span 3;
+  font-size: 28px;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.modal-content .option-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.modal-content .option-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.modal-content .option-card p {
+  font-size: 18px;
+  color: #333;
+}
+
+.close-button {
+  background-color: #ff5e5e;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  grid-column: span 3;
+  justify-self: center;
+  margin-top: 20px;
+}
+
+.close-button:hover {
+  background-color: #e65555;
+}
