@@ -3,8 +3,8 @@ import "./styles/DemoModal.css";
 
 const DemoModal = ({ onClose }) => {
   return (
-    <div className="modal-overlay">
-      <div className="modal-content">
+    <div className="demo-modal-overlay">
+      <div className="demo-modal-content">
         <h2 className="dark">Welcome to EDORA Case Story Demo</h2>
         <p className="text-block-no-hover">
           Please note, this is a front-end demo. None of your data will be

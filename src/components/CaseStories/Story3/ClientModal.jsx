@@ -3,8 +3,8 @@ import "./styles/ClientModal.css";
 
 const ClientModal = ({ closeModal }) => {
   return (
-    <div className="modal-backdrop" onClick={closeModal}>
-      <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+    <div className="client-modal-backdrop" onClick={closeModal}>
+      <div className="client-modal-content" onClick={(e) => e.stopPropagation()}>
         <button className="close-button" onClick={closeModal}>X</button>
         <h2>Zorak Quasor</h2>
         <p><strong>SSN:</strong> 123-45-6789</p>
