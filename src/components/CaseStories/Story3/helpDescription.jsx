@@ -16,7 +16,7 @@ const HelpDescription = () => {
       </button>
 
       {isVisible && (
-        <div className="description-content text-block">
+        <div className="description-content text-block-no-hover">
           <h3 className="dark">Case Story Page Overview</h3>
           <p>
             <strong>

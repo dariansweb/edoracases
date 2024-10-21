@@ -12,8 +12,7 @@
   margin: 0 auto;  /* Centers it horizontally */
 }
 
-
-.text-block {
+.text-block, .text-block-no-hover {
   font-size: 18px;
   font-weight: 500;
   line-height: 1.8;
@@ -32,6 +31,21 @@
   background-color: var(--theme5-light);
   transform: translateY(-2px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.text-block-no-hover {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.8;
+  color: var(--theme1-dark);
+  margin: 1rem 0; /* Simplified margins */
+  text-align: left;
+  padding: 1rem; /* Balanced padding */
+  background-color: var(--theme3-light);
+  border-radius: 8px;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease;
+  border-left: 5px solid var(--theme3-dark);
+  position: relative;
 }
 
 /* Adding a bit of pizzazz to the first letter */
