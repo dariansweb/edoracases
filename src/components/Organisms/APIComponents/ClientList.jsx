@@ -7,17 +7,18 @@ const ClientsList = () => {
 
   useEffect(() => {
     axios
-      .get("/api/clients/clients")  // Correct API endpoint
+      .get("/api/clients/clients") // Correct API route
       .then((response) => {
-        console.log("Response data:", response.data); // Log the full response data
-        setClients(response.data.clients); // Set the clients array
-        setLoading(false);
+        console.log("Full response data:", response.data); // Log the full response data
+        setClients(response.data.clients); // Set clients from response
+        setLoading(false); 
       })
       .catch((error) => {
         console.error("Error fetching the clients:", error);
         setLoading(false);
       });
   }, []);
+  
 
   if (loading) {
     return <p>Loading...</p>;
