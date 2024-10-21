@@ -1,0 +1,169 @@
+{
+    "clients": [
+        {
+            "id": 10001,
+            "name": "Zorak Quasor",
+            "ssn": "1J3-4A-6C89",
+            "race": "Martian",
+            "gender": "Male",
+            "weight": 180,
+            "height": "6'2\"",
+            "age": 42,
+            "dob": "1982-01-01"
+        },
+        {
+            "id": 10002,
+            "name": "Lyra Valkron",
+            "ssn": "5F8-9B-2Q71",
+            "race": "Andorian",
+            "gender": "Female",
+            "weight": 135,
+            "height": "5'8\"",
+            "age": 29,
+            "dob": "1995-04-12"
+        },
+        {
+            "id": 10003,            
+            "name": "Thragg Threx",
+            "ssn": "9C2-7E-3D47",
+            "race": "Kryptonian",
+            "gender": "Male",
+            "weight": 220,
+            "height": "6'5\"",
+            "age": 38,
+            "dob": "1986-11-30"
+        },
+        {
+            "id": 10004,
+            "name": "N'Tal G'Kor",
+            "ssn": "8A4-1L-7P39",
+            "race": "Vulcan",
+            "gender": "Male",
+            "weight": 210,
+            "height": "6'0\"",
+            "age": 53,
+            "dob": "1971-09-14"
+        },
+        {
+            "id": 10005,
+            "name": "Rylah Al'Sune",
+            "ssn": "6H9-5M-4V81",
+            "race": "Xandarian",
+            "gender": "Female",
+            "weight": 150,
+            "height": "5'7\"",
+            "age": 34,
+            "dob": "1989-02-27"
+        },
+        {
+            "id": 10006,
+            "name": "Gornak Dar",
+            "ssn": "4T6-2W-3H94",
+            "race": "Klingon",
+            "gender": "Male",
+            "weight": 240,
+            "height": "6'3\"",
+            "age": 47,
+            "dob": "1977-06-15"
+        },
+        {
+            "id": 10007,
+            "name": "T'Lor Kryl",
+            "ssn": "3B7-9R-2Y83",
+            "race": "Twilek",
+            "gender": "Female",
+            "weight": 165,
+            "height": "5'9\"",
+            "age": 26,
+            "dob": "1997-10-10"
+        },
+        {
+            "id": 10008,
+            "name": "Xarvis Tark",
+            "ssn": "7V2-8C-6M99",
+            "race": "Betazoid",
+            "gender": "Male",
+            "weight": 190,
+            "height": "6'1\"",
+            "age": 31,
+            "dob": "1992-12-05"
+        },
+        {
+            "id": 10009,
+            "name": "Korvak Sharr",
+            "ssn": "2F3-4L-9K22",
+            "race": "Zarnian",
+            "gender": "Male",
+            "weight": 260,
+            "height": "6'8\"",
+            "age": 58,
+            "dob": "1965-04-20"
+        },
+        {
+            "id": 10010,
+            "name": "Lanya Korr",
+            "ssn": "8J5-1D-5V75",
+            "race": "Thanagarian",
+            "gender": "Female",
+            "weight": 145,
+            "height": "5'5\"",
+            "age": 24,
+            "dob": "1999-08-11"
+        },
+        {
+            "id": 10011,
+            "name": "Ronan Xar",
+            "ssn": "1L6-8N-7R92",
+            "race": "Nova Corps",
+            "gender": "Male",
+            "weight": 205,
+            "height": "6'0\"",
+            "age": 37,
+            "dob": "1987-09-17"
+        },
+        {
+            "id": 10012,
+            "name": "J'Kar Xy",
+            "ssn": "5P3-6K-1F88",
+            "race": "Minbari",
+            "gender": "Male",
+            "weight": 175,
+            "height": "5'10\"",
+            "age": 62,
+            "dob": "1961-11-29"
+        },
+        {
+            "id": 10013,
+            "name": "Soran Jax",
+            "ssn": "6C4-2Q-5H45",
+            "race": "Romulan",
+            "gender": "Female",
+            "weight": 155,
+            "height": "5'6\"",
+            "age": 33,
+            "dob": "1991-03-12"
+        },
+        {
+            "id": 10014,
+            "name": "Tirrak Zor",
+            "ssn": "9L7-3B-8J61",
+            "race": "Daxamite",
+            "gender": "Male",
+            "weight": 300,
+            "height": "7'1\"",
+            "age": 48,
+            "dob": "1975-05-22"
+        },
+        {
+            "id": 10015,
+            "name": "Naomi S'Vak",
+            "ssn": "3D2-1F-4N44",
+            "race": "Trill",
+            "gender": "Female",
+            "weight": 130,
+            "height": "5'4\"",
+            "age": 28,
+            "dob": "1995-08-30"
+        }
+    ]
+}
