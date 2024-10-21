@@ -24,7 +24,7 @@ const ClientHeader = () => {
   };
 
   return (
-    <div className="client-header">
+    <div className="services-client-header">
       <div className="client-info-bar">
         <div
           className="client-icon"

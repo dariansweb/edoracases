@@ -1,0 +1,100 @@
+.client-management-container {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 2fr; /* Left: Clients, Middle: Manage, Right: Details */
+  gap: 20px;
+  height: 100vh;
+  padding: 20px;
+}
+
+.left-column {
+  background-color: var(--theme3-light);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+}
+
+.middle-column {
+  background-color: var(--theme3-light);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+}
+
+.right-column {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  overflow-y: auto;
+  max-height: 100vh;
+}
+
+.client-item {
+  padding: 10px;
+  background-color: #f4f7f6;
+  margin: 5px 0;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.client-item.selected {
+  background-color: var(--theme3-dark);
+  color: var(--theme3-light);
+}
+
+.client-item:hover {
+  background-color: var(--theme6-dark);
+  color: var(--theme6-light);
+  font-weight: 600;
+}
+
+.middle-column ul,
+.right-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.middle-column ul li,
+.right-column ul li {
+  cursor: pointer;
+  padding: 10px;
+  background-color: #f9f9f9;
+  margin: 5px 0;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.middle-column ul li:hover,
+.right-column ul li:hover {
+  background-color: #e0e0e0;
+}
+
+.action-details {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-add,
+.btn-history {
+  background-color: var(--theme5-light);
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-add:hover {
+  background-color: var(--theme5-dark);
+}
+
+.btn-history:hover {
+  background-color: var(--theme6-dark);
+}

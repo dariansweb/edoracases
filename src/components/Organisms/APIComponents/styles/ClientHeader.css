@@ -1,0 +1,105 @@
+/* General Header Styling */
+.clients-client-header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: var(--theme3-dark);
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; /* Ensure padding doesn’t overflow the header */
+}
+
+/* Logo styling */
+.clients-client-header .logo h1 {
+  margin: 0;
+  font-size: 24px;
+  color: white;
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+/* Menu and dropdown styles */
+#menu {
+  float: left;
+  width: auto; /* Let the width adjust to the content */
+}
+
+#menu ul {
+  list-style: none;
+  position: relative;
+  display: inline-table;
+  padding: 0;
+  margin: 0;
+}
+
+#menu ul li {
+  float: left;
+  padding: 10px 15px; /* Adjust padding for better spacing */
+}
+
+#menu ul li:hover > ul {
+  display: block;
+}
+
+#menu ul:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+#menu ul li:hover,
+.current {
+  color: rgb(249, 157, 41);
+}
+
+#menu ul li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+
+#menu ul ul {
+  background-color: rgb(112, 111, 111);
+  position: absolute;
+  margin-top: 10px;
+  display: none;
+  padding: 0;
+  z-index: 1100; /* Ensure dropdown appears above everything */
+}
+
+#menu ul ul:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-color: transparent transparent rgb(112, 111, 111) transparent;
+  border-style: solid;
+  border-width: 10px;
+}
+
+#menu ul ul li {
+  float: none;
+  border-bottom: 1px solid white;
+  position: relative;
+  margin-left: 0;
+  padding: 10px;
+  color: white;
+  text-transform: none;
+}
+
+#menu ul ul li:hover {
+  background-color: rgb(249, 157, 41);
+  color: white;
+}
+
+#menu ul ul ul {
+  position: absolute;
+  top: 0;
+}
