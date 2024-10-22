@@ -94,6 +94,10 @@
 
 /* Media Query for screens 768px and smaller */
 @media (max-width: 768px) {
+  
+  .client-management-header-dropdown-menu {
+    width: 50vw;
+  }
   .client-management-header-bar {
     flex-direction: column;
     padding: 10px;
