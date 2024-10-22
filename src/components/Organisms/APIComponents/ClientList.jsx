@@ -121,7 +121,7 @@ const ClientList = () => {
         <div className="client-management-middle-column">
           {selectedClient ? (
             <>
-              <h3>Manage {selectedClient.name}</h3>
+              <h3 className="dark">Manage {selectedClient.name}</h3>
 
               {/* Middle column search input and sort button */}
               <div className="filter-container">
