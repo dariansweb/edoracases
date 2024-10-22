@@ -1,0 +1,142 @@
+.client-management-header-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: var(--theme1-dark);
+  color: var(--theme5-light);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.client-management-header-left {
+  display: flex;
+  align-items: center;
+}
+
+.client-management-header-dropdown {
+  position: relative;
+}
+
+.client-management-header-dropdown-btn {
+  background-color: var(--theme2-dark);
+  color: var(--theme6-light);
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.client-management-header-dropdown-btn:hover {
+  background-color: var(--theme5-dark);
+}
+
+.client-management-header-dropdown-menu {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background-color: var(--theme1-dark);
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  list-style-type: none;
+  margin: 0;
+  z-index: 1000;
+  width: 25vw;
+}
+
+.client-management-header-dropdown-item {
+  padding: 10px;
+  background-color: var(--theme2-light);
+  color: var(--theme1-dark);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.client-management-header-dropdown-item:hover {
+  background-color: var(--theme4-light);
+}
+
+.client-management-header-middle {
+  text-align: center;
+}
+
+.client-management-header-middle h2 {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.client-management-header-right {
+  display: flex;
+  align-items: center;
+}
+
+.client-management-header-edora-link {
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 8px 16px;
+  background-color: var(--theme2-dark);
+  color: var(--theme4-light);
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.client-management-header-edora-link:hover {
+  background-color: var(--theme4-dark);
+  color: var(--theme2-light);
+}
+
+/* Media Query for screens 768px and smaller */
+@media (max-width: 768px) {
+  .client-management-header-bar {
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .client-management-header-left,
+  .client-management-header-right {
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .client-management-header-middle h2 {
+    font-size: 16px; /* Slightly smaller font for smaller screens */
+  }
+
+  .client-management-header-dropdown-btn {
+    font-size: 14px;
+  }
+
+  .client-management-header-edora-link {
+    font-size: 18px; /* Slightly smaller button */
+  }
+}
+
+/* Media Query for screens 400px and smaller */
+@media (max-width: 400px) {
+  .client-management-header-bar {
+    padding: 5px;
+    text-align: center;
+  }
+
+  .client-management-header-dropdown-btn {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .client-management-header-middle h2 {
+    font-size: 14px; /* Further reduce font size */
+  }
+
+  .client-management-header-edora-link {
+    font-size: 16px;
+    padding: 6px 12px; /* Adjust button padding */
+  }
+}

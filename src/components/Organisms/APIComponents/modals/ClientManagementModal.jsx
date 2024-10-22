@@ -1,10 +1,10 @@
 import React from "react";
-import "./styles/Modal.css";
+import "./styles/CM-Modal.css";
 
 const ClientManagementModal = ({ onClose }) => {
   return (
-    <div className="modal-container">
-      <div className="modal-content">
+    <div className="client-management-modal-container">
+      <div className="client-management-modal-content">
         <h2>Client Management Options</h2>
         <ul>
           <li>Add New Client</li>
@@ -12,7 +12,7 @@ const ClientManagementModal = ({ onClose }) => {
           <li>Client Reports</li>
           {/* Add more options as needed */}
         </ul>
-        <button className="close-button" onClick={onClose}>
+        <button className="client-management-close-button" onClick={onClose}>
           Close
         </button>
       </div>

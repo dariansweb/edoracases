@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import ClientsData from "../../../data/clients.json"; // Import JSON data
 import iconsData from "../../../data/iconData"; // Import the icon data
-import ClientManagmentHeader from "./ClientManagementHeader"
 import "./styles/ClientList.css";
 
 const ClientList = () => {
@@ -64,7 +63,6 @@ const ClientList = () => {
 
   return (
     <>
-    <ClientManagmentHeader />
       <div className="client-management-container">
         {/* Left Column: Clients */}
         <div className="client-management-left-column">
@@ -147,7 +145,6 @@ const ClientList = () => {
             <ActionDetails
               action={selectedAction.title}
               client={selectedClient}
-              meaning={selectedAction.meaning} // Pass the meaning from selectedAction
             />
           ) : (
             <p>Select an action to view details.</p>
@@ -159,16 +156,13 @@ const ClientList = () => {
 };
 
 // ActionDetails component for the right column
-const ActionDetails = ({ action, client, meaning }) => {
+const ActionDetails = ({ action, client }) => {
   return (
     <div className="client-management-action-details">
       <h4>
         {action} for {client.name}
       </h4>
       <p>Details for {action} will be displayed here.</p>
-      <p className="client-management-meaning">
-        {meaning || "No meaning available."}
-      </p>
       <button className="client-management-btn-add">Add</button>
       <button className="client-management-btn-history">View History</button>
     </div>
