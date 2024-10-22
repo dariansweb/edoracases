@@ -9,33 +9,72 @@
   padding: 20px; /* Optional: add some padding */
 }
 
-/* Search Bar Styles */
+/* Search Bar Container Styles */
 .provider-info-search {
   display: flex;
-  align-items: center;
-  margin-bottom: 20px;
+  align-items: center; /* Vertically center the items */
+  margin-bottom: 20px; /* Space below the search bar */
+  padding: 10px; /* Padding around the search container */
+  background-color: #f8f9fa; /* Light background for contrast */
+  border-radius: 8px; /* Rounded corners for a softer look */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
+/* Search Input Styles */
 .provider-info-search-input {
-  flex: 1;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-right: 10px;
+  flex: 1; /* Allow the input to take available space */
+  padding: 10px; /* Padding for the input field */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Font size for better readability */
+  margin-right: 10px; /* Space between input and button */
+  transition: border-color 0.3s; /* Smooth transition for border color */
 }
 
+
+/* Focus state for the input */
+.provider-info-search-input:focus {
+  border-color: #0073e6; /* Change border color on focus */
+  box-shadow: 0 0 5px rgba(0, 115, 230, 0.5); /* Add a subtle shadow for emphasis */
+  outline: none; /* Remove default outline */
+}
+
+/* Placeholder styling */
+.provider-info-search-input::placeholder {
+  color: #aaa; /* Lighter color for the placeholder text */
+  opacity: 1; /* Ensures placeholder is fully opaque */
+}
+
+/* Search Button Styles */
 .provider-info-search-button {
-  padding: 10px 15px;
-  background-color: #0073e6;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+  padding: 10px 20px; /* Increased padding for a larger clickable area */
+  background-color: #0073e6; /* Primary blue color */
+  color: #ffffff; /* White text color */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s; /* Smooth transitions */
+  font-size: 16px; /* Font size for readability */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
+/* Hover state */
 .provider-info-search-button:hover {
-  background-color: #005bb5;
+  background-color: #005bb5; /* Darker blue on hover */
+  transform: translateY(-2px); /* Lift effect on hover */
+}
+
+/* Focus state */
+.provider-info-search-button:focus {
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 5px rgba(0, 115, 230, 0.5); /* Glow effect on focus */
+}
+
+/* Disabled state */
+.provider-info-search-button:disabled {
+  background-color: #ccc; /* Gray background when disabled */
+  color: #666; /* Darker gray text */
+  cursor: not-allowed; /* Change cursor to indicate disabled state */
 }
 
 /* General layout for the provider card container */
@@ -157,7 +196,9 @@
   .provider-info-list {
     flex-direction: column; /* Single column for mobile */
   }
-
+  .provider-info-search-input {
+    max-width: 90%; /* Allow it to be slightly wider on smaller screens */
+  }
   .provider-info-card {
     width: 100%; /* Full width on mobile */
   }
@@ -173,3 +214,4 @@
     width: calc(50% - 10px); /* Two cards side by side */
   }
 }
+

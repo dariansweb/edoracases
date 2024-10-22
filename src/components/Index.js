@@ -44,3 +44,6 @@ export { default as CheckboxPrototypes } from "../assets/prototypes/formControls
 //API Files
 export { default as ClientsList } from "./Organisms/APIComponents/ClientList";
 export { default as ProvidersList } from "./Organisms/APIComponents/providers";
+
+// Utilities
+export { default as ScrollToTopButton } from "../utils/ScrollToTopButton";
