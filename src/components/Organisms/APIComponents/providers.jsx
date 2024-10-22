@@ -13,7 +13,7 @@ const ProviderCard = ({ provider }) => {
   return (
     <> 
     <ScrollToTopButton />
-      <div className="provider-info-card">
+      <div className="provider-info-card top">
         <h2 className="provider-info-name">{provider.name}</h2>
         <p className="provider-info-description">
           <strong>Description:</strong> {provider.description}
