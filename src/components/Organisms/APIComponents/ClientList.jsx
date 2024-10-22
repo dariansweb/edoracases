@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ClientsData from "../../../data/clients.json"; // Import JSON data
 import iconsData from "../../../data/iconData"; // Import the icon data
-import ClientManagmentHeader from "./ClientManagementHeader"
+import ClientManagementHeader from "./ClientManagementHeader";
 import "./styles/ClientList.css";
 
 const ClientList = () => {
@@ -10,13 +10,14 @@ const ClientList = () => {
   const [searchTerm, setSearchTerm] = useState(""); // Search term state for clients
   const [middleSearchTerm, setMiddleSearchTerm] = useState(""); // Search term for middle column
   const [sorted, setSorted] = useState(false); // Sort toggle state for clients
-  const [filteredClients, setFilteredClients] = useState(ClientsData.clients); // Filtered clients state
-  const [filteredIcons, setFilteredIcons] = useState(iconsData); // Filtered icons for middle column
+  const [filteredClients, setFilteredClients] = useState([]); // Initially empty client list
+  const [filteredIcons, setFilteredIcons] = useState([]); // Initially empty icon list
 
   // Handle client selection
   const handleClientSelect = (client) => {
     setSelectedClient(client);
     setSelectedAction(null); // Reset action when selecting a new client
+    setFilteredIcons(iconsData); // Load all icons once a client is selected
   };
 
   // Handle card selection in middle column
@@ -28,10 +29,32 @@ const ClientList = () => {
   const handleSearchChange = (e) => {
     const term = e.target.value.toLowerCase();
     setSearchTerm(term);
-    const filtered = ClientsData.clients.filter((client) =>
-      client.name.toLowerCase().includes(term)
-    );
-    setFilteredClients(filtered);
+
+    // Filter clients based on search term
+    if (term) {
+      const filtered = ClientsData.clients.filter((client) =>
+        client.name.toLowerCase().includes(term)
+      );
+      setFilteredClients(filtered);
+    } else {
+      setFilteredClients([]); // Clear clients if search term is empty
+    }
+  };
+
+  // Handle middle column search input changes (for filtering icons)
+  const handleMiddleSearchChange = (e) => {
+    const term = e.target.value.toLowerCase();
+    setMiddleSearchTerm(term);
+
+    // Filter icons based on search term
+    if (term) {
+      const filteredIconsData = iconsData.filter((item) =>
+        item.title.toLowerCase().includes(term)
+      );
+      setFilteredIcons(filteredIconsData);
+    } else {
+      setFilteredIcons(iconsData); // Show all icons if no search term is entered
+    }
   };
 
   // Handle sorting alphabetically by client name
@@ -41,16 +64,6 @@ const ClientList = () => {
     );
     setFilteredClients(sortedClients);
     setSorted(!sorted);
-  };
-
-  // Handle middle column search input changes (for filtering icons)
-  const handleMiddleSearchChange = (e) => {
-    const term = e.target.value.toLowerCase();
-    setMiddleSearchTerm(term);
-    const filteredIconsData = iconsData.filter((item) =>
-      item.title.toLowerCase().includes(term)
-    );
-    setFilteredIcons(filteredIconsData);
   };
 
   // Handle sorting alphabetically by icon title in middle column
@@ -64,11 +77,11 @@ const ClientList = () => {
 
   return (
     <>
-    <ClientManagmentHeader />
+      <ClientManagementHeader />
       <div className="client-management-container">
         {/* Left Column: Clients */}
         <div className="client-management-left-column">
-          <h3>Clients</h3>
+          <h3 className="dark">Clients</h3>
 
           {/* Search Input and Sort Button */}
           <div className="filter-container">
@@ -84,18 +97,23 @@ const ClientList = () => {
             </button>
           </div>
 
+          {/* Show clients only if there are filtered results */}
           <ul>
-            {filteredClients.map((client) => (
-              <li
-                key={client.id}
-                className={`client-management-client-item ${
-                  selectedClient?.id === client.id ? "selected" : ""
-                }`}
-                onClick={() => handleClientSelect(client)}
-              >
-                {client.name} - {client.race}
-              </li>
-            ))}
+            {filteredClients.length > 0 ? (
+              filteredClients.map((client) => (
+                <li
+                  key={client.id}
+                  className={`client-management-client-item ${
+                    selectedClient?.id === client.id ? "selected" : ""
+                  }`}
+                  onClick={() => handleClientSelect(client)}
+                >
+                  {client.name} - {client.race}
+                </li>
+              ))
+            ) : (
+              <p>No clients found. Please search.</p>
+            )}
           </ul>
         </div>
 
@@ -119,21 +137,26 @@ const ClientList = () => {
                 </button>
               </div>
 
+              {/* Show icons only if there are filtered results */}
               <ul>
-                {filteredIcons.map((item) => (
-                  <li
-                    key={item.id}
-                    className={`client-management-icon-card ${
-                      selectedAction === item ? "selected" : ""
-                    }`}
-                    onClick={() => handleCardSelect(item)}
-                  >
-                    <div className="client-management-icon-header">
-                      <span className="client-management-icon">{item.icon}</span>
-                      <span className="client-management-title">{item.title}</span>
-                    </div>
-                  </li>
-                ))}
+                {filteredIcons.length > 0 ? (
+                  filteredIcons.map((item) => (
+                    <li
+                      key={item.id}
+                      className={`client-management-icon-card ${
+                        selectedAction === item ? "selected" : ""
+                      }`}
+                      onClick={() => handleCardSelect(item)}
+                    >
+                      <div className="client-management-icon-header">
+                        <span className="client-management-icon">{item.icon}</span>
+                        <span className="client-management-title">{item.title}</span>
+                      </div>
+                    </li>
+                  ))
+                ) : (
+                  <p>No actions found. Please search.</p>
+                )}
               </ul>
             </>
           ) : (
@@ -162,7 +185,7 @@ const ClientList = () => {
 const ActionDetails = ({ action, client, meaning }) => {
   return (
     <div className="client-management-action-details">
-      <h4>
+      <h4 className="dark">
         {action} for {client.name}
       </h4>
       <p>Details for {action} will be displayed here.</p>
