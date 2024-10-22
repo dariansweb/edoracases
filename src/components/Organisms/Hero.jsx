@@ -11,7 +11,12 @@ const Hero = () => {
       <div className="hero-content">
         {/* Main Title */}
         <h2 className="light hero-title">EDORA</h2>
+          {/* Open source message */}
+          <span className="strong">
+            Health and Human Services Case Management System! <br /> Free to use 💛
+          </span>
 
+        <div className="call-to-action">
         {/* Subtitle breaking down EDORA */}
         <h4 className="light">
           <span className="strong">
@@ -31,11 +36,7 @@ const Hero = () => {
           </span>
         </h4>
 
-        <div className="call-to-action">
-          {/* Open source message */}
-          <span className="strong">
-            EDORA is Open Source, free to use for everyone! 💛
-          </span>
+
           {/* Call to action to get involved */}
           <p>
             <strong className="strong">info@edoracases.com</strong>

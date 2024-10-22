@@ -36,11 +36,6 @@ const ClientManagementHeader = ({ client }) => {
         </div>
       </div>
 
-      <div className="client-management-header-middle">
-        {/* Sentimental Touch: "Their Life's Story" */}
-        <h2 className="light">Their Life’s Story</h2>
-      </div>
-
       <div className="client-management-header-right">
         {/* EDORA Link */}
         <a href="/" className="client-management-header-edora-link">

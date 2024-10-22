@@ -51,10 +51,6 @@ const ClientHeader = () => {
         </div>
       </div>
 
-      {/* Centered message for "Their Life's Story" */}
-      <div className="life-story-message">
-        <h2 className="dark">☀️ A brighter future ☀️</h2>
-      </div>
 
       {/* EDORA link positioned on the far right */}
       <div className="edora-link">

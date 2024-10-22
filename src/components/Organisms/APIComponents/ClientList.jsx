@@ -112,7 +112,10 @@ const ClientList = () => {
                 </li>
               ))
             ) : (
-              <p>No clients found. Please search.</p>
+              <p>
+                No clients found. Please search. <br /><hr />
+                Hint: Just start typing any letter ...
+              </p>
             )}
           </ul>
         </div>
@@ -132,7 +135,10 @@ const ClientList = () => {
                   onChange={handleMiddleSearchChange}
                   className="client-management-search-box"
                 />
-                <button className="client-management-sort-btn" onClick={handleMiddleSort}>
+                <button
+                  className="client-management-sort-btn"
+                  onClick={handleMiddleSort}
+                >
                   {sorted ? "Unsort Actions" : "Sort Actions A-Z"}
                 </button>
               </div>
@@ -149,8 +155,12 @@ const ClientList = () => {
                       onClick={() => handleCardSelect(item)}
                     >
                       <div className="client-management-icon-header">
-                        <span className="client-management-icon">{item.icon}</span>
-                        <span className="client-management-title">{item.title}</span>
+                        <span className="client-management-icon">
+                          {item.icon}
+                        </span>
+                        <span className="client-management-title">
+                          {item.title}
+                        </span>
                       </div>
                     </li>
                   ))
