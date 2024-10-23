@@ -35,7 +35,9 @@ const ClientManagementHeader = ({ client }) => {
           )}
         </div>
       </div>
-
+    <div className="client-management-header-middle">
+          <h3 className="light">EDORA DEMO</h3> 
+      </div> 
       <div className="client-management-header-right">
         {/* EDORA Link */}
         <a href="/" className="client-management-header-edora-link">

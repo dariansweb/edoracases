@@ -2,8 +2,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
-  background-color: var(--theme1-dark);
+  padding: 5px 10px;
+  background-color: var(--theme5-dark);
   color: var(--theme5-light);
   position: sticky;
   top: 0;
@@ -31,7 +31,7 @@
 }
 
 .client-management-header-dropdown-btn:hover {
-  background-color: var(--theme5-dark);
+  background-color: var(--theme4-dark);
 }
 
 .client-management-header-dropdown-menu {

@@ -2,13 +2,21 @@
 .provider-info-list {
   display: flex; /* Use flexbox layout */
   flex-wrap: wrap; /* Allow cards to wrap */
+  flex-direction: column;
   justify-content: center; /* Center cards horizontally */
-  align-items: flex-start; /* Align items at the top */
+  align-items: center; /* Align items at the top */
   gap: 20px; /* Space between cards */
   margin: 0 auto; /* Center the list itself in its parent */
   padding: 20px; /* Optional: add some padding */
   background-color: var(--theme6-light);
   z-index: 1;
+}
+.provider-info-list .no-providers-message {
+  text-align: center; /* Center the text */
+  color: var(--theme5-dark); /* Use a color that stands out */
+  font-weight: bold; /* Make it visually strong */
+  font-size: 1.5rem; /* Larger font for emphasis */
+  margin-top: 20px; /* Space above the message */
 }
 .provider-info-search-terms {
   text-align: center;
@@ -20,19 +28,6 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
-}
-.provider-info-toggle-search-terms {
-  background-color: var(--theme1-dark);
-  color: var(--theme1-light);
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 5px;
-  margin-bottom: 20px;
-}
-.provider-info-toggle-search-terms:hover {
-  background-color: var(--theme1-light);
-  color: var(--theme1-dark);
 }
 .provider-info-term-button {
   display: flex;
@@ -59,29 +54,7 @@
 .provider-info-term-button:active {
   transform: scale(0.95);
 }
-/* Search Bar Container Styles */
-.provider-info-search {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Vertically center the items */
-  margin-bottom: 20px; /* Space below the search bar */
-  padding: 10px; /* Padding around the search container */
-  background-color: #f8f9fa; /* Light background for contrast */
-  border-radius: 8px; /* Rounded corners for a softer look */
-  width: 60vw;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-}
 
-/* Search Input Styles */
-.provider-info-search-input {
-  flex: 1; /* Allow the input to take available space */
-  padding: 10px; /* Padding for the input field */
-  border: 1px solid #ccc; /* Light border */
-  border-radius: 5px; /* Rounded corners */
-  font-size: 16px; /* Font size for better readability */
-  margin-right: 10px; /* Space between input and button */
-  transition: border-color 0.3s; /* Smooth transition for border color */
-}
 
 /* Focus state for the input */
 .provider-info-search-input:focus {
@@ -96,18 +69,6 @@
   opacity: 1; /* Ensures placeholder is fully opaque */
 }
 
-/* Search Button Styles */
-.provider-info-search-button {
-  padding: 10px 20px; /* Increased padding for a larger clickable area */
-  background-color: var(--theme1-dark); /* Primary blue color */
-  color: var(--theme5-light); /* White text color */
-  border: none; /* No border */
-  border-radius: 5px; /* Rounded corners */
-  cursor: pointer; /* Pointer cursor on hover */
-  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s; /* Smooth transitions */
-  font-size: 16px; /* Font size for readability */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-}
 
 /* Hover state */
 .provider-info-search-button:hover {
@@ -128,14 +89,6 @@
   color: #666; /* Darker gray text */
   cursor: not-allowed; /* Change cursor to indicate disabled state */
 }
-.provider-info-search-description {
-  font-size: 14px;
-  color: var(--theme-text-light);
-  margin-top: 10px;
-  font-weight: 600;
-  font-style: italic;
-}
-
 /* General layout for the provider card container */
 .provider-info-card {
   border: 1px solid #ccc;
@@ -191,40 +144,6 @@
   color: #555;
 }
 
-/* Highlighting specific sections of the card */
-.provider-header {
-  background-color: #e0f7fa; /* Light blue for the header */
-  padding: 15px;
-  border-radius: 8px 8px 0 0;
-}
-
-/* Subheadings for sections */
-.provider-info-card h3 {
-  font-size: 20px;
-  color: #555;
-  margin: 15px 0 5px;
-  border-bottom: 2px solid #00796b; /* Underline for emphasis */
-}
-
-/* Strong tags for labels */
-.provider-info-card strong {
-  font-weight: 600;
-  color: #004d40; /* Darker shade for better readability */
-}
-
-/* Links for the provider websites */
-.provider-info-card a {
-  color: #0073e6;
-  text-decoration: none;
-  font-weight: bold; /* Make links stand out */
-  width: calc(50% - 10px); /* Two cards side by side with space */
-  max-width: 600px; /* Optional: set a max width for larger screens */
-}
-
-.provider-info-card a:hover {
-  text-decoration: underline;
-}
-
 /* Styles for the section header with button */
 .provider-info-header {
   display: flex; /* Use flexbox for layout */
@@ -267,23 +186,28 @@
 
 /* Container for the filters and label in a grid layout */
 .provider-info-filters-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   gap: 15px; /* Space between the buttons and label */
   margin-bottom: 20px;
   align-items: center; /* Vertically align content in the center */
 }
-
+/* Filters, label, and buttons grouped together in one container */
+.provider-info-filters-group {
+  display: flex;
+  flex-direction: column; /* Stack label and filters vertically */
+  align-items: center; /* Center all the content horizontally */
+  gap: 15px; /* Space between label, buttons, and radio buttons */
+  margin-bottom: 20px;
+}
 /* Label for current filter status, spanning across all columns */
 .provider-info-filter-label {
-  grid-column: 1 / -1; /* Span across all three columns */
   text-align: center; /* Center the text */
   font-size: 1.6rem; /* Increase font size for visibility */
   font-weight: bold; /* Make it stand out */
   color: var(--theme-text-dark); /* Match text color to a dark theme */
   background-color: var(--theme6-light); /* Background color for contrast */
   padding: 10px;
-  grid-row: 1;
   border-radius: 8px; /* Add rounded corners */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
@@ -323,7 +247,7 @@
   display: flex;
   gap: 10px;
   align-items: center;
-  grid-column: span 3; /* Span the whole width in the grid */
+  justify-content: center;
 }
 
 /* Styling for radio buttons and labels */
@@ -337,14 +261,18 @@
   margin-right: 5px;
   cursor: pointer;
 }
+/* General styling for filter buttons (Show Tags, Clear) */
+
+.provider-info-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
 
 @media (max-width: 768px) {
   .provider-info-list {
     flex-direction: column; /* Single column for mobile */
     margin-left: 0 !important;
-  }
-  .provider-info-search-input {
-    max-width: 90%; /* Allow it to be slightly wider on smaller screens */
   }
   .provider-info-card {
     width: 100%; /* Full width on mobile */
