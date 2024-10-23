@@ -110,11 +110,11 @@ const ProvidersList = () => {
       <div className="provider-info-filters-container">
         {/* Dynamic label showing the current applied filters */}
         <div className="provider-info-filter-label">
-          <strong>Filter Results:</strong> {filterLabel}
+          <span className="text-block strong">{filterLabel}</span>
         </div>
 
         {/* Residential Filter Radio Buttons */}
-        <div className="provider-info-radio-group">
+        <div className="provider-info-radio-group section">
           <label>
             <input
               type="radio"
@@ -190,7 +190,7 @@ const ProvidersList = () => {
             <ProviderCard key={provider.id} provider={provider} />
           ))
         ) : (
-          <p>No providers found. Please select a search term above.</p>
+          <h3 className="dark">No providers found!</h3>
         )}
       </div>
     </div></>
