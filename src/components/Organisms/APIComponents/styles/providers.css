@@ -221,7 +221,7 @@
 @media (max-width: 768px) {
   .provider-info-list {
     flex-direction: column; /* Single column for mobile */
-    margin-left: 0 auto;
+    margin-left: 0;
   }
   .provider-info-search-input {
     max-width: 90%; /* Allow it to be slightly wider on smaller screens */
