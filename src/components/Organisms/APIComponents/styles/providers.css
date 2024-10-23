@@ -82,7 +82,6 @@
   transition: border-color 0.3s; /* Smooth transition for border color */
 }
 
-
 /* Focus state for the input */
 .provider-info-search-input:focus {
   border-color: #0073e6; /* Change border color on focus */
@@ -96,11 +95,11 @@
   opacity: 1; /* Ensures placeholder is fully opaque */
 }
 
-/* Search Button Styles */  
+/* Search Button Styles */
 .provider-info-search-button {
   padding: 10px 20px; /* Increased padding for a larger clickable area */
   background-color: var(--theme1-dark); /* Primary blue color */
-  color: var(--theme5-light ); /* White text color */
+  color: var(--theme5-light); /* White text color */
   border: none; /* No border */
   border-radius: 5px; /* Rounded corners */
   cursor: pointer; /* Pointer cursor on hover */
@@ -111,7 +110,7 @@
 
 /* Hover state */
 .provider-info-search-button:hover {
-  background-color:var(--theme5-light); /* Darker blue on hover */
+  background-color: var(--theme5-light); /* Darker blue on hover */
   transform: translateY(-2px); /* Lift effect on hover */
   color: var(--theme2-dark);
 }
@@ -160,7 +159,7 @@
 }
 
 .provider-info-action-button {
-  background-color:var(--theme1-dark); /* Button color */
+  background-color: var(--theme1-dark); /* Button color */
   color: var(--theme1-light); /* Text color */
   border: none;
   border-radius: 5px;
@@ -172,7 +171,7 @@
 }
 
 .provider-info-action-button:hover {
-  background-color:var(--theme5-light); /* Darker blue on hover */
+  background-color: var(--theme5-light); /* Darker blue on hover */
   transform: translateY(-2px); /* Lift effect */
   color: var(--theme5-dark);
 }
@@ -265,6 +264,79 @@
   text-decoration: underline;
 }
 
+/* Container for the filters and label in a grid layout */
+.provider-info-filters-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px; /* Space between the buttons and label */
+  margin-bottom: 20px;
+  align-items: center; /* Vertically align content in the center */
+}
+
+/* Label for current filter status, spanning across all columns */
+.provider-info-filter-label {
+  grid-column: 1 / -1; /* Span across all three columns */
+  text-align: center; /* Center the text */
+  font-size: 1.6rem; /* Increase font size for visibility */
+  font-weight: bold; /* Make it stand out */
+  color: var(--theme-text-dark); /* Match text color to a dark theme */
+  background-color: var(--theme6-light); /* Background color for contrast */
+  padding: 10px;
+  grid-row: 1;
+  border-radius: 8px; /* Add rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* General styling for filter buttons */
+.provider-info-filter-button {
+  background-color: var(--theme1-dark); /* Primary button color */
+  color: var(--theme1-light); /* Light text color */
+  border: none; /* Remove borders */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px; /* Padding for button size */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+/* Hover and active states for filter buttons */
+.provider-info-filter-button:hover {
+  background-color: var(--theme1-light); /* Invert the theme color on hover */
+  color: var(--theme1-dark); /* Dark text on hover */
+  transform: translateY(-3px); /* Lift effect */
+}
+
+.provider-info-filter-button:active {
+  transform: scale(0.95); /* Slight shrink effect on click */
+}
+
+/* Disabled button state */
+.provider-info-filter-button:disabled {
+  background-color: #ccc; /* Gray background when disabled */
+  color: #666; /* Darker gray text */
+  cursor: not-allowed; /* Show disabled cursor */
+}
+/* Container for the radio buttons */
+.provider-info-radio-group {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  grid-column: span 3; /* Span the whole width in the grid */
+}
+
+/* Styling for radio buttons and labels */
+.provider-info-radio-group label {
+  font-size: 14px;
+  color: var(--theme1-dark);
+  cursor: pointer;
+}
+
+.provider-info-radio-group input[type="radio"] {
+  margin-right: 5px;
+  cursor: pointer;
+}
+
 @media (max-width: 768px) {
   .provider-info-list {
     flex-direction: column; /* Single column for mobile */
@@ -288,4 +360,3 @@
     width: calc(50% - 10px); /* Two cards side by side */
   }
 }
-

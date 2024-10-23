@@ -22,7 +22,7 @@ const ClientManagementHeader = ({ client }) => {
         {/* Dropdown Menu for Client Management */}
         <div className="client-management-header-dropdown">
           <button className="client-management-header-dropdown-btn" onClick={toggleDropdown}>
-            Client Management
+            Operations
           </button>
           {isDropdownOpen && (
             <ul className="client-management-header-dropdown-menu">

@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Providers from "../../../data/providers"; // Importing the providers array
 import "./styles/providers.css";
+import ClientManagementHeader from "./ClientManagementHeader"
 import ScrollToTopButton from "../../../utils/ScrollToTopButton"; // Import the ScrollToTopButton component
 
 // Predefined search terms for the tag buttons
@@ -11,33 +12,158 @@ const searchTerms = [
   "outpatient", "ptsd", "impatient", "mourning", "healing", "intervention", 
   "home visits", "screenings", "emotional", "abuse", "detox", "crime", 
   "confinement", "detainment", "parole", "offense", "misconduct"
-];
+].sort(); // Sort the search terms alphabetically
 
 // ProvidersList Component that displays the list of providers and search terms
 const ProvidersList = () => {
   const [filteredProviders, setFilteredProviders] = useState(Providers); // Show all providers initially
   const [showSearchTerms, setShowSearchTerms] = useState(false); // Hide search terms by default
+  const [selectedTerm, setSelectedTerm] = useState(""); // Track selected search term
+  const [residentialFilter, setResidentialFilter] = useState("all"); // Track residential filter (all, residential, appointment)
+  const [filterLabel, setFilterLabel] = useState(""); // Label to describe the applied filters
 
-  // Filter providers by service type when a search term is clicked
-  const handleSearchClick = (term) => {
-    const result = Providers.filter((provider) =>
-      provider.serviceTypes.some((serviceType) =>
-        serviceType.toLowerCase().includes(term.toLowerCase())
-      )
-    );
+  // Filter providers based on current filters (both search term and residential service)
+  const applyFilters = (term = selectedTerm, residential = residentialFilter) => {
+    let result = Providers;
+
+    // Apply search term filter if a term is selected
+    if (term) {
+      result = result.filter((provider) =>
+        provider.serviceTypes.some((serviceType) =>
+          serviceType.toLowerCase().includes(term.toLowerCase())
+        )
+      );
+    }
+
+    // Apply residential service filter based on the selected option
+    if (residential === "residential") {
+      result = result.filter((provider) => provider.hasResidentialServices === true);
+    } else if (residential === "appointment") {
+      result = result.filter((provider) => provider.hasResidentialServices === false);
+    }
+
     setFilteredProviders(result);
+  };
+
+  // Update filter label based on selected filters and results
+  const updateFilterLabel = () => {
+    if (!selectedTerm && residentialFilter === "all") {
+      setFilterLabel("Showing all providers");
+      return;
+    }
+
+    let label = selectedTerm ? selectedTerm.charAt(0).toUpperCase() + selectedTerm.slice(1) : "";
+
+    if (residentialFilter === "all") {
+      if (selectedTerm) {
+        const hasResidential = filteredProviders.some(provider => provider.hasResidentialServices);
+        const hasAppointmentOnly = filteredProviders.some(provider => !provider.hasResidentialServices);
+        
+        if (hasResidential && hasAppointmentOnly) {
+          label += " for Residential and Appointment Only Providers";
+        } else if (hasResidential) {
+          label += " for Residential Providers";
+        } else if (hasAppointmentOnly) {
+          label += " for Appointment Only Providers";
+        }
+      }
+    } else if (residentialFilter === "residential") {
+      label += selectedTerm ? " for Residential Providers" : "Showing Residential Providers";
+    } else if (residentialFilter === "appointment") {
+      label += selectedTerm ? " for Appointment Only Providers" : "Showing Appointment Only Providers";
+    }
+
+    setFilterLabel(label);
+  };
+
+  // Effect to update label whenever filters or filteredProviders change
+  useEffect(() => {
+    updateFilterLabel();
+  }, [selectedTerm, residentialFilter, filteredProviders]);
+
+  // Handle search term button click
+  const handleSearchClick = (term) => {
+    setSelectedTerm(term);
+    applyFilters(term, residentialFilter);
     setShowSearchTerms(false); // Hide search terms after a search is made
   };
 
+  // Handle radio button change for residential filter
+  const handleResidentialFilterChange = (event) => {
+    const newResidentialFilter = event.target.value;
+    setResidentialFilter(newResidentialFilter);
+    applyFilters(selectedTerm, newResidentialFilter);
+  };
+
+  // Handle "Clear All Filters" button click
+  const handleClearFilters = () => {
+    setSelectedTerm(""); // Clear selected term
+    setResidentialFilter("all"); // Clear residential filter
+    setFilteredProviders(Providers); // Reset to full provider list
+  };
+
   return (
+    <>
+    <ClientManagementHeader />
     <div className="provider-info-list">
-      {/* Show/Hide Search Terms Button */}
-      <button
-        onClick={() => setShowSearchTerms(!showSearchTerms)}
-        className="provider-info-toggle-search-terms"
-      >
-        {showSearchTerms ? "Hide Search Terms" : "Show Search Terms"}
-      </button>
+      {/* Filters and label container */}
+      <div className="provider-info-filters-container">
+        {/* Dynamic label showing the current applied filters */}
+        <div className="provider-info-filter-label">
+          <strong>Filter Results:</strong> {filterLabel}
+        </div>
+
+        {/* Residential Filter Radio Buttons */}
+        <div className="provider-info-radio-group">
+          <label>
+            <input
+              type="radio"
+              name="residentialFilter"
+              value="all"
+              checked={residentialFilter === "all"}
+              onChange={handleResidentialFilterChange}
+            />
+            All Providers
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="residentialFilter"
+              value="residential"
+              checked={residentialFilter === "residential"}
+              onChange={handleResidentialFilterChange}
+            />
+            Residential Providers Only
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="residentialFilter"
+              value="appointment"
+              checked={residentialFilter === "appointment"}
+              onChange={handleResidentialFilterChange}
+            />
+            Appointment Only Providers
+          </label>
+        </div>
+
+
+        {/* Show/Hide Search Terms Button */}
+        <button
+          onClick={() => setShowSearchTerms(!showSearchTerms)}
+          className="provider-info-filter-button"
+        >
+          {showSearchTerms ? "Hide Search Terms" : "Show Search Terms"}
+        </button>
+
+        {/* Clear All Filters Button */}
+        <button
+          onClick={handleClearFilters}
+          className="provider-info-filter-button"
+        >
+          Clear All Filters
+        </button>
+      </div>
 
       {/* Search terms as buttons, visible when toggled */}
       {showSearchTerms && (
@@ -67,9 +193,10 @@ const ProvidersList = () => {
           <p>No providers found. Please select a search term above.</p>
         )}
       </div>
-    </div>
+    </div></>
   );
 };
+
 
 // ProviderCard Component (for displaying each provider's details)
 const ProviderCard = ({ provider }) => {
@@ -78,9 +205,12 @@ const ProviderCard = ({ provider }) => {
   const [showAppointmentServices, setShowAppointmentServices] = useState(false);
   const [showResidentialServices, setShowResidentialServices] = useState(false);
   const [showFundingSources, setShowFundingSources] = useState(false);
-  
+
   const maxDescriptionLength = 200;
-  const truncatedDescription = provider.description.slice(0, maxDescriptionLength);
+  const truncatedDescription = provider.description.slice(
+    0,
+    maxDescriptionLength
+  );
 
   return (
     <>
@@ -105,9 +235,16 @@ const ProviderCard = ({ provider }) => {
           </div>
         )}
 
-        <p><strong>Tax Number:</strong> {provider.taxNumber}</p>
-        <p><strong>Max Capacity:</strong> {provider.maxCapacity}</p>
-        <p><strong>Coverage:</strong> {provider.coverage.district}, {provider.coverage.region}</p>
+        <p>
+          <strong>Tax Number:</strong> {provider.taxNumber}
+        </p>
+        <p>
+          <strong>Max Capacity:</strong> {provider.maxCapacity}
+        </p>
+        <p>
+          <strong>Coverage:</strong> {provider.coverage.district},{" "}
+          {provider.coverage.region}
+        </p>
 
         {/* Contact Information */}
         <h3 className="dark provider-info-header">
@@ -121,22 +258,28 @@ const ProviderCard = ({ provider }) => {
         </h3>
         {showContactInfo && (
           <div className="contact-info">
-            <p><strong>Website:</strong>{" "}
+            <p>
+              <strong>Website:</strong>{" "}
               <a href={`https://${provider.contactInfo.webAddress}`}>
                 {provider.contactInfo.webAddress}
               </a>
             </p>
-            <p><strong>Phone:</strong> {provider.contactInfo.phoneNumber}</p>
-            <p><strong>Executive Director:</strong> 
-              {provider.contactInfo.contacts.executiveDirector.name} - 
+            <p>
+              <strong>Phone:</strong> {provider.contactInfo.phoneNumber}
+            </p>
+            <p>
+              <strong>Executive Director:</strong>
+              {provider.contactInfo.contacts.executiveDirector.name} -
               {provider.contactInfo.contacts.executiveDirector.email}
             </p>
-            <p><strong>Finance Director:</strong> 
-              {provider.contactInfo.contacts.financeDirector.name} - 
+            <p>
+              <strong>Finance Director:</strong>
+              {provider.contactInfo.contacts.financeDirector.name} -
               {provider.contactInfo.contacts.financeDirector.email}
             </p>
-            <p><strong>Program Manager:</strong> 
-              {provider.contactInfo.contacts.programManager.name} - 
+            <p>
+              <strong>Program Manager:</strong>
+              {provider.contactInfo.contacts.programManager.name} -
               {provider.contactInfo.contacts.programManager.email}
             </p>
           </div>
@@ -167,7 +310,9 @@ const ProviderCard = ({ provider }) => {
               Residential Services
               <button
                 className="provider-info-toggle-button"
-                onClick={() => setShowResidentialServices(!showResidentialServices)}
+                onClick={() =>
+                  setShowResidentialServices(!showResidentialServices)
+                }
               >
                 {showResidentialServices ? "Hide" : "Show"}
               </button>

@@ -1406,7 +1406,8 @@ const providers = [
   {
     id: 18,
     name: "Krypton Recovery Center",
-    description: "The Krypton Recovery Center, located near the legendary Fortress of Solitude, provides specialized mental health and trauma recovery services for Kryptonians. Led by Kal-El, Jor-El, and Lara Lor-Van, the center offers both residential and outpatient care, focusing on power control therapy, crisis intervention, and family counseling. Supported by the Kryptonian Wellness Fund and the House of El, this center serves as a critical resource for Kryptonians in need of rehabilitative housing and long-term support across the Kandor Region.",
+    description:
+      "The Krypton Recovery Center, located near the legendary Fortress of Solitude, provides specialized mental health and trauma recovery services for Kryptonians. Led by Kal-El, Jor-El, and Lara Lor-Van, the center offers both residential and outpatient care, focusing on power control therapy, crisis intervention, and family counseling. Supported by the Kryptonian Wellness Fund and the House of El, this center serves as a critical resource for Kryptonians in need of rehabilitative housing and long-term support across the Kandor Region.",
     taxNumber: "TAX-112288334",
     shipTo: {
       address: "Fortress of Solitude",
@@ -1486,7 +1487,8 @@ const providers = [
   {
     id: 19,
     name: "Olympus Divine Healing",
-    description: "Olympus Divine Healing, located atop Mount Olympus, offers a blend of divine and mortal care for those seeking mental health and substance abuse therapy. Overseen by Zeus, Hera, and Athena, the center provides both residential and outpatient services, including godly power control therapy and crisis support. With its divine intervention services and rehabilitative housing, Olympus Divine Healing serves as a sanctuary for both mortals and gods, funded by the Zeus Lightning Recovery Fund and Olympian Crisis Intervention Fund.",
+    description:
+      "Olympus Divine Healing, located atop Mount Olympus, offers a blend of divine and mortal care for those seeking mental health and substance abuse therapy. Overseen by Zeus, Hera, and Athena, the center provides both residential and outpatient services, including godly power control therapy and crisis support. With its divine intervention services and rehabilitative housing, Olympus Divine Healing serves as a sanctuary for both mortals and gods, funded by the Zeus Lightning Recovery Fund and Olympian Crisis Intervention Fund.",
     taxNumber: "TAX-334455667",
     shipTo: {
       address: "Mount Olympus, Summit of the Gods",
@@ -1566,7 +1568,8 @@ const providers = [
   {
     id: 20,
     name: "Camelot Wellness Retreat",
-    description: "Camelot Wellness Retreat offers a sanctuary for knights and warriors in need of mental health support and recovery. Situated in King Arthur's Castle, the center provides chivalric counseling, family therapy, and knightly mental health screenings. Led by King Arthur, Sir Lancelot, and Merlin, the retreat combines legendary power therapy with crisis intervention for warriors, offering both outpatient and residential services. Supported by the Arthurian Kingdom Wellness Fund and the Round Table Crisis Support, this retreat is a beacon of hope in the medieval realm.",
+    description:
+      "Camelot Wellness Retreat offers a sanctuary for knights and warriors in need of mental health support and recovery. Situated in King Arthur's Castle, the center provides chivalric counseling, family therapy, and knightly mental health screenings. Led by King Arthur, Sir Lancelot, and Merlin, the retreat combines legendary power therapy with crisis intervention for warriors, offering both outpatient and residential services. Supported by the Arthurian Kingdom Wellness Fund and the Round Table Crisis Support, this retreat is a beacon of hope in the medieval realm.",
     taxNumber: "TAX-998822334",
     shipTo: {
       address: "King Arthur's Castle, Camelot",
@@ -1649,7 +1652,8 @@ const providers = [
   {
     id: 21,
     name: "Agrabah Palace Health Services",
-    description: "Agrabah Palace Health Services, nestled within the grandeur of the Sultan's Palace, offers essential mental health and trauma recovery care for the people of Agrabah. Led by the Sultan, Jafar, and Princess Jasmine, the center provides both residential and outpatient services, specializing in crisis intervention, family therapy, and rehabilitative housing for desert dwellers. Supported by the Agrabah Royal Health Fund and Desert Recovery Initiative, this center is a key provider of health services across the Arabian Desert region.",
+    description:
+      "Agrabah Palace Health Services, nestled within the grandeur of the Sultan's Palace, offers essential mental health and trauma recovery care for the people of Agrabah. Led by the Sultan, Jafar, and Princess Jasmine, the center provides both residential and outpatient services, specializing in crisis intervention, family therapy, and rehabilitative housing for desert dwellers. Supported by the Agrabah Royal Health Fund and Desert Recovery Initiative, this center is a key provider of health services across the Arabian Desert region.",
     taxNumber: "TAX-778899001",
     shipTo: {
       address: "Sultan's Palace, Agrabah",
@@ -1729,7 +1733,8 @@ const providers = [
   {
     id: 22,
     name: "Asgard Eternal Wellness",
-    description: "Asgard Eternal Wellness, located in the sacred halls of Valhalla, offers divine mental health care and recovery services to gods and warriors across the Nine Realms. Under the leadership of Odin, Frigga, and Thor, the center provides both residential and outpatient services, focusing on power restoration therapy, trauma counseling, and rehabilitative housing. With support from the Asgardian Power Recovery Fund and Valhalla Crisis Recovery Grant, Asgard Eternal Wellness serves as a refuge for gods in need of healing and balance.",
+    description:
+      "Asgard Eternal Wellness, located in the sacred halls of Valhalla, offers divine mental health care and recovery services to gods and warriors across the Nine Realms. Under the leadership of Odin, Frigga, and Thor, the center provides both residential and outpatient services, focusing on power restoration therapy, trauma counseling, and rehabilitative housing. With support from the Asgardian Power Recovery Fund and Valhalla Crisis Recovery Grant, Asgard Eternal Wellness serves as a refuge for gods in need of healing and balance.",
     taxNumber: "TAX-223344556",
     shipTo: {
       address: "Valhalla Halls, Asgard",
@@ -1815,7 +1820,8 @@ const providers = [
   {
     id: 23,
     name: "Narnia Restoration Center",
-    description: "The Narnia Restoration Center, located in the majestic Cair Paravel Castle, provides critical mental health and trauma recovery services for the diverse creatures and beings of Narnia. Under the leadership of Aslan, Edmund Pevensie, and Lucy Pevensie, the center offers both residential and outpatient care, including magical healing therapies, family counseling, and crisis intervention. Supported by Aslan's Wellness Fund and the Narnian Crisis Recovery Initiative, the center serves as a refuge for mythical beings in need of care and restoration in the Western Woods.",
+    description:
+      "The Narnia Restoration Center, located in the majestic Cair Paravel Castle, provides critical mental health and trauma recovery services for the diverse creatures and beings of Narnia. Under the leadership of Aslan, Edmund Pevensie, and Lucy Pevensie, the center offers both residential and outpatient care, including magical healing therapies, family counseling, and crisis intervention. Supported by Aslan's Wellness Fund and the Narnian Crisis Recovery Initiative, the center serves as a refuge for mythical beings in need of care and restoration in the Western Woods.",
     taxNumber: "TAX-445566778",
     shipTo: {
       address: "Cair Paravel Castle, Narnia",
@@ -1898,7 +1904,8 @@ const providers = [
   {
     id: 24,
     name: "Dimension X Recovery Facility",
-    description: "The Dimension X Recovery Facility, located in the infamous Technodrome, provides advanced mental health and trauma recovery services for interdimensional beings. Overseen by Kraang Prime, Shredder, and Bebop, the facility offers both residential and outpatient care, including portal stabilization therapy and crisis recovery for those affected by dimensional shifts. Supported by Kraang's Mental Wellness Fund and the Dimension X Crisis Recovery Fund, this facility is a lifeline for beings from across the Multi-Dimensional Realms.",
+    description:
+      "The Dimension X Recovery Facility, located in the infamous Technodrome, provides advanced mental health and trauma recovery services for interdimensional beings. Overseen by Kraang Prime, Shredder, and Bebop, the facility offers both residential and outpatient care, including portal stabilization therapy and crisis recovery for those affected by dimensional shifts. Supported by Kraang's Mental Wellness Fund and the Dimension X Crisis Recovery Fund, this facility is a lifeline for beings from across the Multi-Dimensional Realms.",
     taxNumber: "TAX-998877554",
     shipTo: {
       address: "Technodrome, Dimension X",
@@ -1978,7 +1985,8 @@ const providers = [
   {
     id: 25,
     name: "Atlantica Counseling and Wellness",
-    description: "Atlantica Counseling and Wellness, based in King Triton's Palace, provides specialized outpatient services for the underwater inhabitants of the Oceanic Realm. Led by King Triton, Sebastian, and Ariel, the center offers family therapy, mental health counseling, and substance abuse support, including home visit therapy sessions for underwater dwellers. With funding from Triton's Wellness Fund and the Oceanic Substance Recovery Grant, Atlantica Counseling and Wellness is a key resource for mental health and family support in the Underwater Kingdom.",
+    description:
+      "Atlantica Counseling and Wellness, based in King Triton's Palace, provides specialized outpatient services for the underwater inhabitants of the Oceanic Realm. Led by King Triton, Sebastian, and Ariel, the center offers family therapy, mental health counseling, and substance abuse support, including home visit therapy sessions for underwater dwellers. With funding from Triton's Wellness Fund and the Oceanic Substance Recovery Grant, Atlantica Counseling and Wellness is a key resource for mental health and family support in the Underwater Kingdom.",
     taxNumber: "TAX-334477889",
     shipTo: {
       address: "King Triton's Palace, Atlantica",
@@ -2051,7 +2059,8 @@ const providers = [
   {
     id: 26,
     name: "Emerald City Family Support",
-    description: "Emerald City Family Support, located in the heart of the Land of Oz, provides vital mental health and family therapy services to the Munchkinland region. Under the leadership of the Wizard of Oz, Glinda the Good Witch, and Scarecrow, the center offers outpatient counseling, substance abuse support, and home visit therapy. Supported by the Wizard's Mental Health Grant and Glinda's Family Aid Grant, Emerald City Family Support is a crucial provider of wellness services for the residents of Oz.",
+    description:
+      "Emerald City Family Support, located in the heart of the Land of Oz, provides vital mental health and family therapy services to the Munchkinland region. Under the leadership of the Wizard of Oz, Glinda the Good Witch, and Scarecrow, the center offers outpatient counseling, substance abuse support, and home visit therapy. Supported by the Wizard's Mental Health Grant and Glinda's Family Aid Grant, Emerald City Family Support is a crucial provider of wellness services for the residents of Oz.",
     taxNumber: "TAX-778822113",
     shipTo: {
       address: "Wizard's Tower, Emerald City",
@@ -2124,7 +2133,8 @@ const providers = [
   {
     id: 27,
     name: "Neverland Counseling & Therapy",
-    description: "Neverland Counseling & Therapy provides essential mental health and family counseling services to the children and residents of Neverland. Led by Peter Pan, Captain Hook, and Tinker Bell, the center offers outpatient care, including home visits for troubled youth and substance abuse therapy. Supported by the Neverland Family Support Fund and Lost Boys Therapy Aid, this center focuses on helping lost children and families find healing in the Enchanted Forest.",
+    description:
+      "Neverland Counseling & Therapy provides essential mental health and family counseling services to the children and residents of Neverland. Led by Peter Pan, Captain Hook, and Tinker Bell, the center offers outpatient care, including home visits for troubled youth and substance abuse therapy. Supported by the Neverland Family Support Fund and Lost Boys Therapy Aid, this center focuses on helping lost children and families find healing in the Enchanted Forest.",
     taxNumber: "TAX-665577334",
     shipTo: {
       address: "Lost Boys' Hideout, Neverland Forest",
@@ -2197,7 +2207,8 @@ const providers = [
   {
     id: 28,
     name: "Wonderland Support Services",
-    description: "Wonderland Support Services offers mental health and emotional support to the whimsical inhabitants of Wonderland. Led by the Queen of Hearts, Mad Hatter, and Cheshire Cat, the center provides outpatient therapy, family counseling, and home visits for emotional support. With funding from the Queen's Heart Fund and Mad Hatter's Emotional Wellness Grant, Wonderland Support Services is a key resource for mental health care in the Royal Gardens of Wonderland.",
+    description:
+      "Wonderland Support Services offers mental health and emotional support to the whimsical inhabitants of Wonderland. Led by the Queen of Hearts, Mad Hatter, and Cheshire Cat, the center provides outpatient therapy, family counseling, and home visits for emotional support. With funding from the Queen's Heart Fund and Mad Hatter's Emotional Wellness Grant, Wonderland Support Services is a key resource for mental health care in the Royal Gardens of Wonderland.",
     taxNumber: "TAX-556677221",
     shipTo: {
       address: "Queen's Castle, Wonderland",
@@ -2270,7 +2281,8 @@ const providers = [
   {
     id: 31,
     name: "Starhaven Trauma & Recovery Center",
-    description: "Starhaven Trauma & Recovery Center offers vital services for abuse victims and those in need of crisis support across the Outer Galaxy. Led by Nova Prime, Gamora, and Drax, the center provides both residential and outpatient care, focusing on trauma recovery, substance abuse detox, and long-term rehabilitation. Supported by the Starhaven Trauma Recovery Fund and the Outer Galaxy Family Support initiative, this facility is a lifeline for individuals seeking recovery and mental health support in the Starhaven Region.",
+    description:
+      "Starhaven Trauma & Recovery Center offers vital services for abuse victims and those in need of crisis support across the Outer Galaxy. Led by Nova Prime, Gamora, and Drax, the center provides both residential and outpatient care, focusing on trauma recovery, substance abuse detox, and long-term rehabilitation. Supported by the Starhaven Trauma Recovery Fund and the Outer Galaxy Family Support initiative, this facility is a lifeline for individuals seeking recovery and mental health support in the Starhaven Region.",
     taxNumber: "TAX-556677889",
     shipTo: {
       address: "Nebula Plaza, Starhaven",
@@ -2350,7 +2362,8 @@ const providers = [
   {
     id: 32,
     name: "Helios Substance Abuse & Trauma Center",
-    description: "Helios Substance Abuse & Trauma Center, situated in the bright city of Dawn, provides crucial services for trauma victims and those dealing with substance abuse across the Inner Solar System. Led by Helios Prime, Apollo, and Eos, the center offers both outpatient and residential care, including substance detox, mental health counseling, and crisis support for severe cases. Backed by the Helios Trauma Recovery Fund and the Inner Solar Substance Recovery Grant, this facility is a beacon of hope for individuals in need of long-term recovery and mental health support.",
+    description:
+      "Helios Substance Abuse & Trauma Center, situated in the bright city of Dawn, provides crucial services for trauma victims and those dealing with substance abuse across the Inner Solar System. Led by Helios Prime, Apollo, and Eos, the center offers both outpatient and residential care, including substance detox, mental health counseling, and crisis support for severe cases. Backed by the Helios Trauma Recovery Fund and the Inner Solar Substance Recovery Grant, this facility is a beacon of hope for individuals in need of long-term recovery and mental health support.",
     taxNumber: "TAX-112233445",
     shipTo: {
       address: "Helios Heights, Dawn City",
@@ -2430,7 +2443,8 @@ const providers = [
   {
     id: 33,
     name: "Aurora Trauma & Recovery Center",
-    description: "Aurora Trauma & Recovery Center, located in the serene Skylands region, offers comprehensive trauma and recovery services to individuals in need of crisis intervention and long-term care. Led by Aurora Sky, Nimbus Cloud, and Zephyr Wind, the center provides both outpatient and residential services, including substance detox, abuse rehabilitation, and family counseling. Supported by the Skylands Trauma Recovery Fund and the Skyhaven Family Support Fund, this facility plays a pivotal role in helping individuals overcome trauma and rebuild their lives in the Skyhaven region.",
+    description:
+      "Aurora Trauma & Recovery Center, located in the serene Skylands region, offers comprehensive trauma and recovery services to individuals in need of crisis intervention and long-term care. Led by Aurora Sky, Nimbus Cloud, and Zephyr Wind, the center provides both outpatient and residential services, including substance detox, abuse rehabilitation, and family counseling. Supported by the Skylands Trauma Recovery Fund and the Skyhaven Family Support Fund, this facility plays a pivotal role in helping individuals overcome trauma and rebuild their lives in the Skyhaven region.",
     taxNumber: "TAX-667788112",
     shipTo: {
       address: "Aurora Peak, Skylands",
@@ -2510,7 +2524,8 @@ const providers = [
   {
     id: 34,
     name: "Everglade Trauma & Substance Recovery",
-    description: "Everglade Trauma & Substance Recovery, nestled in the serene Enchanted Forest, offers comprehensive support to trauma survivors and those battling substance abuse. With a peaceful location in Everglade Valley, the center, led by Evangeline Moss, Willow Brook, and Briar Thorn, provides both outpatient and residential services, including detox, abuse recovery, and crisis support. Funded by the Everglade Trauma Recovery Grant and the Substance Recovery Initiative, this facility is dedicated to providing long-term rehabilitation and mental health care for individuals in need of healing in the tranquil Everglade region.",
+    description:
+      "Everglade Trauma & Substance Recovery, nestled in the serene Enchanted Forest, offers comprehensive support to trauma survivors and those battling substance abuse. With a peaceful location in Everglade Valley, the center, led by Evangeline Moss, Willow Brook, and Briar Thorn, provides both outpatient and residential services, including detox, abuse recovery, and crisis support. Funded by the Everglade Trauma Recovery Grant and the Substance Recovery Initiative, this facility is dedicated to providing long-term rehabilitation and mental health care for individuals in need of healing in the tranquil Everglade region.",
     taxNumber: "TAX-998877221",
     shipTo: {
       address: "Healing Springs, Everglade Valley",
@@ -2590,7 +2605,8 @@ const providers = [
   {
     id: 35,
     name: "Kessel Detention & Reformation Facility",
-    description: "Located on the remote planet of Kessel, this detention facility is renowned for its efforts in rehabilitating galactic offenders, especially those involved in spice-related crimes. Managed by Warden Jarek, finance director Galen Marek, and program manager Lando Calrissian, the facility offers both residential and appointment-only services, ranging from workforce readiness programs to substance detox for spice miners. Supported by the Galactic Justice Fund and the Outer Rim Crime Prevention Fund, Kessel Detention & Reformation Facility focuses on reformation, mental health support, and crisis intervention for intergalactic criminals.",
+    description:
+      "Located on the remote planet of Kessel, this detention facility is renowned for its efforts in rehabilitating galactic offenders, especially those involved in spice-related crimes. Managed by Warden Jarek, finance director Galen Marek, and program manager Lando Calrissian, the facility offers both residential and appointment-only services, ranging from workforce readiness programs to substance detox for spice miners. Supported by the Galactic Justice Fund and the Outer Rim Crime Prevention Fund, Kessel Detention & Reformation Facility focuses on reformation, mental health support, and crisis intervention for intergalactic criminals.",
     taxNumber: "TAX-112233667",
     shipTo: {
       address: "Spice Mines, Kessel Planet",
@@ -2669,7 +2685,8 @@ const providers = [
   {
     id: 36,
     name: "Phantom Zone Containment Facility",
-    description: "The Phantom Zone Containment Facility is a high-security prison located in the Krypton Dimension, specifically designed for interdimensional criminals and those who have committed dimensional crimes. Overseen by General Zod, with Ursa managing finances and Non directing programs, the facility specializes in containment, energy drain control, and mental health therapy for its inmates. Supported by the Phantom Dimension Containment Fund and the Krypton Offender Reformation Fund, it offers both residential and appointment-based services, focusing on long-term confinement, energy control, and reformation programs for some of the galaxy's most notorious offenders.",
+    description:
+      "The Phantom Zone Containment Facility is a high-security prison located in the Krypton Dimension, specifically designed for interdimensional criminals and those who have committed dimensional crimes. Overseen by General Zod, with Ursa managing finances and Non directing programs, the facility specializes in containment, energy drain control, and mental health therapy for its inmates. Supported by the Phantom Dimension Containment Fund and the Krypton Offender Reformation Fund, it offers both residential and appointment-based services, focusing on long-term confinement, energy control, and reformation programs for some of the galaxy's most notorious offenders.",
     taxNumber: "TAX-778899554",
     shipTo: {
       address: "Containment Zone, Phantom Realm",
@@ -2751,7 +2768,8 @@ const providers = [
   {
     id: 37,
     name: "Shadow Realm Detention Complex",
-    description: "The Shadow Realm Detention Complex is a formidable facility located in the Netherworld, designed for the containment and rehabilitation of individuals convicted of dark energy crimes. Overseen by Lord Vortex, with Mistress Nyx handling finances and Raven Darkmoon managing rehabilitation programs, the complex focuses on energy control therapy and mental health treatment for shadow criminals. Backed by the Netherworld Energy Control Fund and the Shadow Realm Criminal Reform Fund, the facility offers both residential and outpatient services, including dark energy suppression, parole hearings, and crisis intervention for offenders from across dimensional realms.",
+    description:
+      "The Shadow Realm Detention Complex is a formidable facility located in the Netherworld, designed for the containment and rehabilitation of individuals convicted of dark energy crimes. Overseen by Lord Vortex, with Mistress Nyx handling finances and Raven Darkmoon managing rehabilitation programs, the complex focuses on energy control therapy and mental health treatment for shadow criminals. Backed by the Netherworld Energy Control Fund and the Shadow Realm Criminal Reform Fund, the facility offers both residential and outpatient services, including dark energy suppression, parole hearings, and crisis intervention for offenders from across dimensional realms.",
     taxNumber: "TAX-998877443",
     shipTo: {
       address: "Dark Citadel, Shadow Mountain",
@@ -2830,7 +2848,8 @@ const providers = [
   {
     id: 38,
     name: "Pandora Exile Detention Facility",
-    description: "Located in the breathtaking yet remote Floating Mountains of Pandora, the Pandora Exile Detention Facility is dedicated to reforming Na'vi exiles and individuals convicted of sky-related crimes. With Commander Tsahik at the helm, Colonel Quaritch overseeing finances, and Neytiri managing reformation programs, the facility provides both residential and outpatient services. It specializes in offender reformation, mental health support, and trauma counseling for high-risk detainees. Backed by the Pandora Sky Reformation Fund and the Alpha Centauri Mental Health Initiative, the center offers a path to rehabilitation and parole for its detainees, guiding them toward reintegration.",
+    description:
+      "Located in the breathtaking yet remote Floating Mountains of Pandora, the Pandora Exile Detention Facility is dedicated to reforming Na'vi exiles and individuals convicted of sky-related crimes. With Commander Tsahik at the helm, Colonel Quaritch overseeing finances, and Neytiri managing reformation programs, the facility provides both residential and outpatient services. It specializes in offender reformation, mental health support, and trauma counseling for high-risk detainees. Backed by the Pandora Sky Reformation Fund and the Alpha Centauri Mental Health Initiative, the center offers a path to rehabilitation and parole for its detainees, guiding them toward reintegration.",
     taxNumber: "TAX-334455667",
     shipTo: {
       address: "Exile's Ridge, Floating Mountains",
@@ -2909,7 +2928,8 @@ const providers = [
   {
     id: 39,
     name: "Valhalla Detention and Warrior Reformation",
-    description: "Valhalla Detention and Warrior Reformation stands as a sanctuary of honor and justice for warriors who have faltered in their celestial duties. Located within the revered Halls of Valhalla, it offers specialized services aimed at rehabilitating those convicted of celestial crimes or suffering from battle fatigue. With Heimdall ensuring security and justice, Thor overseeing financial well-being, and Valkyrie leading reformation programs, this center offers long-term detention and crisis intervention for warriors. Backed by Odin's Celestial Wellness Grant and the Nine Realms Parole Initiative, it is dedicated to restoring honor and ensuring the mental well-being of inter-realm offenders.",
+    description:
+      "Valhalla Detention and Warrior Reformation stands as a sanctuary of honor and justice for warriors who have faltered in their celestial duties. Located within the revered Halls of Valhalla, it offers specialized services aimed at rehabilitating those convicted of celestial crimes or suffering from battle fatigue. With Heimdall ensuring security and justice, Thor overseeing financial well-being, and Valkyrie leading reformation programs, this center offers long-term detention and crisis intervention for warriors. Backed by Odin's Celestial Wellness Grant and the Nine Realms Parole Initiative, it is dedicated to restoring honor and ensuring the mental well-being of inter-realm offenders.",
     taxNumber: "TAX-556677889",
     shipTo: {
       address: "Halls of Valhalla, Asgard",
@@ -2988,7 +3008,8 @@ const providers = [
   {
     id: 40,
     name: "Tartarus Eternal Detainment Facility",
-    description: "Tartarus Eternal Detainment Facility is the ultimate holding center for souls condemned to the underworld for major offenses. Located in the depths of the Underworld Abyss, this facility specializes in eternal detainment and rehabilitation of condemned souls, overseen by Hades himself. With Persephone managing financial resources and Cerberus ensuring order, the facility offers round-the-clock crisis support, mental health counseling, and trauma recovery for its inmates. Supported by the Underworld Detainment Fund and the River Styx Mental Wellness Fund, Tartarus provides both temporary and eternal reformation for the souls it houses.",
+    description:
+      "Tartarus Eternal Detainment Facility is the ultimate holding center for souls condemned to the underworld for major offenses. Located in the depths of the Underworld Abyss, this facility specializes in eternal detainment and rehabilitation of condemned souls, overseen by Hades himself. With Persephone managing financial resources and Cerberus ensuring order, the facility offers round-the-clock crisis support, mental health counseling, and trauma recovery for its inmates. Supported by the Underworld Detainment Fund and the River Styx Mental Wellness Fund, Tartarus provides both temporary and eternal reformation for the souls it houses.",
     taxNumber: "TAX-112244556",
     shipTo: {
       address: "Underworld Abyss, Gates of Tartarus",
@@ -3067,7 +3088,8 @@ const providers = [
   {
     id: 41,
     name: "Neverland Juvenile Reformation Center",
-    description: "The Neverland Juvenile Reformation Center is dedicated to helping enchanted youth reform their mischievous ways and control their magical abilities. Located deep in the Neverland Forest, this center offers a comprehensive rehabilitation program, from youth detainment for minor magical crimes to long-term behavioral therapy. With Peter Pan at the helm, alongside financial oversight by Captain Hook and program management by Wendy Darling, the center provides 24/7 inpatient care, magical control counseling, and crisis intervention. Families are also supported through the Lost Boys Family Support Grant, ensuring that every youth has the chance for a brighter, more responsible future.",
+    description:
+      "The Neverland Juvenile Reformation Center is dedicated to helping enchanted youth reform their mischievous ways and control their magical abilities. Located deep in the Neverland Forest, this center offers a comprehensive rehabilitation program, from youth detainment for minor magical crimes to long-term behavioral therapy. With Peter Pan at the helm, alongside financial oversight by Captain Hook and program management by Wendy Darling, the center provides 24/7 inpatient care, magical control counseling, and crisis intervention. Families are also supported through the Lost Boys Family Support Grant, ensuring that every youth has the chance for a brighter, more responsible future.",
     taxNumber: "TAX-445566778",
     shipTo: {
       address: "Pixie Hollow, Neverland Forest",
@@ -3146,7 +3168,8 @@ const providers = [
   {
     id: 42,
     name: "Camelot Youth Reformation Academy",
-    description: "The Camelot Youth Reformation Academy serves as a beacon of discipline and honor for troubled youth in the Medieval Realm. Nestled within the grand walls of Camelot, this academy provides structured reformation for young knights and magical offenders. King Arthur leads the charge, with Merlin offering financial guidance and Guinevere overseeing daily operations. The academy offers inpatient honor rehabilitation, magical offense reformation, and 24/7 crisis support for young knights, ensuring that even the most troubled youth have a path back to valor and responsibility.",
+    description:
+      "The Camelot Youth Reformation Academy serves as a beacon of discipline and honor for troubled youth in the Medieval Realm. Nestled within the grand walls of Camelot, this academy provides structured reformation for young knights and magical offenders. King Arthur leads the charge, with Merlin offering financial guidance and Guinevere overseeing daily operations. The academy offers inpatient honor rehabilitation, magical offense reformation, and 24/7 crisis support for young knights, ensuring that even the most troubled youth have a path back to valor and responsibility.",
     taxNumber: "TAX-556677889",
     shipTo: {
       address: "Castle Courtyard, Camelot",
@@ -3228,7 +3251,8 @@ const providers = [
   {
     id: 43,
     name: "Atlantis Youth Rehabilitation Academy",
-    description: "The Atlantis Youth Rehabilitation Academy is a state-of-the-art facility located in the ocean's depths, designed to provide comprehensive care and reformation for young merfolk and magical offenders in the Underwater Realm. With King Triton overseeing operations, the academy focuses on behavioral therapy, emotional control, and magical discipline. Both inpatient and outpatient services aim to reintegrate aquatic youth into society, guiding them through crisis intervention and family support. The academy's serene underwater setting offers a tranquil environment for healing and growth under the watchful leadership of Ariel and Sebastian.",
+    description:
+      "The Atlantis Youth Rehabilitation Academy is a state-of-the-art facility located in the ocean's depths, designed to provide comprehensive care and reformation for young merfolk and magical offenders in the Underwater Realm. With King Triton overseeing operations, the academy focuses on behavioral therapy, emotional control, and magical discipline. Both inpatient and outpatient services aim to reintegrate aquatic youth into society, guiding them through crisis intervention and family support. The academy's serene underwater setting offers a tranquil environment for healing and growth under the watchful leadership of Ariel and Sebastian.",
     taxNumber: "TAX-667788990",
     shipTo: {
       address: "Ocean Depths Facility, Triton’s Trench",
@@ -3313,7 +3337,8 @@ const providers = [
   {
     id: 44,
     name: "Emerald City Juvenile Reformation Center",
-    description: "Emerald City Juvenile Reformation Center is a specialized facility in the heart of the Land of Oz, dedicated to reforming troubled youth with magical tendencies. Known for its structured therapy and counseling programs, the center focuses on guiding enchanted youth through the challenges of wizardry control and behavioral adjustment. Led by the Wizard of Oz, the center offers both inpatient and outpatient services, emphasizing rehabilitation for magical misuse and wand offenses. With Glinda and Dorothy overseeing family reformation sessions, the center provides comprehensive support for troubled Munchkins and other enchanted youth in need of crisis intervention.",
+    description:
+      "Emerald City Juvenile Reformation Center is a specialized facility in the heart of the Land of Oz, dedicated to reforming troubled youth with magical tendencies. Known for its structured therapy and counseling programs, the center focuses on guiding enchanted youth through the challenges of wizardry control and behavioral adjustment. Led by the Wizard of Oz, the center offers both inpatient and outpatient services, emphasizing rehabilitation for magical misuse and wand offenses. With Glinda and Dorothy overseeing family reformation sessions, the center provides comprehensive support for troubled Munchkins and other enchanted youth in need of crisis intervention.",
     taxNumber: "TAX-334455667",
     shipTo: {
       address: "Yellow Brick Road, Emerald City",
@@ -3395,7 +3420,8 @@ const providers = [
   {
     id: 45,
     name: "Enchanted Forest Youth Detention",
-    description: "Enchanted Forest Youth Detention is a mystical facility located deep within the Wicked Woods, designed to reform young offenders entangled in curses and magical misbehavior. Known for its comprehensive rehabilitation programs, the center specializes in curse control therapy and behavioral counseling for mischief makers. Under the direction of Maleficent, with guidance from the Evil Queen and Rumpelstiltskin, the facility provides both inpatient and outpatient services, focusing on crisis intervention and long-term reformation for youth sorcerers. Family counseling is also a key component, aiding in the reintegration of reformed youths back into their enchanted communities.",
+    description:
+      "Enchanted Forest Youth Detention is a mystical facility located deep within the Wicked Woods, designed to reform young offenders entangled in curses and magical misbehavior. Known for its comprehensive rehabilitation programs, the center specializes in curse control therapy and behavioral counseling for mischief makers. Under the direction of Maleficent, with guidance from the Evil Queen and Rumpelstiltskin, the facility provides both inpatient and outpatient services, focusing on crisis intervention and long-term reformation for youth sorcerers. Family counseling is also a key component, aiding in the reintegration of reformed youths back into their enchanted communities.",
     taxNumber: "TAX-998877665",
     shipTo: {
       address: "Wicked Woods, Enchanted Forest",
@@ -3474,7 +3500,8 @@ const providers = [
   {
     id: 46,
     name: "Cloud Kingdom Juvenile Detention Center",
-    description: "Cloud Kingdom Juvenile Detention Center is a state-of-the-art facility located in the ethereal Nimbus City, specializing in the rehabilitation of young offenders involved in aerial misconduct and weather manipulation. With a focus on wind control therapy and crisis intervention, this center provides a safe haven for troubled sky youth. Under the leadership of Zephyr, along with support from Cirrus and Nimbus, the center aims to guide young flyers back to responsible behavior through outpatient classes and family counseling. Inpatient programs are also available for long-term rehabilitation, ensuring that each individual receives the support needed to soar high once more.",
+    description:
+      "Cloud Kingdom Juvenile Detention Center is a state-of-the-art facility located in the ethereal Nimbus City, specializing in the rehabilitation of young offenders involved in aerial misconduct and weather manipulation. With a focus on wind control therapy and crisis intervention, this center provides a safe haven for troubled sky youth. Under the leadership of Zephyr, along with support from Cirrus and Nimbus, the center aims to guide young flyers back to responsible behavior through outpatient classes and family counseling. Inpatient programs are also available for long-term rehabilitation, ensuring that each individual receives the support needed to soar high once more.",
     taxNumber: "TAX-334466778",
     shipTo: {
       address: "Skyward Citadel, Cloud Kingdom",
@@ -3559,7 +3586,8 @@ const providers = [
   {
     id: 49,
     name: "Zanarkand Mind and Spirit Clinic",
-    description: "Zanarkand Mind and Spirit Clinic is a serene facility nestled in the enchanting Dreamworld, dedicated to the mental and emotional well-being of its clients. Led by Yuna, with the guidance of Auron and Tidus, the clinic offers specialized outpatient dream therapy and counseling for etheric beings. The center focuses on mindfulness and emotional rebalance, providing a safe space for dreamwalkers to heal and reconnect with their inner selves. Through family healing sessions and personalized mental health support, Zanarkand aims to restore harmony and promote positive emotional health in a tranquil, dreamlike environment.",
+    description:
+      "Zanarkand Mind and Spirit Clinic is a serene facility nestled in the enchanting Dreamworld, dedicated to the mental and emotional well-being of its clients. Led by Yuna, with the guidance of Auron and Tidus, the clinic offers specialized outpatient dream therapy and counseling for etheric beings. The center focuses on mindfulness and emotional rebalance, providing a safe space for dreamwalkers to heal and reconnect with their inner selves. Through family healing sessions and personalized mental health support, Zanarkand aims to restore harmony and promote positive emotional health in a tranquil, dreamlike environment.",
     taxNumber: "TAX-667788334",
     shipTo: {
       address: "Crystal Spire, Zanarkand",
@@ -3632,7 +3660,8 @@ const providers = [
   {
     id: 50,
     name: "Tatooine Oasis Therapy Center",
-    description: "Tatooine Oasis Therapy Center is a tranquil refuge in the harsh landscape of the Dune Sea, designed to promote mental well-being and emotional recovery for the desert's inhabitants. Under the leadership of Obi-Wan Kenobi, with support from Beru Lars and Luke Skywalker, the center provides specialized outpatient desert meditation therapy and mental health services tailored for desert dwellers. The facility offers emotional recovery counseling for drifters and family therapy aimed at fostering unity within desert colonies. With a commitment to healing in a serene oasis setting, Tatooine Oasis stands as a beacon of hope and support in the Outer Rim.",
+    description:
+      "Tatooine Oasis Therapy Center is a tranquil refuge in the harsh landscape of the Dune Sea, designed to promote mental well-being and emotional recovery for the desert's inhabitants. Under the leadership of Obi-Wan Kenobi, with support from Beru Lars and Luke Skywalker, the center provides specialized outpatient desert meditation therapy and mental health services tailored for desert dwellers. The facility offers emotional recovery counseling for drifters and family therapy aimed at fostering unity within desert colonies. With a commitment to healing in a serene oasis setting, Tatooine Oasis stands as a beacon of hope and support in the Outer Rim.",
     taxNumber: "TAX-998877554",
     shipTo: {
       address: "Dune Sea Outpost, Tatooine",
