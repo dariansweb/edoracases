@@ -3,6 +3,7 @@ import Providers from "../../../data/providers"; // Importing the providers arra
 import "./styles/providers.css";
 import ClientManagementHeader from "./ClientManagementHeader"
 import ScrollToTopButton from "../../../utils/ScrollToTopButton"; // Import the ScrollToTopButton component
+import { aside, div } from "framer-motion/client";
 
 // Predefined search terms for the tag buttons
 const searchTerms = [
@@ -133,7 +134,7 @@ const ProvidersList = () => {
               checked={residentialFilter === "residential"}
               onChange={handleResidentialFilterChange}
             />
-            Residential Providers Only
+            Residential Only
           </label>
           <label>
             <input
@@ -143,7 +144,7 @@ const ProvidersList = () => {
               checked={residentialFilter === "appointment"}
               onChange={handleResidentialFilterChange}
             />
-            Appointment Only Providers
+            Appointment Only
           </label>
         </div>
 
@@ -161,7 +162,7 @@ const ProvidersList = () => {
           onClick={handleClearFilters}
           className="provider-info-filter-button"
         >
-          Clear All Filters
+          Clear
         </button>
       </div>
 
@@ -287,7 +288,7 @@ const ProviderCard = ({ provider }) => {
 
         {/* Appointment Only Services */}
         <h3 className="dark provider-info-header">
-          Appointment Only Services
+          Appointment Only
           <button
             className="provider-info-toggle-button"
             onClick={() => setShowAppointmentServices(!showAppointmentServices)}
