@@ -154,7 +154,7 @@ const ProvidersList = () => {
           onClick={() => setShowSearchTerms(!showSearchTerms)}
           className="provider-info-filter-button"
         >
-          {showSearchTerms ? "Hide Search Terms" : "Show Search Terms"}
+          {showSearchTerms ? "Hide Tags" : "Show Tags"}
         </button>
 
         {/* Clear All Filters Button */}
