@@ -9,7 +9,24 @@
       "weight": 180,
       "height": "6'2\"",
       "age": 42,
-      "dob": "1982-01-01"
+      "dob": "1982-01-01",
+      "birthPlace": "Valhalla Crater",
+      "bloodType": "O+",
+      "citizenship": "Galactic Federation",
+      "language": "Martian Galactic",
+      "eyeColor": "Green",
+      "hairColor": "Black",
+      "handedness": "Right",
+      "ethnicity": "Nomadic Clan",
+      "geneticDisorders": "None",
+      "birthOrder": "First-born",
+      "allergies": ["Zytronic Dust"],
+      "permanentIdentifyingMarks": {
+        "scars": ["Small scar on left cheek"],
+        "birthmarks": ["Star-shaped birthmark on left shoulder"],
+        "tattoos": ["None"]
+      },
+      "description": "Zorak is a quiet and reserved individual, originally from Valhalla Crater, who has experienced significant challenges transitioning to life on Earth. He is known for his resourcefulness and practical skills, having been raised in a nomadic clan that values independence. Zorak has shown resilience in adjusting to new circumstances but remains wary of formal institutions. He enjoys spending time alone in nature and has expressed interest in counseling services to help with adapting to societal norms and managing past traumatic experiences from a harsh upbringing. Initial caseworker noted Zorak has a warm sense of humor once comfortable."
     },
     {
       "id": 10002,
@@ -20,7 +37,24 @@
       "weight": 135,
       "height": "5'8\"",
       "age": 29,
-      "dob": "1995-04-12"
+      "dob": "1995-04-12",
+      "birthPlace": "Ice Canyon Outpost",
+      "bloodType": "A-",
+      "citizenship": "Andorian Council",
+      "language": "Andorian Standard",
+      "eyeColor": "Blue",
+      "hairColor": "White",
+      "handedness": "Left",
+      "ethnicity": "Northern Clan",
+      "geneticDisorders": "None",
+      "birthOrder": "Second-born",
+      "allergies": ["Cryogenic Pollen"],
+      "permanentIdentifyingMarks": {
+        "scars": ["Small scar on left eyebrow"],
+        "birthmarks": ["Oval birthmark on right ankle"],
+        "tattoos": ["Tribal symbol on right shoulder"]
+      },
+      "description": "Lyra is a strong-willed individual who grew up in the frigid regions of Ice Canyon Outpost. She is well-known for her determination and resilience, often leading community initiatives in her hometown. Lyra's upbringing instilled a deep respect for her heritage and community, values she brings to her work. Although her outward demeanor can be guarded, she is compassionate and fiercely protective of those she cares about. She enjoys engaging in creative activities, such as crafting traditional Andorian garments, and has sought support for anxiety related to leaving her community. Her caseworker describes her as a natural leader with a nurturing spirit."
     },
     {
       "id": 10003,
@@ -31,7 +65,24 @@
       "weight": 220,
       "height": "6'5\"",
       "age": 38,
-      "dob": "1986-11-30"
+      "dob": "1986-11-30",
+      "birthPlace": "Kandor City",
+      "bloodType": "B+",
+      "citizenship": "Kryptonian High Council",
+      "language": "Kryptonian",
+      "eyeColor": "Silver",
+      "hairColor": "Black",
+      "handedness": "Right",
+      "ethnicity": "Highborn Kryptonian",
+      "geneticDisorders": "None",
+      "birthOrder": "First-born",
+      "allergies": ["Red Sun Radiation"],
+      "permanentIdentifyingMarks": {
+        "scars": ["Deep scar across right bicep"],
+        "birthmarks": ["None"],
+        "tattoos": ["Family crest on upper back"]
+      },
+      "description": "Thragg is a commanding figure who grew up under the strict codes of Kryptonian society in Kandor City. He has a reputation for his imposing presence and natural leadership abilities, which have been both an asset and a point of tension throughout his life. Thragg has spent most of his life in service to the High Council, and his upbringing has shaped him into a disciplined and highly strategic individual. Despite his stoic exterior, Thragg has a deep-seated desire to protect those who cannot defend themselves, a value instilled by his family's creed. His caseworker described him as fiercely loyal, but also noted the need for support in developing personal relationships outside of duty and obligation."
     },
     {
       "id": 10004,
@@ -42,7 +93,24 @@
       "weight": 210,
       "height": "6'0\"",
       "age": 53,
-      "dob": "1971-09-14"
+      "dob": "1971-09-14",
+      "birthPlace": "Shi'Kahr, Vulcan",
+      "bloodType": "AB-",
+      "citizenship": "Vulcan High Command",
+      "language": "Vulcan Standard",
+      "eyeColor": "Brown",
+      "hairColor": "Dark Brown",
+      "handedness": "Ambidextrous",
+      "ethnicity": "Shi'Kahr Region",
+      "geneticDisorders": "None",
+      "birthOrder": "Only Child",
+      "allergies": ["Lirpa Dust"],
+      "permanentIdentifyingMarks": {
+        "scars": ["Faint scar on left palm"],
+        "birthmarks": ["None"],
+        "tattoos": ["Vulcan family symbol on left shoulder blade"]
+      },
+      "description": "N'Tal G'Kor is a highly logical and composed individual, as expected of his Vulcan heritage. Born and raised in the city of Shi'Kahr, he has always upheld the Vulcan principles of logic and emotional suppression, which has contributed to his calm demeanor. N'Tal is an only child who was raised to prioritize scholarly pursuits, particularly in the fields of astronomy and philosophy. He has an intense curiosity about the universe, balanced by his disciplined lifestyle. N'Tal prefers solitude but has shown a willingness to engage with those seeking knowledge, making him a patient mentor. His caseworker has noted that while he remains emotionally distant, his sense of duty to others is deeply ingrained."
     },
     {
       "id": 10005,
@@ -53,7 +121,24 @@
       "weight": 150,
       "height": "5'7\"",
       "age": 34,
-      "dob": "1989-02-27"
+      "dob": "1989-02-27",
+      "birthPlace": "Nova Prime Colony, Xandar",
+      "bloodType": "O+",
+      "citizenship": "Nova Corps",
+      "language": "Xandarian Common",
+      "eyeColor": "Hazel",
+      "hairColor": "Auburn",
+      "handedness": "Right",
+      "ethnicity": "Nova Prime Colony",
+      "geneticDisorders": "None",
+      "birthOrder": "Youngest of Three",
+      "allergies": ["Quasar Pollen"],
+      "permanentIdentifyingMarks": {
+        "scars": ["Small scar on right knee"],
+        "birthmarks": ["Crescent-shaped birthmark on lower back"],
+        "tattoos": ["Symbol of Nova Corps on her right forearm"]
+      },
+      "description": "Rylah Al'Sune grew up in the bustling colony of Nova Prime on Xandar. As the youngest of three siblings, she learned to be both adaptable and fiercely independent. Rylah's upbringing instilled in her a strong sense of justice, and she eventually joined the Nova Corps, where she serves with dedication and pride. She is known for her analytical mind and quick thinking in high-pressure situations. Rylah has a natural charisma, making her a trusted confidant among her peers, though she sometimes struggles with delegating responsibilities, preferring to take on challenges alone. Her caseworker noted her resilience and her strong desire to make a meaningful impact, though she may benefit from support in balancing her personal and professional life."
     },
     {
       "id": 10006,
@@ -64,7 +149,24 @@
       "weight": 240,
       "height": "6'3\"",
       "age": 47,
-      "dob": "1977-06-15"
+      "dob": "1977-06-15",
+      "birthPlace": "Qo'noS, First City",
+      "bloodType": "B+",
+      "citizenship": "Klingon Empire",
+      "language": "Klingon Standard",
+      "eyeColor": "Dark Brown",
+      "hairColor": "Black",
+      "handedness": "Left",
+      "ethnicity": "Warrior Caste",
+      "geneticDisorders": "None",
+      "birthOrder": "Second-born",
+      "allergies": ["Earth Peanuts"],
+      "permanentIdentifyingMarks": {
+        "scars": ["Jagged scar across left cheek"],
+        "birthmarks": ["None"],
+        "tattoos": ["House of Dar crest on chest"]
+      },
+      "description": "Gornak Dar is a proud member of the Klingon Warrior Caste, born in the First City of Qo'noS. Known for his unyielding commitment to honor and tradition, Gornak has spent most of his life training and fighting to uphold his family's reputation within the Empire. He is a fierce combatant, both respected and feared for his martial skills, and he has participated in numerous campaigns to defend Klingon territories. Despite his gruff demeanor, Gornak values camaraderie and respects those who demonstrate courage and integrity. He is loyal to his House and is deeply motivated by a desire to prove his worth. His caseworker has noted that Gornak could benefit from assistance in processing unresolved trauma from his time in battle, as he often struggles to express vulnerability even among allies."
     },
     {
       "id": 10007,
@@ -75,7 +177,24 @@
       "weight": 165,
       "height": "5'9\"",
       "age": 26,
-      "dob": "1997-10-10"
+      "dob": "1997-10-10",
+      "birthPlace": "Ryloth, Kala'uun",
+      "bloodType": "A+",
+      "citizenship": "Ryloth Confederacy",
+      "language": "Rylothian",
+      "eyeColor": "Amber",
+      "hairColor": "None (Lekku)",
+      "handedness": "Right",
+      "ethnicity": "Lethan",
+      "geneticDisorders": "None",
+      "birthOrder": "First-born",
+      "allergies": ["Spice Mists"],
+      "permanentIdentifyingMarks": {
+        "scars": ["Small scar on left lekku"],
+        "birthmarks": ["Red pigment birthmark at base of lekku"],
+        "tattoos": ["Twilek tribal patterns on lekku tips"]
+      },
+      "description": "T'Lor Kryl hails from Kala'uun, the bustling trade hub on Ryloth. She is a Lethan Twilek, known for her distinct red skin, which marks her as rare among her people. T'Lor was the first-born child in her family and quickly took on a caretaker role for her siblings. She has a natural affinity for negotiation and often served as a mediator in local disputes. Her experiences growing up amidst the harsh climates of Ryloth have made her adaptable and quick-witted. T'Lor enjoys dance as a form of expression, and she has faced challenges balancing her cultural expectations with her own ambitions to become a respected trader. Her caseworker noted her potential to excel in diplomacy but also recognized that she could benefit from guidance in managing the stress that accompanies her aspirations."
     },
     {
       "id": 10008,
@@ -86,7 +205,24 @@
       "weight": 190,
       "height": "6'1\"",
       "age": 31,
-      "dob": "1992-12-05"
+      "dob": "1992-12-05",
+      "birthPlace": "Rixx, Betazed",
+      "bloodType": "O-",
+      "citizenship": "Betazed Council",
+      "language": "Betazoid Standard",
+      "eyeColor": "Black",
+      "hairColor": "Dark Brown",
+      "handedness": "Right",
+      "ethnicity": "Rixx Province",
+      "geneticDisorders": "None",
+      "birthOrder": "Middle Child",
+      "allergies": ["Telepathic Resonance Disturbances"],
+      "permanentIdentifyingMarks": {
+        "scars": ["None"],
+        "birthmarks": ["Circular birthmark on right shoulder"],
+        "tattoos": ["Family sigil on left forearm"]
+      },
+      "description": "Xarvis Tark was born in Rixx, the cultural capital of Betazed. He is a telepath, like most Betazoids, and has always been highly attuned to the emotions of those around him. This natural sensitivity has made him both a gifted counselor and occasionally overwhelmed by the intensity of others' feelings. Xarvis is the middle child of five siblings, which has often led him to play the role of mediator and peacekeeper within his family. He has pursued a career in mental health, focusing on empathic therapy, where his telepathic skills are particularly useful. Xarvis is deeply empathetic, though he sometimes finds it challenging to shield himself from emotional overload. His caseworker described him as exceptionally compassionate but noted that developing stronger personal boundaries would help him maintain his well-being while serving others."
     },
     {
       "id": 10009,
@@ -97,7 +233,24 @@
       "weight": 260,
       "height": "6'8\"",
       "age": 58,
-      "dob": "1965-04-20"
+      "dob": "1965-04-20",
+      "birthPlace": "Zarn, Vorta Wastes",
+      "bloodType": "B-",
+      "citizenship": "Zarnian Tribal Confederation",
+      "language": "Zarnian Dialect",
+      "eyeColor": "Steel Grey",
+      "hairColor": "White",
+      "handedness": "Left",
+      "ethnicity": "Vorta Highlander",
+      "geneticDisorders": "None",
+      "birthOrder": "Youngest of Four",
+      "allergies": ["Copper Dust"],
+      "permanentIdentifyingMarks": {
+        "scars": ["Diagonal scar across chest from old combat wound"],
+        "birthmarks": ["Dark speckled mark on right thigh"],
+        "tattoos": ["Tribal war crest across back"]
+      },
+      "description": "Korvak Sharr was born in the Vorta Wastes on Zarn, a harsh and unforgiving environment that shaped his formidable character. Growing up as the youngest of four siblings in a warrior family, Korvak learned to survive and thrive through strength and resilience. He has spent much of his life as a defender of the Zarnian Tribal Confederation, participating in numerous territorial conflicts. Known for his imposing stature and tactical mind, Korvak is a respected leader among his people. Despite his stern and often intimidating demeanor, those close to him know him to be fiercely protective of his family and tribe. His caseworker has noted that Korvak struggles with adapting to peaceful civilian life and may benefit from therapeutic programs focusing on emotional expression and stress management."
     },
     {
       "id": 10010,
@@ -108,18 +261,52 @@
       "weight": 145,
       "height": "5'5\"",
       "age": 24,
-      "dob": "1999-08-11"
+      "dob": "1999-08-11",
+      "birthPlace": "Thanaldor, Thanagar",
+      "bloodType": "A-",
+      "citizenship": "Thanagarian Republic",
+      "language": "Thanagarian",
+      "eyeColor": "Golden",
+      "hairColor": "Black",
+      "handedness": "Right",
+      "ethnicity": "Skyborn",
+      "geneticDisorders": "None",
+      "birthOrder": "Only Child",
+      "allergies": ["Feather Mold"],
+      "permanentIdentifyingMarks": {
+        "scars": ["Thin scar on right forearm from a training incident"],
+        "birthmarks": ["None"],
+        "tattoos": ["Thanagarian wings symbol on lower back"]
+      },
+      "description": "Lanya Korr was born in the city of Thanaldor, one of the major cultural centers of Thanagar. As an only child, Lanya's early life was focused on rigorous training in aerial combat and cultural history, reflecting her people's proud warrior traditions. She is of the Skyborn ethnicity, noted for their adept flying skills, which she demonstrates in her precision and agility during training. Lanya has a curious and adventurous nature, always eager to explore new territories. Though she embraces her heritage, she is also interested in understanding other cultures, often expressing a desire to visit other worlds. Her caseworker has noted that Lanya could benefit from more interpersonal connections outside her training, as her focused upbringing has left her with limited experience in casual social situations."
     },
     {
       "id": 10011,
       "name": "Ronan Xar",
       "ssn": "1L6-8N-7R92",
-      "race": "Nova Corps",
+      "race": "Xandarian",
       "gender": "Male",
       "weight": 205,
       "height": "6'0\"",
       "age": 37,
-      "dob": "1987-09-17"
+      "dob": "1987-09-17",
+      "birthPlace": "Xandar, Nova Prime District",
+      "bloodType": "B+",
+      "citizenship": "Nova Corps",
+      "language": "Xandarian Standard",
+      "eyeColor": "Blue",
+      "hairColor": "Light Brown",
+      "handedness": "Right",
+      "ethnicity": "Urban Xandarian",
+      "geneticDisorders": "None",
+      "birthOrder": "Third-born",
+      "allergies": ["Xandarian Flora Pollen"],
+      "permanentIdentifyingMarks": {
+        "scars": ["Two small scars on left hand from combat training"],
+        "birthmarks": ["Oval birthmark on lower abdomen"],
+        "tattoos": ["Nova Corps emblem on upper left arm"]
+      },
+      "description": "Ronan Xar was born and raised in the Nova Prime District on Xandar, where he grew up in the shadow of the Nova Corps headquarters. From an early age, he aspired to join the Corps, idolizing the defenders of Xandar. As the third-born of five siblings, Ronan often found himself mediating conflicts between his brothers and sisters, which helped hone his skills in communication and diplomacy. He eventually joined the Nova Corps, serving as a field operative. Ronan is known for his tactical acumen and cool-headed nature under pressure, though his commitment to duty sometimes leads him to neglect his personal life. His caseworker noted that Ronan could benefit from more work-life balance and from fostering relationships outside his Corps responsibilities to avoid burnout."
     },
     {
       "id": 10012,
@@ -130,7 +317,24 @@
       "weight": 175,
       "height": "5'10\"",
       "age": 62,
-      "dob": "1961-11-29"
+      "dob": "1961-11-29",
+      "birthPlace": "Yedor, Minbar",
+      "bloodType": "AB+",
+      "citizenship": "Minbari Federation",
+      "language": "Minbari High Speech",
+      "eyeColor": "Pale Blue",
+      "hairColor": "Bald",
+      "handedness": "Right",
+      "ethnicity": "Religious Caste",
+      "geneticDisorders": "None",
+      "birthOrder": "First-born",
+      "allergies": ["Cranium Powder"],
+      "permanentIdentifyingMarks": {
+        "scars": ["Diagonal scar on upper back from a ritual combat"],
+        "birthmarks": ["Faint crescent mark on left shoulder"],
+        "tattoos": ["Minbari sacred emblem on chest"]
+      },
+      "description": "J'Kar Xy was born in Yedor, a prominent city on Minbar, and was raised within the Religious Caste of his people. As the first-born, J'Kar was often expected to uphold the traditions and spiritual practices of his family. He dedicated much of his early life to study, learning the ancient teachings and meditative arts that define Minbari culture. Over the years, he took on a role as a spiritual advisor, guiding younger generations through their initiations and struggles. J'Kar is a calm and reflective individual, deeply committed to his beliefs, and respected for his wisdom. However, his caseworker noted that his intense devotion to tradition sometimes hinders his ability to adapt to new ideas and that exposure to diverse cultural experiences might help broaden his perspective."
     },
     {
       "id": 10013,
@@ -141,7 +345,24 @@
       "weight": 155,
       "height": "5'6\"",
       "age": 33,
-      "dob": "1991-03-12"
+      "dob": "1991-03-12",
+      "birthPlace": "Ki Baratan, Romulus",
+      "bloodType": "A+",
+      "citizenship": "Romulan Star Empire",
+      "language": "Rihannsu",
+      "eyeColor": "Emerald Green",
+      "hairColor": "Dark Brown",
+      "handedness": "Left",
+      "ethnicity": "Ki Baratan Province",
+      "geneticDisorders": "None",
+      "birthOrder": "Second-born",
+      "allergies": ["Trellium Dust"],
+      "permanentIdentifyingMarks": {
+        "scars": ["Thin scar above right eyebrow"],
+        "birthmarks": ["Oval birthmark on back of neck"],
+        "tattoos": ["Romulan Star Empire insignia on left ankle"]
+      },
+      "description": "Soran Jax was born in Ki Baratan, the bustling capital of Romulus. As the second-born child, Soran often found herself striving to prove her worth in a highly competitive family environment. She was trained in tactical studies and espionage, skills that are highly valued within the Romulan Star Empire. Soran is a fiercely independent and determined individual who excels in strategic thinking. Her sharp wit and resourcefulness have made her a valuable asset in the Romulan military, where she currently serves as an intelligence officer. Though Soran maintains a composed and confident exterior, she has difficulty trusting others, a trait that has often isolated her from those around her. Her caseworker noted that while her dedication is commendable, she could benefit from opening up emotionally to foster deeper interpersonal relationships."
     },
     {
       "id": 10014,
@@ -152,7 +373,24 @@
       "weight": 300,
       "height": "7'1\"",
       "age": 48,
-      "dob": "1975-05-22"
+      "dob": "1975-05-22",
+      "birthPlace": "Tarin Fields, Daxam",
+      "bloodType": "O-",
+      "citizenship": "Daxam Confederation",
+      "language": "Daxamite Common",
+      "eyeColor": "Gray",
+      "hairColor": "Black",
+      "handedness": "Right",
+      "ethnicity": "Tarin Plainsman",
+      "geneticDisorders": "Lead Sensitivity",
+      "birthOrder": "First-born",
+      "allergies": ["Lead Particulates"],
+      "permanentIdentifyingMarks": {
+        "scars": ["Long scar down left thigh from a hunting incident"],
+        "birthmarks": ["Large irregular birthmark on left calf"],
+        "tattoos": ["Daxamite honor bands on both wrists"]
+      },
+      "description": "Tirrak Zor was born in the Tarin Fields, a fertile region on Daxam known for its sprawling plains. As the eldest child in a family of farmers, Tirrak quickly learned the value of hard work and community. His imposing stature made him a natural leader, and he often took on responsibilities that went beyond his age. Tirrak later joined the Daxam Confederation military, where he served as a captain, leading his troops with a blend of discipline and compassion. Known for his physical prowess, Tirrak has a deep sense of loyalty to his people. However, his susceptibility to lead—a well-known vulnerability among Daxamites—has always been a concern, restricting his activities off-world. His caseworker noted that while Tirrak is reliable and strong, he often avoids expressing his own vulnerabilities, and could benefit from programs that help him adapt to environments outside of his comfort zone."
     },
     {
       "id": 10015,
@@ -163,7 +401,26 @@
       "weight": 130,
       "height": "5'4\"",
       "age": 28,
-      "dob": "1995-08-30"
+      "dob": "1995-08-30",
+      "birthPlace": "Loval City, Trill",
+      "bloodType": "A-",
+      "citizenship": "Trill Symbiosis Commission",
+      "language": "Trill Standard",
+      "eyeColor": "Hazel",
+      "hairColor": "Chestnut Brown",
+      "handedness": "Right",
+      "ethnicity": "Unjoined Trill",
+      "geneticDisorders": "None",
+      "birthOrder": "Only Child",
+      "allergies": ["Symbiont Secretion"],
+      "permanentIdentifyingMarks": {
+        "scars": ["Small scar on left wrist from a childhood accident"],
+        "birthmarks": ["None"],
+        "tattoos": [
+          "Ornamental Trill spots extending down her neck and sides, traditional markings"
+        ]
+      },
+      "description": "Naomi S'Vak was born in Loval City, a hub of culture and learning on Trill. Raised as an only child, she grew up with a fascination for the intricate connection between her people and their symbionts, although she herself remains unjoined. Naomi has always been deeply inquisitive and passionate about her studies, often immersing herself in biology and xenobiology, aspiring to one day work for the Trill Symbiosis Commission. Her independent spirit and drive to uncover the unknown make her a brilliant researcher. However, her caseworker has noted that Naomi's single-minded focus sometimes isolates her from others, and she would benefit from engaging more in community and social activities to build stronger personal connections."
     },
     {
       "id": 10016,
@@ -174,7 +431,24 @@
       "weight": 185,
       "height": "6'4\"",
       "age": 39,
-      "dob": "1984-02-12"
+      "dob": "1984-02-12",
+      "birthPlace": "Astra City, Tamaran",
+      "bloodType": "B+",
+      "citizenship": "Tamaranean Kingdom",
+      "language": "Tamaranean",
+      "eyeColor": "Amber",
+      "hairColor": "Bright Red",
+      "handedness": "Right",
+      "ethnicity": "Astra Nomadic Clan",
+      "geneticDisorders": "None",
+      "birthOrder": "Middle Child",
+      "allergies": ["Solar Pollen"],
+      "permanentIdentifyingMarks": {
+        "scars": ["Diagonal scar across abdomen from a training duel"],
+        "birthmarks": ["Spiral-shaped mark on right shoulder blade"],
+        "tattoos": ["Tamaranean royal symbol on left calf"]
+      },
+      "description": "Xylor Zythar was born in Astra City on Tamaran, known for its thriving warrior culture and rich heritage. Growing up as part of the Astra Nomadic Clan, Xylor learned to adapt quickly and developed a passion for combat and adventure. He is highly athletic, possessing the unique Tamaranean ability to convert solar energy into strength, a skill that serves him well in both battle and daily life. As the middle child of his family, Xylor often found himself balancing the roles of peacemaker and independent warrior. He is known for his infectious optimism and intense loyalty to his clan, though he can sometimes struggle with impulsiveness. His caseworker noted that while Xylor’s enthusiasm and dedication are admirable, learning to channel his energy more constructively could help him build deeper, more consistent relationships."
     },
     {
       "id": 10017,
@@ -185,7 +459,24 @@
       "weight": 150,
       "height": "5'6\"",
       "age": 32,
-      "dob": "1991-08-19"
+      "dob": "1991-08-19",
+      "birthPlace": "Rigel V, Crystal District",
+      "bloodType": "AB-",
+      "citizenship": "Rigellian Collective",
+      "language": "Rigellian Standard",
+      "eyeColor": "Violet",
+      "hairColor": "Silver",
+      "handedness": "Left",
+      "ethnicity": "Crystal Artisan Guild",
+      "geneticDisorders": "None",
+      "birthOrder": "Youngest of Two",
+      "allergies": ["Platinum Dust"],
+      "permanentIdentifyingMarks": {
+        "scars": ["Small scar on chin from a childhood fall"],
+        "birthmarks": ["Light swirl-shaped mark on lower back"],
+        "tattoos": ["Rigellian Artisan emblem on right forearm"]
+      },
+      "description": "Velora Zyn was born in the Crystal District of Rigel V, an area renowned for its artisans and craftsmen. Growing up as the youngest in a family deeply involved in the Crystal Artisan Guild, Velora developed a love for intricate design and sculpture, skills that set her apart within the guild. She is known for her precision and creativity, often blending traditional Rigellian techniques with innovative designs. Velora is also an empath, sensitive to the emotional states of those around her, which makes her both a compassionate friend and an insightful artist. Her empathetic nature, however, sometimes leaves her overwhelmed by the intensity of others' emotions. Her caseworker noted that Velora would benefit from learning coping strategies for emotional regulation, allowing her to maintain her artistic flow without becoming emotionally drained."
     },
     {
       "id": 10018,
@@ -196,7 +487,28 @@
       "weight": 290,
       "height": "6'7\"",
       "age": 45,
-      "dob": "1979-12-11"
+      "dob": "1979-12-11",
+      "birthPlace": "Megacity Alpha, Earth",
+      "bloodType": "B+",
+      "citizenship": "Unified Earth Coalition",
+      "language": "Standard Galactic",
+      "eyeColor": "Cybernetic Blue",
+      "hairColor": "None (Bald with Implants)",
+      "handedness": "Ambidextrous",
+      "ethnicity": "Human-Cyborg Hybrid",
+      "geneticDisorders": "None",
+      "birthOrder": "Only Child",
+      "allergies": ["Magnetite Particulates"],
+      "permanentIdentifyingMarks": {
+        "scars": [
+          "Large scar across chest from cybernetic implantation surgery"
+        ],
+        "birthmarks": ["None"],
+        "tattoos": [
+          "Circuitry pattern tattoo along left arm, symbolizing the unity of machine and organic life"
+        ]
+      },
+      "description": "Brax Thron was born in Megacity Alpha on Earth, one of the sprawling hubs of technological advancement. From a young age, Brax was fascinated by technology, and after sustaining serious injuries in a mining accident, he chose to undergo extensive cybernetic augmentation, turning him into a powerful human-cyborg hybrid. Standing at an imposing 6'7\", Brax is equipped with enhanced strength, endurance, and sensory capabilities, which have made him an invaluable member of Megacity's defense force. While Brax is highly disciplined and a dedicated protector of his community, his reliance on cybernetics has sometimes made him question his humanity. His caseworker noted that Brax would benefit from therapeutic sessions focused on reconnecting with his organic self, helping him find balance between his human emotions and his machine enhancements."
     },
     {
       "id": 10019,
@@ -207,7 +519,26 @@
       "weight": 135,
       "height": "5'5\"",
       "age": 27,
-      "dob": "1996-06-03"
+      "dob": "1996-06-03",
+      "birthPlace": "New Europa Colony, Lunar Base",
+      "bloodType": "O+",
+      "citizenship": "United Terran Alliance",
+      "language": "Terran Standard English",
+      "eyeColor": "Green",
+      "hairColor": "Light Brown",
+      "handedness": "Right",
+      "ethnicity": "Lunar Colonist",
+      "geneticDisorders": "None",
+      "birthOrder": "First-born",
+      "allergies": ["Synthetic Pollen"],
+      "permanentIdentifyingMarks": {
+        "scars": ["Scar on right forearm from a mechanical accident"],
+        "birthmarks": ["Small star-shaped birthmark on her left hip"],
+        "tattoos": [
+          "Constellation tattoo on her upper back, symbolizing her love for the stars"
+        ]
+      },
+      "description": "Kira Voss was born in the New Europa Colony on the Lunar Base, a part of the United Terran Alliance's efforts to expand human habitation beyond Earth. As a first-born child, Kira was taught early on to be self-reliant and resourceful, traits that helped her navigate life on the moon. Her fascination with mechanics and engineering began in childhood, and she later pursued a career as a technician for the Lunar Colony's life-support systems. Kira is known for her quick thinking and ability to solve problems under pressure, traits that make her an essential member of the colony's maintenance crew. Though she enjoys her independence, her caseworker has noted that Kira sometimes isolates herself from others, preferring to work alone. Encouraging her to take part in more social activities could help her build stronger community ties."
     },
     {
       "id": 10020,
@@ -218,7 +549,24 @@
       "weight": 200,
       "height": "6'2\"",
       "age": 44,
-      "dob": "1979-11-23"
+      "dob": "1979-11-23",
+      "birthPlace": "Skrullos Prime, Central Hive",
+      "bloodType": "B-",
+      "citizenship": "Skrull Empire",
+      "language": "Skrullian High Dialect",
+      "eyeColor": "Dark Green",
+      "hairColor": "Black",
+      "handedness": "Left",
+      "ethnicity": "Hiveborn Skrull",
+      "geneticDisorders": "None",
+      "birthOrder": "Second-born of Quadruplets",
+      "allergies": ["Gamma Radiation Exposure"],
+      "permanentIdentifyingMarks": {
+        "scars": ["Scar across left cheek from battle training"],
+        "birthmarks": ["None"],
+        "tattoos": ["Skrullian war insignia on right shoulder"]
+      },
+      "description": "Oron Zynik was born in the Central Hive on Skrullos Prime, the heart of the Skrull Empire. As one of a set of quadruplets, Oron learned the value of unity and adaptation from a young age, traits that are highly regarded in Skrull culture. Skrulls are known for their shapeshifting abilities, and Oron has specialized in espionage, using his skills to infiltrate and gather intelligence for the Skrull Empire. His cunning and adaptability have made him an asset to his people, though the nature of his work has left him wary of trusting others, even within his own ranks. Oron is resilient and resourceful, often relying on his instinct for survival. His caseworker has suggested that Oron might benefit from building interpersonal trust through structured group activities, as his distrust has isolated him socially despite his loyalty to his people."
     },
     {
       "id": 10021,
@@ -229,7 +577,24 @@
       "weight": 125,
       "height": "5'7\"",
       "age": 36,
-      "dob": "1988-04-15"
+      "dob": "1988-04-15",
+      "birthPlace": "Kree-Lar, Hala",
+      "bloodType": "A+",
+      "citizenship": "Kree Empire",
+      "language": "Kree High Speech",
+      "eyeColor": "Pale Blue",
+      "hairColor": "Platinum Blonde",
+      "handedness": "Right",
+      "ethnicity": "Blue-Skinned Kree",
+      "geneticDisorders": "None",
+      "birthOrder": "Only Child",
+      "allergies": ["Radion Gas"],
+      "permanentIdentifyingMarks": {
+        "scars": ["Three claw-like scars across her left shoulder from combat"],
+        "birthmarks": ["None"],
+        "tattoos": ["Kree Empire insignia on her upper right arm"]
+      },
+      "description": "Iona Rel was born in Kree-Lar, the capital city of Hala, and was raised in the heart of the Kree Empire's military culture. As an only child, she was expected to carry the legacy of her family, which had a long history of military service. Iona's upbringing was steeped in discipline, and she quickly rose through the ranks of the Kree military, earning recognition for her strategic prowess and dedication. Known for her pale blue skin and intense presence, she is fiercely loyal to the Kree Empire, but her unwavering commitment has at times made her rigid and uncompromising. Iona has a strong sense of duty and pride, yet her caseworker has noted that her emotional reserve often creates distance between her and her peers. Engaging in activities outside her military role could help her build more personal connections and foster empathy."
     },
     {
       "id": 10022,
@@ -240,7 +605,26 @@
       "weight": 240,
       "height": "6'6\"",
       "age": 41,
-      "dob": "1983-09-20"
+      "dob": "1983-09-20",
+      "birthPlace": "Valdan Highlands, Daxam",
+      "bloodType": "O-",
+      "citizenship": "Daxam Confederation",
+      "language": "Daxamite Standard",
+      "eyeColor": "Silver",
+      "hairColor": "Jet Black",
+      "handedness": "Right",
+      "ethnicity": "Highlander",
+      "geneticDisorders": "Lead Sensitivity",
+      "birthOrder": "Youngest of Three",
+      "allergies": ["Lead Particulates"],
+      "permanentIdentifyingMarks": {
+        "scars": ["Long scar along the right ribcage from a training accident"],
+        "birthmarks": ["Faint crescent-shaped birthmark on his left shoulder"],
+        "tattoos": [
+          "Daxamite honor crest on his upper back, symbolizing strength and loyalty"
+        ]
+      },
+      "description": "Torrk Kallar hails from the Valdan Highlands of Daxam, a region known for its harsh terrain and resilient people. As the youngest of three siblings, Torrk often found himself striving to keep up with his older brothers, a drive that pushed him to excel in physical challenges and combat training. He is a skilled warrior and has trained extensively to serve as a protector of his home city. Torrk possesses a strong connection to his heritage and takes pride in his highlander upbringing, embracing the values of resilience and community. Despite his strength and determination, Torrk struggles with Daxamite vulnerabilities, such as lead sensitivity, which limits his capacity to operate in environments outside Daxam. His caseworker has noted that while Torrk is fiercely protective of his family and community, he may benefit from exploring pursuits beyond physical training to help cultivate a more balanced approach to his well-being."
     },
     {
       "id": 10023,
@@ -251,7 +635,24 @@
       "weight": 140,
       "height": "5'8\"",
       "age": 31,
-      "dob": "1992-01-09"
+      "dob": "1992-01-09",
+      "birthPlace": "Attilan, Blue Sector",
+      "bloodType": "A-",
+      "citizenship": "Inhuman Collective",
+      "language": "Attilan Standard",
+      "eyeColor": "Dark Violet",
+      "hairColor": "Midnight Blue",
+      "handedness": "Right",
+      "ethnicity": "Terrigen-Born Inhuman",
+      "geneticDisorders": "None",
+      "birthOrder": "Middle Child",
+      "allergies": ["Terrigen Mist Residue"],
+      "permanentIdentifyingMarks": {
+        "scars": ["Thin scar on left cheek from a Terrigenesis ritual"],
+        "birthmarks": ["None"],
+        "tattoos": ["Symbol of the Inhuman Collective on her right wrist"]
+      },
+      "description": "Zara Nyx was born in Attilan's Blue Sector, a region where many Inhumans undergo their transformation through Terrigenesis. As a Terrigen-Born Inhuman, Zara's transformation at a young age granted her the ability to manipulate shadows, an ability that allows her to blend into her surroundings and move unseen. Growing up as the middle child, Zara often played the role of mediator in her family, which has given her a natural empathy for others and a strong sense of fairness. Zara has embraced her powers but has also struggled with controlling the extent of her abilities, particularly when under stress. Her caseworker noted that Zara could benefit from focused training in power regulation and mindfulness exercises, which would help her manage her emotions and abilities more effectively while deepening her connection with the Inhuman community."
     },
     {
       "id": 10024,
@@ -262,7 +663,28 @@
       "weight": 250,
       "height": "6'5\"",
       "age": 50,
-      "dob": "1973-03-18"
+      "dob": "1973-03-18",
+      "birthPlace": "G'Kar Valley, Narn Homeworld",
+      "bloodType": "B+",
+      "citizenship": "Narn Regime",
+      "language": "Narnic",
+      "eyeColor": "Amber",
+      "hairColor": "None (Bald)",
+      "handedness": "Right",
+      "ethnicity": "Mountain Tribes of Narn",
+      "geneticDisorders": "None",
+      "birthOrder": "First-born of Five",
+      "allergies": ["Chrysalis Dust"],
+      "permanentIdentifyingMarks": {
+        "scars": [
+          "Vertical scar across his right eye from combat during the Centauri occupation"
+        ],
+        "birthmarks": ["None"],
+        "tattoos": [
+          "Narn tribal markings along his back, representing his family lineage"
+        ]
+      },
+      "description": "Vorrik Mar was born in G'Kar Valley, a region steeped in resistance history during the Centauri occupation of the Narn Homeworld. As the first-born of five siblings, Vorrik took on the responsibility of caring for his family, often acting as both a protector and provider. He grew up during times of conflict, which shaped his strong sense of loyalty and defiance against oppression. Vorrik has served as a commander within the Narn resistance and later in the Narn Regime, where his strength and tactical skills have been highly valued. Known for his stern demeanor and unwavering determination, Vorrik is respected by his peers but can sometimes come across as intimidating. His caseworker has noted that while his dedication to his people is admirable, engaging in activities focused on relaxation and personal expression could help Vorrik find some respite from the pressures of leadership."
     },
     {
       "id": 10025,
@@ -273,7 +695,24 @@
       "weight": 155,
       "height": "5'9\"",
       "age": 29,
-      "dob": "1994-07-22"
+      "dob": "1994-07-22",
+      "birthPlace": "Syndicate City, Orion Prime",
+      "bloodType": "O+",
+      "citizenship": "Orion Syndicate",
+      "language": "Orion Trade Tongue",
+      "eyeColor": "Emerald Green",
+      "hairColor": "Jet Black",
+      "handedness": "Left",
+      "ethnicity": "Syndicate Class",
+      "geneticDisorders": "None",
+      "birthOrder": "Second-born of Four",
+      "allergies": ["Deltan Pollen"],
+      "permanentIdentifyingMarks": {
+        "scars": ["Small scar on her left temple from a childhood accident"],
+        "birthmarks": ["None"],
+        "tattoos": ["Orion Syndicate crest on her right shoulder"]
+      },
+      "description": "Rysha Vor was born in Syndicate City on Orion Prime, a place renowned for its vibrant trade networks and complex social hierarchy. As a member of the Syndicate Class, Rysha grew up with a deep understanding of the complexities of Orion society, learning the value of influence and negotiation from an early age. She is skilled in persuasion, a talent that she has leveraged to navigate the intricacies of her people's social and political structures. Rysha's emerald green eyes and confident demeanor often make her stand out, and she has earned a reputation for her sharp wit and resourcefulness. Despite her outward confidence, Rysha sometimes struggles with the expectations placed upon her by her community, and her caseworker has noted that engaging in activities unrelated to the Syndicate's demands could help her explore her personal identity outside of her societal role."
     },
     {
       "id": 10026,
@@ -284,7 +723,28 @@
       "weight": 190,
       "height": "6'1\"",
       "age": 38,
-      "dob": "1985-10-16"
+      "dob": "1985-10-16",
+      "birthPlace": "Nova Outpost, Xandar",
+      "bloodType": "B+",
+      "citizenship": "Nova Corps",
+      "language": "Xandarian Standard",
+      "eyeColor": "Blue",
+      "hairColor": "Blonde",
+      "handedness": "Right",
+      "ethnicity": "Urban Outlander",
+      "geneticDisorders": "None",
+      "birthOrder": "Only Child",
+      "allergies": ["Sulfur Particulates"],
+      "permanentIdentifyingMarks": {
+        "scars": [
+          "Diagonal scar on right bicep from an emergency field operation"
+        ],
+        "birthmarks": ["None"],
+        "tattoos": [
+          "Nova Corps emblem on his left forearm, representing his service"
+        ]
+      },
+      "description": "Xandar Quell was born at Nova Outpost on Xandar, a frontier community known for its ties to the Nova Corps. Raised as an only child, Xandar was exposed early to the militaristic discipline and pride of the Corps, which heavily influenced his path in life. He eventually joined the Nova Corps, rising through the ranks to become a respected field operative. Xandar is well-regarded for his level-headed nature during crises and his ability to inspire calm among his comrades. Despite his dedication to the Corps, he often grapples with the loneliness that comes from being stationed far from home and lacking family ties. His caseworker has suggested that Xandar engage in community-focused activities outside of his official duties to foster a deeper sense of belonging and fulfillment beyond his service role."
     },
     {
       "id": 10027,
@@ -295,7 +755,26 @@
       "weight": 170,
       "height": "6'0\"",
       "age": 35,
-      "dob": "1988-11-02"
+      "dob": "1988-11-02",
+      "birthPlace": "Medara, Betazed",
+      "bloodType": "AB+",
+      "citizenship": "Betazed Council",
+      "language": "Betazoid High Speech",
+      "eyeColor": "Black",
+      "hairColor": "Dark Brown",
+      "handedness": "Right",
+      "ethnicity": "Highborn Betazoid",
+      "geneticDisorders": "None",
+      "birthOrder": "Youngest of Three",
+      "allergies": ["Synthetic Pheromones"],
+      "permanentIdentifyingMarks": {
+        "scars": ["Small scar on his right eyebrow from a childhood fall"],
+        "birthmarks": [
+          "Faint birthmark on his left forearm in the shape of a crescent"
+        ],
+        "tattoos": ["Betazoid empathy sigil on his upper back"]
+      },
+      "description": "Korin Jax was born in Medara, the capital city of Betazed, and raised within one of the prominent highborn Betazoid families. As the youngest of three siblings, Korin grew up in an environment that encouraged empathy, telepathic training, and a strong sense of social duty. Known for his refined telepathic abilities, Korin serves as an advisor to the Betazed Council, often mediating disputes and aiding in negotiations with his empathic insight. Though his powers have brought him recognition, they also leave him vulnerable to emotional overload, particularly in tense environments. His caseworker has noted that Korin would benefit from practicing more grounding techniques and engaging in activities that help separate his own emotions from those he perceives in others, allowing him to maintain his well-being in high-pressure situations."
     },
     {
       "id": 10028,
@@ -306,7 +785,26 @@
       "weight": 145,
       "height": "5'7\"",
       "age": 33,
-      "dob": "1990-12-18"
+      "dob": "1990-12-18",
+      "birthPlace": "Lakat City, Cardassia Prime",
+      "bloodType": "B-",
+      "citizenship": "Cardassian Union",
+      "language": "Cardăsa High Speech",
+      "eyeColor": "Steel Gray",
+      "hairColor": "Jet Black",
+      "handedness": "Right",
+      "ethnicity": "Urban Cardassian",
+      "geneticDisorders": "None",
+      "birthOrder": "Second-born of Two",
+      "allergies": ["Polaron Dust"],
+      "permanentIdentifyingMarks": {
+        "scars": [
+          "Thin scar along her right forearm from an industrial accident"
+        ],
+        "birthmarks": ["None"],
+        "tattoos": ["Cardassian Union insignia on her left shoulder blade"]
+      },
+      "description": "Elaria D'Var was born in Lakat City, the bustling center of Cardassia Prime, into a family with a history of civil service. Raised in an environment that valued loyalty to the state above all, Elaria excelled in her studies and quickly secured a role within the Cardassian administrative system. She is known for her methodical approach and analytical mind, which have earned her respect within the Cardassian Union’s Ministry of Information. Elaria is deeply patriotic, though her commitment to the Union sometimes leads her to struggle with the moral complexities of Cardassian policies. Her caseworker noted that while her loyalty is admirable, Elaria could benefit from finding outlets for personal expression and emotional processing, helping her maintain a balance between her duties to the state and her personal identity."
     },
     {
       "id": 10029,
@@ -317,7 +815,28 @@
       "weight": 220,
       "height": "6'4\"",
       "age": 43,
-      "dob": "1980-05-10"
+      "dob": "1980-05-10",
+      "birthPlace": "Hive X7, Outer Reaches",
+      "bloodType": "O-",
+      "citizenship": "Hive Collective",
+      "language": "Chittering Dialect (Xenolinguistic Communication)",
+      "eyeColor": "Glossy Black",
+      "hairColor": "None",
+      "handedness": "Ambidextrous",
+      "ethnicity": "Warrior Drone",
+      "geneticDisorders": "None",
+      "birthOrder": "First Clutch Leader",
+      "allergies": ["Ammonium Compound Exposure"],
+      "permanentIdentifyingMarks": {
+        "scars": [
+          "Crosshatch scars on exoskeleton from battles over territory"
+        ],
+        "birthmarks": ["None"],
+        "tattoos": [
+          "Hive crest etched into carapace on chest, symbolizing loyalty to Hive X7"
+        ]
+      },
+      "description": "Drakon Pyke was born as the leader of the first clutch within Hive X7, located in the remote Outer Reaches. Raised as a Warrior Drone, Drakon has spent his life defending the hive and maintaining order within its complex hierarchy. Known for his powerful exoskeleton and agile combat skills, Drakon has earned respect among his hive-mates and is often relied upon for leading small expeditions and defending key territory. Despite his species' natural aggression, Drakon has a deep sense of loyalty to the collective and a strategic mind that has helped the hive thrive in challenging conditions. His caseworker noted that Drakon's loyalty to the hive is commendable, but exposure to environments beyond the hive might allow him to develop greater independence and strategic thinking beyond immediate survival tactics, potentially aiding in his personal growth."
     },
     {
       "id": 10030,
@@ -328,7 +847,28 @@
       "weight": 130,
       "height": "5'6\"",
       "age": 30,
-      "dob": "1993-03-03"
+      "dob": "1993-03-03",
+      "birthPlace": "Shi'Kahr, Vulcan",
+      "bloodType": "AB+",
+      "citizenship": "Vulcan High Command",
+      "language": "Vulcan Standard",
+      "eyeColor": "Hazel",
+      "hairColor": "Dark Brown",
+      "handedness": "Left",
+      "ethnicity": "Shi'Kahr Clan",
+      "geneticDisorders": "None",
+      "birthOrder": "First-born",
+      "allergies": ["Sehlat Fur"],
+      "permanentIdentifyingMarks": {
+        "scars": [
+          "Small scar behind her left ear from an early childhood accident"
+        ],
+        "birthmarks": ["None"],
+        "tattoos": [
+          "Vulcan IDIC symbol on her right wrist, symbolizing Infinite Diversity in Infinite Combinations"
+        ]
+      },
+      "description": "Suri Tal was born in Shi'Kahr, one of Vulcan's oldest and most revered cities, known for its dedication to logic and academic excellence. As the first-born child of her family, Suri was encouraged from a young age to embrace the Vulcan principles of logic, emotional control, and dedication to knowledge. She has since pursued a career in the Vulcan Science Academy, specializing in xenobotany. Suri is known for her methodical research and calm demeanor, traits that have earned her recognition among her peers. However, the pressure to adhere strictly to Vulcan ideals has sometimes made it challenging for her to engage on a personal level with non-Vulcans. Her caseworker noted that exploring artistic or expressive outlets could help Suri connect with others more naturally, enhancing her interpersonal relationships and overall well-being."
     },
     {
       "id": 10031,
@@ -339,7 +879,28 @@
       "weight": 210,
       "height": "6'3\"",
       "age": 47,
-      "dob": "1976-09-11"
+      "dob": "1976-09-11",
+      "birthPlace": "Palaven, Hierarchy Command Post 17",
+      "bloodType": "A+",
+      "citizenship": "Turian Hierarchy",
+      "language": "Turian Standard",
+      "eyeColor": "Pale Blue",
+      "hairColor": "None",
+      "handedness": "Right",
+      "ethnicity": "Primarch Division",
+      "geneticDisorders": "None",
+      "birthOrder": "Second-born of Three",
+      "allergies": ["Ferric Oxide Dust"],
+      "permanentIdentifyingMarks": {
+        "scars": [
+          "Three deep scars across his left mandible from a skirmish during the Reaper conflicts"
+        ],
+        "birthmarks": ["None"],
+        "tattoos": [
+          "Turian Hierarchy emblem on his left forearm, indicating his military rank and status"
+        ]
+      },
+      "description": "Garrus Vakarian was born on Palaven, at one of the Command Posts dedicated to the Turian military elite. As the second-born in his family, Garrus was expected to follow a strict path of discipline and loyalty to the Turian Hierarchy. He became an exceptional marksman, serving in both reconnaissance and special ops units where his skills were instrumental in several critical missions. Known for his tactical acumen and unwavering sense of justice, Garrus earned the respect of his peers, although his independent nature often led to disagreements with superior officers who preferred stricter adherence to protocol. His experience during the Reaper conflicts left him with scars, both physical and emotional. His caseworker has recommended that Garrus continue engaging in community work and mentorship programs, which could help him reconcile his sense of duty with the need for healing after years of conflict."
     },
     {
       "id": 10032,
@@ -350,7 +911,28 @@
       "weight": 125,
       "height": "5'5\"",
       "age": 28,
-      "dob": "1995-06-21"
+      "dob": "1995-06-21",
+      "birthPlace": "Raal Province, Vulcan",
+      "bloodType": "O-",
+      "citizenship": "Vulcan High Command",
+      "language": "Vulcan Standard",
+      "eyeColor": "Green",
+      "hairColor": "Black",
+      "handedness": "Right",
+      "ethnicity": "Raal Clanswoman",
+      "geneticDisorders": "None",
+      "birthOrder": "Only Child",
+      "allergies": ["Rasathian Dust"],
+      "permanentIdentifyingMarks": {
+        "scars": [
+          "Faint scar on her left palm from an incident during early combat training"
+        ],
+        "birthmarks": ["None"],
+        "tattoos": [
+          "Vulcan glyph for 'Peace' on her right ankle, a mark she chose after completing Kolinahr training"
+        ]
+      },
+      "description": "T'Lora Sur was born in the Raal Province of Vulcan, a region known for its beautiful red deserts and philosophical traditions. Raised as the only child in a family of scholars, T'Lora was encouraged from a young age to pursue knowledge and embrace Vulcan values of logic and discipline. Despite her scholarly upbringing, she also developed an interest in self-defense and martial arts, a pursuit that provided her with balance between mental rigor and physical training. T'Lora recently completed the Kolinahr ritual, seeking to purge all emotions in favor of pure logic. Though highly disciplined and calm, her caseworker has noted that T'Lora might benefit from finding a creative outlet to foster a deeper connection with herself and others, suggesting that pure logic can still coexist with forms of personal expression that are valuable to one's well-being."
     },
     {
       "id": 10033,
@@ -361,7 +943,28 @@
       "weight": 175,
       "height": "5'11\"",
       "age": 40,
-      "dob": "1983-08-09"
+      "dob": "1983-08-09",
+      "birthPlace": "Rakantha Province, Bajor",
+      "bloodType": "B+",
+      "citizenship": "Bajoran Republic",
+      "language": "Bajoran Standard",
+      "eyeColor": "Dark Brown",
+      "hairColor": "Chestnut",
+      "handedness": "Left",
+      "ethnicity": "Rakanthan",
+      "geneticDisorders": "None",
+      "birthOrder": "First-born of Four",
+      "allergies": ["Edosian Nectar"],
+      "permanentIdentifyingMarks": {
+        "scars": [
+          "Horizontal scar across his upper right arm from resistance fighting during the Cardassian Occupation"
+        ],
+        "birthmarks": ["Faint birthmark near his collarbone"],
+        "tattoos": [
+          "Bajoran Resistance insignia on his left shoulder, representing his commitment to the cause"
+        ]
+      },
+      "description": "Raegor Zorn was born in the Rakantha Province of Bajor, a region heavily affected during the Cardassian Occupation. As the first-born in a family of four children, Raegor took on responsibilities early, particularly during the turbulent years of the Occupation. Growing up amidst political turmoil, he joined the Bajoran Resistance at a young age, playing a role in covert operations to undermine Cardassian control. Known for his resilience and tactical thinking, Raegor became a symbol of hope within his community. Since the liberation, Raegor has transitioned into a community leader, helping rebuild his hometown and serve on the Rakantha regional council. Despite his successes, his caseworker noted that Raegor often struggles to leave behind the traumas of war, and has suggested that he participate in restorative activities, such as meditation and arts, to help process his past and find greater peace."
     },
     {
       "id": 10034,
@@ -372,7 +975,28 @@
       "weight": 160,
       "height": "5'8\"",
       "age": 35,
-      "dob": "1988-12-01"
+      "dob": "1988-12-01",
+      "birthPlace": "Iridonia, Ashen Wastes",
+      "bloodType": "O+",
+      "citizenship": "Zabrak Coalition",
+      "language": "Iridonian Common",
+      "eyeColor": "Amber",
+      "hairColor": "Dark Red",
+      "handedness": "Ambidextrous",
+      "ethnicity": "Iridonian Ashen Clan",
+      "geneticDisorders": "None",
+      "birthOrder": "Middle Child of Six",
+      "allergies": ["Rancor Pollen"],
+      "permanentIdentifyingMarks": {
+        "scars": [
+          "Three parallel scars running diagonally across her back from a survival rite on Iridonia"
+        ],
+        "birthmarks": ["None"],
+        "tattoos": [
+          "Intricate Zabrak tribal tattoos around her forehead, symbolizing resilience and honor"
+        ]
+      },
+      "description": "Nyla Vek was born in the Ashen Wastes of Iridonia, a harsh environment that forged her resilient spirit. Raised as the middle child of six, Nyla learned to adapt quickly and navigate the complexities of both family dynamics and the unforgiving Iridonian landscape. The Zabrak of Iridonia place great value on endurance, and Nyla excelled in survival training and combat, earning her place within the Ashen Clan. Known for her fierce independence and sense of duty, Nyla chose to serve as a guide and protector, leading expeditions through the Ashen Wastes and helping younger members of the clan navigate survival rites. Despite her strengths, Nyla often struggles to express vulnerability, a trait shaped by her culture’s emphasis on toughness. Her caseworker noted that engaging in community rituals focused on collective storytelling or ceremonial dance could help Nyla connect with her emotions in a culturally meaningful way, allowing her to explore her softer side while still honoring her heritage."
     },
     {
       "id": 10035,
@@ -383,7 +1007,28 @@
       "weight": 200,
       "height": "6'2\"",
       "age": 42,
-      "dob": "1981-10-30"
+      "dob": "1981-10-30",
+      "birthPlace": "Csilla, Ascendancy District 3",
+      "bloodType": "AB-",
+      "citizenship": "Chiss Ascendancy",
+      "language": "Cheunh",
+      "eyeColor": "Red",
+      "hairColor": "Midnight Blue",
+      "handedness": "Right",
+      "ethnicity": "Ascendant Nobility",
+      "geneticDisorders": "None",
+      "birthOrder": "Youngest of Two",
+      "allergies": ["Spice Residue"],
+      "permanentIdentifyingMarks": {
+        "scars": [
+          "Long scar along his left forearm from a strategic battle exercise gone wrong"
+        ],
+        "birthmarks": ["None"],
+        "tattoos": [
+          "Chiss Ascendancy emblem on his upper left arm, representing his commitment to the Ascendancy"
+        ]
+      },
+      "description": "Torran M'Kal was born in District 3 of Csilla, the homeworld of the Chiss Ascendancy, into a family that held a position of moderate influence within the Ascendant Nobility. From an early age, Torran was groomed to uphold the interests of the Ascendancy, training in the intricacies of political strategy and military tactics. Known for his keen analytical skills and calm demeanor, Torran rose through the ranks to serve as a tactician for the Ascendancy's Defense Fleet. Despite his aptitude for strategic planning, Torran often finds the rigid social expectations of Chiss society to be stifling, and he harbors a desire to explore more creative and unconventional pursuits. His caseworker has suggested that Torran engage in activities such as writing or composing music, which could allow him to explore new forms of expression while maintaining his disciplined approach."
     },
     {
       "id": 10036,
@@ -394,7 +1039,28 @@
       "weight": 190,
       "height": "6'2\"",
       "age": 45,
-      "dob": "1978-05-13"
+      "dob": "1978-05-13",
+      "birthPlace": "Dathomir, Shadow Plains",
+      "bloodType": "B-",
+      "citizenship": "Dathomirian Clans",
+      "language": "Zabrak Common",
+      "eyeColor": "Crimson",
+      "hairColor": "None",
+      "handedness": "Right",
+      "ethnicity": "Dathomirian Tribe",
+      "geneticDisorders": "None",
+      "birthOrder": "First-born of Five",
+      "allergies": ["Abyssal Flora Spores"],
+      "permanentIdentifyingMarks": {
+        "scars": [
+          "Two intersecting scars across his chest from a combat trial during the Nightbrother rites"
+        ],
+        "birthmarks": ["None"],
+        "tattoos": [
+          "Dathomirian tribal tattoos in black and red covering his head and chest, symbolizing his strength and loyalty to his clan"
+        ]
+      },
+      "description": "Kylor Drex was born in the Shadow Plains of Dathomir, a harsh and mystical environment that is home to some of the most resilient and fierce Zabrak tribes. As the first-born of five siblings, Kylor was expected to uphold family honor and take on significant responsibilities from an early age. He excelled in combat, undertaking the rigorous Nightbrother rites that shaped him into a formidable warrior. Known for his fearless demeanor and physical prowess, Kylor eventually became a clan protector, a role that involved defending his people and guiding the younger warriors during their own rites of passage. Despite his outward toughness, Kylor is deeply connected to the traditions of his people and values the strength found in unity. His caseworker has suggested that participating in ceremonial gatherings or leading storytelling sessions within the clan could allow Kylor to express his wisdom and experience, fostering connections beyond the battlefield."
     },
     {
       "id": 10037,
@@ -405,7 +1071,26 @@
       "weight": 145,
       "height": "5'7\"",
       "age": 34,
-      "dob": "1989-09-07"
+      "dob": "1989-09-07",
+      "birthPlace": "Janaran Falls, Betazed",
+      "bloodType": "A+",
+      "citizenship": "Betazed Alliance",
+      "language": "Betazoid Standard",
+      "eyeColor": "Black",
+      "hairColor": "Light Brown",
+      "handedness": "Right",
+      "ethnicity": "Western Betazoid",
+      "geneticDisorders": "None",
+      "birthOrder": "Only Child",
+      "allergies": ["Tholian Dust"],
+      "permanentIdentifyingMarks": {
+        "scars": ["Thin scar along her right wrist from a childhood accident"],
+        "birthmarks": ["Crescent-shaped birthmark on her lower back"],
+        "tattoos": [
+          "Betazoid empathy symbol on her left ankle, representing her deep commitment to understanding others"
+        ]
+      },
+      "description": "Velka Oris was born near the beautiful Janaran Falls on Betazed, a place known for its natural serenity and meditative retreats. As an only child, Velka received a great deal of attention from her family, who encouraged her to fully develop her telepathic abilities. Velka's upbringing was centered on empathy, mindfulness, and the value of understanding others, traits which she has carried into her career as a counselor for interspecies relations on Betazed. Her empathic abilities allow her to sense emotions deeply, which has made her exceptionally skilled at resolving conflicts and fostering understanding between different species. Despite her strengths, Velka is sometimes overwhelmed by the intensity of others' emotions, especially in high-stress situations. Her caseworker has suggested practicing shielding techniques and engaging in activities like meditation or spending time in nature to help her stay grounded and emotionally balanced."
     },
     {
       "id": 10038,
@@ -416,7 +1101,28 @@
       "weight": 250,
       "height": "6'6\"",
       "age": 40,
-      "dob": "1983-04-02"
+      "dob": "1983-04-02",
+      "birthPlace": "Kandor, Krypton",
+      "bloodType": "O+",
+      "citizenship": "Kryptonian High Council",
+      "language": "Kryptonian High Tongue",
+      "eyeColor": "Icy Blue",
+      "hairColor": "Black",
+      "handedness": "Right",
+      "ethnicity": "Kandorian",
+      "geneticDisorders": "None",
+      "birthOrder": "Second-born of Three",
+      "allergies": ["Red Sun Radiation"],
+      "permanentIdentifyingMarks": {
+        "scars": [
+          "A small scar on his left hand from an accident during a training exercise"
+        ],
+        "birthmarks": ["None"],
+        "tattoos": [
+          "Kryptonian sigil of House Vek on his right shoulder, representing family loyalty"
+        ]
+      },
+      "description": "Zorran Vek was born in the city of Kandor on Krypton, a society known for its advancement in science and its adherence to a highly structured social order. As the second-born of three siblings, Zorran was raised to respect the hierarchy and traditions of Kryptonian society, but also to strive for personal excellence. From a young age, he displayed remarkable physical capabilities, and after completing his studies in the fields of xenobiology and physical sciences, Zorran joined the planetary defense forces, where his natural abilities made him a formidable protector of Kandor. Known for his resilience and tactical skills, Zorran often led missions into hazardous environments, where his strength and quick thinking were invaluable. However, his exposure to high-risk situations has led to occasional challenges with emotional detachment. His caseworker recommended that Zorran engage in cultural activities and mentorship roles, which could provide him with emotional fulfillment beyond his duty, helping him to connect more deeply with his people."
     },
     {
       "id": 10039,
@@ -427,7 +1133,28 @@
       "weight": 135,
       "height": "5'6\"",
       "age": 27,
-      "dob": "1996-02-18"
+      "dob": "1996-02-18",
+      "birthPlace": "Ryloth, Kala'uun",
+      "bloodType": "AB+",
+      "citizenship": "Ryloth Collective",
+      "language": "Twi'leki",
+      "eyeColor": "Turquoise",
+      "hairColor": "None (Lekku are Light Blue)",
+      "handedness": "Left",
+      "ethnicity": "Lethan Twi'lek",
+      "geneticDisorders": "None",
+      "birthOrder": "Youngest of Four",
+      "allergies": ["Ryll Dust"],
+      "permanentIdentifyingMarks": {
+        "scars": [
+          "Small scar on her right lek from an accident during an escape attempt from slave traders"
+        ],
+        "birthmarks": ["None"],
+        "tattoos": [
+          "Traditional Twi'lek dance markings on her left forearm, symbolizing freedom and resilience"
+        ]
+      },
+      "description": "Syra Bel-Tor was born in the bustling trade city of Kala'uun on Ryloth, a planet known for its stark contrasts between harsh desert terrain and thriving underground cities. As the youngest of four siblings, Syra's early life was marked by her family's struggle against poverty and the threat of enslavement that faced many Twi'leks. Despite these challenges, Syra developed a passion for traditional Twi'lek dance, which became her means of self-expression and a symbol of resilience against oppression. Her experiences during an attempted abduction by slave traders left her determined to protect her community, and she has since become a vocal advocate for Twi'lek rights and the fight against slavery. Known for her grace and tenacity, Syra has used her dance performances to raise awareness and garner support for her cause. Her caseworker has suggested that Syra continue to blend her cultural heritage with advocacy, possibly by leading community classes in dance and self-defense, which could help her empower others while strengthening her own sense of purpose."
     },
     {
       "id": 10040,
@@ -438,7 +1165,28 @@
       "weight": 225,
       "height": "6'3\"",
       "age": 50,
-      "dob": "1973-07-21"
+      "dob": "1973-07-21",
+      "birthPlace": "G'Kara Province, Narn Homeworld",
+      "bloodType": "O-",
+      "citizenship": "Narn Regime",
+      "language": "Narnic Standard",
+      "eyeColor": "Deep Brown",
+      "hairColor": "None (Typical Narn Baldness)",
+      "handedness": "Right",
+      "ethnicity": "Mountain Narn",
+      "geneticDisorders": "None",
+      "birthOrder": "First-born of Five",
+      "allergies": ["Katarian Plant Pollen"],
+      "permanentIdentifyingMarks": {
+        "scars": [
+          "Diagonal scar across his left cheek from a skirmish with Centauri forces during the Occupation"
+        ],
+        "birthmarks": ["None"],
+        "tattoos": [
+          "Narn Resistance symbol on his upper right arm, representing his fight for freedom"
+        ]
+      },
+      "description": "Jorvik Tross was born in G'Kara Province on the Narn Homeworld, a region that bore the brunt of the Centauri Occupation. As the first-born in a family of five, Jorvik grew up with a strong sense of duty to his family and community, taking on responsibilities far beyond his years. During the Centauri Occupation, he joined the Narn Resistance and played a key role in organizing local efforts to undermine Centauri control, often leading sabotage missions against enemy supply lines. Jorvik is known for his strong leadership skills, unyielding resilience, and his ability to inspire others even in the darkest of times. Since the liberation of the Narn Homeworld, Jorvik has been a key figure in the regional council, focusing on rebuilding efforts and ensuring that the Narn people have a voice in the future of their world. However, years of conflict have left him wary of forming close relationships, and his caseworker has suggested that Jorvik might benefit from participating in community-driven, peaceful initiatives, such as agricultural projects or cultural festivals, to help him reconnect with the simple joys of life and foster a sense of inner peace."
     },
     {
       "id": 10041,
@@ -449,7 +1197,28 @@
       "weight": 170,
       "height": "5'11\"",
       "age": 48,
-      "dob": "1975-03-12"
+      "dob": "1975-03-12",
+      "birthPlace": "Vulcana Regar, Vulcan",
+      "bloodType": "A-",
+      "citizenship": "Vulcan High Command",
+      "language": "Vulcan Standard",
+      "eyeColor": "Hazel",
+      "hairColor": "Black with touches of gray",
+      "handedness": "Right",
+      "ethnicity": "Regar Sect",
+      "geneticDisorders": "None",
+      "birthOrder": "First-born of Two",
+      "allergies": ["Sehlat Fur"],
+      "permanentIdentifyingMarks": {
+        "scars": [
+          "A faint scar across his right temple from an engineering accident"
+        ],
+        "birthmarks": ["None"],
+        "tattoos": [
+          "Vulcan glyph for 'Logic and Duty' on his upper left arm, a mark he received upon entering the Vulcan Science Academy"
+        ]
+      },
+      "description": "Lorin Vaal was born in Vulcana Regar, an industrious city on Vulcan known for its technical innovation and dedication to the advancement of Vulcan knowledge. Raised as the first-born child in a family that valued both scholarship and public service, Lorin was encouraged to explore engineering and scientific inquiry from an early age. His fascination with energy systems led him to become an energy systems specialist for the Vulcan High Command, where he contributed to improving planetary energy infrastructure. Lorin is well-regarded for his calm analytical mind and his ability to find efficient, logical solutions to complex problems. However, his adherence to logic and duty often makes it difficult for him to connect on a personal level with others, as he tends to keep emotional expressions tightly controlled. His caseworker has recommended that Lorin take time to pursue non-academic interests, such as creative writing or meditation in the open Vulcan desert, to allow space for personal exploration beyond duty."
     },
     {
       "id": 10042,
@@ -460,7 +1229,28 @@
       "weight": 125,
       "height": "5'5\"",
       "age": 32,
-      "dob": "1991-08-30"
+      "dob": "1991-08-30",
+      "birthPlace": "New Berlin, Luna Colony",
+      "bloodType": "B+",
+      "citizenship": "Terran Alliance",
+      "language": "English",
+      "eyeColor": "Blue",
+      "hairColor": "Blonde",
+      "handedness": "Left",
+      "ethnicity": "Lunar Colonist",
+      "geneticDisorders": "None",
+      "birthOrder": "Only Child",
+      "allergies": ["Pollen from Lunar Experimental Flora"],
+      "permanentIdentifyingMarks": {
+        "scars": [
+          "Thin scar along her left collarbone from an incident during a low-gravity sport"
+        ],
+        "birthmarks": ["Star-shaped birthmark on her right ankle"],
+        "tattoos": [
+          "A small crescent moon tattoo on her left wrist, representing her connection to Luna Colony"
+        ]
+      },
+      "description": "Talia Skorn was born in New Berlin, one of the most prominent settlements on Luna, where she grew up amidst the ambitious efforts of humanity to colonize and thrive on the moon. As an only child, she was encouraged to explore the sciences and participate in various physical activities suited to the low-gravity environment of Luna. Talia pursued a career in exogeology, focusing on lunar and asteroid mining operations, which allowed her to blend her fascination with planetary sciences with her deep appreciation for the challenges of living in space. Known for her determination and sense of adventure, Talia often volunteered for field missions, particularly in hazardous areas where her knowledge and adaptability were most needed. However, her independence has sometimes made it difficult for her to accept help or collaborate easily with others. Her caseworker suggested that Talia participate in team-based activities beyond work, such as community sports or cultural events, to help foster her collaborative spirit and build stronger relationships within her community."
     },
     {
       "id": 10043,
@@ -471,7 +1261,26 @@
       "weight": 160,
       "height": "5'4\"",
       "age": 60,
-      "dob": "1963-10-14"
+      "dob": "1963-10-14",
+      "birthPlace": "Ferenginar, Golden Market District",
+      "bloodType": "AB-",
+      "citizenship": "Ferengi Alliance",
+      "language": "Ferengi Standard",
+      "eyeColor": "Dark Brown",
+      "hairColor": "None",
+      "handedness": "Right",
+      "ethnicity": "Golden Market Clan",
+      "geneticDisorders": "None",
+      "birthOrder": "Third-born of Seven",
+      "allergies": ["Plasma Extract Residue"],
+      "permanentIdentifyingMarks": {
+        "scars": ["Scar on his left ear lobe from a bartering disagreement"],
+        "birthmarks": ["None"],
+        "tattoos": [
+          "Ferengi Rules of Acquisition symbol tattooed on his forearm, a reminder of his business philosophy"
+        ]
+      },
+      "description": "Varok Kreel was born in the bustling Golden Market District of Ferenginar, an area known for its lively commerce and devotion to trade. As the third-born in a large family of seven children, Varok was exposed to the competitive nature of business from an early age. He learned quickly that only the most cunning could thrive, and he took to heart the Ferengi Rules of Acquisition, seeing them as essential principles for success. Varok built a reputation as a savvy trader, specializing in rare commodities and negotiation, often traveling far beyond Ferenginar to broker deals across the galaxy. Though highly successful in business, his relentless pursuit of profit sometimes made him dismissive of personal relationships, often prioritizing a deal over companionship. His caseworker has recommended that Varok explore activities that encourage meaningful social interaction beyond commerce, such as charity events or mentorship programs, to help balance his work-driven lifestyle and establish deeper connections with others."
     },
     {
       "id": 10044,
@@ -482,7 +1291,28 @@
       "weight": 140,
       "height": "5'7\"",
       "age": 29,
-      "dob": "1994-11-11"
+      "dob": "1994-11-11",
+      "birthPlace": "Shili, Tira Clan Territory",
+      "bloodType": "O+",
+      "citizenship": "Togruta Tribal Council",
+      "language": "Togruti",
+      "eyeColor": "Amber",
+      "hairColor": "None (Montrals and Lekku are Red and White)",
+      "handedness": "Right",
+      "ethnicity": "Tira Clan",
+      "geneticDisorders": "None",
+      "birthOrder": "Second-born of Four",
+      "allergies": ["Falleen Pollen"],
+      "permanentIdentifyingMarks": {
+        "scars": [
+          "A curved scar on her right lekku from a hunting accident during a clan initiation rite"
+        ],
+        "birthmarks": ["None"],
+        "tattoos": [
+          "Togruta tribal markings in blue, encircling her wrists, symbolizing her connection to her ancestral territory"
+        ]
+      },
+      "description": "Zara Larn was born in the Tira Clan Territory of Shili, a region known for its vibrant ecosystems and strong sense of community among the Togruta. As the second-born of four children, Zara developed a fierce loyalty to her family and clan, embracing the communal values that are at the core of Togruta society. She excelled in traditional hunting and survival practices, which are vital parts of her culture, and became a skilled tracker. Zara also took an active role in guiding younger clan members during initiation rites, helping them connect with the land and understand the importance of community. While Zara is well-regarded for her skills and her dedication to the clan, she occasionally finds it difficult to express her own needs and desires, often placing the needs of the group above her own. Her caseworker has suggested that Zara explore artistic expressions such as painting or music, which might provide her with a means to articulate her individuality while still honoring her strong cultural ties."
     },
     {
       "id": 10045,
@@ -493,7 +1323,28 @@
       "weight": 200,
       "height": "6'2\"",
       "age": 41,
-      "dob": "1982-06-23"
+      "dob": "1982-06-23",
+      "birthPlace": "Csaplar, Csilla",
+      "bloodType": "B-",
+      "citizenship": "Chiss Ascendancy",
+      "language": "Cheunh",
+      "eyeColor": "Glowing Red",
+      "hairColor": "Midnight Black",
+      "handedness": "Right",
+      "ethnicity": "House Vos",
+      "geneticDisorders": "None",
+      "birthOrder": "Only Child",
+      "allergies": ["Spice Dust"],
+      "permanentIdentifyingMarks": {
+        "scars": [
+          "Three faint parallel scars on his left forearm from an encounter with a native predator on Csilla"
+        ],
+        "birthmarks": ["None"],
+        "tattoos": [
+          "Chiss Ascendancy insignia on his upper back, representing his dedication to the Ascendancy's principles and ideals"
+        ]
+      },
+      "description": "Rylen Vos was born in Csaplar, the capital of Csilla, into a prestigious family within the Chiss Ascendancy. As an only child, Rylen was groomed from a young age to uphold the traditions of House Vos and to play a strategic role within Chiss society. He excelled in tactical studies and was particularly adept at analyzing complex scenarios to find efficient and innovative solutions, earning him a prominent position within the Chiss Expansionary Defense Fleet. Known for his sharp intellect and disciplined demeanor, Rylen has served as a strategic officer during several critical missions, helping to secure the borders of Chiss space against external threats. Despite his professional accomplishments, Rylen often struggles to express his emotions and has a reputation for being somewhat aloof, which has made forming deep personal relationships difficult. His caseworker has suggested that Rylen consider engaging in mentorship roles within the Ascendancy's educational programs, where his knowledge and experience could be shared with younger Chiss, potentially providing him with an avenue for deeper interpersonal connections and a sense of fulfillment outside of tactical duty."
     },
     {
       "id": 10046,
@@ -504,7 +1355,28 @@
       "weight": 180,
       "height": "6'0\"",
       "age": 38,
-      "dob": "1985-02-14"
+      "dob": "1985-02-14",
+      "birthPlace": "Nabat, Ryloth",
+      "bloodType": "A+",
+      "citizenship": "Ryloth Confederation",
+      "language": "Twi'leki",
+      "eyeColor": "Emerald Green",
+      "hairColor": "None (Lekku are Deep Blue)",
+      "handedness": "Right",
+      "ethnicity": "Nabat Clan",
+      "geneticDisorders": "None",
+      "birthOrder": "First-born of Three",
+      "allergies": ["Ryll Herb"],
+      "permanentIdentifyingMarks": {
+        "scars": [
+          "A prominent scar on his left lek from a skirmish with slavers while defending his village"
+        ],
+        "birthmarks": ["None"],
+        "tattoos": [
+          "Twi'lek clan crest tattooed across his upper arm, representing his dedication to the Nabat Clan and his people"
+        ]
+      },
+      "description": "Jax Orin was born in Nabat, one of the older settlements on Ryloth, known for its resilience and deep-seated resistance against slavers and outside threats. As the first-born in his family, Jax was entrusted with significant responsibilities from a young age, including caring for his siblings and participating in village defense efforts. He developed a strong sense of duty and was known for his courageous efforts during several conflicts with slavers, defending his village from numerous incursions. As he matured, Jax took on the role of a community protector and leader, helping to organize defenses and lead expeditions to gather resources from the harsh terrain. Though his commitment to his people is unwavering, Jax often struggles with the emotional toll of constant vigilance, finding it difficult to relax or enjoy peaceful moments. His caseworker has suggested that Jax participate in cultural activities like Twi'lek storytelling or traditional music, which might provide him with a sense of relief and help build deeper connections with his community outside of his leadership responsibilities."
     },
     {
       "id": 10047,
@@ -515,7 +1387,28 @@
       "weight": 140,
       "height": "5'6\"",
       "age": 34,
-      "dob": "1989-07-09"
+      "dob": "1989-07-09",
+      "birthPlace": "Equator City, Rodia",
+      "bloodType": "B+",
+      "citizenship": "Rodia Clan Council",
+      "language": "Rodese",
+      "eyeColor": "Black",
+      "hairColor": "None",
+      "handedness": "Left",
+      "ethnicity": "Equatorial Rodian",
+      "geneticDisorders": "None",
+      "birthOrder": "Second-born of Five",
+      "allergies": ["Rancor Grass Spores"],
+      "permanentIdentifyingMarks": {
+        "scars": [
+          "Small scar above her right eye from a childhood hunting mishap"
+        ],
+        "birthmarks": ["None"],
+        "tattoos": [
+          "Clan Vex symbol tattooed on her left shoulder, representing loyalty to her family and heritage"
+        ]
+      },
+      "description": "Sila Vex was born in Equator City, one of the largest and most vibrant cities on Rodia. Growing up in the bustling environment of Equator City, Sila learned early about the importance of survival and adaptability, values deeply embedded in Rodian culture. As the second-born of five siblings, she often took on the role of peacemaker in her family, balancing her siblings' rivalries and guiding them through their formative years. Sila developed a strong affinity for hunting, an essential part of Rodian culture, and quickly became skilled in tracking and archery. Her natural talent led her to participate in various clan hunts, where her precision and resourcefulness earned her respect. Despite her prowess, Sila struggles with the tension between her role as a skilled hunter and her desire for a peaceful existence, particularly as she has grown older. Her caseworker has suggested that Sila explore non-combative community activities, such as teaching archery to younger Rodians or participating in traditional Rodian dance, as a way to stay connected to her heritage while cultivating a more balanced lifestyle."
     },
     {
       "id": 10048,
@@ -526,7 +1419,28 @@
       "weight": 210,
       "height": "6'3\"",
       "age": 46,
-      "dob": "1977-09-23"
+      "dob": "1977-09-23",
+      "birthPlace": "Irontown, Dathomir",
+      "bloodType": "O-",
+      "citizenship": "Dathomirian Clans",
+      "language": "Zabraki",
+      "eyeColor": "Golden Yellow",
+      "hairColor": "None (Horns typical of Zabrak)",
+      "handedness": "Right",
+      "ethnicity": "Nightbrother",
+      "geneticDisorders": "None",
+      "birthOrder": "First-born of Four",
+      "allergies": ["Kiros Bloom Pollen"],
+      "permanentIdentifyingMarks": {
+        "scars": [
+          "Three intersecting scars on his back from a Dathomirian trial of endurance"
+        ],
+        "birthmarks": ["None"],
+        "tattoos": [
+          "Nightbrother tribal tattoos in red and black encircling his arms, symbolizing strength and honor within his clan"
+        ]
+      },
+      "description": "Orik Zan was born in Irontown, a rugged settlement on Dathomir known for its strong-willed inhabitants and their deep connection to the planet’s mystical traditions. As the first-born in his family, Orik took on significant responsibilities early on, often helping to care for his siblings while simultaneously training under the harsh conditions of the Dathomirian landscape. He underwent the Nightbrother rites, enduring physical trials that marked his body and solidified his role within the clan. Known for his endurance and brute strength, Orik eventually became a respected Nightbrother warrior, dedicating himself to protecting his people and preserving their traditions. Despite his physical prowess, Orik struggles with expressing vulnerability, often keeping emotional distances even from those closest to him. His caseworker has suggested that Orik participate in more community-centered activities, such as storytelling or ritual drumming, as a way to connect with his clan on an emotional level, allowing him to embrace both his warrior identity and the softer aspects of community life."
     },
     {
       "id": 10049,
@@ -537,7 +1451,28 @@
       "weight": 135,
       "height": "5'7\"",
       "age": 27,
-      "dob": "1996-03-15"
+      "dob": "1996-03-15",
+      "birthPlace": "Joralla, Mirial",
+      "bloodType": "AB+",
+      "citizenship": "Mirial Council",
+      "language": "Mirialan Standard",
+      "eyeColor": "Emerald Green",
+      "hairColor": "Black",
+      "handedness": "Right",
+      "ethnicity": "Jorallan Clan",
+      "geneticDisorders": "None",
+      "birthOrder": "First-born of Two",
+      "allergies": ["Sand Lily Pollen"],
+      "permanentIdentifyingMarks": {
+        "scars": [
+          "A faint scar on her left wrist from an accident while training with a vibroblade"
+        ],
+        "birthmarks": ["None"],
+        "tattoos": [
+          "Mirialan geometric tattoos along her forehead and cheeks, representing her spiritual journey and significant milestones in her life"
+        ]
+      },
+      "description": "Mira Kryll was born in Joralla, a village on the cold, wind-swept planet of Mirial known for its deep spirituality and communal culture. As the first-born of two siblings, Mira was expected to set an example for her younger sibling, and she took on the responsibilities of maintaining the family traditions and contributing to her clan. Raised with a strong spiritual focus, Mira learned the importance of discipline and meditation, which has guided her personal growth and her work as a healer. Mira pursued her training in herbal medicine and energy-based healing, skills that are valued highly within her community. Known for her calm demeanor and compassion, Mira has become a respected figure among her people, often called upon to assist in healing rituals and community gatherings. Despite her success, Mira sometimes struggles with the pressure of always being the composed and reliable one. Her caseworker has recommended that Mira engage in personal pursuits outside of her healer role, such as painting or exploring Mirial’s landscape, to allow herself to experience more joy and spontaneity in her otherwise disciplined life."
     },
     {
       "id": 10050,
@@ -548,7 +1483,28 @@
       "weight": 195,
       "height": "6'1\"",
       "age": 53,
-      "dob": "1970-05-18"
+      "dob": "1970-05-18",
+      "birthPlace": "Zarra, Neimoidia",
+      "bloodType": "A-",
+      "citizenship": "Trade Federation Council",
+      "language": "Neimoidian Standard",
+      "eyeColor": "Red",
+      "hairColor": "None (Typical Neimoidian baldness)",
+      "handedness": "Right",
+      "ethnicity": "Zarran Caste",
+      "geneticDisorders": "None",
+      "birthOrder": "First-born of Three",
+      "allergies": ["Toxic Mold Spores"],
+      "permanentIdentifyingMarks": {
+        "scars": [
+          "Scar across his left cheek from an industrial accident in a Trade Federation factory"
+        ],
+        "birthmarks": ["None"],
+        "tattoos": [
+          "Trade Federation emblem tattooed on his right bicep, symbolizing his dedication to Neimoidian trade and commerce"
+        ]
+      },
+      "description": "Tor Valen was born in Zarra, an influential city on Neimoidia known for its involvement in galactic commerce and its significant role in the Trade Federation. As the first-born in his family, Tor was groomed for leadership within the Zarran Caste, taught from an early age about the importance of wealth accumulation, negotiation, and influence. He pursued a career in trade and commerce, eventually securing a prominent position within the Trade Federation Council. Tor became well-known for his shrewd negotiating skills, often acting as a mediator in trade disputes across the galaxy. Despite his outward success, the pressure to always remain calculating and detached has taken a toll on Tor’s emotional well-being, leaving him feeling isolated. His caseworker has suggested that Tor engage in non-transactional activities, such as cultivating a garden or learning an art form, to help him find a personal sense of satisfaction that does not depend on commerce or influence."
     },
     {
       "id": 10051,
@@ -559,7 +1515,28 @@
       "weight": 210,
       "height": "6'2\"",
       "age": 35,
-      "dob": "1988-06-17"
+      "dob": "1988-06-17",
+      "birthPlace": "Star Command, Galactic Sector 4",
+      "bloodType": "O+",
+      "citizenship": "Galactic Alliance",
+      "language": "Galactic Basic",
+      "eyeColor": "Blue",
+      "hairColor": "Brown",
+      "handedness": "Right",
+      "ethnicity": "Human, Galactic",
+      "geneticDisorders": "None",
+      "birthOrder": "Only Child",
+      "allergies": ["Xenonian Pollen"],
+      "permanentIdentifyingMarks": {
+        "scars": [
+          "Minor burn scar on his right forearm from a plasma discharge during a training mission"
+        ],
+        "birthmarks": ["None"],
+        "tattoos": [
+          "Star Command insignia tattooed on his left shoulder, representing his dedication to protecting the galaxy"
+        ]
+      },
+      "description": "Buzz Lightyear was born at Star Command, the training base for elite Space Rangers in Galactic Sector 4. Raised with a clear sense of duty and honor, Buzz excelled in physical training, space navigation, and tactical operations from an early age. His desire 'to go to infinity and beyond' has fueled his career as a top Space Ranger, known for his bravery and unwavering commitment to protecting the galaxy from threats both big and small. Buzz is admired for his fearless attitude and sharp focus during missions, though his zealous pursuit of perfection sometimes leads to overexertion and an unwillingness to accept help. His caseworker has recommended that Buzz engage in recreational activities that emphasize collaboration, such as team sports or group strategy games, to help him relax and connect with others on a personal level. This could assist in cultivating a more balanced approach to teamwork and reduce his tendency to take all responsibility upon himself."
     },
     {
       "id": 10052,
@@ -570,7 +1547,26 @@
       "weight": 60,
       "height": "3'5\"",
       "age": 7,
-      "dob": "2016-04-26"
+      "dob": "2016-04-26",
+      "birthPlace": "Galaxy Defense Industries Laboratory, Planet Turo",
+      "bloodType": "Unknown (Genetically Engineered)",
+      "citizenship": "Galactic Federation (Unofficial)",
+      "language": "Tantalog, Galactic Basic",
+      "eyeColor": "Black",
+      "hairColor": "None",
+      "handedness": "Ambidextrous",
+      "ethnicity": "Genetic Experiment",
+      "geneticDisorders": "None (Engineered for Resilience)",
+      "birthOrder": "Only Creation of Series",
+      "allergies": ["Heavy Rain (Causes brief discomfort)"],
+      "permanentIdentifyingMarks": {
+        "scars": ["None (Engineered for rapid healing)"],
+        "birthmarks": ["None"],
+        "tattoos": [
+          "Experiment 626 identification tattoo on his lower back, as an identifier within the Galactic Experimentation Series"
+        ]
+      },
+      "description": "Stitch, also known as Experiment 626, was created in a laboratory on Planet Turo as part of a highly secretive genetic experimentation project led by the infamous scientist Jumba Jookiba. Engineered to be an indestructible, highly intelligent, and mischievous life form, Stitch was designed with a number of extraordinary abilities, including super strength, agility, and rapid healing. Although he was initially designed for destruction, Stitch has found a new purpose in forming close bonds, particularly with his Earth 'ohana.' His natural curiosity and unconventional approach to problem-solving have helped him grow beyond his original programming, embracing the concept of family and loyalty. Despite his progress, Stitch still struggles with occasional impulses to cause chaos, particularly when he becomes frustrated or overwhelmed. His caseworker has suggested activities such as group play with other experiments or engaging in creative crafts, which could help channel his energy in positive ways and further strengthen his understanding of community."
     },
     {
       "id": 10053,
@@ -581,7 +1577,28 @@
       "weight": 150,
       "height": "4'0\"",
       "age": 700,
-      "dob": "2324-10-23"
+      "dob": "2324-10-23",
+      "birthPlace": "Buy n Large Factory, Earth",
+      "bloodType": "None (Mechanical)",
+      "citizenship": "Independent (Classified as a utility robot)",
+      "language": "Robotic Binary, Human Gestures",
+      "eyeColor": "Photoreceptor Lenses (Yellow Glow)",
+      "hairColor": "None",
+      "handedness": "Ambidextrous (Dual Arm Manipulators)",
+      "ethnicity": "Utility Robot Series",
+      "geneticDisorders": "None (Artificial Construct)",
+      "birthOrder": "Unit Number 626 of Series 7000",
+      "allergies": ["Water Ingress (Can cause corrosion over time)"],
+      "permanentIdentifyingMarks": {
+        "scars": [
+          "Multiple superficial dents and scratches from centuries of waste collection work"
+        ],
+        "birthmarks": ["None"],
+        "tattoos": [
+          "Buy n Large Corporation serial number engraved on his chassis for identification purposes"
+        ]
+      },
+      "description": "WALL-E, also known as Waste Allocation Load Lifter: Earth-Class, was produced by the Buy n Large Corporation to clean up the waste-covered Earth after human departure. Built with simplicity and resilience in mind, WALL-E has spent centuries compacting garbage into neatly stacked cubes in an effort to restore Earth’s habitability. Over his extensive service, WALL-E has developed a distinct personality characterized by curiosity, persistence, and a longing for connection—traits that are unusual for a machine of his series. His love for old human artifacts, such as musical recordings and cultural relics, has fostered a deep sense of wonder about life and companionship. Despite his mechanical endurance, WALL-E’s primary challenges involve maintenance issues and loneliness. His caseworker has suggested introducing WALL-E to group activities with other utility bots, or even connecting him with humans and other robots to foster social experiences, which may not only ease his sense of isolation but also enhance his understanding of relationships."
     },
     {
       "id": 10054,
@@ -592,7 +1609,28 @@
       "weight": 180,
       "height": "6'0\"",
       "age": 33,
-      "dob": "1989-12-07"
+      "dob": "1989-12-07",
+      "birthPlace": "ENCOM Mainframe",
+      "bloodType": "None (Digital Construct)",
+      "citizenship": "Independent Security Protocol",
+      "language": "Binary, User Interface Commands",
+      "eyeColor": "Glowing White",
+      "hairColor": "None (Digital Helm Visor)",
+      "handedness": "Right",
+      "ethnicity": "Guardian Class Program",
+      "geneticDisorders": "None (Coded Stability)",
+      "birthOrder": "First Generation Security Program",
+      "allergies": ["Code Corruption"],
+      "permanentIdentifyingMarks": {
+        "scars": [
+          "Data corruption streak across his upper arm from a close encounter with a viral code infection"
+        ],
+        "birthmarks": ["None"],
+        "tattoos": [
+          "Circuitry lines across his body that glow blue, signifying his core energy and purpose as a protector"
+        ]
+      },
+      "description": "Tron was originally written as a security program within the ENCOM Mainframe, designed to monitor and maintain system integrity. As a Guardian Class Program, Tron was responsible for defending the digital realm from corruption and unauthorized access. Tron's skills in combat and his unwavering dedication to protecting the system have earned him a reputation as a formidable opponent against rogue programs and system threats. Despite his deep-seated sense of duty, Tron has also exhibited a sense of loyalty towards Users, believing in their capacity to bring order to the digital landscape. Over time, Tron's encounters with viral programs and malicious entities have left him with residual data corruption, which occasionally affects his stability. His caseworker suggested that Tron take part in less confrontational activities within the digital community, such as running diagnostics for community applications or engaging in data-visualization projects, which could offer him a sense of fulfillment without the constant pressure of high-stakes conflict."
     },
     {
       "id": 10055,
@@ -603,7 +1641,28 @@
       "weight": 140,
       "height": "5'8\"",
       "age": 28,
-      "dob": "1995-02-14"
+      "dob": "1995-02-14",
+      "birthPlace": "Thebes, Greece",
+      "bloodType": "B+",
+      "citizenship": "Greek City-State Alliance",
+      "language": "Ancient Greek, Modern Greek",
+      "eyeColor": "Violet",
+      "hairColor": "Dark Brown",
+      "handedness": "Right",
+      "ethnicity": "Hellenic",
+      "geneticDisorders": "None",
+      "birthOrder": "Only Child",
+      "allergies": ["Olive Pollen"],
+      "permanentIdentifyingMarks": {
+        "scars": [
+          "A faint scar on her left wrist from an accident involving a chariot wheel during her teenage years"
+        ],
+        "birthmarks": ["A small crescent-shaped birthmark on her shoulder"],
+        "tattoos": [
+          "A discreet laurel wreath tattoo on her ankle, symbolizing resilience and remembrance of her personal journey"
+        ]
+      },
+      "description": "Megara was born in Thebes, one of the prominent city-states of Greece, and grew up amidst the rich culture and storied history of the Hellenic world. As an only child, she was well-acquainted with independence from an early age, learning how to navigate the challenges of life without siblings to rely on. Known for her wit, sharp tongue, and a hint of skepticism, Megara has always maintained a sense of resilience despite the hardships she faced, including complex relationships and personal losses. Megara is skilled in negotiation and has a knack for finding her way out of difficult situations, a skillset she developed partly as a result of her troubled past. Though she often gives off an aura of aloofness, she has a soft side that reveals itself to those willing to look beyond her guarded exterior. Her caseworker has suggested that Megara engage in creative pursuits, such as poetry or drama, which could allow her to explore her emotions more openly and build deeper connections with her community while also celebrating her love of Greek cultural traditions."
     },
     {
       "id": 10056,
@@ -614,7 +1673,28 @@
       "weight": 240,
       "height": "6'5\"",
       "age": 30,
-      "dob": "1993-05-25"
+      "dob": "1993-05-25",
+      "birthPlace": "Mount Olympus, Greece",
+      "bloodType": "Unknown (Divine Influence)",
+      "citizenship": "Olympian and Greek City-State",
+      "language": "Ancient Greek, Modern Greek",
+      "eyeColor": "Sky Blue",
+      "hairColor": "Golden Brown",
+      "handedness": "Right",
+      "ethnicity": "Hellenic, Olympian",
+      "geneticDisorders": "None (Enhanced Physiology)",
+      "birthOrder": "First-born",
+      "allergies": ["None (Immune to Normal Allergens)"],
+      "permanentIdentifyingMarks": {
+        "scars": [
+          "Multiple battle scars on his arms and back from his Twelve Labors"
+        ],
+        "birthmarks": ["None"],
+        "tattoos": [
+          "A lightning bolt on his left shoulder, symbolizing his connection to his father, Zeus"
+        ]
+      },
+      "description": "Hercules, known as the greatest hero of Greece, was born on Mount Olympus as the son of Zeus and Alcmene, making him a demigod with a unique blend of divine and mortal heritage. From early childhood, Hercules exhibited incredible strength and a heroic spirit, which would eventually lead him to complete the Twelve Labors, a series of near-impossible tasks designed to test his courage, stamina, and determination. Hercules is known for his unwavering bravery, a sense of justice, and his boundless loyalty to his friends and family. Despite his extraordinary abilities, Hercules often faces the burden of balancing his divine expectations with the desire for a simple, meaningful life among mortals. He struggles with the pressure to always be heroic and longs for moments of normalcy. His caseworker has recommended activities that foster relaxation and personal fulfillment beyond heroics, such as engaging in artistic pursuits like sculpture or storytelling, where Hercules could channel his experiences into creative expressions, offering both himself and others a deeper understanding of his journey."
     },
     {
       "id": 10057,
@@ -625,7 +1705,26 @@
       "weight": 125,
       "height": "5'7\"",
       "age": 24,
-      "dob": "1999-12-21"
+      "dob": "1999-12-21",
+      "birthPlace": "Arendelle Castle, Kingdom of Arendelle",
+      "bloodType": "A+",
+      "citizenship": "Kingdom of Arendelle",
+      "language": "Arendellian (Norwegian), English",
+      "eyeColor": "Ice Blue",
+      "hairColor": "Platinum Blonde",
+      "handedness": "Right",
+      "ethnicity": "Nordic",
+      "geneticDisorders": "None (Magical Affinity)",
+      "birthOrder": "First-born",
+      "allergies": ["None (Magic enhances immunity)"],
+      "permanentIdentifyingMarks": {
+        "scars": ["None (Heals rapidly due to magical affinity)"],
+        "birthmarks": ["None"],
+        "tattoos": [
+          "Snowflake symbol on her right wrist, symbolizing her connection to her ice powers"
+        ]
+      },
+      "description": "Elsa was born in the royal family of Arendelle and is the first-born heir to the throne. From a young age, she displayed powerful ice magic, which often manifested uncontrollably, leading her to isolate herself to protect those around her. As she grew older, Elsa learned to embrace her powers, ultimately finding harmony between her magical abilities and her responsibilities as queen. Elsa is known for her elegance, strong-willed leadership, and fierce protection of her family and kingdom. However, beneath her composed exterior lies a deep fear of causing harm to her loved ones, which sometimes leads to isolation. Her caseworker has suggested that Elsa participate in community activities that emphasize connection without the pressures of leadership, such as organizing seasonal festivals or teaching young children about nature's beauty. These activities could help her foster personal relationships in a relaxed environment, allowing her to embrace the warmth and companionship she often denies herself."
     },
     {
       "id": 10058,
@@ -636,7 +1735,26 @@
       "weight": 175,
       "height": "5'10\"",
       "age": 27,
-      "dob": "1996-08-14"
+      "dob": "1996-08-14",
+      "birthPlace": "Agrabah, Arabian Desert",
+      "bloodType": "O+",
+      "citizenship": "Sultanate of Agrabah",
+      "language": "Arabic, English",
+      "eyeColor": "Brown",
+      "hairColor": "Black",
+      "handedness": "Right",
+      "ethnicity": "Middle Eastern",
+      "geneticDisorders": "None",
+      "birthOrder": "Only Child",
+      "allergies": ["Dates (mild allergic reaction)"],
+      "permanentIdentifyingMarks": {
+        "scars": [
+          "Small scar on his left hand from a childhood mishap while scavenging for food in the bazaar"
+        ],
+        "birthmarks": ["None"],
+        "tattoos": ["None"]
+      },
+      "description": "Aladdin was born and raised in the bustling streets of Agrabah, a city situated on the edge of the Arabian Desert. Orphaned at an early age, Aladdin learned to survive on his own, developing sharp instincts, resourcefulness, and a good heart despite his circumstances. Known as the 'diamond in the rough,' he displayed a natural talent for evading trouble, navigating the city, and outwitting those who underestimated him. Aladdin’s life changed dramatically when he came into possession of a magic lamp, befriending a Genie and eventually winning the love of Princess Jasmine. Though he now lives in the palace, Aladdin often feels torn between his old life of freedom and his new royal responsibilities. His caseworker has suggested that Aladdin stay connected to his roots by organizing outreach programs for the people of Agrabah, particularly those in need. Such efforts could help Aladdin balance his role in the palace with his passion for helping others, while also providing him with the sense of freedom and purpose that he craves."
     },
     {
       "id": 10059,
@@ -647,7 +1765,26 @@
       "weight": 130,
       "height": "6'0\"",
       "age": 1000,
-      "dob": "1024-10-31"
+      "dob": "1024-10-31",
+      "birthPlace": "Moors, Enchanted Forest",
+      "bloodType": "Unknown (Magical)",
+      "citizenship": "Moors Alliance",
+      "language": "Faery Speak, Common Tongue",
+      "eyeColor": "Green (Glows with magic)",
+      "hairColor": "Black (Often covered by horned headdress)",
+      "handedness": "Ambidextrous",
+      "ethnicity": "Fae",
+      "geneticDisorders": "None (Magically Augmented)",
+      "birthOrder": "Unique Fairy of Her Kind",
+      "allergies": ["Iron (Toxic to fae physiology)"],
+      "permanentIdentifyingMarks": {
+        "scars": ["None (Heals through magic)"],
+        "birthmarks": ["None"],
+        "tattoos": [
+          "None, but possesses intricate glowing markings that appear when casting powerful spells"
+        ]
+      },
+      "description": "Maleficent was born in the Moors, a mystical realm within the Enchanted Forest, where she grew up as the guardian of the fae and other magical creatures. She possesses immense magical power, allowing her to control elements, shape-shift, and wield destructive dark magic. Known for her commanding presence and sharp intellect, Maleficent has a deep connection to the natural world and a fierce loyalty to those she loves. Her transformation from a kind-hearted protector of the Moors to a vengeful dark fairy was triggered by betrayal and loss, leading her to isolate herself and guard her heart from the pain of further betrayal. Despite her formidable exterior, Maleficent yearns for connection, and she shows compassion towards those who prove themselves worthy of her trust. Her caseworker has suggested that Maleficent partake in activities that bring her closer to the community of the Moors, such as guiding young fae in using their magic or overseeing the restoration of damaged parts of the forest. These activities might allow her to foster a sense of belonging and purpose beyond the pursuit of power and revenge."
     },
     {
       "id": 10060,
@@ -658,7 +1795,26 @@
       "weight": 420,
       "height": "4'0\" (on all fours)",
       "age": 5,
-      "dob": "2018-07-19"
+      "dob": "2018-07-19",
+      "birthPlace": "Pride Lands, African Savanna",
+      "bloodType": "Unknown (Feline)",
+      "citizenship": "Kingdom of Pride Lands",
+      "language": "Lion Roar Communication, understands Swahili commands",
+      "eyeColor": "Golden",
+      "hairColor": "Golden Mane",
+      "handedness": "Ambidextrous (Paw Usage)",
+      "ethnicity": "Panthera Leo",
+      "geneticDisorders": "None",
+      "birthOrder": "First-born of Mufasa and Sarabi",
+      "allergies": ["None (Natural Immunity)"],
+      "permanentIdentifyingMarks": {
+        "scars": [
+          "A small scar above his right eye from a confrontation with a hyena"
+        ],
+        "birthmarks": ["None"],
+        "tattoos": ["None"]
+      },
+      "description": "Simba was born in the Pride Lands, a vast territory in the African Savanna where he was destined to be king as the first-born of Mufasa and Sarabi. From an early age, Simba exhibited a blend of curiosity, bravery, and a thirst for adventure, traits that would both help and challenge him as he grew into his role as leader. After the tragic loss of his father, Simba was driven away from his kingdom, which shaped much of his early experience as he learned resilience and survival. Over time, Simba learned the importance of courage, responsibility, and his place in the Circle of Life, eventually returning to reclaim the Pride Lands and fulfill his destiny as king. Known for his charisma and compassion, Simba continues to be a strong leader who values his pride above all else. His caseworker has recommended that Simba engage in activities that help foster community building, such as organizing pride gatherings or facilitating cub training, which could strengthen his bond with his pride and help the younger generation learn the values that guided him."
     },
     {
       "id": 10061,
@@ -669,7 +1825,26 @@
       "weight": 135,
       "height": "5'8\"",
       "age": 28,
-      "dob": "1995-04-14"
+      "dob": "1995-04-14",
+      "birthPlace": "Northern Wei Village, China",
+      "bloodType": "O+",
+      "citizenship": "Imperial China",
+      "language": "Mandarin, Cantonese",
+      "eyeColor": "Brown",
+      "hairColor": "Black",
+      "handedness": "Right",
+      "ethnicity": "Han Chinese",
+      "geneticDisorders": "None",
+      "birthOrder": "Only Child",
+      "allergies": ["None"],
+      "permanentIdentifyingMarks": {
+        "scars": [
+          "A faint scar on her left forearm from a training injury during military training"
+        ],
+        "birthmarks": ["None"],
+        "tattoos": ["None"]
+      },
+      "description": "Mulan was born in a small village in Northern Wei, China, during a time when societal roles for women were strictly defined. As an only child, Mulan felt the weight of her family's expectations, especially after her father's health began to deteriorate. Mulan chose to disguise herself as a man and enlist in the Imperial Army in his place, a decision that required immense bravery and resilience. Through rigorous training, Mulan developed formidable martial skills, eventually playing a key role in defending China from invasion. Known for her courage, loyalty, and strong sense of justice, Mulan broke barriers and became an inspirational figure to her fellow soldiers and her community. Despite her achievements, Mulan occasionally struggles with feeling torn between her warrior identity and her wish for a peaceful life with her family. Her caseworker has suggested engaging in cultural activities such as traditional calligraphy or hosting storytelling sessions in her village to help Mulan balance her warrior spirit with her cultural roots, fostering deeper connections with her family and community."
     },
     {
       "id": 10062,
@@ -680,7 +1855,26 @@
       "weight": 410,
       "height": "3'11\" (on all fours)",
       "age": 7,
-      "dob": "2016-09-12"
+      "dob": "2016-09-12",
+      "birthPlace": "Pride Lands, African Savanna",
+      "bloodType": "Unknown (Feline)",
+      "citizenship": "Kingdom of Pride Lands (Formerly)",
+      "language": "Lion Roar Communication, understands Swahili commands",
+      "eyeColor": "Green",
+      "hairColor": "Dark Mane (Black)",
+      "handedness": "Ambidextrous (Paw Usage)",
+      "ethnicity": "Panthera Leo",
+      "geneticDisorders": "None",
+      "birthOrder": "Second-born of Ahadi and Uru",
+      "allergies": ["None (Natural Immunity)"],
+      "permanentIdentifyingMarks": {
+        "scars": [
+          "A prominent scar over his left eye, earned during a dispute"
+        ],
+        "birthmarks": ["None"],
+        "tattoos": ["None"]
+      },
+      "description": "Scar was born in the Pride Lands as the younger brother of Mufasa, always living in the shadow of his elder sibling who was destined to be king. Ambitious and cunning, Scar grew resentful of Mufasa's position, and his desire for power gradually led him down a dark path. His strategic thinking and manipulative abilities allowed him to form alliances with the hyenas, using them as pawns to overthrow Mufasa and claim the throne. Despite his intelligence and ability to lead, Scar's leadership style was driven by fear and control rather than respect and unity, which led to the decline of the Pride Lands. Scar's complex personality is characterized by a mix of charisma, bitterness, and an overwhelming need for recognition. His caseworker has suggested that Scar engage in reflective activities such as mindfulness practices or mentoring younger lions, which could help him harness his strategic mind for positive contributions and perhaps develop a more balanced perspective on leadership and community."
     },
     {
       "id": 10063,
@@ -691,18 +1885,24 @@
       "weight": 120,
       "height": "5'5\"",
       "age": 22,
-      "dob": "2001-05-12"
-    },
-    {
-      "id": 10064,
-      "name": "Buzz Lightyear",
-      "ssn": "9T3-6V-2L11",
-      "race": "Toy",
-      "gender": "Male",
-      "weight": 2,
-      "height": "11 inches",
-      "age": 5,
-      "dob": "2019-06-21"
+      "dob": "2001-05-12",
+      "birthPlace": "Corona Castle, Kingdom of Corona",
+      "bloodType": "A+",
+      "citizenship": "Kingdom of Corona",
+      "language": "English, Corona Dialect",
+      "eyeColor": "Green",
+      "hairColor": "Golden Blonde (Magically restored to brown)",
+      "handedness": "Right",
+      "ethnicity": "European",
+      "geneticDisorders": "None",
+      "birthOrder": "Only Child",
+      "allergies": ["None"],
+      "permanentIdentifyingMarks": {
+        "scars": ["None"],
+        "birthmarks": ["A small heart-shaped birthmark on her right shoulder"],
+        "tattoos": ["None"]
+      },
+      "description": "Rapunzel was born in Corona Castle as the long-awaited heir to the kingdom. Taken from her parents as an infant by Mother Gothel, Rapunzel spent her early years isolated in a tower, unaware of her true identity as a princess. Her long, magical golden hair, which possessed healing properties, was the reason for her captivity, as Gothel used its power to maintain her youth. Despite her seclusion, Rapunzel grew up with a deep sense of curiosity and wonder about the outside world. With the help of Flynn Rider, she escaped the tower, discovered her true heritage, and returned to her family as the rightful princess of Corona. Rapunzel is known for her kind heart, optimism, and adventurous spirit. However, having lived in captivity for so long, she occasionally struggles with trusting her independence and balancing her desire for adventure with her royal responsibilities. Her caseworker has recommended that Rapunzel engage in activities that celebrate her adventurous nature while fostering a sense of community, such as organizing outdoor art workshops or leading exploration treks in the kingdom's scenic areas. These activities can help her reconnect with her past while embracing her role as a leader."
     },
     {
       "id": 10065,
@@ -713,18 +1913,24 @@
       "weight": 125,
       "height": "5'6\"",
       "age": 26,
-      "dob": "1997-10-09"
-    },
-    {
-      "id": 10066,
-      "name": "Hercules",
-      "ssn": "3H7-8P-2M43",
-      "race": "Demigod",
-      "gender": "Male",
-      "weight": 220,
-      "height": "6'5\"",
-      "age": 30,
-      "dob": "1993-12-12"
+      "dob": "1997-10-09",
+      "birthPlace": "New Orleans, Louisiana",
+      "bloodType": "B+",
+      "citizenship": "United States",
+      "language": "English, French Creole",
+      "eyeColor": "Brown",
+      "hairColor": "Black",
+      "handedness": "Right",
+      "ethnicity": "African American",
+      "geneticDisorders": "None",
+      "birthOrder": "Only Child",
+      "allergies": ["Shellfish (Mild reaction)"],
+      "permanentIdentifyingMarks": {
+        "scars": ["A small scar on her left hand from a cooking accident"],
+        "birthmarks": ["None"],
+        "tattoos": ["None"]
+      },
+      "description": "Tiana was born and raised in the vibrant city of New Orleans, where her love of cooking was inspired by her late father, who dreamt of opening a restaurant. From a young age, Tiana displayed a strong work ethic and determination, often working multiple jobs to save enough money to fulfill her father's dream. Known for her culinary talent, creativity, and independence, Tiana eventually achieved her dream by opening her own restaurant, Tiana's Palace. Despite her successes, Tiana sometimes struggles to balance her passion for work with taking time to relax and enjoy the company of friends and family. Her caseworker has recommended that Tiana engage in activities that foster personal well-being, such as cooking classes for fun rather than work, or joining local jazz events to reconnect with her community. These activities could help Tiana find joy beyond her goals and nurture her relationships in a relaxed setting."
     },
     {
       "id": 10067,
@@ -735,40 +1941,26 @@
       "weight": 140,
       "height": "5'7\"",
       "age": 25,
-      "dob": "1998-11-17"
-    },
-    {
-      "id": 10068,
-      "name": "Jafar",
-      "ssn": "4N6-3K-8X56",
-      "race": "Human",
-      "gender": "Male",
-      "weight": 175,
-      "height": "6'2\"",
-      "age": 45,
-      "dob": "1978-04-03"
-    },
-    {
-      "id": 10069,
-      "name": "Ariel",
-      "ssn": "2S3-5M-1Y77",
-      "race": "Mermaid",
-      "gender": "Female",
-      "weight": 120,
-      "height": "5'5\"",
-      "age": 22,
-      "dob": "2001-08-13"
-    },
-    {
-      "id": 10070,
-      "name": "Hades",
-      "ssn": "5F1-9V-4J88",
-      "race": "God of the Underworld",
-      "gender": "Male",
-      "weight": 230,
-      "height": "6'6\"",
-      "age": 99,
-      "dob": "Ancient Times"
+      "dob": "1998-11-17",
+      "birthPlace": "Arendelle Castle, Kingdom of Arendelle",
+      "bloodType": "A+",
+      "citizenship": "Kingdom of Arendelle",
+      "language": "Arendellian (Norwegian), English",
+      "eyeColor": "Ice Blue",
+      "hairColor": "Platinum Blonde",
+      "handedness": "Right",
+      "ethnicity": "Nordic",
+      "geneticDisorders": "None (Magical Affinity)",
+      "birthOrder": "First-born",
+      "allergies": ["None (Magic-enhanced immunity)"],
+      "permanentIdentifyingMarks": {
+        "scars": ["None (Heals rapidly through magic)"],
+        "birthmarks": ["None"],
+        "tattoos": [
+          "None, but possesses shimmering frost-like patterns that appear on her arms when casting spells"
+        ]
+      },
+      "description": "Elsa was born in the royal family of Arendelle as the first-born heir to the throne. She possesses powerful ice magic, an ability that manifested at an early age, which caused both wonder and fear in her family. To protect those she loved, Elsa chose to isolate herself, spending many years in her room trying to control her powers. Eventually, through courage, love, and the support of her sister Anna, Elsa learned to embrace her magical gifts, turning them from a source of fear into an asset that brought beauty and harmony to her kingdom. Known for her grace, poise, and fierce protection of her loved ones, Elsa is a symbol of resilience. Despite her abilities, Elsa sometimes struggles with balancing her role as a ruler and her desire for personal freedom. Her caseworker has recommended that Elsa engage in creative and communal activities that would allow her to explore the lighter aspects of her magic, such as hosting winter festivals in Arendelle or organizing snow sculpture workshops. Such activities could help Elsa build closer bonds with her community while enjoying her unique gifts in a lighthearted setting."
     },
     {
       "id": 10071,
@@ -779,7 +1971,26 @@
       "weight": 167,
       "height": "5'10\"",
       "age": 28,
-      "dob": "1996-08-10"
+      "dob": "1996-08-10",
+      "birthPlace": "Queens, New York City, USA",
+      "bloodType": "O-",
+      "citizenship": "United States",
+      "language": "English, Spanish (basic)",
+      "eyeColor": "Hazel",
+      "hairColor": "Brown",
+      "handedness": "Right",
+      "ethnicity": "Caucasian",
+      "geneticDisorders": "None (Genetically Altered by Spider Bite)",
+      "birthOrder": "Only Child",
+      "allergies": ["Bee Stings (Mild reaction)"],
+      "permanentIdentifyingMarks": {
+        "scars": [
+          "Various small scars from past battles, notably a scar on his left shoulder from a fight with the Vulture"
+        ],
+        "birthmarks": ["None"],
+        "tattoos": ["None"]
+      },
+      "description": "Peter Parker was born and raised in Queens, New York City, and after the loss of his parents at a young age, he was raised by his Aunt May and Uncle Ben. Gifted with superhuman abilities after being bitten by a genetically-altered spider, Peter became the masked vigilante known as Spider-Man, using his newfound powers to protect the citizens of New York City. Despite his extraordinary strength, agility, and 'spider-sense,' Peter has always prioritized the values instilled in him by Uncle Ben: 'With great power comes great responsibility.' Balancing his superhero duties with his everyday life has been a constant struggle for Peter, especially as he juggles personal relationships, work responsibilities, and the need to keep his identity secret. Known for his intelligence, sense of humor, and determination, Peter often uses his wit to cope with the stresses of his double life. His caseworker has suggested that Peter engage in activities that help him decompress, such as photography projects focused on New York's landscape or mentoring younger science students, allowing him to use his skills in a relaxed, positive setting that does not involve saving the world."
     },
     {
       "id": 10072,
@@ -790,7 +2001,24 @@
       "weight": 225,
       "height": "6'1\"",
       "age": 48,
-      "dob": "1976-05-29"
+      "dob": "1976-05-29",
+      "birthPlace": "Manhattan, New York City, USA",
+      "bloodType": "AB+",
+      "citizenship": "United States",
+      "language": "English, French, Italian",
+      "eyeColor": "Brown",
+      "hairColor": "Black",
+      "handedness": "Right",
+      "ethnicity": "Caucasian",
+      "geneticDisorders": "None",
+      "birthOrder": "Only Child",
+      "allergies": ["Penicillin"],
+      "permanentIdentifyingMarks": {
+        "scars": ["Circular scar on his chest from the arc reactor implant"],
+        "birthmarks": ["None"],
+        "tattoos": ["None"]
+      },
+      "description": "Tony Stark was born in Manhattan, New York City, to billionaire industrialist Howard Stark and socialite Maria Stark. As a child prodigy, Tony showed a natural affinity for engineering and technology, eventually taking over Stark Industries after the untimely death of his parents. His life took a dramatic turn when he was captured by terrorists and forced to create weapons, during which he sustained a severe chest injury. Instead of building the weapons, Tony constructed the first Iron Man suit and an arc reactor to keep shrapnel from reaching his heart. From that moment, he decided to use his intellect and resources to protect humanity rather than simply profit from weapons manufacturing. Known for his brilliance, wit, and confidence, Tony is also aware of the ethical responsibilities his inventions bring. Despite his heroic persona, he struggles with anxiety and the weight of responsibility that comes with being Iron Man. His caseworker has suggested that Tony find ways to focus on his personal well-being, such as investing time in humanitarian projects unrelated to technology or mentoring young engineers, which could help him find fulfillment beyond the Iron Man persona and establish a healthier work-life balance."
     },
     {
       "id": 10073,
@@ -801,7 +2029,26 @@
       "weight": 135,
       "height": "5'5\"",
       "age": 35,
-      "dob": "1988-11-22"
+      "dob": "1988-11-22",
+      "birthPlace": "Stalingrad, Soviet Union (now Volgograd, Russia)",
+      "bloodType": "O-",
+      "citizenship": "Russian (Formerly), United States",
+      "language": "Russian, English, French, German",
+      "eyeColor": "Green",
+      "hairColor": "Red",
+      "handedness": "Ambidextrous",
+      "ethnicity": "Slavic",
+      "geneticDisorders": "None",
+      "birthOrder": "Orphan (No known siblings)",
+      "allergies": ["None"],
+      "permanentIdentifyingMarks": {
+        "scars": [
+          "Several small scars from past missions, including a knife scar on her upper left thigh"
+        ],
+        "birthmarks": ["None"],
+        "tattoos": ["None"]
+      },
+      "description": "Natasha Romanoff, also known as the Black Widow, was born in Stalingrad (now Volgograd), Russia, and became an orphan at a young age. She was recruited into the Red Room, a covert Soviet training program, where she was trained extensively in espionage, martial arts, and weapons handling. The training was intense and left Natasha with a highly developed skillset but also emotional scars from the manipulation and conditioning she endured. Despite her complicated past, Natasha defected and eventually joined S.H.I.E.L.D., becoming one of their most skilled agents. Known for her intelligence, resourcefulness, and ability to adapt to any situation, Natasha has consistently put herself on the front lines to protect her allies. While she is often seen as calm under pressure and fiercely loyal, Natasha still grapples with her past and the 'red in her ledger' that she hopes to make up for through her heroic actions. Her caseworker has suggested engaging in community-focused activities like self-defense workshops for women and youth or art classes focused on storytelling through painting to help Natasha find a positive outlet for her skills and create new, uplifting connections with others."
     },
     {
       "id": 10074,
@@ -812,7 +2059,26 @@
       "weight": 240,
       "height": "6'2\"",
       "age": 100,
-      "dob": "1923-07-04"
+      "dob": "1923-07-04",
+      "birthPlace": "Brooklyn, New York City, USA",
+      "bloodType": "AB+",
+      "citizenship": "United States",
+      "language": "English, German (basic)",
+      "eyeColor": "Blue",
+      "hairColor": "Blonde",
+      "handedness": "Right",
+      "ethnicity": "Caucasian",
+      "geneticDisorders": "None (Genetically Enhanced)",
+      "birthOrder": "Only Child",
+      "allergies": ["None"],
+      "permanentIdentifyingMarks": {
+        "scars": [
+          "Scars from numerous battles, including a notable scar on his left side from shrapnel during WWII"
+        ],
+        "birthmarks": ["None"],
+        "tattoos": ["None"]
+      },
+      "description": "Steve Rogers, also known as Captain America, was born on July 4th, 1923, in Brooklyn, New York. Before becoming Captain America, Steve was a frail young man with a strong sense of justice and an unbreakable will to serve his country. His transformation came through the Super Soldier Serum, which enhanced his physical abilities to superhuman levels, allowing him to serve as a symbol of hope and courage during World War II. After sacrificing himself to save others at the end of the war, Steve was frozen in ice for nearly 70 years before being revived in the modern era. Known for his unwavering morals, leadership qualities, and resilience, Steve has consistently been a pillar of integrity, always putting others before himself. Despite his heroic persona, Steve struggles with adjusting to modern society, often feeling out of place in a world that has changed so much during his absence. His caseworker has suggested that Steve engage in activities that could help him integrate into contemporary society, such as volunteering at veterans' support groups or teaching history courses focusing on the WWII era, providing him with opportunities to connect with others while sharing his unique experiences and insights."
     },
     {
       "id": 10075,
@@ -823,7 +2089,26 @@
       "weight": 180,
       "height": "5'9\" (7'0\" as Hulk)",
       "age": 50,
-      "dob": "1974-12-18"
+      "dob": "1974-12-18",
+      "birthPlace": "Dayton, Ohio, USA",
+      "bloodType": "A-",
+      "citizenship": "United States",
+      "language": "English, Russian (basic)",
+      "eyeColor": "Brown (Green when Hulk)",
+      "hairColor": "Brown",
+      "handedness": "Right",
+      "ethnicity": "Caucasian",
+      "geneticDisorders": "None (Gamma Radiation Enhanced Physiology)",
+      "birthOrder": "Only Child",
+      "allergies": ["None"],
+      "permanentIdentifyingMarks": {
+        "scars": [
+          "Minor surgical scars on his arm from medical experiments and tests"
+        ],
+        "birthmarks": ["None"],
+        "tattoos": ["None"]
+      },
+      "description": "Bruce Banner was born in Dayton, Ohio, and from a young age showed an extraordinary aptitude for science, particularly in the field of gamma radiation. His life changed forever when an experimental gamma bomb he was working on exploded, exposing him to a massive dose of gamma radiation. Instead of killing him, the radiation transformed Bruce into the Hulk—an unstoppable, powerful green giant triggered by his anger or extreme stress. This dual identity has defined Bruce's life, with the Hulk embodying his repressed rage and serving both as a protector and a threat. Known for his incredible intelligence and soft-spoken nature, Bruce constantly seeks ways to manage or cure his Hulk side while also trying to use his condition for good. He often struggles with the fear of hurting those around him and grapples with a deep sense of isolation. His caseworker has suggested that Bruce engage in activities that encourage inner peace and community connection, such as yoga, meditation, or leading workshops on gamma research to help him channel his intellect in a way that positively impacts others while also finding moments of personal tranquility."
     },
     {
       "id": 10076,
@@ -834,29 +2119,84 @@
       "weight": 640,
       "height": "6'6\"",
       "age": 1500,
-      "dob": "0524-07-17"
+      "dob": "0524-07-17",
+      "birthPlace": "Asgard, Realm Eternal",
+      "bloodType": "N/A (Asgardian Physiology)",
+      "citizenship": "Asgardian",
+      "language": "Allspeak (Asgardian language understood by all beings), English, Old Norse",
+      "eyeColor": "Blue",
+      "hairColor": "Blonde",
+      "handedness": "Right",
+      "ethnicity": "Asgardian (Nordic)",
+      "geneticDisorders": "None (Enhanced Asgardian Physiology)",
+      "birthOrder": "First-born of Odin and Frigga",
+      "allergies": ["None"],
+      "permanentIdentifyingMarks": {
+        "scars": [
+          "Several scars from battles across realms, including a scar on his right cheek from the Battle of Vanaheim"
+        ],
+        "birthmarks": ["None"],
+        "tattoos": ["None"]
+      },
+      "description": "Thor Odinson, Prince of Asgard and the God of Thunder, was born in Asgard, the Realm Eternal, to King Odin and Queen Frigga. From an early age, Thor was trained to be a warrior, excelling in combat and leadership. Wielding Mjolnir, the enchanted hammer that can only be lifted by those deemed worthy, Thor's powers include the ability to summon lightning, fly, and possess superhuman strength. Thor's journey has not only been one of battles across realms but also a personal transformation—from a brash, impetuous prince to a more thoughtful and humble leader. Despite his power and status, Thor has faced great losses, including the destruction of Asgard and the deaths of many loved ones, which have deeply affected him. Known for his bravery, loyalty, and sense of honor, Thor often uses humor to cope with the burdens of leadership and loss. His caseworker has suggested that Thor engage in activities that allow him to reconnect with his sense of purpose beyond warfare, such as mentoring young warriors, organizing Asgardian cultural festivals, or leading efforts to rebuild communities both on Earth and across the cosmos, allowing him to focus on creating and nurturing rather than just fighting."
     },
     {
       "id": 10077,
       "name": "Loki Laufeyson",
       "ssn": "8F3-1R-9L42",
-      "race": "Frost Giant",
+      "race": "Frost Giant (Raised Asgardian)",
       "gender": "Male",
       "weight": 525,
       "height": "6'4\"",
       "age": 1050,
-      "dob": "1024-08-23"
+      "dob": "1024-08-23",
+      "birthPlace": "Jotunheim, Realm of the Frost Giants",
+      "bloodType": "N/A (Frost Giant Physiology)",
+      "citizenship": "Jotunheim (By Birth), Asgard (Adopted)",
+      "language": "Allspeak (Asgardian language understood by all beings), English, Old Norse",
+      "eyeColor": "Green",
+      "hairColor": "Black",
+      "handedness": "Ambidextrous",
+      "ethnicity": "Frost Giant (Raised Asgardian)",
+      "geneticDisorders": "None (Magically Augmented)",
+      "birthOrder": "Adopted son of Odin and Frigga",
+      "allergies": ["None"],
+      "permanentIdentifyingMarks": {
+        "scars": [
+          "None visible, relies on illusion to cover marks and injuries"
+        ],
+        "birthmarks": ["None"],
+        "tattoos": ["None"]
+      },
+      "description": "Loki Laufeyson was born in Jotunheim, the land of the Frost Giants, as the son of Laufey, the King of the Frost Giants. Found as an infant by Odin after a battle, Loki was brought to Asgard and raised as Odin's son alongside Thor, though he was unaware of his true heritage for much of his early life. From a young age, Loki showed a natural aptitude for magic, mastering the arts of illusion and manipulation. Known as the God of Mischief, Loki's complex relationship with Thor and his struggle for recognition have been central themes in his life. Loki often oscillates between the roles of villain and anti-hero, motivated by a desire for power, recognition, and a sense of belonging. Despite his cunning and self-serving nature, Loki has moments of vulnerability and compassion, particularly towards those he loves. His caseworker has recommended that Loki focus on activities that foster genuine connections and a sense of community, such as teaching magic to young Asgardians or engaging in storytelling circles to share his experiences in a creative, constructive manner. These activities could help Loki channel his talents for transformation and illusion towards building relationships rather than furthering schemes."
     },
     {
       "id": 10078,
       "name": "Wanda Maximoff",
       "ssn": "4P5-8Q-2M17",
-      "race": "Mutant",
+      "race": "Mutant (Enhanced)",
       "gender": "Female",
       "weight": 130,
       "height": "5'7\"",
       "age": 29,
-      "dob": "1995-02-28"
+      "dob": "1995-02-28",
+      "birthPlace": "Sokovia",
+      "bloodType": "O+",
+      "citizenship": "Sokovian",
+      "language": "Sokovian, English",
+      "eyeColor": "Hazel",
+      "hairColor": "Auburn",
+      "handedness": "Right",
+      "ethnicity": "Eastern European",
+      "geneticDisorders": "None (Magically Enhanced Mutant Genes)",
+      "birthOrder": "Twin Sister (Pietro Maximoff)",
+      "allergies": ["None"],
+      "permanentIdentifyingMarks": {
+        "scars": ["Several faint scars from battles against Hydra and Ultron"],
+        "birthmarks": ["None"],
+        "tattoos": ["None"]
+      },
+      "description": "Wanda Maximoff, also known as the Scarlet Witch, was born in the war-torn nation of Sokovia alongside her twin brother Pietro. Their lives were marked by hardship from an early age, as their family was caught in the crossfire of regional conflicts. Wanda and Pietro were subjected to Hydra experiments, which awakened Wanda's latent mutant abilities, giving her powerful magical and telekinetic powers. After the death of her brother and her alliance with the Avengers, Wanda became a key member of the team, fighting against powerful threats to humanity. Known for her immense power, Wanda is also deeply empathetic, with a strong desire to protect those she loves. However, her emotions are both her greatest strength and her greatest vulnerability, often driving her actions in unpredictable ways. Wanda's journey is one of seeking control over her powers and her emotions, especially following the significant losses she has endured. Her caseworker has suggested that Wanda engage in therapeutic activities that combine her natural gifts with healing practices, such as energy healing workshops or community service focused on helping war refugees. These activities could help Wanda channel her abilities in ways that are constructive and fulfilling, allowing her to find peace and connection in a positive context."
     },
     {
       "id": 10079,
@@ -867,62 +2207,86 @@
       "weight": 200,
       "height": "6'0\"",
       "age": 35,
-      "dob": "1989-11-15"
+      "dob": "1989-11-15",
+      "birthPlace": "Wakanda",
+      "bloodType": "B+",
+      "citizenship": "Wakandan",
+      "language": "Xhosa, English, French",
+      "eyeColor": "Brown",
+      "hairColor": "Black",
+      "handedness": "Right",
+      "ethnicity": "African (Wakandan)",
+      "geneticDisorders": "None (Herb-Enhanced Physiology)",
+      "birthOrder": "First-born (Prince and Heir)",
+      "allergies": ["None"],
+      "permanentIdentifyingMarks": {
+        "scars": [
+          "Few minor scars from combat, notably a scar on his right bicep from the Battle of Wakanda"
+        ],
+        "birthmarks": ["None"],
+        "tattoos": ["None, but ceremonial markings are worn during rituals"]
+      },
+      "description": "T'Challa, the Black Panther and king of Wakanda, was born in the secluded and technologically advanced nation of Wakanda as the first-born son of King T'Chaka. As the heir to the throne, T'Challa was groomed for leadership, learning the importance of protecting his people and their secrets. Following the death of his father, T'Challa took up the mantle of the Black Panther—a protector of Wakanda—and embraced his role as king. The powers of the Black Panther, granted to him by consuming the Heart-Shaped Herb, gave T'Challa enhanced strength, agility, and senses, allowing him to serve as Wakanda's protector both at home and abroad. Known for his intelligence, diplomatic skills, and honor, T'Challa is a leader who deeply cares for his people and believes in using Wakanda's resources to help the world. Despite his power and responsibilities, T'Challa often struggles with balancing tradition with the need for progress, especially in light of opening Wakanda to the international community. His caseworker has suggested that T'Challa engage in activities that help him connect more personally with the global community, such as leading technology exchange programs or hosting cultural events that share Wakandan heritage with the world, thereby fostering a sense of unity while maintaining his own cultural identity."
     },
     {
       "id": 10080,
       "name": "Stephen Strange",
       "ssn": "9Z8-4K-7J61",
-      "race": "Human",
+      "race": "Human (Mystically Enhanced)",
       "gender": "Male",
       "weight": 180,
       "height": "6'0\"",
       "age": 45,
-      "dob": "1978-07-05"
-    },
-    {
-      "id": 10081,
-      "name": "Peter Parker",
-      "ssn": "2C5-9G-8J67",
-      "race": "Human (Mutated)",
-      "gender": "Male",
-      "weight": 167,
-      "height": "5'10\"",
-      "age": 28,
-      "dob": "1995-08-10"
+      "dob": "1978-07-05",
+      "birthPlace": "Philadelphia, Pennsylvania, USA",
+      "bloodType": "AB-",
+      "citizenship": "United States",
+      "language": "English, Sanskrit, Latin",
+      "eyeColor": "Gray",
+      "hairColor": "Black (with streaks of gray)",
+      "handedness": "Right",
+      "ethnicity": "Caucasian",
+      "geneticDisorders": "None",
+      "birthOrder": "Only Child",
+      "allergies": ["None"],
+      "permanentIdentifyingMarks": {
+        "scars": [
+          "Numerous scars on his hands from the car accident that ended his surgical career"
+        ],
+        "birthmarks": ["None"],
+        "tattoos": ["None"]
+      },
+      "description": "Dr. Stephen Strange was born in Philadelphia, Pennsylvania, and grew up aspiring to be one of the world's most renowned neurosurgeons. With his exceptional skill and intelligence, he became a highly successful, yet arrogant, surgeon until a devastating car accident damaged the nerves in his hands, effectively ending his medical career. In a desperate attempt to regain his skills, Strange sought out alternative treatments, leading him to Kamar-Taj in Nepal. There, he learned the mystic arts under the guidance of the Ancient One and transformed from a broken man into the Sorcerer Supreme. Known for his photographic memory, determination, and the mastery of countless mystical spells, Stephen now dedicates his life to protecting Earth from supernatural threats. Despite his strength in magic, Stephen struggles with letting go of his former ego and adapting to a life defined by humility and service. His caseworker has suggested that Stephen engage in activities that further ground him in the present, such as teaching introductory classes on magic for new apprentices at Kamar-Taj or volunteering as a mentor for those struggling with physical disabilities, helping them find new paths in life just as he did."
     },
     {
       "id": 10082,
       "name": "Natasha Romanoff",
       "ssn": "7L3-6Y-9P12",
-      "race": "Human",
+      "race": "Human (Enhanced Training)",
       "gender": "Female",
       "weight": 135,
       "height": "5'7\"",
       "age": 35,
-      "dob": "1988-11-22"
-    },
-    {
-      "id": 10083,
-      "name": "Bruce Banner",
-      "ssn": "6K2-1Z-3F44",
-      "race": "Human (Mutated)",
-      "gender": "Male",
-      "weight": 1280,
-      "height": "8'0\"",
-      "age": 49,
-      "dob": "1975-12-18"
-    },
-    {
-      "id": 10084,
-      "name": "Tony Stark",
-      "ssn": "1A9-4H-7L92",
-      "race": "Human",
-      "gender": "Male",
-      "weight": 225,
-      "height": "6'1\"",
-      "age": 48,
-      "dob": "1976-05-29"
+      "dob": "1988-11-22",
+      "birthPlace": "Stalingrad, Soviet Union (now Volgograd, Russia)",
+      "bloodType": "O-",
+      "citizenship": "Russian (Formerly), United States",
+      "language": "Russian, English, French, German",
+      "eyeColor": "Green",
+      "hairColor": "Red",
+      "handedness": "Ambidextrous",
+      "ethnicity": "Slavic",
+      "geneticDisorders": "None",
+      "birthOrder": "Orphan (No known siblings)",
+      "allergies": ["None"],
+      "permanentIdentifyingMarks": {
+        "scars": [
+          "Small scars from past missions, notably a scar on her upper left thigh from a knife wound"
+        ],
+        "birthmarks": ["None"],
+        "tattoos": ["None"]
+      },
+      "description": "Natasha Romanoff, known by her alias Black Widow, was born in Stalingrad (now Volgograd), Russia. She became an orphan at a young age and was subsequently recruited into the Red Room, a secret Soviet training facility that specialized in the creation of elite spies. There, Natasha underwent rigorous training in combat, espionage, and psychological conditioning, leaving her with unparalleled skills and emotional scars. Though her training made her a highly effective operative, Natasha eventually sought to leave her dark past behind, defecting to join S.H.I.E.L.D. and later becoming an Avenger. Natasha is known for her adaptability, intelligence, and tenacity, often taking on the most dangerous assignments without hesitation. Despite her incredible skills, Natasha still struggles with a sense of guilt over her past actions, particularly the moral compromises she made during her years as an assassin. Her caseworker has suggested that Natasha focus on community-building activities, such as leading self-defense workshops for women or sharing her story to empower others, helping her to channel her skills and experiences into a positive force for change."
     },
     {
       "id": 10085,
@@ -933,40 +2297,24 @@
       "weight": 165,
       "height": "5'11\"",
       "age": 38,
-      "dob": "1986-10-14"
-    },
-    {
-      "id": 10086,
-      "name": "Wanda Maximoff",
-      "ssn": "9H3-2B-1N82",
-      "race": "Human (Mutated)",
-      "gender": "Female",
-      "weight": 132,
-      "height": "5'7\"",
-      "age": 32,
-      "dob": "1992-02-10"
-    },
-    {
-      "id": 10087,
-      "name": "T'Challa",
-      "ssn": "8K5-6X-3M98",
-      "race": "Human (Enhanced)",
-      "gender": "Male",
-      "weight": 200,
-      "height": "6'0\"",
-      "age": 40,
-      "dob": "1984-11-14"
-    },
-    {
-      "id": 10088,
-      "name": "Stephen Strange",
-      "ssn": "4N7-5Z-9H12",
-      "race": "Human (Mystically Enhanced)",
-      "gender": "Male",
-      "weight": 180,
-      "height": "6'2\"",
-      "age": 45,
-      "dob": "1979-07-18"
+      "dob": "1986-10-14",
+      "birthPlace": "Boston, Massachusetts, USA",
+      "bloodType": "A+",
+      "citizenship": "United States, Kree Empire",
+      "language": "English, Kree",
+      "eyeColor": "Blue",
+      "hairColor": "Blonde",
+      "handedness": "Right",
+      "ethnicity": "Caucasian",
+      "geneticDisorders": "None (Kree DNA Enhancement)",
+      "birthOrder": "Middle Child (Two Siblings)",
+      "allergies": ["None"],
+      "permanentIdentifyingMarks": {
+        "scars": ["None visible due to Kree-enhanced healing factor"],
+        "birthmarks": ["None"],
+        "tattoos": ["None"]
+      },
+      "description": "Carol Danvers, also known as Captain Marvel, was born in Boston, Massachusetts. She displayed a fierce determination and sense of justice from a young age, leading her to join the United States Air Force where she excelled as a combat pilot. During a mission involving the experimental energy core of a Kree spaceship, Carol was exposed to Tesseract energy, which altered her DNA, merging it with that of the Kree and endowing her with superhuman abilities, such as flight, super strength, and energy manipulation. Carol’s transformation made her one of the universe's most powerful heroes. Though her powers allow her to protect both Earth and distant galaxies, Carol often struggles with her dual identity and the burden of her immense abilities. Known for her bravery, leadership, and sometimes stubborn streak, Carol often takes on the role of protector without hesitation. Her caseworker has suggested that Carol focus on activities that help her stay grounded, such as mentoring young pilots or working with underrepresented youth interested in aerospace, enabling her to share her passion for flight while building meaningful relationships with those who look up to her."
     },
     {
       "id": 10089,
@@ -977,7 +2325,26 @@
       "weight": 240,
       "height": "6'1\"",
       "age": 38,
-      "dob": "1986-09-23"
+      "dob": "1986-09-23",
+      "birthPlace": "Harlem, New York City, USA",
+      "bloodType": "B+",
+      "citizenship": "United States",
+      "language": "English, Spanish",
+      "eyeColor": "Brown",
+      "hairColor": "Black",
+      "handedness": "Right",
+      "ethnicity": "African American",
+      "geneticDisorders": "None",
+      "birthOrder": "Youngest of Three",
+      "allergies": ["None"],
+      "permanentIdentifyingMarks": {
+        "scars": [
+          "Small scar on his left forearm from a parachuting accident during training"
+        ],
+        "birthmarks": ["None"],
+        "tattoos": ["None"]
+      },
+      "description": "Sam Wilson, also known as the Falcon, was born in Harlem, New York City, where he grew up inspired by his community and the values instilled in him by his family. He served in the United States Air Force as a pararescue airman, where he distinguished himself with his bravery and dedication to rescuing others. After leaving the military, Sam became a counselor to veterans, helping them deal with the difficulties of re-integrating into civilian life, which showcased his empathy and desire to give back. Equipped with a special flight suit, Sam eventually became a partner to Captain America and later took up the shield himself, becoming a symbol of hope and resilience. Known for his leadership, courage, and compassion, Sam is always willing to stand up for what is right, using his skills to protect those who cannot protect themselves. Despite his strength, Sam sometimes struggles with the weight of his role as Captain America and the expectations placed upon him. His caseworker has suggested that Sam continue his community outreach by leading programs for at-risk youth, using his experiences to inspire and uplift them, and hosting motivational talks for veterans to share his journey from a soldier to a symbol of hope."
     },
     {
       "id": 10090,
@@ -988,117 +2355,26 @@
       "weight": 170,
       "height": "6'0\"",
       "age": 28,
-      "dob": "1996-03-17"
-    },
-    {
-      "id": 10091,
-      "name": "Moses",
-      "ssn": "7D1-2A-9F12",
-      "race": "Hebrew",
-      "gender": "Male",
-      "weight": 180,
-      "height": "6'0\"",
-      "age": 120,
-      "dob": "1391 BCE"
-    },
-    {
-      "id": 10092,
-      "name": "Abraham",
-      "ssn": "9C4-5B-1L56",
-      "race": "Semitic",
-      "gender": "Male",
-      "weight": 175,
-      "height": "5'10\"",
-      "age": 175,
-      "dob": "1996 BCE"
-    },
-    {
-      "id": 10093,
-      "name": "David",
-      "ssn": "2E6-7H-4L73",
-      "race": "Israelite",
-      "gender": "Male",
-      "weight": 165,
-      "height": "5'8\"",
-      "age": 70,
-      "dob": "1040 BCE"
-    },
-    {
-      "id": 10094,
-      "name": "Isaac",
-      "ssn": "6G7-8N-2F94",
-      "race": "Hebrew",
-      "gender": "Male",
-      "weight": 160,
-      "height": "5'9\"",
-      "age": 180,
-      "dob": "1896 BCE"
-    },
-    {
-      "id": 10095,
-      "name": "Jacob",
-      "ssn": "4H3-2K-5D83",
-      "race": "Hebrew",
-      "gender": "Male",
-      "weight": 170,
-      "height": "5'9\"",
-      "age": 147,
-      "dob": "1836 BCE"
-    },
-    {
-      "id": 10096,
-      "name": "Joseph",
-      "ssn": "1J9-3L-8K91",
-      "race": "Hebrew",
-      "gender": "Male",
-      "weight": 175,
-      "height": "5'11\"",
-      "age": 110,
-      "dob": "1745 BCE"
-    },
-    {
-      "id": 10097,
-      "name": "Noah",
-      "ssn": "3L2-4M-9B45",
-      "race": "Pre-Flood",
-      "gender": "Male",
-      "weight": 210,
-      "height": "6'1\"",
-      "age": 950,
-      "dob": "2970 BCE"
-    },
-    {
-      "id": 10098,
-      "name": "Joshua",
-      "ssn": "5N6-2P-7G82",
-      "race": "Israelite",
-      "gender": "Male",
-      "weight": 185,
-      "height": "5'10\"",
-      "age": 110,
-      "dob": "1355 BCE"
-    },
-    {
-      "id": 10099,
-      "name": "Samson",
-      "ssn": "8O4-9Q-1Z78",
-      "race": "Israelite",
-      "gender": "Male",
-      "weight": 250,
-      "height": "6'4\"",
-      "age": 40,
-      "dob": "1085 BCE"
-    },
-    {
-      "id": 10100,
-      "name": "Solomon",
-      "ssn": "2P8-1R-5X67",
-      "race": "Israelite",
-      "gender": "Male",
-      "weight": 170,
-      "height": "5'9\"",
-      "age": 80,
-      "dob": "990 BCE"
+      "dob": "1996-03-17",
+      "birthPlace": "Planet Zen-Whoberi",
+      "bloodType": "N/A (Alien Physiology)",
+      "citizenship": "Zen-Whoberian, Adopted Daughter of Thanos",
+      "language": "Zen-Whoberian, Galactic Common",
+      "eyeColor": "Green",
+      "hairColor": "Black with streaks of red",
+      "handedness": "Right",
+      "ethnicity": "Zen-Whoberian",
+      "geneticDisorders": "None",
+      "birthOrder": "Orphan (No known biological siblings, adopted siblings under Thanos)",
+      "allergies": ["None"],
+      "permanentIdentifyingMarks": {
+        "scars": [
+          "Multiple scars from battles, notably a scar across her right shoulder from a training exercise"
+        ],
+        "birthmarks": ["None"],
+        "tattoos": ["None"]
+      },
+      "description": "Gamora, often known as the 'Deadliest Woman in the Galaxy,' was born on the planet Zen-Whoberi, a peaceful world that was ravaged by the armies of Thanos. After her family and most of her people were killed, Gamora was taken in by Thanos, who raised her as his adopted daughter, training her to be a highly skilled assassin. Under his brutal training, Gamora developed exceptional combat skills, but she also carried a deep resentment towards Thanos for the destruction he caused. Eventually, she defected and sought redemption by joining the Guardians of the Galaxy. Known for her incredible combat prowess, agility, and strategic mind, Gamora has become a fierce protector of the universe and her new family, the Guardians. Despite her strength, she struggles with her past and the guilt of her actions under Thanos' command. Her caseworker has suggested that Gamora focus on activities that nurture her compassionate side, such as helping rehabilitate former child soldiers across different planets or leading self-defense workshops for vulnerable communities, allowing her to transform her skills into tools for empowerment and healing."
     }
   ]
 }
