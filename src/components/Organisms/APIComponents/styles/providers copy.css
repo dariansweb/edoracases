@@ -10,54 +10,7 @@
   background-color: var(--theme6-light);
   z-index: 1;
 }
-.provider-info-search-terms {
-  text-align: center;
-  margin-bottom: 20px;
-}
 
-.provider-info-term-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-}
-.provider-info-toggle-search-terms {
-  background-color: var(--theme1-dark);
-  color: var(--theme1-light);
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 5px;
-  margin-bottom: 20px;
-}
-.provider-info-toggle-search-terms:hover {
-  background-color: var(--theme1-light);
-  color: var(--theme1-dark);
-}
-.provider-info-term-button {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  background-color: var(--theme3-light);
-  color: var(--theme1-dark);
-  border: 2px solid var(--theme1-dark);
-  border-radius: 50%;
-  padding: 10px 20px;
-  cursor: pointer;
-  font-size: 14px;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.provider-info-term-button:hover {
-  background-color: var(--theme1-dark);
-  color: var(--theme1-light);
-  transform: scale(1.1);
-}
-
-.provider-info-term-button:active {
-  transform: scale(0.95);
-}
 /* Search Bar Container Styles */
 .provider-info-search {
   display: flex;
@@ -142,7 +95,7 @@
   border-radius: 8px;
   padding: 20px;
   margin-bottom: 20px;
-  background-color: var(--theme3-light);
+  background-color: #ffffff; /* Keeping it white for clarity */
   box-sizing: border-box;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s; /* Adding hover effect */
