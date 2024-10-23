@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Providers from "../../../data/providers"; // Importing the providers array
 import "./styles/providers.css";
-import "../../../utils/ScrollToTopButton"
+import "../../../utils/ScrollToTopButton";
 import ScrollToTopButton from "../../../utils/ScrollToTopButton";
 
 const ProviderCard = ({ provider }) => {
@@ -9,15 +9,39 @@ const ProviderCard = ({ provider }) => {
   const [showAppointmentServices, setShowAppointmentServices] = useState(false);
   const [showResidentialServices, setShowResidentialServices] = useState(false);
   const [showFundingSources, setShowFundingSources] = useState(false);
+  const [showFullDescription, setShowFullDescription] = useState(false); // State to toggle description
+
+  // Set the number of characters for truncating the description
+  const maxDescriptionLength = 200;
+  const truncatedDescription = provider.description.slice(
+    0,
+    maxDescriptionLength
+  );
 
   return (
-    <> 
-    <ScrollToTopButton />
+    <>
+      <ScrollToTopButton />
       <div className="provider-info-card top">
-        <h2 className="provider-info-name">{provider.name}</h2>
-        <p className="provider-info-description">
-          <strong>Description:</strong> {provider.description}
+        <h2 className="dark provider-info-name">{provider.name}</h2>
+
+        <p className="text-block-no-hover provider-info-description">
+          <strong>Description:</strong>{" "}
+          {showFullDescription
+            ? provider.description
+            : `${truncatedDescription}...`}
+          {/* Show the "Show more" link below the description */}
+          {provider.description.length > maxDescriptionLength && (
+            <div className="provider-info-show-more-container">
+              <button
+                onClick={() => setShowFullDescription(!showFullDescription)}
+                className="provider-info-show-more"
+              >
+                {showFullDescription ? "Show less" : "Show more"}
+              </button>
+            </div>
+          )}{" "}
         </p>
+
         <p>
           <strong>Tax Number:</strong> {provider.taxNumber}
         </p>
@@ -29,7 +53,7 @@ const ProviderCard = ({ provider }) => {
           {provider.coverage.region}
         </p>
 
-        <h3 className="provider-info-header">
+        <h3 className="dark provider-info-header">
           Contact Information
           <button
             className="provider-info-toggle-button"
@@ -67,7 +91,7 @@ const ProviderCard = ({ provider }) => {
           </div>
         )}
 
-        <h3 className="provider-info-header">
+        <h3 className="dark provider-info-header">
           Appointment Only Services
           <button
             className="provider-info-toggle-button"
@@ -86,7 +110,7 @@ const ProviderCard = ({ provider }) => {
 
         {provider.hasResidentialServices && (
           <>
-            <h3 className="provider-info-header">
+            <h3 className="dark provider-info-header">
               Residential Services
               <button
                 className="provider-info-toggle-button"
@@ -107,7 +131,7 @@ const ProviderCard = ({ provider }) => {
           </>
         )}
 
-        <h3 className="provider-info-header">
+        <h3 className="dark provider-info-header">
           Funding Sources
           <button
             className="provider-info-toggle-button"
@@ -139,7 +163,7 @@ const ProviderCard = ({ provider }) => {
         </div>
       </div>
     </>
-    );
+  );
 };
 
 const ProvidersList = () => {
@@ -153,9 +177,20 @@ const ProvidersList = () => {
   return (
     <div className="provider-info-list">
       <div className="provider-info-search">
+        <p className="provider-info-search-description">
+          Use the search box to filter providers based on their description.
+          Common searches include:{" "}
+          <strong>
+            recovery, residential, therapy, counseling, detox, housing,
+            employment, medical, education, aftercare, outpatient, crisis
+            intervention
+          </strong>
+          , and more. Type keywords to find providers offering specific
+          services.
+        </p>
         <input
           type="text"
-          placeholder="Search providers by description..."
+          placeholder="Search by description..."
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
           className="provider-info-search-input"
@@ -167,7 +202,6 @@ const ProvidersList = () => {
           Clear
         </button>
       </div>
-
       <div className="provider-info-list">
         {filteredProviders.length > 0 ? (
           filteredProviders.map((provider) => (

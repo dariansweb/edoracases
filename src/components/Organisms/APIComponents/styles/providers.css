@@ -7,17 +7,20 @@
   gap: 20px; /* Space between cards */
   margin: 0 auto; /* Center the list itself in its parent */
   padding: 20px; /* Optional: add some padding */
+  background-color: var(--theme6-light);
   z-index: 1;
 }
 
 /* Search Bar Container Styles */
 .provider-info-search {
   display: flex;
+  flex-direction: column;
   align-items: center; /* Vertically center the items */
   margin-bottom: 20px; /* Space below the search bar */
   padding: 10px; /* Padding around the search container */
   background-color: #f8f9fa; /* Light background for contrast */
   border-radius: 8px; /* Rounded corners for a softer look */
+  width: 60vw;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
@@ -46,11 +49,11 @@
   opacity: 1; /* Ensures placeholder is fully opaque */
 }
 
-/* Search Button Styles */
+/* Search Button Styles */  
 .provider-info-search-button {
   padding: 10px 20px; /* Increased padding for a larger clickable area */
-  background-color: #0073e6; /* Primary blue color */
-  color: #ffffff; /* White text color */
+  background-color: var(--theme1-dark); /* Primary blue color */
+  color: var(--theme5-light ); /* White text color */
   border: none; /* No border */
   border-radius: 5px; /* Rounded corners */
   cursor: pointer; /* Pointer cursor on hover */
@@ -61,8 +64,9 @@
 
 /* Hover state */
 .provider-info-search-button:hover {
-  background-color: #005bb5; /* Darker blue on hover */
+  background-color:var(--theme5-light); /* Darker blue on hover */
   transform: translateY(-2px); /* Lift effect on hover */
+  color: var(--theme2-dark);
 }
 
 /* Focus state */
@@ -76,6 +80,13 @@
   background-color: #ccc; /* Gray background when disabled */
   color: #666; /* Darker gray text */
   cursor: not-allowed; /* Change cursor to indicate disabled state */
+}
+.provider-info-search-description {
+  font-size: 14px;
+  color: var(--theme-text-light);
+  margin-top: 10px;
+  font-weight: 600;
+  font-style: italic;
 }
 
 /* General layout for the provider card container */
@@ -102,8 +113,8 @@
 }
 
 .provider-info-action-button {
-  background-color: #0073e6; /* Button color */
-  color: #fff; /* Text color */
+  background-color:var(--theme1-dark); /* Button color */
+  color: var(--theme1-light); /* Text color */
   border: none;
   border-radius: 5px;
   padding: 5px 10px; /* Adjust padding to reduce button size */
@@ -114,8 +125,9 @@
 }
 
 .provider-info-action-button:hover {
-  background-color: #005bb5; /* Darker blue on hover */
+  background-color:var(--theme5-light); /* Darker blue on hover */
   transform: translateY(-2px); /* Lift effect */
+  color: var(--theme5-dark);
 }
 
 /* Styling for services and funding sources */
@@ -179,7 +191,7 @@
 
 /* Toggle button styling */
 .provider-info-toggle-button {
-  background-color: #4caf50; /* Green background */
+  background-color: var(--theme5-dark); /* Green background */
   color: white; /* White text color */
   border: none; /* No border */
   border-radius: 5px; /* Rounded corners */
@@ -190,7 +202,20 @@
 }
 
 .provider-info-toggle-button:hover {
-  background-color: #45a049; /* Darker green on hover */
+  background-color: var(--theme2-light); /* Darker green on hover */
+  color: var(--theme2-dark);
+}
+.provider-info-show-more {
+  background: none;
+  border: none;
+  color: var(--theme-highlight);
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.provider-info-show-more:hover {
+  text-decoration: underline;
 }
 
 @media (max-width: 768px) {
