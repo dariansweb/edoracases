@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import ClientsData from "../../../data/clients.json"; // Import JSON data
 import iconsData from "../../../data/iconData"; // Import the icon data
 import ClientManagementHeader from "./ClientManagementHeader";
+import ClientHelp from "./ClientHelp"; // Import the ClientHelp component
 import "./styles/ClientList.css";
 
 const ClientList = () => {
+  const [showHelp, setShowHelp] = useState(false); // Toggle for showing/hiding help modal
   const [selectedClient, setSelectedClient] = useState(null); // Selected client
   const [selectedAction, setSelectedAction] = useState(null); // Action for the middle column
   const [searchTerm, setSearchTerm] = useState(""); // Search term state for clients
@@ -113,7 +115,8 @@ const ClientList = () => {
               ))
             ) : (
               <p>
-                No clients found. Please search. <br /><hr />
+                No clients found. Please search. <br />
+                <br />
                 Hint: Just start typing any letter ...
               </p>
             )}
@@ -176,6 +179,13 @@ const ClientList = () => {
 
         {/* Right Column: Action Details */}
         <div className="client-management-right-column">
+        <button
+            className="client-management-help-btn"
+            onClick={() => setShowHelp(true)}
+          >
+            Show Help
+          </button>
+
           {selectedAction && selectedClient ? (
             <ActionDetails
               action={selectedAction.title}
@@ -185,6 +195,9 @@ const ClientList = () => {
           ) : (
             <p>Select an action to view details.</p>
           )}
+
+          {/* Help Modal */}
+          <ClientHelp isOpen={showHelp} handleClose={() => setShowHelp(false)} />
         </div>
       </div>
     </>
