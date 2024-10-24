@@ -10,6 +10,7 @@ function ClientPage() {
   const [filteredClients, setFilteredClients] = useState(initialClients);
   const [filterText, setFilterText] = useState("");
   const tableContainerRef = useRef(null);
+  const fakeScrollRef = useRef(null); // Fix: Add fakeScrollRef initialization
 
   // This commmented code will show all columns on load
   // const [visibleColumns, setVisibleColumns] = useState(Object.keys(initialClients[0] || {}));
@@ -18,6 +19,12 @@ function ClientPage() {
   );
 
   const [showColumnSelector, setShowColumnSelector] = useState(false);
+
+  // Ensure both the table and fake scrollbar stay in sync
+  const handleTableScroll = () =>
+    handleSyncScroll(tableContainerRef, fakeScrollRef);
+  const handleFakeScroll = () =>
+    handleSyncScroll(fakeScrollRef, tableContainerRef);
 
   useEffect(() => {
     if (Array.isArray(clients)) {
@@ -35,6 +42,11 @@ function ClientPage() {
         left: scrollOffset,
         behavior: "smooth",
       });
+    }
+  };
+  const handleSyncScroll = (source, target) => {
+    if (target.current && source.current) {
+      target.current.scrollLeft = source.current.scrollLeft;
     }
   };
 
@@ -138,7 +150,20 @@ function ClientPage() {
           <div className="client-info-scroll-track">
             <div className="client-info-scroll-thumb"></div>
           </div>
-          <div className="client-info-table-container">
+          {/* Top Fake Scroll Container */}
+          <div
+            ref={fakeScrollRef}
+            className="client-info-fake-scroll-container"
+            onScroll={() => handleSyncScroll(fakeScrollRef, tableContainerRef)}
+          >
+            <div className="client-info-scroll-content"></div>
+          </div>
+
+          <div
+            className="client-info-table-container"
+            ref={tableContainerRef}
+            onScroll={handleTableScroll}
+          >
             <table className="client-info-table">
               <thead>
                 <tr>

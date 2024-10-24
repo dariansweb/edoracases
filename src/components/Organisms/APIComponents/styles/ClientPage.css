@@ -1,3 +1,19 @@
+.client-info-fake-scroll-container {
+  width: 100%;
+  overflow-x: auto; /* Enable scrolling */
+  height: 15px; /* Just enough height to mimic a scrollbar */
+  margin-bottom: 5px;
+  position: relative;
+  background-color:rgb(255, 255, 255);
+}
+
+.client-info-scroll-content {
+  width: 2000px; /* Width should be equal to or larger than the table to trigger scrolling */
+  height: 5px; /* Match the height of the fake scrollbar container */
+  background: #eff0ef; /* Color to represent the scrollbar thumb */
+  border-radius: 5px; /* Rounded corners for the scrollbar thumb */
+}
+
 .client-info-table-container-wrapper {
   position: relative;
   margin-bottom: 20px;
