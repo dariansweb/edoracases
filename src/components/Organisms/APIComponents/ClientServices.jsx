@@ -5,7 +5,7 @@ import ClientManagementHeader from "./ClientManagementHeader";
 import ClientHelp from "./ClientHelp"; // Import the ClientHelp component
 import "./styles/ClientList.css";
 
-const ClientList = () => {
+const ClientServices = () => {
   const [showHelp, setShowHelp] = useState(false); // Toggle for showing/hiding help modal
   const [selectedClient, setSelectedClient] = useState(null); // Selected client
   const [selectedAction, setSelectedAction] = useState(null); // Action for the middle column
@@ -221,4 +221,4 @@ const ActionDetails = ({ action, client, meaning }) => {
   );
 };
 
-export default ClientList;
+export default ClientServices;

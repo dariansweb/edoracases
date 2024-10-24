@@ -8,7 +8,7 @@
 // ];
 
 export const mainMenuItems = [
-  { id: 107, name: "Demo 1", link: "/clients" },
+  { id: 107, name: "Demo 1", link: "/clientservices" },
   { id: 108, name: "Demo 2", link: "/casestory3" },
   { id: 1137, name: "Demo 3", link: "/providers" },  
   { id: 1, name: "Child and Family", link: "/child-and-family" },
@@ -26,7 +26,7 @@ export const starMenuItems = [
   // { id: 9, name: "Services", link: "/services" },  
   { id: 10, name: "Contact", link: "/contact" },
   { id: 1108, name: "Demo 1", link: "/casestory3" },    
-  { id: 137, name: "Demo 2", link: "/clients" },
+  { id: 137, name: "Demo 2", link: "/clientservices" },
   { id: 2137, name: "Demo 3", link: "/providers" },
 ];
 

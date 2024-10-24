@@ -41,7 +41,8 @@ import ServiceSelector from "./CaseStories/ServiceSelector";
 import IconsList from "../components/Icons/IconList";
 
 // API Listings
-import ClientsList from "../components/Organisms/APIComponents/ClientList";
+import ClientServices from "../components/Organisms/APIComponents/ClientServices";
+import ClientPage from "../components/Organisms/APIComponents/ClientPage";
 import Providers from "../components/Organisms/APIComponents/providers"
 
 const AppRoutes = () => {
@@ -84,7 +85,8 @@ const AppRoutes = () => {
       {/* API Links */}
       <Route path="/providers" element={<Providers />} />
       {/* New route for ClientsList */}
-      <Route path="/clients" element={<ClientsList />} /> {/* 404 page */}
+      <Route path="/clientservices" element={<ClientServices />} /> 
+      <Route path="/clientpage" element={<ClientPage />} /> {/* 404 page */}
       <Route path="*" element={<NotFound />} />
     </Routes>
   );

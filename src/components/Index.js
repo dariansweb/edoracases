@@ -42,7 +42,8 @@ export { default as RadiobuttonPrototype } from "../assets/prototypes/formContro
 export { default as CheckboxPrototypes } from "../assets/prototypes/formControls/Checkbox";
 
 //API Files
-export { default as ClientsList } from "./Organisms/APIComponents/ClientList";
+export { default as ClientServices } from "./Organisms/APIComponents/ClientServices";
+export { default as ClientPage } from "./Organisms/APIComponents/ClientPage";
 export { default as ProvidersList } from "./Organisms/APIComponents/providers";
 
 // Utilities
