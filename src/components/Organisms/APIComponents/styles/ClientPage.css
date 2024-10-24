@@ -1,6 +1,3 @@
-* {
-  border: 1px solid red !important; /* Temporarily add borders to see all container sizes */
-}
 .client-info-table-container-wrapper {
   position: relative;
   margin-bottom: 20px;
