@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./styles/ClientPage.css";
 
 import ClientsData from "../../../data/clients.json";
@@ -9,6 +9,8 @@ function ClientPage() {
   const [editingClientId, setEditingClientId] = useState(null);
   const [filteredClients, setFilteredClients] = useState(initialClients);
   const [filterText, setFilterText] = useState("");
+  const tableContainerRef = useRef(null);
+
   // This commmented code will show all columns on load
   // const [visibleColumns, setVisibleColumns] = useState(Object.keys(initialClients[0] || {}));
   const [visibleColumns, setVisibleColumns] = useState(
@@ -26,6 +28,15 @@ function ClientPage() {
       );
     }
   }, [filterText, clients]);
+
+  const handleScroll = (scrollOffset) => {
+    if (tableContainerRef.current) {
+      tableContainerRef.current.scrollBy({
+        left: scrollOffset,
+        behavior: "smooth",
+      });
+    }
+  };
 
   const handleEditClick = (id) => {
     setEditingClientId(id);
@@ -85,15 +96,15 @@ function ClientPage() {
         {showColumnSelector && (
           <div className="client-info-column-selector">
             {Object.keys(initialClients[0] || {}).map((key) => (
-              <div key={key} className="client-info-column-option">
+              <label key={key} className="client-info-column-option">
                 <input
                   type="checkbox"
                   value={key}
                   checked={visibleColumns.includes(key)}
                   onChange={handleColumnVisibilityChange}
                 />
-                <label>{key}</label>
-              </div>
+                {key}
+              </label>
             ))}
           </div>
         )}
@@ -107,68 +118,90 @@ function ClientPage() {
           onChange={handleFilterChange}
         />
       </div>
-
       {Array.isArray(filteredClients) && filteredClients.length > 0 ? (
-        <table className="client-info-table">
-          <thead>
-            <tr>
-              <th>Actions</th>
-              {visibleColumns.map((key) => (
-                <th key={key}>{key}</th>
-              ))}
-            </tr>
-          </thead>
-          <tbody>
-            {filteredClients.map((client) => (
-              <tr key={client.id} style={{ height: "1.1rem" }}>
-                <td className="client-info-actions">
-                  {editingClientId === client.id ? (
-                    <button
-                      className="client-info-save"
-                      onClick={() => handleSaveClick(client.id)}
-                    >
-                      Save
-                    </button>
-                  ) : (
-                    <>
-                      <button
-                        className="client-info-edit"
-                        onClick={() => handleEditClick(client.id)}
-                      >
-                        Edit
-                      </button>
-                      <button
-                        className="client-info-delete"
-                        onClick={() => handleDeleteClick(client.id)}
-                      >
-                        Del
-                      </button>
-                    </>
-                  )}
-                </td>
-                {visibleColumns.map((key) => (
-                  <td key={key}>
-                    {editingClientId === client.id && key !== "id" ? (
-                      <input
-                        type="text"
-                        value={client[key]}
-                        onChange={(e) =>
-                          handleInputChange(client.id, key, e.target.value)
-                        }
-                      />
-                    ) : key === "description" ? (
-                      truncateText(client[key], 100)
-                    ) : client[key] instanceof Object ? (
-                      JSON.stringify(client[key])
-                    ) : (
-                      client[key]
-                    )}
-                  </td>
+        <div className="client-info-table-container-wrapper">
+          <div className="client-info-scroll-controls">
+            <button
+              className="client-info-scroll-left"
+              onClick={() => handleScroll(-300)}
+            >
+              &#8592; Scroll Left
+            </button>
+            <button
+              className="client-info-scroll-right"
+              onClick={() => handleScroll(300)}
+            >
+              Scroll Right &#8594;
+            </button>
+          </div>
+          {/* Custom Scroll Track */}
+          <div className="client-info-scroll-track">
+            <div className="client-info-scroll-thumb"></div>
+          </div>
+          <div className="client-info-table-container">
+            <table className="client-info-table">
+              <thead>
+                <tr>
+                  <th>Actions</th>
+                  {visibleColumns.map((key) => (
+                    <th key={key}>{key}</th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {filteredClients.map((client) => (
+                  <tr key={client.id} style={{ height: "1.1rem" }}>
+                    <td className="client-info-actions">
+                      {editingClientId === client.id ? (
+                        <>
+                          <button
+                            className="client-info-save"
+                            onClick={() => handleSaveClick(client.id)}
+                          >
+                            Save
+                          </button>
+                          <button
+                            className="client-info-delete"
+                            onClick={() => handleDeleteClick(client.id)}
+                          >
+                            Del
+                          </button>
+                        </>
+                      ) : (
+                        <button
+                          className="client-info-edit"
+                          onClick={() => handleEditClick(client.id)}
+                        >
+                          Edit
+                        </button>
+                      )}
+                    </td>
+
+                    {visibleColumns.map((key) => (
+                      <td key={key}>
+                        {editingClientId === client.id && key !== "id" ? (
+                          <input
+                            type="text"
+                            value={client[key]}
+                            onChange={(e) =>
+                              handleInputChange(client.id, key, e.target.value)
+                            }
+                          />
+                        ) : key === "description" ? (
+                          truncateText(client[key], 100)
+                        ) : client[key] instanceof Object ? (
+                          JSON.stringify(client[key])
+                        ) : (
+                          client[key]
+                        )}
+                      </td>
+                    ))}
+                  </tr>
                 ))}
-              </tr>
-            ))}
-          </tbody>
-        </table>
+              </tbody>
+            </table>
+          </div>
+        </div>
       ) : (
         <p>No clients found. Please adjust your filter.</p>
       )}
