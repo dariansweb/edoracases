@@ -9,15 +9,9 @@ function ClientPage() {
   const [editingClientId, setEditingClientId] = useState(null);
   const [filteredClients, setFilteredClients] = useState(initialClients);
   const [filterText, setFilterText] = useState("");
+  const [ssnFilterText, setSsnFilterText] = useState("");
   const tableContainerRef = useRef(null);
   const fakeScrollRef = useRef(null); // Fix: Add fakeScrollRef initialization
-
-  // This commmented code will show all columns on load
-  // const [visibleColumns, setVisibleColumns] = useState(Object.keys(initialClients[0] || {}));
-  const [visibleColumns, setVisibleColumns] = useState(
-    ["name", "dob", "age", "race", "gender"].sort()
-  );
-
   const [showColumnSelector, setShowColumnSelector] = useState(false);
 
   // Ensure both the table and fake scrollbar stay in sync
@@ -25,25 +19,35 @@ function ClientPage() {
     handleSyncScroll(tableContainerRef, fakeScrollRef);
   const handleFakeScroll = () =>
     handleSyncScroll(fakeScrollRef, tableContainerRef);
+  // This commmented code will show all columns on load
+  // const [visibleColumns, setVisibleColumns] = useState(Object.keys(initialClients[0] || {}));
+  const [visibleColumns, setVisibleColumns] = useState([
+    "name",
+    "ssn",
+    "dob",
+    "age",
+    "race",
+    "gender",
+  ]);
 
   useEffect(() => {
     if (Array.isArray(clients)) {
       setFilteredClients(
-        clients.filter((client) =>
-          client.name.toLowerCase().includes(filterText.toLowerCase())
-        )
+        clients.filter((client) => {
+          const nameMatches = client.name
+            .toLowerCase()
+            .includes(filterText.toLowerCase());
+          const ssnMatches = client.ssn
+            ?.toLowerCase()
+            .includes(ssnFilterText.toLowerCase());
+
+          // Only show clients that match both the name and SSN filters
+          return nameMatches && ssnMatches;
+        })
       );
     }
-  }, [filterText, clients]);
+  }, [filterText, ssnFilterText, clients]);
 
-  const handleScroll = (scrollOffset) => {
-    if (tableContainerRef.current) {
-      tableContainerRef.current.scrollBy({
-        left: scrollOffset,
-        behavior: "smooth",
-      });
-    }
-  };
   const handleSyncScroll = (source, target) => {
     if (target.current && source.current) {
       target.current.scrollLeft = source.current.scrollLeft;
@@ -78,11 +82,28 @@ function ClientPage() {
 
   const handleColumnVisibilityChange = (e) => {
     const { value, checked } = e.target;
+
     setVisibleColumns((prevColumns) => {
-      const updatedColumns = checked
-        ? [...prevColumns, value]
-        : prevColumns.filter((col) => col !== value);
-      return updatedColumns.sort(); // Sort columns in ascending order
+      let updatedColumns;
+
+      if (checked) {
+        // Add the column if checked
+        updatedColumns = [...prevColumns, value];
+      } else {
+        // Remove the column if unchecked, but never remove "name"
+        updatedColumns = prevColumns.filter(
+          (col) => col !== value && col !== "name"
+        );
+      }
+
+      // Ensure "name" is always first
+      if (!updatedColumns.includes("name")) {
+        updatedColumns.unshift("name");
+      }
+
+      return updatedColumns.sort((a, b) =>
+        a === "name" ? -1 : b === "name" ? 1 : 0
+      );
     });
   };
 
@@ -98,54 +119,50 @@ function ClientPage() {
 
   return (
     <div className="client-info-page">
-      <div className="client-info-column-selector-wrapper">
-        <button
-          className="client-info-dropdown-btn"
-          onClick={toggleColumnSelector}
-        >
-          Columns
-        </button>
-        {showColumnSelector && (
-          <div className="client-info-column-selector">
-            {Object.keys(initialClients[0] || {}).map((key) => (
-              <label key={key} className="client-info-column-option">
-                <input
-                  type="checkbox"
-                  value={key}
-                  checked={visibleColumns.includes(key)}
-                  onChange={handleColumnVisibilityChange}
-                />
-                {key}
-              </label>
-            ))}
-          </div>
-        )}
-      </div>
-
-      <div className="client-info-filter">
-        <input
-          type="text"
-          placeholder="Filter clients by name..."
-          value={filterText}
-          onChange={handleFilterChange}
-        />
+      <div className="client-info-filter-wrapper">
+        <div className="client-info-filter">
+          <input
+            type="text"
+            placeholder="Filter clients by name..."
+            value={filterText}
+            onChange={handleFilterChange}
+          />
+        </div>
+        <div className="client-info-filter">
+          <input
+            type="text"
+            placeholder="Filter clients by SSN..."
+            value={ssnFilterText}
+            onChange={(e) => setSsnFilterText(e.target.value)}
+          />
+        </div>
+        <div className="client-info-column-selector-wrapper">
+          <button
+            className="client-info-dropdown-btn"
+            onClick={toggleColumnSelector}
+          >
+            Columns
+          </button>
+          {showColumnSelector && (
+            <div className="client-info-column-selector">
+              {Object.keys(initialClients[0] || {}).map((key) => (
+                <label key={key} className="client-info-column-option">
+                  <input
+                    type="checkbox"
+                    value={key}
+                    checked={visibleColumns.includes(key)}
+                    onChange={handleColumnVisibilityChange}
+                    disabled={key === "name" || key === "id"} // Prevent "name" and "id" from being unchecked
+                  />
+                  {key}
+                </label>
+              ))}
+            </div>
+          )}
+        </div>
       </div>
       {Array.isArray(filteredClients) && filteredClients.length > 0 ? (
         <div className="client-info-table-container-wrapper">
-          <div className="client-info-scroll-controls">
-            <button
-              className="client-info-scroll-left"
-              onClick={() => handleScroll(-300)}
-            >
-              &#8592; Scroll Left
-            </button>
-            <button
-              className="client-info-scroll-right"
-              onClick={() => handleScroll(300)}
-            >
-              Scroll Right &#8594;
-            </button>
-          </div>
           {/* Custom Scroll Track */}
           <div className="client-info-scroll-track">
             <div className="client-info-scroll-thumb"></div>
@@ -180,13 +197,13 @@ function ClientPage() {
                       {editingClientId === client.id ? (
                         <>
                           <button
-                            className="client-info-save"
+                            className="client-info-button client-info-save"
                             onClick={() => handleSaveClick(client.id)}
                           >
                             Save
                           </button>
                           <button
-                            className="client-info-delete"
+                            className="client-info-button client-info-delete"
                             onClick={() => handleDeleteClick(client.id)}
                           >
                             Del
@@ -194,7 +211,7 @@ function ClientPage() {
                         </>
                       ) : (
                         <button
-                          className="client-info-edit"
+                          className="client-info-button client-info-edit"
                           onClick={() => handleEditClick(client.id)}
                         >
                           Edit

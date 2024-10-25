@@ -1,15 +1,23 @@
+.client-info-filter-wrapper {
+  display: flex;
+  align-items: flex-start; /* Aligns items to the top */
+  justify-content: center;
+  gap: 10px; /* Adds some space between the filter and dropdown */
+}
+
 .client-info-fake-scroll-container {
   width: 100%;
   overflow-x: auto; /* Enable scrolling */
-  height: 15px; /* Just enough height to mimic a scrollbar */
+  height: 25px; /* Just enough height to mimic a scrollbar */
   margin-bottom: 5px;
   position: relative;
-  background-color:rgb(255, 255, 255);
+  background-color: var(--theme2-light);
+  border-radius: 5px; /* Rounded corners for a smooth look */
 }
 
 .client-info-scroll-content {
   width: 2000px; /* Width should be equal to or larger than the table to trigger scrolling */
-  height: 5px; /* Match the height of the fake scrollbar container */
+  height: 25px; /* Match the height of the fake scrollbar container */
   background: #eff0ef; /* Color to represent the scrollbar thumb */
   border-radius: 5px; /* Rounded corners for the scrollbar thumb */
 }
@@ -17,12 +25,6 @@
 .client-info-table-container-wrapper {
   position: relative;
   margin-bottom: 20px;
-}
-
-.client-info-scroll-controls {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 10px;
 }
 
 .client-info-scroll-left,
@@ -50,7 +52,6 @@
   position: relative;
   width: 100%;
 }
-
 .client-info-scroll-thumb {
   height: 100%;
   width: 10%;
@@ -60,37 +61,20 @@
   left: 0;
   transition: left 0.3s ease;
 }
-
-.client-info-table-container {
-  overflow-x: scroll; /* Hide the default scrollbar */
-  max-width: 100%;
-  border: 1px solid #ccc;
-  padding: 10px;
-  white-space: nowrap; /* Prevent wrapping */
-  position: relative; /* So the custom scroll track stays aligned */
-}
-
-.client-info-table {
-  min-width: 1500px; /* Ensure the table is wider than container */
-  width: 100%;
-  border-collapse: collapse;
-  table-layout: fixed;
-}
-
 .client-info-table-container {
   overflow-x: scroll !important; /* Enables horizontal scrolling if the content overflows */
   width: 100% !important; /* Allows the container to grow as much as the viewport */
   border: 1px solid #ab9292; /* Adds a subtle border around the container */
   padding: 10px; /* Adds some padding for visual breathing room */
   white-space: nowrap !important; /* Prevents the table content from wrapping to new lines */
+  position: relative; /* So the custom scroll track stays aligned */
 }
 
 .client-info-table {
-  /* This makes the table expand to fit its content rather than shrink to the container */
-  width: max-content !important;
-  border-collapse: collapse !important; /* Makes the table look neater with borders */
-  min-width: 1600px !important; /* Set a minimum width to ensure scrollability when necessary */
-  table-layout: fixed; /* This can help with layout consistency */
+  min-width: max-content; /* Ensure the table is wider than container */
+  border-collapse: collapse !important; /* Neater table with collapsed borders */
+  min-width: 1600px !important; /* Ensure enough width for horizontal scrolling */
+  table-layout: fixed; /* Consistent column widths */
 }
 
 .client-info-table tbody tr:nth-child(even) {
@@ -143,7 +127,7 @@
 }
 .client-info-dropdown-btn {
   padding: 5px 10px;
-  font-size: 1rem;
+  font-size: 1.2rem;
   cursor: pointer;
   background-color: #4caf50;
   color: white;
@@ -154,81 +138,46 @@
 .client-info-dropdown-btn:hover {
   background-color: #45a049;
 }
-
-.client-info-dropdown-btn {
-  padding: 10px 15px;
-  font-size: 1rem;
-  cursor: pointer;
-  background-color: #4caf50;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
-}
-.client-info-dropdown-btn:hover {
-  background-color: #45a049;
-}
+/* Shared button styles */
 .client-info-button {
-  font-size: 0.875rem;
-  font-weight: 600;
-  color: white;
-  border: none;
-  padding: 4px 8px;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  width: 60px;
-}
-.client-info-delete {
-  @extend .client-info-button;
-  background-color: #e74c3c;
-}
-.client-info-delete:hover {
-  background-color: #c0392b;
-}
-.client-info-edit {
-  @extend .client-info-button;
-  background-color: lightseagreen;
-}
-.client-info-edit:hover {
-  background-color: #45a049;
-}
-.client-info-save {
-  @extend .client-info-button;
-  background-color: #ffd700;
-  color: black;
-}
-.client-info-save:hover {
-  background-color: #ffc107;
-}
-.client-info-delete:hover {
-  background-color: #c0392b;
-}
-.client-info-edit {
-  background-color: lightseagreen;
-  color: white;
-  border: none;
-  padding: 8px 12px;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-.client-info-edit:hover {
-  background-color: #45a049;
-}
-.client-info-save {
-  background-color: #ffd700;
-  color: black;
-  border: none;
-  padding: 8px 12px;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-.client-info-save:hover {
-  background-color: #ffc107;
+  font-size: 0.875rem;         /* Smaller font size for compact buttons */
+  font-weight: 600;            /* Bold text for better visibility */
+  color: white;                /* Default color */
+  border: none;                /* Remove default borders */
+  padding: 4px 8px;            /* Padding to ensure clickability */
+  border-radius: 4px;          /* Smooth, rounded corners */
+  cursor: pointer;             /* Pointer cursor to indicate action */
+  transition: background-color 0.3s ease; /* Smooth hover transition */
+  width: 60px;                 /* Uniform button width */
 }
 
+/* Delete button specific styles */
+.client-info-delete {
+  background-color: #e74c3c;   /* Red for delete button */
+}
+
+.client-info-delete:hover {
+  background-color: #c0392b;   /* Darker red on hover */
+}
+
+/* Edit button specific styles */
+.client-info-edit {
+  background-color: lightseagreen; /* Teal color for edit button */
+}
+
+.client-info-edit:hover {
+  background-color: #45a049;   /* Darker teal on hover */
+}
+
+/* Save button specific styles */
+.client-info-save {
+  background-color: #ffd700;   /* Golden color for save button */
+  color: black;                /* Black text for better contrast */
+}
+
+.client-info-save:hover {
+  background-color: #ffc107;   /* Darker gold on hover */
+}
 .client-info-column-selector {
   position: absolute;
   top: 110%;
@@ -247,12 +196,13 @@
 }
 .client-info-column-option {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 8fr;
   align-items: center;
   gap: 10px;
   cursor: pointer; /* Makes it obvious the whole area is clickable */
   padding: 5px; /* Add padding to make it look better on hover */
   border-radius: 4px; /* Slight rounding for better UX */
+  text-transform: uppercase;
   transition: background-color 0.3s ease; /* Smooth transition */
 }
 .client-info-column-option:hover {
